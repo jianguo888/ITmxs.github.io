@@ -7,14 +7,14 @@ node_modules
 .DS_Store
 .vscode
 yarn.lock
-README.md
+# README.md
 archetypes/
-assets/
+# assets/
 blog.zip
 blog_even.zip
-config.toml
-content/
-deploy.sh
+# config.toml
+# content/
+# deploy.sh
 i18n/
 images/
 layouts/
