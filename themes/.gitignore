@@ -1,0 +1,25 @@
+# Created by .ignore support plugin (hsz.mobi)
+# .idea/
+# public
+# /public
+# node_modules
+# **/node_modules/**/*
+# .DS_Store
+# .vscode
+# yarn.lock
+# # README.md
+# archetypes/
+# # assets/
+# blog.zip
+# blog_even.zip
+# # config.toml
+# # content/
+# # deploy.sh
+# i18n/
+# images/
+# layouts/
+# package.json
+# resources/
+# static/
+# themes/
+# "\351\205\215\347\275\256/"
