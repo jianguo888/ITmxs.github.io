@@ -5,8 +5,8 @@ lastmod: 2021-05-17T10:08:48+08:00
 draft: false
 keywords: []
 description: ""
-tags: []
-categories: []
+tags: ["go"]
+categories: ["go"]
 author: ""
 featuredImage: ""
 featuredImagePreview: "https://luckly007.oss-cn-beijing.aliyuncs.com/img/f77be1f477e980732d57475d3ddb69d.png"
@@ -47,6 +47,10 @@ sequenceDiagrams:
 
 接下来会推荐一些资料，以及大佬
 
+
+
+
+
 # 社区
 
 [微软](https://docs.microsoft.com/zh-cn/learn/paths/go-first-steps/)
@@ -58,6 +62,32 @@ sequenceDiagrams:
 [golang中国](https://golangtc.com/)
 
 [LearnKu](https://learnku.com/go)
+
+# 开源电子书
+
+
+
+**[Go 语言原本](https://golang.design/under-the-hood/)**
+
+**[Go 语言编程之旅 ](https://golang2.eddycjy.com/)**
+
+[Go语言圣经（中文版）](https://books.studygolang.com/gopl-zh/)
+
+**[《Go入门指南》](https://github.com/Unknwon/the-way-to-go_ZH_CN)**
+
+**[Go语言高级编程 ](https://github.com/chai2010/advanced-go-programming-book)**
+
+**[Go by Example 中文](https://books.studygolang.com/gobyexample/)**
+
+[Go_Web编程](https://www.kancloud.cn/kancloud/web-application-with-golang/44105)
+
+**[Go 语言设计模式](  https://github.com/senghoo/golang-design-pattern)**
+
+**[数据结构与算法](https://goalgorithm.github.io/basic/before.html)**
+
+**[Go 语言设计与实现](https://draveness.me/golang/)**
+
+
 
 # 自建博客：
 
@@ -135,6 +165,8 @@ sequenceDiagrams:
 
 [**GopherChina**](https://space.bilibili.com/436361287/video)
 
+[**面向加薪学习**](https://space.bilibili.com/375038855/)
+
 # 公众号
 
 go语言中文网
@@ -175,15 +207,17 @@ Golang来啦
 
 #  面试题专供
 
+
+
 http://interview.wzcu.com/ 
 
 
 
 # 英文网站
 
+
+
 https://dave.cheney.net/
-
-
 
 [A Journey With Go](https://medium.com/a-journey-with-go?fr=topgoer)
 
