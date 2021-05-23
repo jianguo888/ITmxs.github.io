@@ -75,7 +75,7 @@ enableEmoji = true
         name = "关于"
         url = "/about/"
         title = ""
-        weight = 5
+        weight = 6
       [[languages.zh-cn.menu.main]]
         identifier = "github"
         pre = "<i class='fab fa-github fa-fw'></i>"
@@ -83,7 +83,7 @@ enableEmoji = true
         name = "Github"
         url = "https://github.com/ITmxs"
         title = "GitHub"
-        weight = 6
+        weight = 7
       [[languages.zh-cn.menu.main]]
         identifier = "friend"
         pre = "<i class='fas fa-user-friends'></i>"
@@ -91,7 +91,14 @@ enableEmoji = true
         name = "友链"
         url = "/friend/"
         title = ""
-        weight = 7      
+        weight = 8   
+      [[languages.zh-cn.menu.main]]
+        identifier = "flutter"
+        pre = ""
+        name = "Flutter"
+        url = "/categories/flutter/"
+        title = ""
+        weight = 5        
     [languages.zh-cn.params]
       # 网站描述
       description = "早起的年轻人做的网站"

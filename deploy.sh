@@ -18,7 +18,7 @@ fi
 git commit -m "$msg"
 
 # Push source and build repos.
-git push -u git@github.com:itmxs/itmxs.github.io.git  master -f
+git push -u git@github.com:itmxs/itmxs.github.io.git  master 
 
 # Come Back
 cd ..

@@ -1,5 +1,5 @@
 ---
-title: "关于 LoveIt"
+title: "关于 早起的年轻人"
 date: 2019-08-02T11:04:49+08:00
 draft: false
 
@@ -9,19 +9,38 @@ math:
   enable: true
 ---
 
-{{< style "img { height: 1.25rem }" >}}
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/dillonzq/LoveIt?style=flat-square)](https://github.com/dillonzq/LoveIt/releases)
 [![Hugo](https://img.shields.io/badge/Hugo-%5E0.62.0-ff4088?style=flat-square&logo=hugo)](https://gohugo.io/)
 [![License](https://img.shields.io/github/license/dillonzq/LoveIt?style=flat-square)](https://github.com/dillonzq/LoveIt/blob/master/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/dillonzq/LoveIt?style=social)](https://github.com/dillonzq/LoveIt)
-[![GitHub forks](https://img.shields.io/github/forks/dillonzq/LoveIt?style=social)](https://github.com/dillonzq/LoveIt/fork)
-{{< /style >}}
+[![GitHub stars](https://img.shields.io/github/stars/ITmxs?style=social)](https://github.com/ITmxs)
+[![GitHub forks](https://img.shields.io/github/forks/ITmxs/flutter_bloc_super?style=social)](https://github.com/ITmxs/flutter_bloc_super/fork)
 
-> [:(far fa-kiss-wink-heart fa-fw): LoveIt](https://github.com/dillonzq/LoveIt) 是一个由 [Dillon](https://dillonzq.com) 开发的**简洁**、**优雅**且**高效**的 [Hugo](https://gohugo.io/) 博客主题。
->
-> 它的原型基于 [LeaveIt 主题](https://github.com/liuzc/LeaveIt) 和 [KeepIt 主题](https://github.com/Fastbyte01/KeepIt)。
+> 本名徐建国，就读于兰州某一高校
 
-![Hugo 主题 LoveIt](/images/Apple-Devices-Preview.png "Hugo 主题 LoveIt")
+### 所获荣誉
+
+- 2020-2021年度获得“优秀共产党员”，
+- 2020-2021年度获得省级“优秀毕业生”，
+- 2020-2021年度获得校级“优秀毕业生”，
+- 2019-2020年度获得校级“优秀学生干部”，
+- 2019-2020学年获得学校“三等奖学金”
+- 2018-2019学年获得校级“三好学生”
+- 2018-2019学年获得学校“三等奖学金”
+- 2019年6月获得第九届“Mathcup”数学建模大赛“三等奖”
+- 2017-2028年度获得校级“优秀学生干部”，
+- 2017-2018学年获得学校“三等奖学金”
+
+### 实习经历
+
+**2020.12~2021.05**    浙江宁波      **前端开发**      
+
+**主要工作：**负责个人界面，个人资料，Android应用内升级，好友界面，底部弹框，视频播放等工作。以及好多基础小部件和工具类的封装。
+
+### 项目经历
+
+[ **仿京东购物商城**](https://github.com/ITmxs/flutter_lucklyshop)
+
+**[博客](https://github.com/ITmxs/flutter_bloc_super)**
 
 ### 特性
 
@@ -83,35 +102,5 @@ math:
 * :(fas fa-cookie-bite fa-fw): 支持基于 [cookieconsent](https://github.com/osano/cookieconsent) 的 **Cookie 许可横幅**
 * ...
 
-### 许可协议
+### 
 
-LoveIt 根据 **MIT** 许可协议授权。
-
-更多信息请查看 [LICENSE 文件](https://github.com/dillonzq/LoveIt/blob/master/LICENSE)。
-
-LoveIt 主题中用到了以下项目，感谢它们的作者：
-
-* [normalize.css](https://github.com/necolas/normalize.css)
-* [Font Awesome](https://fontawesome.com/)
-* [Simple Icons](https://github.com/simple-icons/simple-icons)
-* [Animate.css](https://daneden.github.io/animate.css/)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [autocomplete.js](https://github.com/algolia/autocomplete.js)
-* [Lunr.js](https://lunrjs.com/)
-* [algoliasearch](https://github.com/algolia/algoliasearch-client-javascript)
-* [lazysizes](https://github.com/aFarkas/lazysizes)
-* [object-fit-images](https://github.com/fregante/object-fit-images)
-* [Twemoji](https://github.com/twitter/twemoji)
-* [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js)
-* [clipboard.js](https://github.com/zenorocha/clipboard.js)
-* [Sharer.js](https://github.com/ellisonleao/sharer.js)
-* [TypeIt](https://typeitjs.com/)
-* [$ \KaTeX $](https://katex.org/)
-* [mermaid](https://github.com/knsv/mermaid)
-* [ECharts](https://echarts.apache.org/)
-* [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js)
-* [APlayer](https://github.com/MoePlayer/APlayer)
-* [MetingJS](https://github.com/metowolf/MetingJS)
-* [Gitalk](https://github.com/gitalk/gitalk)
-* [Valine](https://valine.js.org/)
-* [cookieconsent](https://github.com/osano/cookieconsent)
