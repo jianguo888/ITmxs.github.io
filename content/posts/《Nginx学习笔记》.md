@@ -8,8 +8,8 @@ author: ""
 authorLink: ""
 description: ""
 images: []
-tags: []
-categories: []
+tags: ["Nginx"]
+categories: ["Nginx"]
 
 hiddenFromHomePage: false
 hiddenFromSearch: false

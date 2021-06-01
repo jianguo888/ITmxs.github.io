@@ -66,9 +66,11 @@ https://flutterchina.club/
 
 [flutter教程网](http://www.flutterj.com/)
 
-Dart 中文社区 https://www.dart-china.org/
+[flutter技术周报](https://flutterweekly.dev/)
 
-Dart 开发者社区 - Fuchsia OS 中文社区https://fuchsia-china.com/dart-developers-community/
+[Dart 中文社区](https://www.dart-china.org/) 
+
+[Dart 开发者社区 - Fuchsia OS 中文社区](https://fuchsia-china.com/dart-developers-community/)
 
 # 开源电子书
 

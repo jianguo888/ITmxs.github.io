@@ -87,7 +87,7 @@ sequenceDiagrams:
 
 **[Go 语言设计与实现](https://draveness.me/golang/)**
 
-
+[go专家编程](http://books.studygolang.com/GoExpertProgramming/)
 
 # 自建博客：
 

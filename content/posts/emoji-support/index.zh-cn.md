@@ -5,7 +5,7 @@ date: 2019-10-01T17:55:28+08:00
 lastmod: 2019-10-01T17:55:28+08:00
 draft: false
 author: "早起的年轻人"
-authorLink: "https://dillonzq.com"
+authorLink: ""
 description: "Hugo 和 LoveIt 中的 Emoji 的用法指南."
 resources:
 - name: "featured-image"

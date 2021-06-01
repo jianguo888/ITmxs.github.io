@@ -46,13 +46,34 @@ enableEmoji = true
         title = ""
         weight = 1
       [[languages.zh-cn.menu.main]]
+        identifier = "flutter"
+        pre = ""
+        name = "Flutter"
+        url = "/categories/Flutter/"
+        title = ""
+        weight = 2  
+      [[languages.zh-cn.menu.main]]
+        identifier = "read"
+        pre = ""
+        name = "读书笔记"
+        url = "/categories/read/"
+        title = ""
+        weight = 3
+      [[languages.zh-cn.menu.main]]
+        identifier = "go"
+        pre = ""
+        name = "Go"
+        url = "/categories/Go/"
+        title = ""
+        weight = 4
+      [[languages.zh-cn.menu.main]]
         identifier = "tags"
         pre = ""
         post = ""
         name = "标签"
         url = "/tags/"
         title = ""
-        weight = 2
+        weight = 5
       [[languages.zh-cn.menu.main]]
         identifier = "categories"
         pre = ""
@@ -60,14 +81,8 @@ enableEmoji = true
         name = "分类"
         url = "/categories/"
         title = ""
-        weight = 3
-      [[languages.zh-cn.menu.main]]
-        identifier = "documentation"
-        pre = ""
-        name = "文档"
-        url = "/categories/documentation/"
-        title = ""
-        weight = 4
+        weight = 6
+      
       [[languages.zh-cn.menu.main]]
         identifier = "about"
         pre = ""
@@ -75,7 +90,7 @@ enableEmoji = true
         name = "关于"
         url = "/about/"
         title = ""
-        weight = 6
+        weight = 7
       [[languages.zh-cn.menu.main]]
         identifier = "github"
         pre = "<i class='fab fa-github fa-fw'></i>"
@@ -83,7 +98,7 @@ enableEmoji = true
         name = "Github"
         url = "https://github.com/ITmxs"
         title = "GitHub"
-        weight = 7
+        weight = 8
       [[languages.zh-cn.menu.main]]
         identifier = "friend"
         pre = "<i class='fas fa-user-friends'></i>"
@@ -91,14 +106,8 @@ enableEmoji = true
         name = "友链"
         url = "/friend/"
         title = ""
-        weight = 8   
-      [[languages.zh-cn.menu.main]]
-        identifier = "flutter"
-        pre = ""
-        name = "Flutter"
-        url = "/categories/flutter/"
-        title = ""
-        weight = 5        
+        weight = 9   
+           
     [languages.zh-cn.params]
       # 网站描述
       description = "早起的年轻人做的网站"
@@ -153,7 +162,7 @@ enableEmoji = true
           # 主页显示的网站标题 (支持 HTML 格式)
           title = ""
           # 主页显示的网站副标题
-          subtitle = "一个记录学习过程的网站"
+          subtitle = "思维决定思路，思路决定效果。行动见证效果，年轻人，加油！"
           # 是否为副标题显示打字机动画
           typeit = true
           # 是否显示社交账号
@@ -496,10 +505,10 @@ enableEmoji = true
       # Valine 评论系统设置 (https://github.com/xCss/Valine)
       [params.page.comment.valine]
         enable = true
-        appId = 'cIRpq8figzQxyGz5LyAdUahJ-gzGzoHsz'
-        appKey = 'T9YWfgGhznKaXXx7TCLxzS3C'
+        appId = 'LqsxahhaGjA96LY5Ldj1mbgq-MdYXbMMI'
+        appKey = 'Hdb0imPTOlWHWe8MY3bD8tln'
         notify = true  # mail notifier , https://github.com/xCss/Valine/wiki
-        verify = false # Verification code
+        verify = true # Verification code
         avatar = 'robohash'
         placeholder = '说点什么吧...'
         visitor = true
@@ -508,6 +517,7 @@ enableEmoji = true
         pageSize = true
         lang = true
         enableQQ = true
+        recordIP = true
         # Facebook comment config (https://developers.facebook.com/docs/plugins/comments)
         # Facebook 评论系统设置 (https://developers.facebook.com/docs/plugins/comments)
       [params.page.comment.facebook]
@@ -621,7 +631,7 @@ enableEmoji = true
   # Cookie consent config
   # Cookie 许可配置
   [params.cookieconsent]
-    enable = false
+    enable = true
     # text strings used for Cookie consent banner
     # 用于 Cookie 许可横幅的文本字符串
     [params.cookieconsent.content]
