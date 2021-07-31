@@ -1,15 +1,15 @@
 ---
-title: "《Flutter安装教程》"
+title: "《Dart语言基础之List》"
 subtitle: ""
-date: 2021-05-28T16:34:49+08:00
-lastmod: 2021-05-28T16:34:49+08:00
+date: 2021-03-28T19:18:05+08:00
+lastmod: 2021-03-28T19:18:05+08:00
 draft: false
 author: ""
 authorLink: ""
 description: ""
 images: []
-tags: ["flutter","基础"]
-categories: ["flutter","基础"]
+tags: ["flutter"]
+categories: ["flutter"]
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
