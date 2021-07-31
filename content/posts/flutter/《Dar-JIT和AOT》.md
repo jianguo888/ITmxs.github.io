@@ -1,8 +1,8 @@
 ---
 title: "《Dar JIT和AOT》"
 subtitle: ""
-date: 2021-07-31T20:53:39+08:00
-lastmod: 2021-07-31T20:53:39+08:00
+date: 2021-06-24T21:41:33+08:00
+lastmod: 2021-06-24T21:41:33+08:00
 draft: false
 author: ""
 authorLink: ""
@@ -42,10 +42,6 @@ mapbox:
 > 本文主要简单聊聊 Dart 的 JIT 和 AOT 模式
 
 <!--more-->
-
-。
-
-
 
 Dart 官方有如下介绍：
 

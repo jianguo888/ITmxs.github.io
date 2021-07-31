@@ -54,7 +54,7 @@ math:
 
 https://www.sunmoonblog.com/
 
-
+https://www.aferica.site/
 
 https://xinbaos.github.io/
 
@@ -62,11 +62,17 @@ https://xinbaos.github.io/
 
 **[博客](https://github.com/ITmxs/flutter_bloc_super)**
 
+https://www.mahoo12138.cn/
 
+https://blog.mutoe.com/
 
+http://crazysunj.com/
 
+https://wangxin1248.github.io/archive
 
+http://kmanong.top/kmn/qxw/form/article?id=9911&cate=93
 
+https://rencheng.cc/tags/Flutter/
 
 ### 封装小部件
 

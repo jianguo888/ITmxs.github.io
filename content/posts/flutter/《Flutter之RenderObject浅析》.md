@@ -37,17 +37,9 @@ mapbox:
   accessToken: ""
 ---
 
-
-
 > 本文主要介绍Flutter 开发指南中提到 Widget 是 Android View 的对等物。虽然形象，但不准确。Flutter 文档说一切皆 Widget，同时又说 Widget 只是 UI 配置/蓝图，到底该如何理解？本文带你揭开 Widget 的神秘面纱，探寻背后藏着的 RenderObject。
 
 <!--more-->
-
-
-
-
-
-
 
 # 引言
 

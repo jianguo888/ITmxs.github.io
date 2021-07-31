@@ -39,13 +39,9 @@ mapbox:
 
 
 
-> 本文主要介绍
+> Flutter 提供了不少性能分析工具，但感觉相关文档不咋的，散落在官方的各个地方，对开发者不太友好。另外，有的工具目前只在 Android Studio 中有，比如 Flutter Performance；甚至有的工具只在 debug 模式下可用。本文对这些工具简单整理一下，便于做性能优化时查找和参考。
 
 <!--more-->
-
-Flutter 提供了不少性能分析工具，但感觉相关文档不咋的，散落在官方的各个地方，对开发者不太友好。另外，有的工具目前只在 Android Studio 中有，比如 Flutter Performance；甚至有的工具只在 debug 模式下可用。本文对这些工具简单整理一下，便于做性能优化时查找和参考。
-
-
 
 # Performance Overlay
 

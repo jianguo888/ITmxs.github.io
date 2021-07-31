@@ -43,10 +43,6 @@ mapbox:
 
 <!--more-->
 
-
-
-
-
 Flutter 官方文档提到 widget 只是一个配置数据结构，创建是非常轻量的，加上 Flutter 团队对 widget 的创建/销毁做了优化，不用担心整个 widget 树重新创建所带来的性能问题。但实际上并非这么简单。看看这篇文章怎么说吧。
 
 本文翻译自 [Performance considerations](https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html#performance-considerations)。
