@@ -89,3 +89,168 @@ mapbox:
       )
 ```
 
+
+
+
+
+```
+  SliverOpacity(
+              opacity: 0.9,
+              sliver: SliverToBoxAdapter(
+                child: FlutterLogo(
+                  size: 500,
+                ),
+              ),
+            ),
+```
+
+
+
+
+
+```
+ SliverAnimatedOpacity(
+              duration: Duration(
+                seconds: 100,
+              ),
+              opacity: 0.9,
+              sliver: SliverToBoxAdapter(
+                child: FlutterLogo(
+                  size: 500,
+                ),
+              ),
+            ),
+```
+
+
+
+```
+SliverIgnorePointer(
+              ignoring: false,
+              sliver: SliverToBoxAdapter(
+                child: FlatButton(
+                  onPressed: () {},
+                  child: FlutterLogo(
+                    size: 500,
+                  ),
+                ),
+              ),
+            ),
+```
+
+
+
+```
+ SliverList(
+                delegate: SliverChildListDelegate([
+              FlutterLogo(
+                size: 200,
+              ),
+              FlutterLogo(
+                size: 600,
+              ),
+              FlutterLogo()
+            ])),
+```
+
+
+
+```
+SliverGrid(
+              delegate: SliverChildListDelegate([
+                Icon(
+                  Icons.ac_unit,
+                ),
+                Icon(
+                  Icons.ac_unit,
+                ),
+                Icon(
+                  Icons.ac_unit,
+                ),
+              ]),
+              gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+                maxCrossAxisExtent: 80,
+              ),
+            ),
+```
+
+
+
+
+
+```
+SliverPadding(
+              padding: EdgeInsets.all(10),
+              sliver: SliverIgnorePointer(
+                ignoring: false,
+                sliver: SliverToBoxAdapter(
+                  child: FlatButton(
+                    onPressed: () {},
+                    child: FlutterLogo(
+                      size: 500,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+```
+
+
+
+```
+ SliverToBoxAdapter(
+              child: Divider(),
+            ),
+            SliverToBoxAdapter(),
+```
+
+
+
+
+
+```
+   //当前视窗
+            SliverFillRemaining(
+              child: Placeholder(),
+            )
+```
+
+
+
+```
+SliverFillRemaining(
+              child: Center(
+                child: CircularProgressIndicator(),
+              ),
+            )
+            
+            
+            
+
+```
+
+
+
+
+
+
+
+```
+ SliverLayoutBuilder(
+              builder: (context, constraints) {
+                print(constraints);
+                return SliverToBoxAdapter();
+              },
+            )
+```
+
+
+
+
+
+```
+ SliverConstraints(
+              
+            ),            ),
+```
+

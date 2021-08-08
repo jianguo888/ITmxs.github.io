@@ -39,10 +39,6 @@ mapbox:
 
 
 
-> 本文主要介绍
-
-<!--more-->
-
 ## 解决 setState() called after diapose()
 
 网络请求成功前退出了页面，该 State 被从对象树卸载掉，而这时回调了网络请求的方法，方法中带有 setState 的调用，也就导致了该问题。

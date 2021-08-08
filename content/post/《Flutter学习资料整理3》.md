@@ -18,8 +18,8 @@ fontawesome: true
 linkToMarkdown: true
 rssFullText: false
 
-featuredImage: "https://luckly007.oss-cn-beijing.aliyuncs.com/img/90c6cc12-742e-4c9f-b318-b912f163b8d0.png"
-featuredImagePreview: "https://luckly007.oss-cn-beijing.aliyuncs.com/img/90c6cc12-742e-4c9f-b318-b912f163b8d0.png"
+featuredImage: "https://luckly007.oss-cn-beijing.aliyuncs.com/img/flutter.png"
+featuredImagePreview: "https://luckly007.oss-cn-beijing.aliyuncs.com/img/flutter.png"
 
 toc:
   enable: true
@@ -42,7 +42,7 @@ Flutter是谷歌的移动UI框架，可以快速在iOS和Android上构建高质�
 
 Flutter作为一门新**开源**的移动UI框架，在设计之初，谷歌的工程师就考虑到了开发者在学习Flutter的成本问题，Dart语言与Flutter的结合，获得泛型、class等强类型语言的特性保证了我们开发的应用安全可控，同时Flutter借鉴了FaceBook成熟开源框架React的单向数据绑定的特性，使我们在开发的过程中可以恰到好处的更新和控制我们的页面。
 
-通过我们的实际开发使用的经验看，Flutter是一门学习起来十分顺滑的成熟技术框架，下面将推荐一下学习路线让你快速的入门Flutter，构建你想要的应用：
+通过我们的实际开发使用的经验看，Flutter是一门学习起来十分顺滑的成熟技术框架，下面将推荐一下学习路线让你快速的入门Flutter，构建你想要的应用：![flutter](https://luckly007.oss-cn-beijing.aliyuncs.com/img/flutter.png)
 
 ##### 1.  学习Dart语言：
 
@@ -404,3 +404,4 @@ lib
 > 在大批量调用渲染和网络请求等“高消耗”的操作下，Flutter Ui视图会造成卡顿现象，这时候要开启一个线程去跑这些操作。在使用isolate过程中注意使用完后关闭isolate并释放掉内存，否则会因内存占用大而导致应用奔溃。
 
 ### 14.  flutter_sound：音频录取和播放
+
