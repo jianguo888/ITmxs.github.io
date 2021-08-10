@@ -88,12 +88,6 @@ disqusShortname = ""  ## 是否开启disqus评论，不要和utteranc同时开�
 
 [menu]
 
- 
- [[menu.main]]
-  name = "归档"
-  weight = 20
-  identifier = "archives"
-  url = "/post/"
  [[menu.main]]
   name = "分类"
   weight = 30
@@ -110,7 +104,7 @@ disqusShortname = ""  ## 是否开启disqus评论，不要和utteranc同时开�
   identifier = "about"
   url = "/about/"
  [[menu.main]]
-  name = "阅读清单"
+  name = "github"
   weight = 60
   identifier = "reading-list"
   url = "https://github.com/ITmxs/"
