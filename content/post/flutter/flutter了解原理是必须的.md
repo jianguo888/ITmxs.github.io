@@ -114,23 +114,14 @@ The `PaintingContext` is basically a fancy canvas. And on this fancy canvas ther
 
 ## 回顾一下
 
-- 该`Opacity`不是`StatelessWidget`还是`StatefulWidget`而是一个`SingleChildRenderObjectWidget`。
+- 该`Opacity`不是`StatelessWidget`和`StatefulWidget`而是一个`SingleChildRenderObjectWidget`。
 - 将`Widget`仅持有该渲染器可以使用的信息。
 - 在这种情况下，`Opacity`持有一个代表不透明度的双精度值。
-- 的`RenderOpacity`，它扩展了`RenderProxyBox`执行实际布点/渲染等。
+- `RenderOpacity`，它扩展了`RenderProxyBox`执行实际布点/渲染等。
 - 因为 opacity 的行为与其子级几乎完全一样，所以它将每个方法调用委托给子级。
 - 它覆盖了paint 方法并调用*pushOpacity*，这将向小部件添加所需的不透明度。
 
-## To recap
 
-- The `Opacity` is not a `StatelessWidget` or a `StatefulWidget` but instead a `SingleChildRenderObjectWidget`.
-- The `Widget` only holds information which the renderer can use.
-- In this case the `Opacity` is holding a double representing the opacity.
-- The `RenderOpacity`, which extends the `RenderProxyBox` does the actual layouting/ rendering etc.
-- Because the opacity behaves pretty much exactly as its child it delegates every method call to the child.
-- It overrides the paint method and calls *pushOpacity* which adds the desired opacity to the widget.
-
-# That’s it? Kind of.
 
 请记住，小部件只是一个配置，`RenderObject`唯一管理布局/渲染等。
 
@@ -148,22 +139,6 @@ The `PaintingContext` is basically a fancy canvas. And on this fancy canvas ther
 
 元素是核心框架的核心部分，显然它们还有更多内容，但现在这些信息已经足够了。
 
-Remember, the widget is only a configuration and the `RenderObject` only manages layout/rendering etc.
-
-In Flutter you recreate widgets basically all the time. When your `build()` methods gets called you create a bunch of widgets. This build method is called every time something changes. When an animation happens for example, the build method gets called very often. This means you can’t rebuild the whole sub tree every time. Instead you want to update it.
-
-> You can’t get the size or location on the screen of a widget, because a widget is like a blueprint, it’s not actually on the screen. It’s only a description of what variables the underlying render object should use.
-
-**Introducing the Element**
-
-The element is a concrete widget in the big tree.
-
-**Basically what happens is:**
-
-The first time when a widget is created, it is inflated to an `Element`. The element then gets inserted it into the tree. If the widget later changes, it is compared to the old widget and the element updates accordingly. The important thing is, the element doesn’t get rebuilt, it only gets updated.
-
-Elements are a central part of the core framework and there is obviously more to them, but for now this is enough information.
-
 ## 不透明度示例中创建的元素在哪里？
 
 *对于那些好奇的人来说，只是一小段。*
@@ -177,35 +152,19 @@ SingleChildRenderObjectElement createElement() => new SingleChildRenderObjectEle
 
 [*source*](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/widgets/framework.dart#L1631)
 
-And the `SingleChildRenderObjectElement` is just an Element which has single child.
-
-## The element creates the RenderObject, but in our case the Opacity widget creates its own RenderObject?
-
-This is just for a smooth API. Because more often then not, the widget needs a `RenderObject` but no custom `Element`. The `RenderObject` is actually created by the `Element`, let’s take a look:
-
-```
-SingleChildRenderObjectElement(SingleChildRenderObjectWidget widget) : super(widget);
-```
-
-[*source*](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/widgets/framework.dart#L4643)
-
-
-
 而这`SingleChildRenderObjectElement`只是一个只有一个孩子的元素。
 
 ## 该元素创建了 RenderObject，但在我们的例子中，Opacity 小部件创建了它自己的 RenderObject？
 
 这只是为了流畅的 API。因为更多时候不是，小部件需要一个`RenderObject`但没有自定义`Element`. 该`RenderObject`实际上是由创造`Element`，让我们一起来看看：
 
+```
+SingleChildRenderObjectElement(SingleChildRenderObjectWidget widget) : super(widget);
+```
 
-
-将`SingleChildRenderObjectElement`获取到的参考`RenderObjectWidget`（其中有创建的方法`RenderObject`）。
+将`SingleChildRenderObjectElement`获取到reference to `RenderObjectWidget`（其中有创建的方法`RenderObject`）。
 
 mount 方法是将元素插入元素树的地方，这里发生了神奇的事情（RenderObjectElement 类）：
-
-The `SingleChildRenderObjectElement` gets a reference to the `RenderObjectWidget` (which has the methods to create a `RenderObject`).
-
-The mount method is the place where the element gets inserted into the element tree, and here the magic happens (RenderObjectElement class):
 
 ```
 @override
@@ -221,10 +180,8 @@ void mount(Element parent, dynamic newSlot) {
 
 只有一次（当它被安装时）它会询问小部件“请给我你想要使用的渲染对象，以便我可以保存它”。
 
-# The End
+# 结束
 
-And that’s it. This is how the opacity widget works internally.
+就是这样。这就是不透明度小部件在内部的工作方式。
 
-My goal with this post was to introduce you to the world beyond widgets. There are still a lot of topics to cover, but I hope I could give you a nice introduction to the inner workings.
-
-Big thanks to [Simon Lightfoot](https://twitter.com/devangelslondon?lang=en) for helping me out researching this!
+我这篇文章的目标是向您介绍小部件之外的世界。还有很多话题要讨论，但我希望我能给你一个很好的内部工作介绍。
