@@ -44,3 +44,10 @@ mapbox:
 <!--more-->
 
 
+
+
+
+```
+(DateTime.now().millisecondsSinceEpoch / 1000).toInt();
+```
+
