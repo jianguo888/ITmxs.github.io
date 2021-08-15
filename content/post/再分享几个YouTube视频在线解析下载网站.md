@@ -48,7 +48,7 @@ sequenceDiagrams:
 
 以下这些网站都不存在于地球,直接打不开的,自己想办法就不明说了;
 
-https://y2mate.com/zh-cn （极力推荐，功能强大，可以直接访问，速度快）
+https://y2mate.com/zh-cn （极力推荐，功能强大，可以直接访问，速度快） --已挂
 
 [https://ytmp3.cc](https://ytmp3.cc/) (这个网站可以直接下载mp3和mp4格式)
 
@@ -64,7 +64,7 @@ http://www.clipconverter.cc/
 
 http://fetchvideo.com/
 
-https://en.savefrom.net/18/
+https://en.savefrom.net/18/          -------------现在他
 
 12 Best Online YouTube Downloader – Download HD Video Online
 
