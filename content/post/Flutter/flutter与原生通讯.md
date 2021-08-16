@@ -79,7 +79,7 @@ Kotlin 代码：
 Handler(Looper.getMainLooper()).post {
   
 }
-复制代码
+ 
 ```
 
 Java 代码：
@@ -91,7 +91,7 @@ new Handler(Looper.getMainLooper()).post(new Runnable() {
     
   }
 });
-复制代码
+ 
 ```
 
 如果可以获取到当前 Activity，也可以使用如下方式：
@@ -100,7 +100,7 @@ new Handler(Looper.getMainLooper()).post(new Runnable() {
 activity.runOnUiThread {
    
 }
-复制代码
+ 
 ```
 
 iOS 端从子线程跳转到主线程方式：
@@ -111,7 +111,7 @@ Objective-C 代码：
 dispatch_async(dispatch_get_main_queue(), ^{
   
 });
-复制代码
+ 
 ```
 
 Swift 代码：
@@ -191,7 +191,7 @@ private void invokeFlutterMethod() {
     });
   }
 }
-复制代码
+ 
 ```
 
 通过MethodChannel调用invokeMethod("方法名","传递参数",[Flutter返回参数回调，非必须]);
@@ -202,14 +202,14 @@ Flutter:
 
 ```
 static const methodChannel = const MethodChannel('testflutter');
-复制代码
+ 
 ```
 
 1. 添加处理方法到MethodChannel
 
 ```
 methodChannel.setMethodCallHandler(_addNativeMethod);
-复制代码
+ 
 ```
 
 1. 处理android调用的方法，根据方法名
@@ -226,7 +226,7 @@ Future<dynamic> _addNativeMethod(MethodCall methodCall) async {
   }
 }
 //其中，return返回的数据在Android的回调中接收
-复制代码
+ 
 ```
 
 **Flutter调用Android方法：**
@@ -238,7 +238,7 @@ Android：
 ```
 MethodChannel methodChannel = new MethodChannel(flutterView, METHOD_CHANNEL);
 methodChannel.setMethodCallHandler(plugin);
-复制代码
+ 
 ```
 
 1. 自定义的plugin实现MethodChannel.MethodCallHandler接口的onMethodCall方法
@@ -259,7 +259,7 @@ public void onMethodCall(MethodCall methodCall, MethodChannel.Result result) {
   }
 }
 //在onMethodCall中监听Flutter调用什么名字的方法（此处getBatterLevel），通过result返回方法的执行结果。
-复制代码
+ 
 ```
 
 Flutter：
@@ -268,7 +268,7 @@ Flutter：
 
 ```
 static const methodChannel = const MethodChannel('testflutter');
-复制代码
+ 
 ```
 
 1. 调用Android的方法，接收返回数据
@@ -287,7 +287,7 @@ Future<Null> _getBatteryLevel() async {
     _batteryLevel = batteryLevel;
   });
 }
-复制代码
+ 
 ```
 
 #### BasicMessageChannel（互相发送消息）
@@ -300,7 +300,7 @@ Android：
 
 ```
 BasicMessageChannel messageChannel = new BasicMessageChannel<>(flutterView, "messageChannel", StandardMessageCodec.INSTANCE);
-复制代码
+ 
 ```
 
 1. 调用发送消息的方法
@@ -311,7 +311,7 @@ private void sendMessageToFlutter() {
     this.mBasicMessageChannel.send("Message From Native");
   }
 }
-复制代码
+ 
 ```
 
 Flutter：
@@ -320,7 +320,7 @@ Flutter：
 
 ```
 static const basicMessageChannel = BasicMessageChannel('messageChannel', StandardMessageCodec());
-复制代码
+ 
 ```
 
 1. 添加接收信息处理方法
@@ -329,7 +329,7 @@ static const basicMessageChannel = BasicMessageChannel('messageChannel', Standar
 void _listenMessageFromNative() {
   basicMessageChannel.setMessageHandler(_receiveMessageFromNative);
 }
-复制代码
+ 
 ```
 
 1. 处理接收的数据
@@ -341,7 +341,7 @@ Future<dynamic> _receiveMessageFromNative(Object result) async {
     _messageFromNative = result.toString();
   });
 }
-复制代码
+ 
 ```
 
 **Flutter给Android发消息：**
@@ -353,7 +353,7 @@ Android：
 ```
 BasicMessageChannel messageChannel = new BasicMessageChannel<>(flutterView, "messageChannel", StandardMessageCodec.INSTANCE);
 messageChannel.setMessageHandler(plugin);
-复制代码
+ 
 ```
 
 1. plugin实现BasicMessageChannel.MessageHandler接口的onMessage方法，处理接收到的信息
@@ -365,7 +365,7 @@ public void onMessage(Object o, BasicMessageChannel.Reply reply) {
   reply.reply(o.toString()+" back from native");
 }
 //reply返回数据给Flutter
-复制代码
+ 
 ```
 
 Flutter：
@@ -374,7 +374,7 @@ Flutter：
 
 ```
 static const basicMessageChannel = BasicMessageChannel('messageChannel', StandardMessageCodec());
-复制代码
+ 
 ```
 
 1. 发送消息给Android并接收返回数据
@@ -388,7 +388,7 @@ Future<dynamic> _sendMessageToNative(String message) async {
   });
   return reply;
 }
-复制代码
+ 
 ```
 
 #### EventChannel（原生发送消息，Flutter接收）
@@ -400,7 +400,7 @@ Android：
 ```
 EventChannel eventChannel = new EventChannel(flutterView, EVENT_CHANNEL);
 eventChannel.setStreamHandler(plugin);
-复制代码
+ 
 ```
 
 1. plugin实现EventChannel.StreamHandler接口及onListen、onCancel方法
@@ -429,7 +429,7 @@ private BroadcastReceiver createChargingBroadcaseReceiver(EventChannel.EventSink
     }
   };
 }
-复制代码
+
 ```
 
 Flutter:
@@ -438,7 +438,7 @@ Flutter:
 
 ```
 static const _eventChannel = const EventChannel('charging');
-复制代码
+
 ```
 
 1. 添加接收数据方法
@@ -454,7 +454,7 @@ void _onEvent(Object object) {
     _batteryStatus = s;
   });
 }
-复制代码
+
 ```
 
 #### 桥接View给Flutter使用
@@ -483,7 +483,7 @@ public class MyTextview implements PlatformView {
   public void dispose() {
   }
 }
-复制代码
+
 ```
 
 1. 实现PlatformViewFactory
@@ -501,7 +501,7 @@ public class TextViewFactory extends PlatformViewFactory {
     return new MyTextview(context, messageCodec, i, (Map<String, Object>) o);
   }
 }
-复制代码
+
 ```
 
 1. 注册View给Flutter使用
@@ -509,7 +509,7 @@ public class TextViewFactory extends PlatformViewFactory {
 ```
 registrar.platformViewRegistry().registerViewFactory("TextView", new TextViewFactory(new StandardMessageCodec()));
 //起名叫TextView，给Flutter用做viewType
-复制代码
+ 
 ```
 
 Flutter:
@@ -522,16 +522,8 @@ AndroidView(
   creationParams: {'text': 'TTTeeeXXXttt'},
   creationParamsCodec: new StandardMessageCodec(),
 ),//其中creationParams，creationParamsCodec必须同时存在或不存在
-复制代码
+ 
 ```
-
-以上，正文结束；
-
-
-作者：damengzai
-链接：https://juejin.cn/post/6844903941138841613
-来源：掘金
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
 
 

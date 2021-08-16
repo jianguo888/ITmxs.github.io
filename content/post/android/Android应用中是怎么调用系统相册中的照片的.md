@@ -2,8 +2,8 @@
 title: "Android应用中是怎么调用系统相册中的照片的"
 date: 2021-08-15T10:18:53+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["android"]
+categories: ["android"]
 ---
 
 Android应用中是怎么调用系统相册中的照片的？相信很多没有经验的人对此束手无策，为此本文总结了问题出现的原因和解决方法，通过这篇文章希望你能解决这个问题。

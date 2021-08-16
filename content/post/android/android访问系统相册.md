@@ -2,8 +2,8 @@
 title: "Android访问系统相册"
 date: 2021-08-15T10:09:12+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["android"]
+categories: ["android"]
 ---
 
 

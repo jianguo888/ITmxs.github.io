@@ -16,3 +16,18 @@ if(children != null) {
 }
 ```
 
+
+
+
+
+https://flutter.github.io/samples/animations.html
+
+
+
+
+
+
+
+https://stackoverflow.com/questions/54636718/no-application-found-for-targetplatform-android-x86
+
+![image-20210816172952142](https://luckly007.oss-cn-beijing.aliyuncs.com/img/image-20210816172952142.png)

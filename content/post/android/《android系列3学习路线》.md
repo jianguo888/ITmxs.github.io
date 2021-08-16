@@ -8,8 +8,8 @@ author: ""
 authorLink: ""
 description: ""
 images: []
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["android"]
+categories: ["android"]
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
