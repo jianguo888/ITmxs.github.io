@@ -89,8 +89,8 @@ disqusShortname = ""  ## 是否开启disqus评论，不要和utteranc同时开�
 ## 配置代码高亮
 [markup]
   [markup.highlight]
-    lineNos = true
-    style = "github"
+    lineNos = false
+    style = "monokai"
 
 ## 配置网站菜单
 
