@@ -91,7 +91,7 @@ Streams 以发送数据事件的相同方式发送错误事件。大多数 strea
 
 `Stream` 类有许多工具方法用于在 stream 上执行常用操作，跟 `Iterable` 的方法类似。比如，可以使用 Stream API 的 `lastWhere()` 方法查找 stream 中最后一个正整数：
 
-```
+```dart
 Future<int> lastPositive(Stream<int> stream) =>
     stream.lastWhere((x) => x >= 0);
 ```
