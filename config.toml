@@ -10,7 +10,7 @@ preserveTaxonomyNames = true
 disablePathToLower = true
 
 hasCJKLanguage = true
-summaryLength = 140
+summaryLength = 20
 
 disqusShortname = ""  ## 是否开启disqus评论，不要和utteranc同时开启
 
@@ -41,7 +41,14 @@ disqusShortname = ""  ## 是否开启disqus评论，不要和utteranc同时开�
     Host = "https://cdn.jsdelivr.net/gh/ITmxs/ITmxs.github.io"
 
 ## 友情链接，可以多个
-
+[[params.links]]
+  title = "李文周"
+  name = "李文周的博客"
+  url = "https://www.liwenzhou.com/"
+[[params.links]]
+  title = "小包子的博客"
+  name = "小包子的博客"
+  url = "http://www.xbzweb.com/"
 [[params.links]]
   title = "飞雪无情的博客"
   name = "飞雪无情的博客"
@@ -52,12 +59,12 @@ disqusShortname = ""  ## 是否开启disqus评论，不要和utteranc同时开�
   name = "Android Gradle权威指南"
   url = "http://yuedu.baidu.com/ebook/14a722970740be1e640e9a3e"
 [[params.links]]
-  title = "格子导航"
-  name = "小格子"
+  title = "小格子"
+  name = "格子导航"
   url = "https://gesdh.cn/"
 [[params.links]]
-  title = "itachi's Blog"
-  name = "阿林"
+  title = "阿林"
+  name = "itachi's Blog"
   url = "https://itachi.xyz/"
 
 ## 侧边栏广告位
