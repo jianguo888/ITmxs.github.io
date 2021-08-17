@@ -52,6 +52,10 @@ disqusShortname = ""  ## 是否开启disqus评论，不要和utteranc同时开�
   name = "Android Gradle权威指南"
   url = "http://yuedu.baidu.com/ebook/14a722970740be1e640e9a3e"
 [[params.links]]
+  title = "格子导航"
+  name = "小格子"
+  url = "https://gesdh.cn/"
+[[params.links]]
   title = "itachi's Blog"
   name = "阿林"
   url = "https://itachi.xyz/"
