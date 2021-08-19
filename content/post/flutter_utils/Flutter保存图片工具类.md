@@ -1,7 +1,9 @@
 ---
 title: "Flutter保存图片工具类"
 date: 2021-08-18T10:59:08+08:00
-draft: true
+draft: false
+tags: ["flutter"]
+categories: ["flutter"]
 ---
 
 

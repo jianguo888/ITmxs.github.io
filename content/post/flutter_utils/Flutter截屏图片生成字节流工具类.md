@@ -1,7 +1,9 @@
 ---
 title: "Flutter截屏图片生成字节流工具类"
 date: 2021-08-18T11:02:36+08:00
-draft: true
+draft: false
+tags: ["flutter"]
+categories: ["flutter"]
 ---
 
 

@@ -2,6 +2,8 @@
 title: "Flutter底部导航栏、"
 date: 2021-08-19T15:15:19+08:00
 draft: false
+tags: ["flutter"]
+categories: ["flutter"]
 ---
 
 

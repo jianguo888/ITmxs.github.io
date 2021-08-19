@@ -2,6 +2,8 @@
 title: "Flutter2源码阅读"
 date: 2021-08-13T09:00:22+08:00
 draft: false
+tags: ["flutter"]
+categories: ["flutter"]
 ---
 
 
