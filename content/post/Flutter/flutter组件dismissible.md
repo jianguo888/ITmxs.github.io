@@ -1,7 +1,9 @@
 ---
 title: "Flutter组件dismissible"
 date: 2021-08-17T13:06:29+08:00
-draft: true
+draft: false
+tags: ["flutter"]
+categories: ["flutter"]
 ---
 
 

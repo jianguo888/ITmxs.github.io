@@ -85,3 +85,177 @@ IntelliJ IDEA 有一个名为“ **ForceShortcuts** ”的插件。此插件会*
 此外，还有一个名为“ **KeyPromoterX** ”的插件，它不会阻止操作，但可以清楚地**识别** **更多** **快捷方式**。
 
 就是这样。如果您喜欢这篇文章，请与您的朋友分享，并随时告诉我是否应该有第二部分或我可以做得更好。如果我忘记了对您很重要的快捷方式，请与我们分享！
+
+
+
+让我们看看作为 Flutter 开发者面试是什么感觉。
+
+**Q 1. 你对 Flutter 的体验是什么？**
+
+这是因为 Flutter 是市场上的一项年轻技术，人们在这方面的经验较少。他们想知道你是否对 Flutter 有一些了解。
+
+记得在这个问题上留下好印象。您可以在此答案中添加一些内容。
+
+1. 你是如何接触到 Flutter 的？
+2. 你什么时候开始使用 Flutter？
+3. 你在 Flutter 中做了多少个应用？
+4. 您了解哪些主题 [动画、状态管理、API ……]？
+5. 课程，训练营，准备。
+
+**Q 2. 你有Android/iOS原生的经验吗？**
+
+这是 Flutter 开发人员最常问的问题。由于我们没有所有的包/插件，我们必须使用本机代码为自己构建插件。这就是为什么我们应该有某种本土经验。
+
+**Q 3. 为什么选择 Flutter 而不是 React Native 或其他跨平台技术？**
+
+我向我采访的每个人都问了这个问题。这是因为选择技术背后的动机会说明很多事情，比如他对学习和获得更多技术知识的兴趣。
+
+现在让我们根据职位来划分问题。我们可以为**实习生、新生、中级、高级、首席开发人员和经理**提供工作职位。是的，在这么多职位上，您可能会收到有关 flutter 的问题。
+
+# **A. 实习生**
+
+问 1. 什么是 Flutter？什么是Dart？
+
+Q 2. 什么是跨平台？
+
+Q 3. 什么是小工具？
+
+Q 4. 小部件的两种主要类型是什么？
+
+Q 5. Stateless 和 Stateful 小部件有什么区别？
+
+Q 6. 什么是主要和运行应用程序功能。它们之间有何不同？
+
+ What are main and run app functions. How do they differ from each other?
+
+Q 7. 什么是 MaterialApp 和 CupertinoApp 小部件？
+
+Q 8.什么是 BuildContext？
+
+Q 9. Flutter 中的键是什么？
+
+Q 10. 什么是热重启和热重载？
+
+Q 11. Flutter 如何做动画？
+
+Q 12. Flutter 的优缺点是什么？
+
+Q 13. Flutter 中的包和插件是什么？
+
+Q 14. 什么是 pubspec.yaml 文件？解释这个文件的几个元素。
+
+# B. 初学者
+
+> 包括实习生的一切。
+
+Q 1. 你的 Flutter 项目的文件结构是什么？
+
+Q 2. Flutter 中的依赖是什么？
+
+问 3. 有哪些不同类型的依赖项？
+
+Q 4. 如何在 Flutter 中添加资？
+
+Q 5. Flutter 中有哪些不同类型的 Image 小部件？
+
+Q 6. 导航器在flutter中是如何工作的？
+
+Q 7. 如何在flutter中发送数据到上一屏？
+
+Q 8. 解释一下 Flutter 应用程序的生命周期？
+
+Q 9. Flutter 中的 SetState 是什么？
+
+Q 10. 为什么无状态小部件没有 SetState？
+
+Q 11. flutter 中的 dispose 方法是什么？
+
+Q 12. flutter 中的 Builder 是什么？
+
+Q 13. StreamBuilder 和 Stream Controller 是什么？
+
+Q 14. 什么是 Future Builder？
+
+Q 15. 如何进行 API 调用？
+
+Q 16. Flutter 中的 abstract、const、final 关键字是什么？
+
+Q 17. 抽象类是如何工作的？
+
+Q 18. SizedBox 和 Container 的区别。
+
+Q 19. 什么是命名构造函数、工厂构造函数和默认构造函数？
+
+Q 20. dart 中的 async、await 和 Futures 是什么？
+
+Q 21. 关于 Flutter 小部件的几个问题。
+
+例如多子控件：行、列、ListView、GridView、
+
+其他： AppBar, Button, Icon, Padding, Floating action button, ListTile, Bottom navigation bar, **Scaffold** , **SafeArea**。
+
+# C. 中级
+
+问 1. 什么是 MediaQuery？
+
+Q 2. 什么是平台渠道？
+
+Q 3. 如何只为调试模式编写代码？
+
+Q 4. 什么是首选大小的小部件？
+
+Q 5. Flutter 有哪些路由？
+
+Q 6. 如何在 Flutter 中生成路由？
+
+Q 7. 你知道导航插件吗？
+
+Q 8. 什么是命名路由？
+
+Q 9. 导航的设置是什么？
+
+Q 10. 如何减少应用程序的大小？
+
+Q 11. 你了解 Flutter 的 CI/CD 吗？如何实施它们。
+
+Q 12. 如何将未发布的包添加到 Flutter 项目中？
+
+Q 13. 可以在 Flutter 应用中进行数据库迁移吗？
+
+Q 14. Flutter for iOS 和 Android 的数据库迁移流程是怎样的？
+
+Q 15. 你如何在 Flutter 中存储配置键？
+
+Q 16. 告诉我一些关于 Flutter 优化的事情。
+
+# D. 高级
+
+Q 1. 如何从头开始创建应用栏？
+
+Q 2. 什么是事件通道？它与平台渠道有何不同？
+
+Q 3. 你开发过插件吗？你的方法是什么？
+
+Q 4. 您如何估计开发功能的时间？
+
+Q 5. 您如何确保该应用程序在每台设备上都能高效运行？
+
+Q 6. 您如何确保应用程序的 UI 在每种设备类型中都是完美的？
+
+Q 7. 给我一个你不会使用现有插件或包的场景。
+
+Q 8. 说服我使用 Flutter 而不是原生的 android 或 iOS。
+
+Q 9. Flutter 带来的最大特性是什么？
+
+Q 10. 你知道 Flutter/Dart 中的外部函数吗？如何与他们合作？
+
+Q 11. 你听说过 podspec、Gradle、pod 吗？它们是什么以及它们之间有何不同？
+
+Q 12. 一个现有的 Flutter 项目交给你了，你必须再添加 4 个特性。您对此有何看法？
+
+这些是技术招聘人员可以问你的几个问题。Flutter 中有更多的主题，可以提出问题。但我敢肯定，如果您至少为此做好了准备，那么您可以通过任何 Flutter 技术面试。
+
+
+
+link https://levelup.gitconnected.com/job-interview-flutter-developer-8adcb2c75dd4
