@@ -157,7 +157,7 @@ Andrew Gerrand建议通过对某些事物使用更长的标识，向读者表明
 
 我们来举个栗子:
 
-```
+```go
 type Person struct {
 	Name string
 	Age  int
@@ -193,7 +193,7 @@ func AverageAge(people []Person) int {
 
 两个标识符`i`和`index`之间有什么区别。 我们不能断定一个就比另一个好，例如
 
-```
+```go
 for index := 0; index < len(s); index++ {
 	//
 }
@@ -201,7 +201,7 @@ for index := 0; index < len(s); index++ {
 
 从根本上说，上面的代码更具有可读性
 
-```
+```go
 for i := 0; i < len(s); i++ {
 	//
 }
@@ -211,13 +211,13 @@ for i := 0; i < len(s); i++ {
 
 但是，哪些功能更具可读性？
 
-```
+```go
 func (s *SNMP) Fetch(oid []int, index int) (int, error)
 ```
 
 或
 
-```
+```go
 func (s *SNMP) Fetch(o []int, i int) (int, error)
 ```
 
@@ -239,7 +239,7 @@ var usersMap map[string]*User
 
 接下来, 如果我们像这样来声明其他变量：
 
-```
+```go
 var (
 	companiesMap map[string]*Company
 	productsMap map[string]*Products
@@ -254,7 +254,7 @@ var (
 
 此建议也适用于函数参数。 例如：
 
-```
+```go
 type Config struct {
 	//
 }
@@ -270,7 +270,7 @@ func WriteConfig(w io.Writer, config *Config)
 
 > 贴士: 不要让包名窃取好的变量名。 导入标识符的名称包括其包名称。 例如，`context`包中的`Context`类型将被称为`context.Context`。 这使得无法将`context`用作包中的变量或类型。
 
-```
+```go
 func WriteLog(context context.Context, message string)
 ```
 
@@ -320,7 +320,7 @@ Go至少有六种不同的方式来声明变量
 
 - 声明变量但没有初始化时，请使用`var`。 当声明变量稍后将在函数中初始化时，请使用`var`关键字。
 
-```
+```go
 var players int    // 0
 
 var things []Thing // an empty slice of Things
@@ -346,7 +346,7 @@ json.Unmarshall(reader, thing)
 
 在第一个和第三个例子中，因为在Go语言中没有从一种类型到另一种类型的自动转换; 赋值运算符左侧的类型必须与右侧的类型相同。 编译器可以从右侧的类型推断出声明的变量的类型，上面的例子可以更简洁地写为：
 
-```
+```go
 var players = 0
 
 var things []Thing = nil

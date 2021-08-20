@@ -1,8 +1,8 @@
 ---
 title: "《Go第一课》"
 subtitle: ""
-date: 2021-05-21T12:57:22+08:00
-lastmod: 2021-05-21T12:57:22+08:00
+date: 2021-08-21T12:57:22+08:00
+lastmod: 2021-08-21T12:57:22+08:00
 draft: false
 author: ""
 authorLink: ""
@@ -77,3 +77,7 @@ mapbox:
 
 [Go 语言设计与实现](https://draveness.me/golang/)
 [Go 语言原本](https://golang.design/under-the-hood/)
+
+# Go每日一库
+
+https://github.com/darjun/go-daily-lib

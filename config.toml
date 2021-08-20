@@ -66,7 +66,10 @@ disqusShortname = ""  ## 是否开启disqus评论，不要和utteranc同时开�
   title = "阿林"
   name = "itachi's Blog"
   url = "https://itachi.xyz/"
-
+[[params.links]]
+  title = "大俊"
+  name = "大俊Blog"
+  url = "https://darjun.github.io/"
 ## 侧边栏广告位
 [[params.ads]]
   title = "我的CSDN"

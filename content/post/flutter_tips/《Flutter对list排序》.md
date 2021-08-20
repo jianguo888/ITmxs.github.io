@@ -122,7 +122,7 @@ return ScopedModelDescendant<MainModel>(
 
 
 
-![enter](https://i1.wp.com/i.stack.imgur.com/c1eGb.png)
+![enter](https://luckly007.oss-cn-beijing.aliyuncs.com/img/c1eGb.png)
 
  [相关讨论](javascript:void(0))
 
@@ -303,7 +303,4 @@ Material(
 
 您可以使用RotatedBox旋转AppBar，但是您将无法使用Scaffold中的AppBar参数，因为该参数需要水平的。
 
-
-
-https://www.codenong.com/tag/flutter/
 
