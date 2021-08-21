@@ -337,7 +337,7 @@ v = 'abc'; // 错误：无法将 v 的类型从 int 更改为 String。
 
 
 
-
+- 如何动态更新 ListView？
 
 - ChangeNotifier 和 notifyListeners 在 Provider 中的作用是什么？
 - 什么是 ValueListenableBuilder？
@@ -358,11 +358,9 @@ v = 'abc'; // 错误：无法将 v 的类型从 int 更改为 String。
 
 
 
-- https://medium.com/@anhndt/flutter-interview-questions-4e5bd3b793bd
-- https://medium.com/@dev.n/answering-questions-on-flutter-app-development-6d50eb7223f3
-- https://medium.com/@ravindrasendhav4/10-flutter-interview-questions-and-answers-6aa7448b0da1
-- [https://stackoverflow.com/questions/13264230/what-is-the-difference-between-named-and-positional-parameters-in-dart#:~:text=Dart%20has%20two%20types%20of%20optional %20parameters%3A%20named%20and%20positional.&text=Dart](https://stackoverflow.com/questions/13264230/what-is-the-difference-between-named-and-positional-parameters-in-dart#:~:text=Dart has two types of optional parameters%3A named and positional.&text=Dart)
-- [https://stackoverflow.com/questions/12416507/difference-between-var-and-dynamic-type-in-dart#:~:text=dynamic%3A%20can%20change%20TYPE%20of,the%20variable%20later %20in%20code](https://stackoverflow.com/questions/12416507/difference-between-var-and-dynamic-type-in-dart#:~:text=dynamic%3A can change TYPE of,the variable later in code)。
+
+
+
 
 
 
@@ -493,3 +491,9 @@ class _LifeCycleManagerState extends State<LifeCycleManager>
 
 
 https://www.filledstacks.com/post/flutter-architecture-my-provider-implementation-guide/
+
+
+
+
+
+我啦啦啦https://www.filledstacks.com/snippets
