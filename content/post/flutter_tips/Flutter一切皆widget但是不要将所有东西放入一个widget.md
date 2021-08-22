@@ -20,7 +20,7 @@ categories: ["flutter"]
 
 “小部件中的一切”的示例可以在[Flutter 文档本身中找到](https://flutter.dev/docs/development/ui/layout/tutorial)。本教程的目标是展示如何构建此布局：
 
-![img](https://miro.medium.com/max/1004/1*19boaSDDHcbNycqVj5Za_w.jpeg)
+![image-20210822082626144](https://luckly007.oss-cn-beijing.aliyuncs.com/img/image-20210822082626144.png)
 
 最终代码达到了它的目的：展示如何简单地创建上述布局。正如我们所见，甚至还有一些变量和方法可以为布局的各个部分提供语义。这是一个很好的观点，因为它使代码更容易理解。
 

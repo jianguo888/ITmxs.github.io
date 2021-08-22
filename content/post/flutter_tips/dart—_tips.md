@@ -12,6 +12,8 @@ categories: ["flutter"]
 
 https://codewithandrea.com/videos/top-dart-tips-and-tricks-for-flutter-devs/
 
+特意给大家带来我在开发中总结的dart相关的技巧
+
 ## 1. 你知道吗？Dart 支持字符串乘法。
 
 这是一个简单的程序，显示如何使用字符串乘法打印圣诞树：
@@ -51,7 +53,7 @@ class CovidAPI {
 }
 ```
 
-要同时执行所有这些期货，请使用`Future.wait`. 这需要一个**列表或期货**并返回**列表**的**未来**：
+要同时执行所有这些futures，请使用`Future.wait`. 这需要一个**列表或 **futures** and returns a **future of lists**:
 
 ```
 final api = CovidAPI();
@@ -63,7 +65,7 @@ final values = await Future.wait([
 print(values); // [1000, 100, 10]
 ```
 
-当期货是**独立的**并且它们不需要**顺序**执行时，这是理想的。
+This is ideal when the futures are **independent**, and they don't need to execute **sequentially**.
 
 ## 3. 在 Dart 类中实现“调用”方法，使它们像函数一样可调用。
 
@@ -88,7 +90,7 @@ validator('test1234');
 validator.call('not-so-frozen-arctic');
 ```
 
-## [4. 需要调用回调但前提是它不为空？使用“?.call()”语法。](https://codewithandrea.com/videos/top-dart-tips-and-tricks-for-flutter-devs/#4-need-to-invoke-a-callback-but-only-if-its-not-null?-use-the-?call-syntax)
+## 4. 需要调用回调但前提是它不为空？使用“?.call()”语法。
 
 假设我们有一个自定义小部件类，它应该`onDragCompleted`在发生特定事件时调用回调：
 
@@ -123,7 +125,7 @@ class CustomDraggable extends StatelessWidget {
   }
 ```
 
-## [5. 使用匿名函数和函数作为参数](https://codewithandrea.com/videos/top-dart-tips-and-tricks-for-flutter-devs/#5-using-anonymous-functions-and-functions-as-arguments)
+## 5. 使用匿名函数和函数作为参数
 
 在 Dart 中，函数是**一等公民**，可以**作为参数**传递给其他函数。
 
@@ -174,11 +176,11 @@ values.map(square).toList();
 values.map((value) => square(value)).toList();
 ```
 
-## [6. 您可以使用 collection-if 和 spreads 与列表、集合和映射](https://codewithandrea.com/videos/top-dart-tips-and-tricks-for-flutter-devs/#6-you-can-use-collection-if-and-spreads-with-lists-sets-and-maps)
+## 6. 您可以使用 collection-if 和 spreads 与lists, sets AND maps
 
 当您将 UI 作为代码编写时，Collection-if 和 spreads 非常有用。
 
-但是您知道您也可以将它们与地图一起使用吗？
+但是您知道您也可以将它们与maps一起使用吗？
 
 考虑这个例子：
 
@@ -194,11 +196,11 @@ const restaurant = {
 };
 ```
 
-这里我们声明一个`restaurant`地图，只添加`avgRating`和`numRatings`键值对，如果`addRatings`是`true`。因为我们要添加多个键值对，所以我们需要使用扩展运算符 ( `...`)。
+这里我们声明一个`restaurant`maps，只添加`avgRating`和`numRatings`键值对，如果`addRatings`是`true`。因为我们要添加多个键值对，所以我们需要使用扩展运算符 ( `...`)。
 
-## [7. 需要以空安全的方式遍历地图吗？使用`.entries`：](https://codewithandrea.com/videos/top-dart-tips-and-tricks-for-flutter-devs/#7-need-to-iterate-through-a-map-in-a-null-safe-manner?-use-`entries`)
+## 7. 需要以空安全的方式遍历map吗？使用`.entries`：
 
-假设你有这张地图：
+假设你有map：
 
 ```
 const timeSpent = <String, double>{
@@ -230,7 +232,7 @@ for (var key in timeSpent.keys) {
 
 上面的代码`!`在读取值时需要使用断言运算符 ( )，因为 Dart 不能保证给定键的值存在。
 
-## [8. 使用命名构造函数和初始化列表以获得更符合人体工程学的 API。](https://codewithandrea.com/videos/top-dart-tips-and-tricks-for-flutter-devs/#8-use-named-constructors-and-initializer-lists-for-more-ergonomic-apis)
+## 8. 使用命名构造函数和初始化列表以获得更符合人体工程学的 API。
 
 假设您要声明一个表示温度值的类。
 
@@ -254,7 +256,7 @@ final temp1 = Temperature.celsius(30);
 final temp2 = Temperature.fahrenheit(90);
 ```
 
-## [9. getter 和 setter](https://codewithandrea.com/videos/top-dart-tips-and-tricks-for-flutter-devs/#9-getters-and-setters)
+## 9. getter 和 setter
 
 在`Temperature`上面的类中，`celsius`被声明为存储变量。
 
@@ -286,7 +288,7 @@ temp2.celsius = 28;
 
 **底线**：使用命名构造函数、getter 和 setter 来改进类的设计。
 
-## [10. 对未使用的函数参数使用下划线](https://codewithandrea.com/videos/top-dart-tips-and-tricks-for-flutter-devs/#10-use-underscores-for-unused-function-arguments)
+## 10. 对未使用的函数参数使用下划线
 
 在 Flutter 中，我们经常使用带有函数参数的小部件。一个常见的例子是`ListView.builder`：
 
@@ -317,7 +319,7 @@ ListView.builder(
 
 *注意：这两个参数是不同的 (`_`和`__`)，因为它们是**单独的标识符**。*
 
-## [11. 需要一个只能实例化一次的类（又名单例）？使用带有私有构造函数的静态实例变量。](https://codewithandrea.com/videos/top-dart-tips-and-tricks-for-flutter-devs/#11-need-a-class-that-can-only-be-instantiated-once-aka-singleton?-use-a-static-instance-variable-with-a-private-constructor)
+## 11. 需要一个只能实例化一次的类（又名单例）？使用带有私有构造函数的静态实例变量。
 
 单例最重要的特性是整个程序中只能有**一个**它的**实例**。这对于建模文件系统之类的东西很有用。
 
@@ -341,9 +343,9 @@ final fs = FileSystem.instance;
 // do something with fs
 ```
 
-*注意：如果您不小心，单身人士可能会导致许多问题。在使用它们之前，请确保您了解它们的缺点。*
+*注意：如果您不小心，final可能会导致许多问题。在使用它们之前，请确保您了解它们的缺点。*
 
-## [12. 需要收集独特的物品？使用集合而不是列表。](https://codewithandrea.com/videos/top-dart-tips-and-tricks-for-flutter-devs/#12-need-a-collection-of-unique-items?-use-a-set-rather-than-a-list)
+## 12. 需要收集独特的set？使用集合而不是列表。
 
 Dart 中最常用的集合类型是`List`.
 
@@ -392,7 +394,7 @@ citiesSet.intersection({'London', 'Berlin'});
 
 > 底线：当你创建一个集合时，问问自己你是否希望它的项目是独一无二的，并考虑使用一个集合。
 
-## [13.如何使用try、on、catch、rethrow、finally](https://codewithandrea.com/videos/top-dart-tips-and-tricks-for-flutter-devs/#13-how-to-use-try-on-catch-rethrow-finally)
+## 13.如何使用try、on、catch、rethrow、finally
 
 `try`并且`catch`在使用基于 Future 的 API 时非常理想，如果出现问题，这些 API 可能会引发异常。
 
@@ -426,7 +428,7 @@ Future<void> printWeather() async {
 
 如果您正在使用或设计一些基于 Future 的 API，请确保根据需要处理异常。
 
-## [14. 常见的 Future 构造函数](https://codewithandrea.com/videos/top-dart-tips-and-tricks-for-flutter-devs/#14-common-future-constructors)
+## 14. 常见的 Future 构造函数
 
 Dart`Future`类带有一些方便的工厂构造函数：`Future.delayed`,`Future.value`和`Future.error`。
 
@@ -447,7 +449,7 @@ await Future.error(Exception('Out of milk'));
 
 您可以使用这些构造函数来模拟来自基于 Future 的 API 的响应。这在您的测试代码中编写模拟类时很有用。
 
-## [15. 通用流构造器](https://codewithandrea.com/videos/top-dart-tips-and-tricks-for-flutter-devs/#15-common-stream-constructors)
+## 15. 通用流构造器
 
 Stream 类还带有一些方便的构造函数。以下是最常见的：
 
@@ -467,7 +469,7 @@ Stream.periodic(Duration(seconds: 1), (index) => index);
 - 用于`Stream.fromFuture`创建仅包含一个值的流，该值将在未来完成时可用。
 - 用于`Stream.periodic`创建周期性的事件流。您可以将 a 指定`Duration`为事件之间的时间间隔，并指定一个匿名函数来生成给定其在流中的索引的每个值。
 
-## [16. 同步和异步生成器](https://codewithandrea.com/videos/top-dart-tips-and-tricks-for-flutter-devs/#16-sync-and-async-generators)
+## 16. 同步和异步生成器
 
 在 Dart 中，我们可以将**同步**生成器定义为一个返回 的函数`Iterable`：
 
