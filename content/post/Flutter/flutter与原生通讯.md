@@ -41,9 +41,7 @@ Flutter与原生之间的通信依赖灵活的消息传递方式：
 > 2. BasicMessageChannel // Flutter与原生相互发送消息，用于数据传递
 > 3. EventChannel // 原生发送消息，Flutter接收，用于数据流通信
 
-
-
-![img](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2019/9/12/16d24d9cfad8346f~tplv-t2oaga2asx-watermark.awebp)
+![](https://luckly007.oss-cn-beijing.aliyuncs.com/image/56ElhnJSyWvqpao.png)
 
 
 
@@ -107,7 +105,7 @@ iOS 端从子线程跳转到主线程方式：
 
 Objective-C 代码：
 
-```
+```objective-c
 dispatch_async(dispatch_get_main_queue(), ^{
   
 });
@@ -116,7 +114,7 @@ dispatch_async(dispatch_get_main_queue(), ^{
 
 Swift 代码：
 
-```
+```swift
 DispatchQueue.main.async {
   
 }
@@ -174,7 +172,7 @@ var result = await channel.invokeMethod('sendData',{'name': 'luckly', 'age': 18}
 
 1. 调用Flutter方法
 
-```
+```java
 private void invokeFlutterMethod() {
   if (this.mMethodChannel != null) {
     this.mMethodChannel.invokeMethod("flutterMethod", "native参数", new MethodChannel.Result() {
@@ -214,7 +212,7 @@ methodChannel.setMethodCallHandler(_addNativeMethod);
 
 1. 处理android调用的方法，根据方法名
 
-```
+```dart
 Future<dynamic> _addNativeMethod(MethodCall methodCall) async {
   switch (methodCall.method) {
     case 'flutterMethod':
