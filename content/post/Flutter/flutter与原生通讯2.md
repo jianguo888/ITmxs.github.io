@@ -47,7 +47,7 @@ Kotlin 代码：
 Handler(Looper.getMainLooper()).post {
   
 }
-复制代码
+  
 ```
 
 Java 代码：
@@ -59,7 +59,7 @@ new Handler(Looper.getMainLooper()).post(new Runnable() {
     
   }
 });
-复制代码
+  
 ```
 
 如果可以获取到当前 Activity，也可以使用如下方式：
@@ -68,7 +68,7 @@ new Handler(Looper.getMainLooper()).post(new Runnable() {
 activity.runOnUiThread {
    
 }
-复制代码
+  
 ```
 
 iOS 端从子线程跳转到主线程方式：
@@ -79,7 +79,7 @@ Objective-C 代码：
 dispatch_async(dispatch_get_main_queue(), ^{
   
 });
-复制代码
+  
 ```
 
 Swift 代码：
@@ -88,7 +88,7 @@ Swift 代码：
 DispatchQueue.main.async {
   
 }
-复制代码
+  
 ```
 
 ### MethodChannel
@@ -99,7 +99,7 @@ Flutter 端创建 **MethodChannel** 通道，用于与原生端通信：
 
 ```dart
 var channel = MethodChannel('com.flutter.guide.MethodChannel');
-复制代码
+  
 ```
 
 **com.flutter.guide.MethodChannel** 是 MethodChannel 的名称，原生端要与之对应。
@@ -108,7 +108,7 @@ var channel = MethodChannel('com.flutter.guide.MethodChannel');
 
 ```dart
 var result = await channel.invokeMethod('sendData',{'name': 'laomeng', 'age': 18})
-复制代码
+  
 ```
 
 - 第一个参数表示**method**，方法名称，原生端会解析此参数。
@@ -155,7 +155,7 @@ class _MethodChannelDemoState extends State<MethodChannelDemo> {
     );
   }
 }
-复制代码
+  
 ```
 
 #### Android 端
@@ -185,7 +185,7 @@ class MethodChannelDemo(messenger: BinaryMessenger): MethodChannel.MethodCallHan
         
     }
 }
-复制代码
+  
 ```
 
 ![img](https:////p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fdf2ed2f86994c2e9d30aba49cd96f51~tplv-k3u1fbpfcp-watermark.awebp)
@@ -204,7 +204,7 @@ override fun onMethodCall(call: MethodCall, result: MethodChannel.Result) {
         result.success(map)
     }
 }
-复制代码
+  
 ```
 
 - **call.method** 字符串就是 invokeMethod 方法传入的 **method**。
@@ -218,7 +218,7 @@ var result = await channel
     .invokeMethod('sendData', {'name': 'laomeng', 'age': 18});
 var name = result['name'];
 var age = result['age'];
-复制代码
+  
 ```
 
 > 两端的解析要相互对应。
@@ -233,7 +233,7 @@ class MainActivity : FlutterActivity() {
         MethodChannelDemo(flutterEngine.dartExecutor.binaryMessenger)
     }
 }
-复制代码
+  
 ```
 
 ![img](https:////p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0cfb04c8c0214139b6d61ac0f3bed411~tplv-k3u1fbpfcp-watermark.awebp)
@@ -262,7 +262,7 @@ public class MethodChannelDemo {
     }
 }
 
-复制代码
+  
 ```
 
 ![img](https:////p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/32c25cc5ec1547a1ba2fe55aa185066a~tplv-k3u1fbpfcp-watermark.awebp)
@@ -288,7 +288,7 @@ import Flutter
   }
 }
 
-复制代码
+  
 ```
 
 ![img](https:////p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2752886e9f654294aa88b13f90ce24e4~tplv-k3u1fbpfcp-watermark.awebp)
@@ -307,7 +307,7 @@ void initState() {
     });
   });
 }
-复制代码
+  
 ```
 
 ##### Android 发送数据
@@ -349,7 +349,7 @@ class MethodChannelDemo(var activity: Activity, messenger: BinaryMessenger) : Me
         }
     }
 }
-复制代码
+  
 ```
 
 > 注意：Android 端发送数据要在**主现场**中调用，即：
@@ -359,7 +359,7 @@ class MethodChannelDemo(var activity: Activity, messenger: BinaryMessenger) : Me
 >              var map = mapOf("count" to count++)
 >              channel.invokeMethod("timer", map)
 >          }
-> 复制代码
+>   
 > ```
 
 启动修改如下：
@@ -373,7 +373,7 @@ class MainActivity : FlutterActivity() {
         flutterEngine.plugins.add(MyPlugin())
     }
 }
-复制代码
+  
 ```
 
 ![img](https:////p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b05f3f5b2ba54ed2b89036faf20c3b13~tplv-k3u1fbpfcp-watermark.awebp)
@@ -413,7 +413,7 @@ public class MethodChannelDemo {
     }
 }
 
-复制代码
+  
 ```
 
 ![img](https:////p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1cb98e88f11248338f65de502e050071~tplv-k3u1fbpfcp-watermark.awebp)

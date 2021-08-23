@@ -41,7 +41,7 @@ class _SwitchDemoState extends State<SwitchDemo> {
     });
   }
 }
-复制代码
+  
 ```
 
 其实这里可能很让人疑惑 `Switch` 为什么不自己维护  `开关状态`，要将改状态`交由外界指定`呢？既然 `Switch`  是 `StatelessWidget` ，为什么可以执行滑动的动画？还有 `onChanged` 方法又是何时触发的？带着这些问题我们来逐渐去认识这个属性而陌生的 `Switch` 组件。
@@ -69,7 +69,7 @@ Switch(
   value: _value,
   onChanged: _onChanged,
 );
-复制代码
+  
 ```
 
 ------
@@ -91,7 +91,7 @@ Switch(
   value: _value,
   onChanged: _onChanged,
 );
-复制代码
+  
 ```
 
 `mouseCursor` 属性的类型为 `MouseCursor` ，其中 `SystemMouseCursors` 中定义了非常多的鼠标指针类型以供使用。下面给出几个效果：
@@ -116,7 +116,7 @@ Switch(
   value: _value,
   onChanged: _onChanged,
 );
-复制代码
+  
 ```
 
 ------
@@ -135,7 +135,7 @@ enum MaterialState {
   disabled,
   error,
 }
-复制代码
+  
 ```
 
 可以看出这两个成员都是 `MaterialStateProperty` 类型，那这种类型的对象如何创建，又有什么特点呢？
@@ -144,7 +144,7 @@ enum MaterialState {
 ---->[Switch 成员声明]----
 final MaterialStateProperty<Color?>? thumbColor;
 final MaterialStateProperty<Color?>? trackColor;
-复制代码
+  
 ```
 
 ------
@@ -161,7 +161,7 @@ final MaterialStateProperty<Color?>? trackColor;
 
 ```dart
 inactiveThumbImage > thumbColor > inactiveThumbColor > 默认 Switch 主题
-复制代码
+  
 ```
 
 ------
@@ -196,7 +196,7 @@ Widget build(BuildContext context) {
       ))
     );
 }
-复制代码
+  
 ```
 
 ------
@@ -210,7 +210,7 @@ enum MaterialTapTargetSize {
   padded,
   shrinkWrap,
 }
-复制代码
+  
 ```
 
 ![img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2b6e6dcc5f8d4b5fb3c2ed865923fb83~tplv-k3u1fbpfcp-watermark.awebp)
@@ -228,7 +228,7 @@ enum _SwitchType { material, adaptive }
 
 ---->[Switch 成员声明]----
 final _SwitchType _switchType;
-复制代码
+  
 ```
 
 既然是成员变量，必然会在类内部被初始化，一般来说对 `成员变量` 初始化的地方在 `构造方法` 中。如下，` Switch 的普通构造` 中，会将 `_switchType` 设为 `_SwitchType.material` 。
@@ -279,7 +279,7 @@ Size _getSwitchSize(ThemeData theme) {
       return const Size(_kSwitchWidth, _kSwitchHeightCollapsed);
   }
 }
-复制代码
+  
 ```
 
 下面分别是 `padded` 和 `shrinkWrap` 的调试信息，可以很清楚地看出尺寸情况。

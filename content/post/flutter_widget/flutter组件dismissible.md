@@ -136,7 +136,7 @@ Widget buildSecondaryBackground(){
     color: Colors.red,
   );
 }
-复制代码
+  
 ```
 
 ------
@@ -150,7 +150,7 @@ Widget buildSecondaryBackground(){
 final ConfirmDismissCallback? confirmDismiss;
 
 typedef ConfirmDismissCallback = Future<bool?> Function(DismissDirection direction);
-复制代码
+  
 ```
 
 如下左图中，滑动结束后，`等待两秒`再执行后续逻辑。效果上来看条目会在两秒后移除。也就说明 `onDismissed` 是在 `confirmDismiss` 异步方法完成后才被调用的。
@@ -178,7 +178,7 @@ Future<bool?> _confirmDismiss(DismissDirection direction) async{
   print('_confirmDismiss:$direction');
   return direction!=DismissDirection.startToEnd;
 }
-复制代码
+  
 ```
 
 ------
@@ -197,7 +197,7 @@ enum DismissDirection {
   down,
   none
 }
-复制代码
+  
 ```
 
 如下左图中，设置 `startToEnd` ,那么从右往左就无法滑动。如下右图中，设置 `vertical` ,那条目就只能在竖直方向响应滑动。不过和列表同向滑动有个问题，条目响应了竖直拖拽手势，那列表的拖拽手势就会`竞技失败`，所以列表是滑不动的。一般来说不会让 `Dismissible` 和列表滑动方向相同，当列表是水平方向滑动， `Dismissible` 可以使用竖直方向滑动。
@@ -224,7 +224,7 @@ void _handleResizeProgressChanged() {
 }
 
 const Curve _kResizeTimeCurve = Interval(0.4, 1.0, curve: Curves.ease);
-复制代码
+  
 ```
 
 ------
@@ -237,7 +237,7 @@ const Curve _kResizeTimeCurve = Interval(0.4, 1.0, curve: Curves.ease);
 const double _kDismissThreshold = 0.4;
 
 final Map<DismissDirection, double> dismissThresholds;
-复制代码
+  
 ```
 
 | 默认效果                                                     | 本案例效果                                                   |
@@ -267,7 +267,7 @@ Widget _buildItems(BuildContext context, int index) {
     confirmDismiss: _confirmDismiss,
   );
 }
-复制代码
+  
 ```
 
 ------
