@@ -1,7 +1,13 @@
 ---
 title: "Flutter组件flexible,expanded,spacer"
 date: 2021-08-23T08:38:28+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter"]
+categories: ["flutter"]
 ---
 
 所以说 `Expanded` 就是一个强制延展的 `Flexible` 组件。

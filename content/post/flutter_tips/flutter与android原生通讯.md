@@ -1,7 +1,13 @@
 ---
 title: "Flutter与android原生通讯"
 date: 2021-08-23T11:10:39+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter"]
+categories: ["flutter"]
 ---
 
 
