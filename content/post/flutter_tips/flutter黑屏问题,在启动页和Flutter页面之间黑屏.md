@@ -1,7 +1,13 @@
 ---
 title: "Flutter黑屏问题,在启动页和Flutter页面之间黑屏"
 date: 2021-08-24T09:44:37+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter"]
+categories: ["flutter"]
 ---
 
 # 黑屏
