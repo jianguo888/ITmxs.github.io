@@ -363,3 +363,11 @@ Get.changeTheme(Get.isDarkMode ? ThemeData.light() : ThemeData.dark());
 ## 对第 3 点的满意度：可扩展
 
 假设现在您希望在我们的聊天应用程序中添加任何其他功能，例如，您现在希望拥有一个聊天列表或您朋友的所有联系人列表，因此您只需创建一个名为`chat_list`or的新文件夹`contact_list`并创建相同的文件夹结构。因此，您可以说这个项目结构是可扩展的，因为添加新功能不需要您更改现有的功能文件。
+
+https://segmentfault.com/a/1190000039139198
+
+https://www.cxyzjd.com/article/zl18603543572/115586290
+
+https://blog.csdn.net/qq_36407748/article/details/115204260
+
+https://ithelp.ithome.com.tw/articles/10215918

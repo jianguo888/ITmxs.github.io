@@ -35,7 +35,7 @@ https://tsvillain.medium.com/flutter-reduce-line-of-code-using-spread-8d6988bac0
 
 这很好，但我们可以从 90% 到 100%。
 
-![img](https://miro.medium.com/max/60/1*D1EQCwj5yzE_Fdf2qnPN5w.png?q=20)
+
 
 ![img](https://miro.medium.com/max/875/1*D1EQCwj5yzE_Fdf2qnPN5w.png)
 
@@ -47,7 +47,7 @@ Spread o perator 使用起来很简单，只需添加 ... 是开始，您就可�
 
 但是你我在想为什么它没有抛出错误。这很简单，因为 Column Contains a List<Widget> 并且可以使用扩展运算符将现有 List 添加到它接受并理解的另一个 List 中。
 
-![img](https://miro.medium.com/max/60/1*LYdurecrfDeqZN1X9lkZNw.png?q=20)
+
 
 ![img](https://miro.medium.com/max/875/1*LYdurecrfDeqZN1X9lkZNw.png)
 
