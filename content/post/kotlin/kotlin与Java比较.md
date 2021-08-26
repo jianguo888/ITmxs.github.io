@@ -2,8 +2,8 @@
 title: "Kotlin与Java比较"
 date: 2021-08-26T23:32:38+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Kotlin"]
+categories: ["Kotlin"]
 ---
 
 > 本文主要介绍java与kotlin的一些异同
