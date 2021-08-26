@@ -6,9 +6,9 @@ tags: ["flutter"]
 categories: ["flutter"]
 ---
 
-> 本文主要介绍
+> 本文主要介绍java与kotlin的一些异同
 
-<!--more-->
+后面可能还会继续比较kotlin和dart 期待吗？
 
 ## 打印日志
 
