@@ -10,6 +10,10 @@ categories: ["Kotlin"]
 
 <!--more-->
 
+
+
+https://www.jianshu.com/p/1c83bd577cbb
+
 Kotlin 是一种在 Java 虚拟机上运行的静态类型编程语言，被称之为 Android 世界的Swift，由 JetBrains 设计开发并开源。
 
 Kotlin 可以编译成Java字节码，也可以编译成 JavaScript，方便在没有 JVM 的设备上运行。
@@ -42,9 +46,14 @@ Kotlin为什么可以编写Android程序？
 >  [kotlin学习笔记：object关键字介绍与java中的静态变量与静态方法的实现以及@JvmField和@JvmStatic的使用](https://blog.csdn.net/liyi1009365545/article/details/84064326)
 >  [Kotlin学习系列之：可变参数](https://blog.csdn.net/xlh1191860939/article/details/82109086)
 
+### 你需要知道一些比较重要的事
 
-
-
+- [Learn Kotlin - lateinit vs lazy](https://blog.mindorks.com/learn-kotlin-lateinit-vs-lazy)
+- [Learn Kotlin - apply vs with](https://blog.mindorks.com/learn-kotlin-apply-vs-with)
+- [Learn Kotlin - Data Class](https://blog.mindorks.com/learn-kotlin-data-class)
+- [Learn Kotlin - Destructuring Declarations](https://blog.mindorks.com/learn-kotlin-destructuring-declarations)
+- [Learn Kotlin - Extension Functions](https://blog.mindorks.com/learn-kotlin-extension-functions)
+- [Learn Kotlin - Sealed Classes](https://blog.mindorks.com/learn-kotlin-sealed-classes)
 
 
 
