@@ -45,10 +45,6 @@ mapbox:
 
 # 关于排序：如何根据函数返回的值对dart中的List进行排序
 
-
-
-
-
 ```dart
 
 void main(){
@@ -68,10 +64,6 @@ class POJO {
   POJO(this.id);
 }
 ```
-
-
-
-
 
 # 关于android：Flutter TabBarView不断调用构建器
 
@@ -296,11 +288,4 @@ Material(
   )      
 )
 ```
-
-# Flutter使垂直appBar
-
-在应用程序中，我想在不同页面中创建一个具有自定义标题的垂直appBar：
-
-您可以使用RotatedBox旋转AppBar，但是您将无法使用Scaffold中的AppBar参数，因为该参数需要水平的。
-
 
