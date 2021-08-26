@@ -45,6 +45,8 @@ Kotlin为什么可以编写Android程序？
 >  [Kotlin系列之let、with、run、apply、also函数的使用](https://www.jianshu.com/p/cc65e88d86ce)
 >  [kotlin学习笔记：object关键字介绍与java中的静态变量与静态方法的实现以及@JvmField和@JvmStatic的使用](https://blog.csdn.net/liyi1009365545/article/details/84064326)
 >  [Kotlin学习系列之：可变参数](https://blog.csdn.net/xlh1191860939/article/details/82109086)
+>
+> [《Kotlin for android developers》中文版翻译](http://uprogrammer.cn/kotlin-for-android-developers-zh/)
 
 ### 你需要知道一些比较重要的事
 
