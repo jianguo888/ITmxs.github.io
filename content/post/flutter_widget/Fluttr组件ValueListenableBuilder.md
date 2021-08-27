@@ -10,9 +10,9 @@ categories: ["flutter"]
 
 该Widget的显示内容 会与ValueListenable保持同步，ValueListenable是dart的接口，该接口用于 保持value变化的监听者。这里涉及到了一套dart本身提供的通知机制，机制结构如下：
 
+![image-20210827081924865](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image-20210827081924865.png)
 
 
-![img](https:////upload-images.jianshu.io/upload_images/6567305-bbee3e1ca4c7c6c2.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp)
 
 ChangeNotifier
 

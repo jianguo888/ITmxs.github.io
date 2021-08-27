@@ -22,6 +22,8 @@ categories: ["flutter"]
 
 安装fvm后，考虑设置环境变量 `FVM_HOME` 或 `FVM_GIT_CACHE`，否则默认安装 flutter SDK 缓存路径为 `~/fvm/versions`；
 
+![image-20210827084411967](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image-20210827084411967.png)
+
 ## fvm releases
 
 `fvm releases`: View all Flutter SDK releases available for install.

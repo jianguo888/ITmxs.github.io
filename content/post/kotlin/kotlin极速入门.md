@@ -10,7 +10,7 @@ categories: ["Kotlin"]
 
 <!--more-->
 
-
+# 关于Kotlin
 
 https://www.jianshu.com/p/1c83bd577cbb
 
@@ -38,17 +38,18 @@ Kotlin为什么可以编写Android程序？
  3、不是全面向对象语言，而是半面向对象语言。
  4、不支持字符串内嵌表达式，拼接字符串繁杂。
 
-- Kotlin学习资料
+## Kotlin学习资料
 
 > [Kotlin-in-chinese](https://huanglizhuo.gitbooks.io/kotlin-in-chinese/)
->  [Kotlin极简教程](https://link.jianshu.com/?t=http%3A%2F%2Fwww.kotlindoc.cn%2Fchapter%2Feasy_kotlin_chapter_1.html%23)
->  [Kotlin系列之let、with、run、apply、also函数的使用](https://www.jianshu.com/p/cc65e88d86ce)
->  [kotlin学习笔记：object关键字介绍与java中的静态变量与静态方法的实现以及@JvmField和@JvmStatic的使用](https://blog.csdn.net/liyi1009365545/article/details/84064326)
->  [Kotlin学习系列之：可变参数](https://blog.csdn.net/xlh1191860939/article/details/82109086)
+> [Kotlin系列之let、with、run、apply、also函数的使用](https://www.jianshu.com/p/cc65e88d86ce)
+> [kotlin学习笔记：object关键字介绍与java中的静态变量与静态方法的实现以及@JvmField和@JvmStatic的使用](https://blog.csdn.net/liyi1009365545/article/details/84064326)
+> [Kotlin学习系列之：可变参数](https://blog.csdn.net/xlh1191860939/article/details/82109086)
 >
 > [《Kotlin for android developers》中文版翻译](http://uprogrammer.cn/kotlin-for-android-developers-zh/)
+>
+> https://developer.android.google.cn/kotlin/first?hl=zh-cn
 
-### 你需要知道一些比较重要的事
+## 你需要知道一些比较重要的事
 
 - [Learn Kotlin - lateinit vs lazy](https://blog.mindorks.com/learn-kotlin-lateinit-vs-lazy)
 - [Learn Kotlin - apply vs with](https://blog.mindorks.com/learn-kotlin-apply-vs-with)
@@ -1664,13 +1665,13 @@ internal val baz = 6    // 相同模块内可见
 
 Kotlin 中所有类都继承该 Any 类，它是所有类的超类，对于没有超类型声明的类是默认超类：
 
-```
+```kotlin
 class Example // 从 Any 隐式继承
 ```
 
 Any 默认提供了三个函数：
 
-```
+```kotlin
 equals()
 
 hashCode()
@@ -1682,7 +1683,7 @@ toString()
 
 如果一个类要被继承，可以使用 open 关键字进行修饰。
 
-```
+```kotlin
 open class Base(p: Int)           // 定义基类
 
 class Derived(p: Int) : Base(p)
@@ -1696,7 +1697,7 @@ class Derived(p: Int) : Base(p)
 
 如果子类有主构造函数， 则基类必须在主构造函数中立即初始化。
 
-```
+```kotlin
 open class Person(var name : String, var age : Int){// 基类
 
 }
@@ -1717,7 +1718,7 @@ fun main(args: Array<String>) {
 
 输出结果：
 
-```
+```kotlin
 学生名： Breeze
 年龄： 18
 学生号： S12346
@@ -1728,7 +1729,7 @@ fun main(args: Array<String>) {
 
 如果子类没有主构造函数，则必须在每一个二级构造函数中用 super 关键字初始化基类，或者在代理另一个构造函数。初始化基类时，可以调用基类的不同构造方法。
 
-```
+```kotlin
 class Student : Person {
 
     constructor(ctx: Context) : super(ctx) {
@@ -1741,7 +1742,7 @@ class Student : Person {
 
 ### 实例
 
-```
+```kotlin
 /**用户基类**/
 open class Person(name:String){
     /**次级构造函数**/
@@ -1786,7 +1787,7 @@ fun main(args: Array<String>) {
 
 在基类中，使用fun声明函数时，此函数默认为final修饰，不能被子类重写。如果允许子类重写该函数，那么就要手动添加 open 修饰它, 子类重写方法使用 override 关键词：
 
-```
+```kotlin
 /**用户基类**/
 open class Person{
     open fun study(){       // 允许子类重写
@@ -1817,7 +1818,7 @@ fun main(args: Array<String>) {
 
 如果有多个相同的方法（继承或者实现自其他类，如A、B类），则必须要重写该方法，使用super范型去选择性地调用父类的实现。
 
-```
+```kotlin
 open class A {
     open fun f () { print("A") }
     fun a() { print("a") }
@@ -1846,7 +1847,7 @@ C 继承自 a() 或 b(), C 不仅可以从 A 或则 B 中继承函数，而且 C
 
 输出结果为:
 
-```
+```kotlin
 AB
 ```
 
@@ -1856,7 +1857,7 @@ AB
 
 属性重写使用 override 关键字，属性必须具有兼容类型，每一个声明的属性都可以通过初始化程序或者getter方法被重写：
 
-```
+```kotlin
 open class Foo {
     open val x: Int get { …… }
 }
@@ -1870,7 +1871,7 @@ class Bar1 : Foo() {
 
 你可以在主构造函数中使用 override 关键字作为属性声明的一部分:
 
-```
+```kotlin
 interface Foo {
     val count: Int
 }
@@ -1882,11 +1883,11 @@ class Bar2 : Foo {
 }
 ```
 
-**几点补充：**
+## **几点补充：**
 
 1、子类继承父类时，不能有跟父类同名的变量，除非父类中该变量为 private，或者父类中该变量为 open 并且子类用 override 关键字重写:
 
-```
+```kotlin
 open class Person(var name: String, var age: Int) {    
     open var sex: String = "unknow"    
     init {        
@@ -1907,7 +1908,7 @@ class Student(var name: String, age: Int, var no: String, var score: Int) : Pers
 
 我试过了，不是必须调用 A() 和 B() 中该函数的实现，代码如下：
 
-```
+```kotlin
 open class A {
     open fun f() {
         println("A")
@@ -1939,7 +1940,7 @@ class C : A(), B {
 
 4、如果一个变量想要在定义的时候被初始化，则该变量必须拥有 backing field 字段，该变量的默认 getter 和 setter 方法中是有定义 field 字段的，但是如果我们重写了这个变量的 getter 方法和 setter 方法，并且在 getter 方法和 setter 方法中都没有出现过 filed 这个关键字，则编译器会报错，提示 Initializer is not allowed here because this property has no backing field，除非显式写出 filed 关键字（哪怕它什么都不干，只要放在那里就可以了，我理解是出现一次就相当于“声明”过了，就可以用了，而在定义变量的时候初始化是要求 field 被“声明”过才可以）：
 
-```
+```kotlin
 var aaa: Int = 0
 get() {
     field // 这里必须出现一下field关键字，否则 var aaa: Int = 0 会报错，除非你去掉 = 0这部分，不要给它赋初始化值
@@ -1954,21 +1955,59 @@ set(value) {}
 
 Kotlin 接口与 Java 8 类似，使用 interface 关键字定义接口，允许方法有默认实现：
 
-interface MyInterface {    fun bar()    // 未实现    fun foo() {  //已实现      // 可选的方法体      println("foo")    } }
+```kotlin
+interface MyInterface {
+    fun bar()    // 未实现
+    fun foo() {  //已实现
+      // 可选的方法体
+      println("foo")
+    }
+}
+```
+
+
 
 ### 实现接口
 
 一个类或者对象可以实现一个或多个接口。
 
-class Child : MyInterface {    override fun bar() {        // 方法体    } }
+```kotlin
+class Child : MyInterface {
+    override fun bar() {
+        // 方法体
+    }
+}
+```
+
+
 
 ## 实例
 
-interface MyInterface {    fun bar()    fun foo() {        // 可选的方法体        println("foo")    } } class Child : MyInterface {    override fun bar() {        // 方法体        println("bar")    } } fun main(args: Array<String>) {    val c =  Child()    c.foo();    c.bar();  }
+```kotlin
+interface MyInterface {
+    fun bar()
+    fun foo() {
+        // 可选的方法体
+        println("foo")
+    }
+}
+class Child : MyInterface {
+    override fun bar() {
+        // 方法体
+        println("bar")
+    }
+}
+fun main(args: Array<String>) {
+    val c =  Child()
+    c.foo();
+    c.bar();
+ 
+}
+```
 
 输出结果为：
 
-```
+```kotlin
 foo
 bar
 ```
@@ -1977,39 +2016,52 @@ bar
 
 接口中的属性只能是抽象的，不允许初始化值，接口不会保存属性值，实现接口时，必须重写属性：
 
-interface MyInterface{    var name:String //name 属性, 抽象的 }  class MyImpl:MyInterface{    override var name: String = "Breeze" //重写属性 }
+```kotlin
+interface MyInterface{
+    var name:String //name 属性, 抽象的
+}
+ 
+class MyImpl:MyInterface{
+    override var name: String = "runoob" //重写属性
+}
+```
+
+
 
 ## 实例
 
-interface MyInterface {    var name:String //name 属性, 抽象的    fun bar()    fun foo() {        // 可选的方法体        println("foo")    } } class Child : MyInterface {    override var name: String = "Breeze" //重写属性    override fun bar() {        // 方法体        println("bar")    } } fun main(args: Array<String>) {    val c =  Child()    c.foo();    c.bar();    println(c.name)  }
+```kotlin
+interface MyInterface {
+    var name:String //name 属性, 抽象的
+    fun bar()
+    fun foo() {
+        // 可选的方法体
+        println("foo")
+    }
+}
+class Child : MyInterface {
+    override var name: String = "runoob" //重写属性
+    override fun bar() {
+        // 方法体
+        println("bar")
+    }
+}
+fun main(args: Array<String>) {
+    val c =  Child()
+    c.foo();
+    c.bar();
+    println(c.name)
+ 
+}
+```
 
 输出结果为：
 
-```
+```kotlin
 foo
 bar
-Breeze
+runoob
 ```
-
-------
-
-## 函数重写
-
-实现多个接口时，可能会遇到同一方法继承多个实现的问题。例如:
-
-## 实例
-
-interface A {    fun foo() { print("A") }   // 已实现    fun bar()                  // 未实现，没有方法体，是抽象的 }  interface B {    fun foo() { print("B") }   // 已实现    fun bar() { print("bar") } // 已实现 }  class C : A {    override fun bar() { print("bar") }   // 重写 }  class D : A, B {    override fun foo() {        super<A>.foo()        super<B>.foo()    }     override fun bar() {        super<B>.bar()    } }  fun main(args: Array<String>) {    val d =  D()    d.foo();    d.bar(); }
-
-输出结果为：
-
-```
-ABbar
-```
-
-实例中接口 A 和 B 都定义了方法 foo() 和 bar()， 两者都实现了 foo(), B 实现了 bar()。因为 C 是一个实现了 A 的具体类，所以必须要重写 bar() 并实现这个抽象方法。
-
-然而，如果我们从 A 和 B 派生 D，我们需要实现多个接口继承的所有方法，并指明 D 应该如何实现它们。这一规则 既适用于继承单个实现（bar()）的方法也适用于继承多个实现（foo()）的方法。
 
 # Kotlin 扩展
 
@@ -2469,7 +2521,7 @@ fun copy(name: String = this.name, age: Int = this.age) = User(name, age)
 
 使用 copy 类复制 User 数据类，并修改 age 属性:
 
-```
+```kotlin
 data class User(val name: String, val age: Int)
 
 
@@ -2493,7 +2545,7 @@ User(name=Jack, age=2)
 
 组件函数允许数据类在解构声明中使用：
 
-```
+```kotlin
 val jane = User("Jane", 35)
 val (name, age) = jane
 println("$name, $age years of age") // prints "Jane, 35 years of age"
@@ -2528,7 +2580,7 @@ fun eval(expr: Expr): Double = when (expr) {
 
 使用密封类的关键好处在于使用 when 表达式 的时候，如果能够 验证语句覆盖了所有情况，就不需要为该语句再添加一个 else 子句了。
 
-```
+```kotlin
 fun eval(expr: Expr): Double = when(expr) {
     is Expr.Const -> expr.number
     is Expr.Sum -> eval(expr.e1) + eval(expr.e2)
@@ -2537,80 +2589,70 @@ fun eval(expr: Expr): Double = when(expr) {
 }
 ```
 
- [Kotlin 扩展](https://www.Breeze.com/kotlin/kotlin-extensions.html)
 
-[Kotlin 泛型](https://www.Breeze.com/kotlin/kotlin-generics.html) 
 
-## 1 篇笔记 写笔记
+## 笔记
 
-1. 
 
-     xinyuli
 
-    org***126.com
+我的理解密封类就是一种专门用来配合 when 语句使用的类，举个例子，假如在 Android 中我们有一个 view，我们现在想通过 when 语句设置针对 view 进行两种操作：显示和隐藏，那么就可以这样做：
 
-    [ 参考地址](https://www.cnblogs.com/figozhg/p/7107053.html)
+```
+sealed class UiOp {
+    object Show: UiOp()
+    object Hide: UiOp()
+} 
+fun execute(view: View, op: UiOp) = when (op) {
+    UiOp.Show -> view.visibility = View.VISIBLE
+    UiOp.Hide -> view.visibility = View.GONE
+}
+```
 
-   59
+以上功能其实完全可以用枚举实现，但是如果我们现在想加两个操作：水平平移和纵向平移，并且还要携带一些数据，比如平移了多少距离，平移过程的动画类型等数据，用枚举显然就不太好办了，这时密封类的优势就可以发挥了，例如：
 
-   我的理解密封类就是一种专门用来配合 when 语句使用的类，举个例子，假如在 Android 中我们有一个 view，我们现在想通过 when 语句设置针对 view 进行两种操作：显示和隐藏，那么就可以这样做：
+```
+sealed class UiOp {
+    object Show: UiOp()
+    object Hide: UiOp()
+    class TranslateX(val px: Float): UiOp()
+    class TranslateY(val px: Float): UiOp()
+}
 
-   ```
-   sealed class UiOp {
-       object Show: UiOp()
-       object Hide: UiOp()
-   } 
-   fun execute(view: View, op: UiOp) = when (op) {
-       UiOp.Show -> view.visibility = View.VISIBLE
-       UiOp.Hide -> view.visibility = View.GONE
-   }
-   ```
+ 
 
-   以上功能其实完全可以用枚举实现，但是如果我们现在想加两个操作：水平平移和纵向平移，并且还要携带一些数据，比如平移了多少距离，平移过程的动画类型等数据，用枚举显然就不太好办了，这时密封类的优势就可以发挥了，例如：
+fun execute(view: View, op: UiOp) = when (op) {
+    UiOp.Show -> view.visibility = View.VISIBLE
+    UiOp.Hide -> view.visibility = View.GONE
+    is UiOp.TranslateX -> view.translationX = op.px // 这个 when 语句分支不仅告诉 view 要水平移动，还告诉 view 需要移动多少距离，这是枚举等 Java 传统思想不容易实现的
+    is UiOp.TranslateY -> view.translationY = op.px
+}
+```
 
-   ```
-   sealed class UiOp {
-       object Show: UiOp()
-       object Hide: UiOp()
-       class TranslateX(val px: Float): UiOp()
-       class TranslateY(val px: Float): UiOp()
-   }
-   
-    
-   
-   fun execute(view: View, op: UiOp) = when (op) {
-       UiOp.Show -> view.visibility = View.VISIBLE
-       UiOp.Hide -> view.visibility = View.GONE
-       is UiOp.TranslateX -> view.translationX = op.px // 这个 when 语句分支不仅告诉 view 要水平移动，还告诉 view 需要移动多少距离，这是枚举等 Java 传统思想不容易实现的
-       is UiOp.TranslateY -> view.translationY = op.px
-   }
-   ```
+以上代码中，TranslateX 是一个类，它可以携带多于一个的信息，比如除了告诉 view 需要水平平移之外，还可以告诉 view 平移多少像素，甚至还可以告诉 view 平移的动画类型等信息，我想这大概就是密封类出现的意义吧。
 
-   以上代码中，TranslateX 是一个类，它可以携带多于一个的信息，比如除了告诉 view 需要水平平移之外，还可以告诉 view 平移多少像素，甚至还可以告诉 view 平移的动画类型等信息，我想这大概就是密封类出现的意义吧。
+除此之外，如果 when 语句的分支不需要携带除“显示或隐藏view之外的其它信息”时（即只需要表明 when 语句分支，不需要携带额外数据时），用 object 关键字创建单例就可以了，并且此时 when 子句不需要使用 is 关键字。只有需要携带额外信息时才定义密封类的子类，而且使用了密封类就不需要使用 else 子句，每当我们多增加一个密封类的子类或单例，编译器就会在 when 语句中给出提示，可以在编译阶段就及时发现错误，这也是以往 switch-case 语句和枚举不具备的功能。
 
-   除此之外，如果 when 语句的分支不需要携带除“显示或隐藏view之外的其它信息”时（即只需要表明 when 语句分支，不需要携带额外数据时），用 object 关键字创建单例就可以了，并且此时 when 子句不需要使用 is 关键字。只有需要携带额外信息时才定义密封类的子类，而且使用了密封类就不需要使用 else 子句，每当我们多增加一个密封类的子类或单例，编译器就会在 when 语句中给出提示，可以在编译阶段就及时发现错误，这也是以往 switch-case 语句和枚举不具备的功能。
+最后，我们甚至可以把这一组操作封装成一个函数，以便日后调用，如下：
 
-   最后，我们甚至可以把这一组操作封装成一个函数，以便日后调用，如下：
+```
+// 先封装一个UI操作列表
+class Ui(val uiOps: List = emptyList()) {
+    operator fun plus(uiOp: UiOp) = Ui(uiOps + uiOp)
+}
 
-   ```
-   // 先封装一个UI操作列表
-   class Ui(val uiOps: List = emptyList()) {
-       operator fun plus(uiOp: UiOp) = Ui(uiOps + uiOp)
-   }
-   
-   // 定义一组操作
-   val ui = Ui() +
-           UiOp.Show +
-           UiOp.TranslateX(20f) +
-           UiOp.TranslateY(40f) +
-           UiOp.Hide
-   // 定义调用的函数
-   fun run(view: View, ui: Ui) {
-       ui.uiOps.forEach { execute(view, it) }
-   }
-   
-   run(view, ui) // 最终调用
-   ```
+// 定义一组操作
+val ui = Ui() +
+        UiOp.Show +
+        UiOp.TranslateX(20f) +
+        UiOp.TranslateY(40f) +
+        UiOp.Hide
+// 定义调用的函数
+fun run(view: View, ui: Ui) {
+    ui.uiOps.forEach { execute(view, it) }
+}
+
+run(view, ui) // 最终调用
+```
 
 
 
@@ -3227,7 +3269,7 @@ class MyClass {
 
 # kotlin 委托
 
-[委托模式](https://www.Breeze.com/w3cnote/delegate-mode.html)是软件设计模式中的一项基本技巧。在委托模式中，有两个对象参与处理同一个请求，接受请求的对象将请求委托给另一个对象来处理。
+委托模式是软件设计模式中的一项基本技巧。在委托模式中，有两个对象参与处理同一个请求，接受请求的对象将请求委托给另一个对象来处理。
 
 Kotlin 直接支持委托模式，更加优雅，简洁。Kotlin 通过关键字 by 实现委托。
 
