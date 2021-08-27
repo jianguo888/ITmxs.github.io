@@ -1,7 +1,13 @@
 ---
 title: "Flutter报错unfase"
 date: 2021-08-27T14:37:27+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter"]
+categories: ["flutter"]
 ---
 
 flutter:报错之： Looking up a deactivated widget’s ancestor is unsafe

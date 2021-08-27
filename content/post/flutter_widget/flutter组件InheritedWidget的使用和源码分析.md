@@ -1,7 +1,13 @@
 ---
 title: "Flutter组件InheritedWidget的使用和源码分析"
 date: 2021-08-27T08:34:22+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter"]
+categories: ["flutter"]
 ---
 
 ## **InheritedWidget**使用

@@ -1,7 +1,13 @@
 ---
 title: "Flutter组件OverFlowBox,SizedOverFlowBox"
 date: 2021-08-26T08:42:49+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter"]
+categories: ["flutter"]
 ---
 
 #### 1.认识 OverflowBox 组件
