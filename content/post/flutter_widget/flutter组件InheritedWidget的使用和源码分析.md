@@ -43,7 +43,7 @@ class InfoWidget extends InheritedWidget {
   }
   
 }
-复制代码
+
 ```
 
 代码说明：
@@ -74,7 +74,7 @@ class InfoChildWidget extends StatelessWidget {
     return Text("$number", style: TextStyle(color: Colors.amber, fontSize: 40));
   }
 }
-复制代码
+
 ```
 
 1. 使用**InfoChildWidget**的**常量构造函数**是为了解决不必要的重建和销毁。
@@ -96,7 +96,7 @@ InfoWidget(
             ),
         ),
     )
-复制代码
+
 ```
 
 使用的时候是将**InfoChildWidget**做为**InfoWidget**的**子Widget**，我这里特意中间加了**Center**和**Column**，就是为了指出**InfoChildWidget**不一定需要是**直接子Widget**。
@@ -187,7 +187,7 @@ class InfoChildWidget extends StatelessWidget {
     return Text("$number", style: TextStyle(color: Colors.amber, fontSize: 40));
   }
 }
-复制代码
+
 ```
 
 效果如下：
@@ -202,7 +202,7 @@ class InfoChildWidget extends StatelessWidget {
 
 ```
 Map<Type, InheritedElement>? _inheritedWidgets;
-复制代码
+
 ```
 
 每个**Widget**生成的**Element**挂载到**Element Tree**上的时候都会调用`mount`方法：
@@ -212,7 +212,7 @@ Map<Type, InheritedElement>? _inheritedWidgets;
 void mount(Element? parent, dynamic newSlot) {
     _updateInheritance();
 }
-复制代码
+
 ```
 
 `mount`方法会调用`_updateInheritance`方法：
@@ -222,7 +222,7 @@ void mount(Element? parent, dynamic newSlot) {
 void _updateInheritance() {
     _inheritedWidgets = _parent?._inheritedWidgets;
 }
-复制代码
+
 ```
 
 如果不是**InheritedElement**,则`_inheritedWidgets`都指向父**Element**的`_inheritedWidgets`。
@@ -237,7 +237,7 @@ void _updateInheritance() {
       _inheritedWidgets = HashMap<Type, InheritedElement>();
     _inheritedWidgets![widget.runtimeType] = this;
 }
-复制代码
+
 ```
 
 如果是**InheritedElement**,先拷贝一份父节点的`_inheritedWidgets`, 然后添加或者替换key为**widget.runtimeType**，值为**InheritedElement**的键值对。
@@ -273,7 +273,7 @@ InheritedWidget dependOnInheritedElement(InheritedElement ancestor, { Object? as
     ancestor.updateDependencies(this, aspect);
     return ancestor.widget;
 }
-复制代码
+
 ```
 
 1. 从`_inheritedWidgets`这个**Map**中找到类型对应的**InheritedElement**；
@@ -290,7 +290,7 @@ void setDependencies(Element dependent, Object? value) {
 }
 
 final Map<Element, Object?> _dependents = HashMap<Element, Object?>();
-复制代码
+
 ```
 
 ![updateDependencies](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b5cff7b71cec418f9e184a4792e981e8~tplv-k3u1fbpfcp-watermark.awebp)
@@ -308,7 +308,7 @@ void updated(InheritedWidget oldWidget) {
 void updated(covariant ProxyWidget oldWidget) {
     notifyClients(oldWidget);
 }
-复制代码
+
 ```
 
 `notifyClients`方法会对`_dependents`中的每个**子Element**调用`notifyDependent`方法，**子Element**会调用`didChangeDependencies`方法：
@@ -323,7 +323,7 @@ void notifyClients(InheritedWidget oldWidget) {
 void notifyDependent(covariant InheritedWidget oldWidget, Element dependent) {
     dependent.didChangeDependencies();
 }
-复制代码
+
 ```
 
 **子Element**调用`didChangeDependencies`最后会重新构建：
@@ -332,7 +332,7 @@ void notifyDependent(covariant InheritedWidget oldWidget, Element dependent) {
 void didChangeDependencies() {
     markNeedsBuild();
 }
-复制代码
+
 ```
 
 当**子Element**为**StateFulElement**时，会将`_didChangeDependencies`置为true；
@@ -342,7 +342,7 @@ void didChangeDependencies() {
     super.didChangeDependencies();
     _didChangeDependencies = true;
 }
-复制代码
+
 ```
 
 当重新构建时，**StateFulElement**会调用**state**的`didChangeDependencies`方法。
@@ -355,7 +355,7 @@ void performRebuild() {
     }
     super.performRebuild();
 }
-复制代码
+
 ```
 
 ![didChangeDependencies](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/12ce9975de014d328fa7e8c7399b7d03~tplv-k3u1fbpfcp-watermark.awebp)
