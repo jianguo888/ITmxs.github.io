@@ -1426,3 +1426,191 @@ dependencies:
 
 
 第二种方式 provider
+
+
+
+
+
+# 第六gex
+
+# 在 Flutter 中使用 GetX 动态更改您的应用主题
+
+在本文中，您将逐步学习如何在没有任何样板代码的情况下获得动态深色主题
+
+# Motivation
+
+
+
+![img](https://miro.medium.com/max/375/1*1jKHA_05bXSK-uQ9-5C4JQ.gif)
+
+## This article consists of two parts
+
+- ## 本文由两部分组成
+
+  - 第 1 部分：如何获得动态暗模式
+  - 第 2 部分：如何使主题持久化
+
+  此外，文章末尾还有一个示例项目。你可以检查一下
+
+# Part 1: How to get dynamic dark mode
+
+# 第 1 部分：如何获得动态暗模式
+
+## 第 1 步：将包添加到您的 pubspec.yaml 文件中
+
+[GetX](https://pub.dev/packages/get)就像一个微[框架](https://pub.dev/packages/get)，几乎可以为您完成所有工作。这次我们将使用它来将我们的应用程序主题更改为暗面。
+
+```
+dependencies:
+  get: ^3.13.2
+```
+
+## 第 2 步：创建明暗主题
+
+在这种情况下，我们只有 2 个主题。
+
+
+
+```
+class Themes {
+  static final light = ThemeData.light().copyWith(
+    backgroundColor: Colors.white,
+    buttonColor: Colors.blue,
+  );
+  static final dark = ThemeData.dark().copyWith(
+    backgroundColor: Colors.black,
+    buttonColor: Colors.red,
+  );
+}
+```
+
+## 第 3 步：将 MaterialApp 更改为 GetMaterialApp 并添加主题
+
+GetX 给了我们更多的权力和功能来控制 MaterialApp，为了使用它们我们需要改变权力的来源
+
+```
+return GetMaterialApp(
+  ...
+  theme: Themes.light,
+  darkTheme: Themes.dark,
+);
+```
+
+## 第 4 步：从主题中获取您的风格
+
+您也可以使用`Theme.of(context)`代替`context.theme`
+
+```
+return Container(
+  color: context.theme.backgroundColor
+);
+```
+
+## 第 5 步：动态更改主题
+
+我˚F ThemeMode是黑暗的模式，则是让它发光别的反之亦然
+
+```
+onPressed: () {
+  if (Get.isDarkMode)
+    Get.changeThemeMode(ThemeMode.light);
+  else
+    Get.changeThemeMode(ThemeMode.dark);
+}
+```
+
+就是这样！您的动态主题已准备就绪！现在我们可以开始下一部分。让主题持久化
+
+# 第 2 部分：如何使主题持久化
+
+## 第 1 步：将包添加到您的 pubspec.yaml 文件中
+
+[get_storage](https://pub.dev/packages/get_storage)是 GetX 作者的本地存储包。它是[shared_preferences](https://pub.dev/packages/shared_preferences)的替代方案，具有更好的性能。
+
+```
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^3.13.2
+  get_storage: ^1.3.1 // add this
+```
+
+
+
+## 第 2 步：创建 ThemeService
+
+```
+class ThemeService {
+  final _box = GetStorage();
+  final _key = 'isDarkMode';
+  
+  /// Get isDarkMode info from local storage and return ThemeMode
+  ThemeMode get theme => _loadThemeFromBox() ? ThemeMode.dark : ThemeMode.light;
+
+  /// Load isDArkMode from local storage and if it's empty, returns false (that means default theme is light)
+  bool _loadThemeFromBox() => _box.read(_key) ?? false;
+  
+  /// Save isDarkMode to local storage
+  _saveThemeToBox(bool isDarkMode) => _box.write(_key, isDarkMode);
+  
+  /// Switch theme and save to local storage
+  void switchTheme() {
+    Get.changeThemeMode(_loadThemeFromBox() ? ThemeMode.light : ThemeMode.dark);
+    _saveThemeToBox(!_loadThemeFromBox());
+  }
+}
+```
+
+## 第 3 步：初始化 GetStorage 并从 ThemeService 获取 ThemeMode
+
+我们初始化本地存储并从存储中获取主题信息
+
+```
+void main() async { // make it async
+  await GetStorage.init(); // add this
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return GetMaterialApp(
+      theme: Themes.light,
+      darkTheme: Themes.dark,
+      themeMode: ThemeService().theme, // add this
+      home: HomePage(),
+    );
+  }
+}
+```
+
+
+
+## 第 4 步：将 ThemeService().switchTheme 添加到按钮的 onPressed 方法中
+
+```
+class HomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: context.theme.backgroundColor,
+      body: Center(
+        child: RaisedButton(
+          color: context.theme.buttonColor,
+          child: Text(
+            'Change Theme',
+            style: TextStyle(color: Colors.white),
+          ),
+          onPressed: ThemeService().switchTheme,
+        ),
+      ),
+    );
+  }
+}
+```
+
+
+
+## Example Project
+
+If you’re the guy who better understands with source code. This is for you.

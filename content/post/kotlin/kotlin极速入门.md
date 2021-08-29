@@ -129,15 +129,15 @@ Android Studio 3.0 在当前对话框中提供启用 Kotlin 支持的选项，�
 
 选择 Android 版本:
 
-![img](https://www.Breeze.com/wp-content/uploads/2017/05/1495853670-8308-1-create-new-project.png)
+![img](https://luckly007.oss-cn-beijing.aliyuncs.com/img/1495853670-8308-1-create-new-project.png)
 
 选择需要创建的 Activity 样式:
 
-![img](https://www.Breeze.com/wp-content/uploads/2017/05/1495853838-1520-0-create-new-project.png)
+![img](https://luckly007.oss-cn-beijing.aliyuncs.com/img/1495853838-1520-0-create-new-project.png)
 
 命名该 Activity:
 
-![img](https://www.Breeze.com/wp-content/uploads/2017/05/1495853838-8955-1-create-new-project.png)
+![img](https://luckly007.oss-cn-beijing.aliyuncs.com/img/1495853838-8955-1-create-new-project.png)
 
 在 Android Studio 3.0 中，可以选择使用 Kotlin 创建 activity，因此也不需要"将Java 代码转换为 Kotlin（Converting Java code to Kotlin）"这一步骤。
 
@@ -151,29 +151,31 @@ Android Studio 3.0 在当前对话框中提供启用 Kotlin 支持的选项，�
 
 打开 MainActivity.java 文件，通过菜单栏依次调出 Code | Convert Java File to Kotlin File：
 
-![img](https://www.Breeze.com/wp-content/uploads/2017/05/1495854751-7389-convert-java-to-kotlin.png)
+![img](https://luckly007.oss-cn-beijing.aliyuncs.com/img/1495854751-7389-convert-java-to-kotlin.png)
 
 转换完成后即可看到使用 Kotlin 编写的 activity。
 
-![img](https://www.Breeze.com/wp-content/uploads/2017/05/1495854753-3864-converted-code.png)
+![img](https://luckly007.oss-cn-beijing.aliyuncs.com/img/1495854753-3864-converted-code.png)
 
 ### 工程中配置 Kotlin
 
 在开始编辑此文件时，Android Studio 会提示当前工程还未配置 Kotlin，根据提示完成操作即可，或者可以在菜单栏中选择 Tools
 
-![img](https://www.Breeze.com/wp-content/uploads/2017/05/1495854757-6620-kotlin-not-configured.png)
+![img](https://luckly007.oss-cn-beijing.aliyuncs.com/img/1495854757-6620-kotlin-not-configured.png)
 
 选择配置时有如下对话框，选择已安装的最新版本即可。
 
-![img](https://www.Breeze.com/wp-content/uploads/2017/05/1495854752-7001-re-kotlin-in-project-details.png)
+![img](https://luckly007.oss-cn-beijing.aliyuncs.com/img/1495854752-7001-re-kotlin-in-project-details.png)
+
+
 
 Kotlin 配置完成后，应用程序的 build.gradle 文件会更新。 你能看到新增了 apply plugin: 'kotlin-android' 及其依赖。
 
-![img](https://www.Breeze.com/wp-content/uploads/2017/05/1495854750-1825-sync-project-with-gradle.png)
+![img](https://luckly007.oss-cn-beijing.aliyuncs.com/img/1495854750-1825-sync-project-with-gradle.png)
 
 同步工程，在提示框中点击"立即同步（Sync Now）"或者使用 Sync Project with Gradle Files命令。
 
-![img](https://www.Breeze.com/wp-content/uploads/2017/05/1495854764-6190-sync-project-with-gradle-2.png)
+![img](https://luckly007.oss-cn-beijing.aliyuncs.com/img/1495854764-6190-sync-project-with-gradle-2.png)
 
 # Kotlin 基础语法
 
@@ -2040,7 +2042,7 @@ interface MyInterface {
     }
 }
 class Child : MyInterface {
-    override var name: String = "runoob" //重写属性
+    override var name: String = "breeze" //重写属性
     override fun bar() {
         // 方法体
         println("bar")
@@ -2060,7 +2062,7 @@ fun main(args: Array<String>) {
 ```kotlin
 foo
 bar
-runoob
+breeze
 ```
 
 # Kotlin 扩展
@@ -2075,7 +2077,7 @@ Kotlin 可以对一个类的属性和方法进行扩展，且不需要继承或�
 
 扩展函数可以在已有类中添加新的方法，不会对原类做修改，扩展函数定义形式：
 
-```
+```kotlin
 fun receiverType.functionName(params){
     body
 }
@@ -2087,7 +2089,7 @@ fun receiverType.functionName(params){
 
 以下实例扩展 User 类 ：
 
-```
+```kotlin
 class User(var name:String)
 
 /**扩展函数**/
@@ -2109,7 +2111,7 @@ fun main(arg:Array<String>){
 
 下面代码为 MutableList 添加一个swap 函数：
 
-```
+```kotlin
 // 扩展函数 swap,调换不同位置的值
 fun MutableList<Int>.swap(index1: Int, index2: Int) {
     val tmp = this[index1]     //  this 对应该列表
@@ -2129,7 +2131,7 @@ fun main(args: Array<String>) {
 
 实例执行输出结果为：
 
-```
+```kotlin
 [3, 2, 1]
 ```
 
@@ -2141,7 +2143,7 @@ this关键字指代接收者对象(receiver object)(也就是调用扩展函数�
 
 扩展函数是静态解析的，并不是接收者类型的虚拟成员，在调用扩展函数时，具体被调用的的是哪一个函数，由调用函数的的对象表达式来决定的，而不是动态的类型决定的:
 
-```
+```kotlin
 open class C
 
 class D: C()
@@ -2161,13 +2163,13 @@ fun main(arg:Array<String>){
 
 实例执行输出结果为：
 
-```
+```kotlin
 c
 ```
 
 若扩展函数和成员函数一致，则使用该函数时，会优先使用成员函数。
 
-```
+```kotlin
 class C {
     fun foo() { println("成员函数") }
 }
@@ -2190,7 +2192,7 @@ fun main(arg:Array<String>){
 
 在扩展函数内， 可以通过 this 来判断接收者是否为 NULL,这样，即使接收者为 NULL,也可以调用扩展函数。例如:
 
-```
+```kotlin
 fun Any?.toString(): String {
     if (this == null) return "null"
     // 空检测之后，“this”会自动转换为非空类型，所以下面的 toString()
@@ -2215,7 +2217,7 @@ null
 
 除了函数，Kotlin 也支持属性对属性进行扩展:
 
-```
+```kotlin
 val <T> List<T>.lastIndex: Int
     get() = size - 1
  
@@ -2237,7 +2239,7 @@ val Foo.bar = 1 // 错误：扩展属性不能有初始化器
 
 伴生对象通过"类名."形式调用伴生对象，伴生对象声明的扩展函数，通过用类名限定符来调用：
 
-```
+```kotlin
 class MyClass {
     companion object { }  // 将被称为 "Companion"
 }
@@ -2257,7 +2259,7 @@ fun main(args: Array<String>) {
 
 实例执行输出结果为：
 
-```
+```kotlin
 no:10
 伴随对象的扩展函数
 ```
@@ -2268,7 +2270,7 @@ no:10
 
 通常扩展函数或属性定义在顶级包下:
 
-```
+```kotlin
 package foo.bar
 
 fun Baz.goo() { …… } 
@@ -2276,7 +2278,7 @@ fun Baz.goo() { …… }
 
 要使用所定义包之外的一个扩展, 通过import导入扩展的函数名进行使用:
 
-```
+```kotlin
 package com.example.usage
 
 import foo.bar.goo // 导入所有名为 goo 的扩展
@@ -2296,7 +2298,7 @@ fun usage(baz: Baz) {
 
 在这个扩展中，有个多个隐含的接受者，其中扩展方法定义所在类的实例称为分发接受者，而扩展方法的目标类型的实例称为扩展接受者。
 
-```
+```kotlin
 class D {
     fun bar() { println("D bar") }
 }
@@ -2324,7 +2326,7 @@ fun main(args: Array<String>) {
 
 实例执行输出结果为：
 
-```
+```kotlin
 D bar
 C baz
 ```
@@ -2333,7 +2335,7 @@ C baz
 
 假如在调用某一个函数，而该函数在分发接受者和扩展接受者均存在，则以扩展接收者优先，要引用分发接收者的成员你可以使用限定的 this 语法。
 
-```
+```kotlin
 class D {
     fun bar() { println("D bar") }
 }
@@ -2361,14 +2363,14 @@ fun main(args: Array<String>) {
 
 实例执行输出结果为：
 
-```
+```kotlin
 D bar
 C bar
 ```
 
 以成员的形式定义的扩展函数, 可以声明为 open , 而且可以在子类中覆盖. 也就是说, 在这类扩展函数的派 发过程中, 针对分发接受者是虚拟的(virtual), 但针对扩展接受者仍然是静态的。
 
-```
+```kotlin
 open class D {
 }
 
@@ -2410,7 +2412,7 @@ fun main(args: Array<String>) {
 
 实例执行输出结果为：
 
-```
+```kotlin
 D.foo in C
 D.foo in C1
 D.foo in C
@@ -2429,7 +2431,7 @@ D.foo in C
 
 例如以下代码：
 
-```
+```kotlin
 class MyClass {
     companion object {
         val myClassField1: Int = 1
@@ -2469,7 +2471,7 @@ fun main(args: Array<String>) {
 
 运行结果：
 
-```
+```kotlin
 no:10
 field1:1
 field2:this is myClassField2
@@ -2489,7 +2491,7 @@ foo 伴随对象外部扩展函数
 
 Kotlin 可以创建一个只包含数据的类，关键字为 **data**：
 
-```
+```kotlin
 data class User(val name: String, val age: Int)
 ```
 
@@ -2513,7 +2515,7 @@ data class User(val name: String, val age: Int)
 
 复制使用 copy() 函数，我们可以使用该函数复制对象并修改部分属性, 对于上文的 User 类，其实现会类似下面这样：
 
-```
+```kotlin
 fun copy(name: String = this.name, age: Int = this.age) = User(name, age)
 ```
 
@@ -2536,7 +2538,7 @@ fun main(args: Array<String>) {
 
 输出结果为：
 
-```
+```kotlin
 User(name=Jack, age=1)
 User(name=Jack, age=2)
 ```
@@ -2565,7 +2567,7 @@ println("$name, $age years of age") // prints "Jane, 35 years of age"
 
 sealed 不能修饰 interface ,abstract class(会报 warning,但是不会出现编译错误)
 
-```
+```kotlin
 sealed class Expr
 data class Const(val number: Double) : Expr()
 data class Sum(val e1: Expr, val e2: Expr) : Expr()
@@ -2597,7 +2599,7 @@ fun eval(expr: Expr): Double = when(expr) {
 
 我的理解密封类就是一种专门用来配合 when 语句使用的类，举个例子，假如在 Android 中我们有一个 view，我们现在想通过 when 语句设置针对 view 进行两种操作：显示和隐藏，那么就可以这样做：
 
-```
+```kotlin
 sealed class UiOp {
     object Show: UiOp()
     object Hide: UiOp()
@@ -2610,7 +2612,7 @@ fun execute(view: View, op: UiOp) = when (op) {
 
 以上功能其实完全可以用枚举实现，但是如果我们现在想加两个操作：水平平移和纵向平移，并且还要携带一些数据，比如平移了多少距离，平移过程的动画类型等数据，用枚举显然就不太好办了，这时密封类的优势就可以发挥了，例如：
 
-```
+```kotlin
 sealed class UiOp {
     object Show: UiOp()
     object Hide: UiOp()
@@ -2634,7 +2636,7 @@ fun execute(view: View, op: UiOp) = when (op) {
 
 最后，我们甚至可以把这一组操作封装成一个函数，以便日后调用，如下：
 
-```
+```kotlin
 // 先封装一个UI操作列表
 class Ui(val uiOps: List = emptyList()) {
     operator fun plus(uiOp: UiOp) = Ui(uiOps + uiOp)
@@ -2658,7 +2660,7 @@ run(view, ui) // 最终调用
 
 我的理解密封类就是一种专门用来配合 when 语句使用的类，举个例子，假如在 Android 中我们有一个 view，我们现在想通过 when 语句设置针对 view 进行两种操作：显示和隐藏，那么就可以这样做：
 
-```
+```kotlin
 sealed class UiOp {
     object Show: UiOp()
     object Hide: UiOp()
@@ -2671,7 +2673,7 @@ fun execute(view: View, op: UiOp) = when (op) {
 
 以上功能其实完全可以用枚举实现，但是如果我们现在想加两个操作：水平平移和纵向平移，并且还要携带一些数据，比如平移了多少距离，平移过程的动画类型等数据，用枚举显然就不太好办了，这时密封类的优势就可以发挥了，例如：
 
-```
+```kotlin
 sealed class UiOp {
     object Show: UiOp()
     object Hide: UiOp()
@@ -2695,7 +2697,7 @@ fun execute(view: View, op: UiOp) = when (op) {
 
 最后，我们甚至可以把这一组操作封装成一个函数，以便日后调用，如下：
 
-```
+```kotlin
 // 先封装一个UI操作列表
 class Ui(val uiOps: List = emptyList()) {
     operator fun plus(uiOp: UiOp) = Ui(uiOps + uiOp)
@@ -2723,7 +2725,7 @@ run(view, ui) // 最终调用
 
 声明一个泛型类:
 
-```
+```kotlin
 class Box<T>(t: T) {
     var value = t
 }
