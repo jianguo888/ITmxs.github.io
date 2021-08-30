@@ -1,7 +1,13 @@
 ---
-title: "Flutter中使用Device_Calendar库与Android/ios日历通讯"
+title: "Flutter中使用Device_Calendar库与Android_ios日历通讯"
 date: 2021-08-30T10:05:52+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter"]
+categories: ["flutter"]
 ---
 
 构建到 Roam 创建了一个"device_calendar"飞毛device_calendar/Dart 库，以便与移动设备日历进行通信（即添加、更新、检索、删除 Android/iOS 日历事件）。他们当前的 Github 页面包括一个示例应用程序， 实现库， 我建议查看。
