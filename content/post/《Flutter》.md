@@ -43,6 +43,8 @@ mapbox:
 
 <!--more-->
 
+https://gitee.com/hbwangz/wang-zhong-course-android
+
 做android原生开发时，底部导航栏是通过自定义布局，图片自己上网找，点击之后还要变色，在切换的时候使用fragment，切换下一个的同时上一个隐藏……
 现在，来看flutter怎么实现吧
 
