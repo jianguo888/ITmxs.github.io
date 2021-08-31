@@ -4,13 +4,13 @@ date: 2021-08-31T13:27:35+08:00
 draft: true
 ---
 
-https://blog.csdn.net/qq_41097495/article/details/106845668
 
-
-
-https://blog.csdn.net/qq_41097495/article/details/106428651
 
 http://www.ptbird.cn/flutter-video.html
+
+https://www.jianshu.com/p/a104f0a96594
+
+https://blog.csdn.net/beyondforme/article/details/103895229
 
 首先在 pubspec.yaml 文件中添加 shared_preferences 引用并 Packages get
 
@@ -477,7 +477,7 @@ sqflite是一个轻量的关系型数据库，以表的形式将较为复杂的�
 在pubspec.yaml文件下添加
 path_provider是用来处理路径相关的操作
 
-```
+```dart
 dependencies:
   sqflite: ^1.3.0+2
   path_provider: ^1.6.9
@@ -489,7 +489,7 @@ dependencies:
 
 ### 1.3 导入
 
-```
+```dart
 import 'package:sqflite/sqflite.dart';
 import 'package:path_provider/path_provider.dart';
 
@@ -497,7 +497,7 @@ import 'package:path_provider/path_provider.dart';
 
 ### 1.4 注意
 
-```
+```dart
  // SQLite支持的数据类型  不支持bool和DateTime
  // SQL类型 ==== Dart类型
  // integer ==== int
@@ -513,7 +513,7 @@ import 'package:path_provider/path_provider.dart';
 
 ### 2.1 创建数据库
 
-```
+```dart
 // 数据库文件路径：可以根据自己的需求自己定 这里使用的是外部存储可见的目录
 // 可以将路径打印出来 在手机上找到它
 String databasePath=(await getExternalStorageDirectory()).path+"/demo.db";
@@ -553,7 +553,7 @@ String databasePath=(await getExternalStorageDirectory()).path+"/demo.db";
 
 ### 2.2 创建数据表
 
-```
+```dart
 // 使用execute方法执行SQL语句 注意：execute执行的SQL是没有返回值的
 database.execute('CREATE TABLE Test (id INTEGER PRIMARY KEY, name TEXT, value INTEGER, age REAL)');
 
@@ -563,7 +563,7 @@ database.execute('CREATE TABLE Test (id INTEGER PRIMARY KEY, name TEXT, value IN
 
 2.3.1 where和whereArgs的使用
 
-```
+```dart
 // 在查询和更新删除等语句中，会使用到where和whereArgs作为条件及条件参数
 // 此处以查询为例 更新和删除请举一反三
 // 查询test表中 name为zs并且age为18的记录 
@@ -575,7 +575,7 @@ await database.query('test',where:"name=? and age=?",whereArgs: ["zs",18]).then(
 
 2.3.2 插入数据
 
-```
+```dart
 // 插入数据  
 //1.insert(表名,{"键":值},conflictAlgorithm(冲突算法:枚举类型)) 返回行数
 database.insert('test',{"name":'zs',"age":18}).then((value) => print(value));
@@ -586,7 +586,7 @@ database.insert('test',{"name":'zs',"age":18}).then((value) => print(value));
 
 2.3.3 删除数据
 
-```
+```dart
 // 删除数据 
 // 1.delete("表名",where(条件),whereArgs(条件参数))
 // 此处为寻找name为zs的记录
@@ -598,7 +598,7 @@ database.delete('test',where: "name=?",whereArgs: ["zs"]);
 
 2.3.4 更新数据
 
-```
+```dart
 // 更新数据
 // 1.update("表名",要修改的内容{'键':值},where(条件),whereArgs(条件参数),conflictAlgorithm(冲突算法：枚举类型))
 // 将name为zs的记录的name改为ls，age改为18
@@ -610,7 +610,7 @@ database.update('test', {"name":'ls',"age":18},where: "name=?",whereArgs: ['zs']
 
 2.3.5 查询数据
 
-```
+```dart
 // 查询数据
 // 1.query(表名,{distinct,columns(返回哪些字段),where(条件),
 // whereArgs(条件参数),groupBy(分组),having(分组后的进行条件查询),
@@ -632,7 +632,7 @@ await database.query('test',                 //查询的表名
 
 ### 2.4 批处理 Batch
 
-```
+```dart
 // 批处理SQL语句 往Batch中添加语句 但是这些语句并不会执行 需要调用commit方法 然后一次性执行
 Batch batch=database.batch();
 batch.insert("test",{"name":'ls'});
@@ -644,7 +644,7 @@ batch.commit(noResult: true,continueOnError: true).then((value) => print(value))
 
 ### 2.5 事务
 
-```
+```dart
 // 事务
 // 在事务中执行SQL语句 若发生异常 则进行回滚 即全部SQL语句无效
 // 四大特征:
@@ -662,7 +662,7 @@ database.transaction((txn)async{
 
 ### 2.6其他
 
-```
+```dart
 // 数据库是否打开
 // print(database.isOpen);
 
@@ -711,42 +711,42 @@ import 'package:path_provider/path_provider.dart';
 
 1. 2.1 获取临时文件路径(IOS和安卓通用)
 
-  ```
+  ```dart
   // 获取不会备份并且随时会被删除的临时目录(IOS和安卓通用)
   getTemporaryDirectory().then((value) => print(value));
   ```
 
   2.2 获取应用支持目录(IOS和安卓通用)
 
-  ```
+  ```dart
   // 用于存储应用支持的目录 这个目录对于用户是不可见的 (IOS和安卓通用)
   getApplicationSupportDirectory().then((value) => print(value));
   ```
 
   2.3 获取应用文件目录(IOS和安卓通用)
 
-  ```
+  ```dart
   // 用于放置用户生成的数据或不能有应用程序重新创建的数据 用户不可见(IOS和安卓通用)
   getApplicationDocumentsDirectory().then((value) => print(value));
   ```
 
   2.4 获取应用持久存储目录路径(仅IOS可用)
 
-  ```
+  ```dart
   // 应用程序可以存储持久化、备份和用户不可见的文件的目录路径
   getLibraryDirectory().then((value) => print(value));
   ```
 
   2.5 获取外部存储目录(仅安卓可用)
 
-  ```
+  ```dart
   // 获取外部存储目录 用户可见
   getExternalStorageDirectory().then((value) => print(value));
   ```
 
   2.6 获取外部存储目录列表(仅安卓可用)
 
-  ```
+  ```dart
   // 可以存储应用程序特定数据的目录 
   // 这些路径通常驻留在外部存储上 用户可见 如单独的分区或SD卡(可以有多个 所以是列表)
   getExternalStorageDirectories().then((value) => print(value));
@@ -754,7 +754,7 @@ import 'package:path_provider/path_provider.dart';
 
   2.7 获取外部缓存目录(仅安卓可用)
 
-  ```
+  ```dart
   // 可以存储应用程序特定外部存储数据的目录 
   // 这些路径通常驻留在外部存储上，如单独的分区或SD卡(可以有多个 所以是列表)
   getExternalCacheDirectories().then((value) => print(value));
@@ -762,7 +762,7 @@ import 'package:path_provider/path_provider.dart';
 
   2.8 获取下载目录(仅桌面可用 安卓和IOS报错)
 
-  ```
+  ```dart
   // 获取下载路径 
   getDownloadsDirectory().then((value) => print(value));
   ```
