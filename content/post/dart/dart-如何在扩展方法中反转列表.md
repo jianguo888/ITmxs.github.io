@@ -1,7 +1,13 @@
 ---
-title: "Dart 如何在扩展方法中反转列表"
+title: "Dart如何在扩展方法中反转列表"
 date: 2021-08-31T12:54:23+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 从[here](https://dart.dev/guides/language/extension-methods#implementing-generic-extensions)

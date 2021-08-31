@@ -1,5 +1,5 @@
 ---
-title: "《Dart之笨办法学Dart Dartdoc"
+title: "《Dart之笨办法学Dart》"
 subtitle: ""
 date: 2021-07-31T21:00:31+08:00
 lastmod: 2021-07-31T21:00:31+08:00

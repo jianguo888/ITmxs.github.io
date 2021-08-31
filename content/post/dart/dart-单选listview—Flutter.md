@@ -1,7 +1,13 @@
 ---
 title: "Dart 单选listview—Flutter"
 date: 2021-08-31T09:02:00+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 我试图在我的应用程序中实现`listView`单一选择，以便一旦点击列表中的某个项目，从而使按下的项目颜色状态与其他项目不同。我已经尽力了，但是效果不好。问题在于，即使我的实现在按下时更新了每个项目状态，也不会将其他状态重置为初始状态。

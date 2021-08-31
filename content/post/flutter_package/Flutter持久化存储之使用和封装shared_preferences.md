@@ -1,7 +1,13 @@
 ---
 title: "Flutter持久化存储之使用和封装shared_preferences"
 date: 2021-08-31T13:27:35+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 

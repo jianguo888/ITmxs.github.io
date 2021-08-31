@@ -1,7 +1,13 @@
 ---
 title: "Flutter组件Draggable与DragTarget"
 date: 2021-08-31T09:48:26+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 #### 一、认识 Draggable 组件

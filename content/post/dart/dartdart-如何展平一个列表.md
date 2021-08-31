@@ -1,7 +1,13 @@
 ---
 title: "Dart如何展平一个列表"
 date: 2021-08-31T11:29:38+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 ****

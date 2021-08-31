@@ -1,5 +1,5 @@
 ---
-title: "《Dar JIT和AOT》"
+title: "《DarJIT和AOT》"
 subtitle: ""
 date: 2021-06-24T21:41:33+08:00
 lastmod: 2021-06-24T21:41:33+08:00

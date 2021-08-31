@@ -1,7 +1,13 @@
 ---
 title: "Flutter组件DecoratedBox"
 date: 2021-08-31T09:32:43+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 #### 1.认识 DecoratedBox 组件
