@@ -117,12 +117,17 @@ disqusShortname = ""  ## 是否开启disqus评论，不要和utteranc同时开�
   identifier = "tags"
   url = "/tags/"
  [[menu.main]]
+  identifier = "archives"
+  name = "归档"
+  url = "/archives/"
+  weight = 50  
+ [[menu.main]]
   name = "关于我"
-  weight = 50
+  weight = 60
   identifier = "about"
   url = "/about/"
  [[menu.main]]
   name = "github"
-  weight = 60
+  weight = 70
   identifier = "reading-list"
   url = "https://github.com/ITmxs/"
