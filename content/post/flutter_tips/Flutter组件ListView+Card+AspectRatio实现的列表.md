@@ -1,7 +1,13 @@
 ---
 title: "Flutter组件ListView+Card+AspectRatio实现的列表"
 date: 2021-09-01T09:15:43+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 ## 一、列表效果

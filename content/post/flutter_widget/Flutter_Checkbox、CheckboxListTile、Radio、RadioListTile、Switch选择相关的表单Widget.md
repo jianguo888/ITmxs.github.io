@@ -1,7 +1,13 @@
 ---
 title: "Flutter_Checkbox、CheckboxListTile、Radio、RadioListTile、Switch选择相关的表单Widget"
 date: 2021-09-01T09:01:49+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 ## 一、Checkbox 和 CheckboxListTile

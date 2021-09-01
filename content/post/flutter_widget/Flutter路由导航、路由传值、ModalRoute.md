@@ -1,7 +1,13 @@
 ---
 title: "Flutter路由导航、路由传值、ModalRoute"
 date: 2021-09-01T09:12:14+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 ## 一、基本路由使用

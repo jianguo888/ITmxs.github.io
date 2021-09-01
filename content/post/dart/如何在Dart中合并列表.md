@@ -1,7 +1,13 @@
 ---
 title: "如何在Dart中合并列表"
 date: 2021-09-01T15:28:07+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 https://www.geeksforgeeks.org/how-to-combine-lists-in-dart/?ref=leftbar-rightbar

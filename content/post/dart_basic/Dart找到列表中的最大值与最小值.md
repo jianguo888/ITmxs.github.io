@@ -1,7 +1,13 @@
 ---
 title: "Dart找到列表中的最大值与最小值"
 date: 2021-09-01T16:09:31+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 在 Dart 中，我们可以通过七种方式找到给定列表中存在的最小值和最大值元素：

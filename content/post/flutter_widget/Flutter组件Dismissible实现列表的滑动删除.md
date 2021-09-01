@@ -1,7 +1,13 @@
 ---
 title: "Flutter组件Dismissible实现列表的滑动删除"
 date: 2021-09-01T08:44:27+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 ## 一、Dismissible

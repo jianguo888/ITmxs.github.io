@@ -1,7 +1,13 @@
 ---
 title: "Dart–Common_Collection_Methods"
 date: 2021-09-01T17:02:00+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 List、Set 和 Map 共享许多集合中的通用功能。其中一些常见功能是由 Iterable 类定义的，List 和 Set 实现了该类。

@@ -1,7 +1,13 @@
 ---
 title: "Flutter表单模拟训练"
 date: 2021-09-01T08:51:10+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 ## 一、Flutter 中的表单

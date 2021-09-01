@@ -1,7 +1,13 @@
 ---
 title: "Dart中的Getter和Setter方法"
 date: 2021-09-01T16:45:46+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 getter 和 setter 方法是用于操作类字段数据的类方法。getter 用于读取或获取类字段的数据，而 setter 用于将类字段的数据设置为某个变量。

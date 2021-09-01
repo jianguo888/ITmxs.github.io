@@ -1,7 +1,13 @@
 ---
 title: "Flutter组件在列表中使用SnackBar进行删除提示与撤销"
 date: 2021-09-01T08:46:47+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 ## 一、SnackBar

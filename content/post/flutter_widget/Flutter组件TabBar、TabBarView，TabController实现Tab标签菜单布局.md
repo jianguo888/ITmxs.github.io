@@ -1,7 +1,13 @@
 ---
 title: "Flutter组件TabBar、TabBarView，TabController实现Tab标签菜单布局"
 date: 2021-09-01T09:08:22+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 ## 一、TabBar 和 TabBarView

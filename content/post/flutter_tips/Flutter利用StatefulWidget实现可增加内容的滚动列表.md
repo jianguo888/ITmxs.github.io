@@ -1,7 +1,13 @@
 ---
 title: "Flutter利用StatefulWidget实现可增加内容的滚动列表"
 date: 2021-09-01T09:13:38+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 ## 一、实现的效果

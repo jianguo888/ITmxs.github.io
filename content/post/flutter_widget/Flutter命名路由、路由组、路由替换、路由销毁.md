@@ -1,7 +1,13 @@
 ---
 title: "Flutter命名路由、路由组、路由替换、路由销毁"
 date: 2021-09-01T09:11:22+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 ## 一、路由表 和 命名路由

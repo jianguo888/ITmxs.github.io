@@ -1,7 +1,13 @@
 ---
 title: "Flutter_Form、TextFormField及表单验证、表单输入框聚焦"
 date: 2021-09-01T08:58:21+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 ## 一、Form 及 TextFormField 输入框校验

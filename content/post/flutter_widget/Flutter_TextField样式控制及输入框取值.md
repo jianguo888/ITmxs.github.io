@@ -1,7 +1,13 @@
 ---
 title: "Flutter_TextField样式控制及输入框取值"
 date: 2021-09-01T08:53:17+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 ## 一、TextField 实现各种各样的输入框

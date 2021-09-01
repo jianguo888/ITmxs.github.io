@@ -1,7 +1,13 @@
 ---
 title: "Dart中的生成器"
 date: 2021-09-01T15:44:59+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 Dart 中的生成器允许用户轻松生成值序列。可以借助两个生成器函数在 dart 中生成一系列值：

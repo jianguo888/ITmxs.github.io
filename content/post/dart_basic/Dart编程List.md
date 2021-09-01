@@ -1,7 +1,13 @@
 ---
 title: "Dart编程List"
 date: 2021-09-01T16:22:00+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 在 Dart 编程中，List 数据类型类似于其他编程语言中的数组。列表用于表示对象的集合。它是一组有序的对象。Dart 中的**核心**库负责 List 类的存在、创建和操作。

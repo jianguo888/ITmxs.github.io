@@ -1,7 +1,13 @@
 ---
 title: "Flutter组件Drawer实现左侧横滑菜单"
 date: 2021-09-01T09:06:18+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 ## 一、Scalfold 的 Drawer

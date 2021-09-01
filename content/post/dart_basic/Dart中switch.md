@@ -1,7 +1,13 @@
 ---
 title: "Dart中switch"
 date: 2021-09-01T15:52:24+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["flutter","dart"]
+categories: ["flutter","dart"]
 ---
 
 在 Dart 中，switch-case 语句是嵌套 if-else 语句的简化版本。它的方法与Java中的方法相同。
