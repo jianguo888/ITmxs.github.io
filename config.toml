@@ -70,19 +70,19 @@ disqusShortname = ""  ## 是否开启disqus评论，不要和utteranc同时开�
   title = "大俊"
   name = "大俊Blog"
   url = "https://darjun.github.io/"
-## 侧边栏广告位
-[[params.ads]]
-  title = "我的CSDN"
-  url = "https://blog.csdn.net/qq_39132095?spm=1001.2101.3001.5343"
-  img = "https://luckly007.oss-cn-beijing.aliyuncs.com/img/flutter.png"
-[[params.ads]]
-  title = "我的哔哩哔哩"
-  url = "https://space.bilibili.com/480883651"
-  img = "https://luckly007.oss-cn-beijing.aliyuncs.com/img/flutter.png"
-[[params.ads]]
-  title = "我的知乎"
-  url = "https://www.zhihu.com/people/yimi-yang-guang-96-65"
-  img = "https://luckly007.oss-cn-beijing.aliyuncs.com/img/flutter.png"
+# ## 侧边栏广告位
+# [[params.ads]]
+#   title = "我的CSDN"
+#   url = "https://blog.csdn.net/qq_39132095?spm=1001.2101.3001.5343"
+#   img = "https://luckly007.oss-cn-beijing.aliyuncs.com/img/flutter.png"
+# [[params.ads]]
+#   title = "我的哔哩哔哩"
+#   url = "https://space.bilibili.com/480883651"
+#   img = "https://luckly007.oss-cn-beijing.aliyuncs.com/img/flutter.png"
+# [[params.ads]]
+#   title = "我的知乎"
+#   url = "https://www.zhihu.com/people/yimi-yang-guang-96-65"
+#   img = "https://luckly007.oss-cn-beijing.aliyuncs.com/img/flutter.png"
 
 ## 配置 utteranc评论,教程参考 https://utteranc.es/
 [params.utteranc]

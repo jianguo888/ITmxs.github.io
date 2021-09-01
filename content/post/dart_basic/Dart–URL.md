@@ -20,7 +20,7 @@ Uri 类支持对用于 URI（您可能称为 URL）的字符串进行编码和�
 
 **例子：** 
 
-```
+```dart
 void main(){
 	
 var uri = 'https://example.org/api?foo=some message';
@@ -39,7 +39,7 @@ print(uri == decoded);
 
 要编码和解码在 URI 中具有特殊含义的所有字符串字符，包括（但不限于）/、& 和 :，请使用***encodeComponent()***和***decodeComponent()***方法。
 
-```
+```dart
 void main(){
 	
 var uri = 'https://example.org/api?foo=some message';
@@ -60,7 +60,7 @@ print(uri == decoded);
 
 **例子：**
 
-```
+```dart
 void main(){
 	
 var uri =
@@ -83,7 +83,7 @@ https://dartpad.cn/?null_safety=true&id
 
 **例子：**
 
-```
+```dart
 void main(){
 	
 var uri = Uri(
