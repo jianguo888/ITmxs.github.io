@@ -38,7 +38,11 @@ Future<void> precacheImage(
 例子：
 
 ```
-void didChangeDependencies() { precacheImage(AssetImage("assets/logo.png"), context); precacheImage(AssetImage("assets/home_bg.png"), context); super.didChangeDependencies();  
+void didChangeDependencies()
+{ precacheImage(AssetImage("assets/logo.png"), context); 
+
+precacheImage(AssetImage("assets/home_bg.png"), context);
+super.didChangeDependencies();  
 }
 ```
 
