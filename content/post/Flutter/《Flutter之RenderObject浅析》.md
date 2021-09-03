@@ -256,24 +256,24 @@ RenderObject 中两个重要的属性是 `_parent` 和 `parentData`。
 
 或许你已经发现 RenderObject 更像 Android View 的对应物。的确如此，两者不仅从概念上类似，很多方法也几乎一一对应。
 
-|                   | Flutter RenderObject                                         | Android View                                     |
-| ----------------- | ------------------------------------------------------------ | ------------------------------------------------ |
-| 绘制              | **paint()**                                                  | draw()/onDraw()                                  |
-| 布局              | **performLayout()**/layout()                                 | measure()/onMeasure(), layout()/onLayout()       |
-| 布局约束          | Constraints                                                  | MeasureSpec                                      |
+|                   | Flutter RenderObject                                            | Android View                                     |
+| ----------------- | --------------------------------------------------------------- | ------------------------------------------------ |
+| 绘制              | **paint()**                                                     | draw()/onDraw()                                  |
+| 布局              | **performLayout()**/layout()                                    | measure()/onMeasure(), layout()/onLayout()       |
+| 布局约束          | Constraints                                                     | MeasureSpec                                      |
 | 布局协议1         | performLayout() 的 Constraints 参数表示父节点对子节点的布局限制 | measure() 的两个参数表示父节点对子节点的布局限制 |
-| 布局协议2         | performLayout() 应调用各子节点的 layout()                    | onLayout() 应调用各子节点的 layout()             |
-| 布局参数          | parentData                                                   | mLayoutParams                                    |
-| 请求布局          | markNeedsLayout()                                            | requestLayout()                                  |
-| 请求绘制          | markNeedsPaint()                                             | invalidate()                                     |
-| 添加 child        | adoptChild()                                                 | addView()                                        |
-| 移除 child        | dropChild()                                                  | removeView()                                     |
-| 关联到窗口/树     | attach()                                                     | onAttachedToWindow()                             |
-| 从窗口/树取消关联 | detach()                                                     | onDetachedFromWindow()                           |
-| 获取 parent       | parent                                                       | getParent()                                      |
-| 触摸事件          | hitTest()                                                    | onTouch()                                        |
-| 用户输入事件      | handleEvent()                                                | onKey()                                          |
-| 旋转事件          | rotate()                                                     | onConfigurationChanged()                         |
+| 布局协议2         | performLayout() 应调用各子节点的 layout()                       | onLayout() 应调用各子节点的 layout()             |
+| 布局参数          | parentData                                                      | mLayoutParams                                    |
+| 请求布局          | markNeedsLayout()                                               | requestLayout()                                  |
+| 请求绘制          | markNeedsPaint()                                                | invalidate()                                     |
+| 添加 child        | adoptChild()                                                    | addView()                                        |
+| 移除 child        | dropChild()                                                     | removeView()                                     |
+| 关联到窗口/树     | attach()                                                        | onAttachedToWindow()                             |
+| 从窗口/树取消关联 | detach()                                                        | onDetachedFromWindow()                           |
+| 获取 parent       | parent                                                          | getParent()                                      |
+| 触摸事件          | hitTest()                                                       | onTouch()                                        |
+| 用户输入事件      | handleEvent()                                                   | onKey()                                          |
+| 旋转事件          | rotate()                                                        | onConfigurationChanged()                         |
 
 此外，一些方法调用规则也类似。比如：
 

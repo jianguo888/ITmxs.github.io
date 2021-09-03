@@ -2,8 +2,8 @@
 title: "Go_web模板1"
 date: 2021-08-20T22:47:59+08:00
 draft: false
-tags: ["Go"]
-categories: ["Go"]
+tags: ["go"]
+categories: ["go"]
 ---
 
 > 本文主要介绍

@@ -9,7 +9,7 @@ authorLink: ""
 description: ""
 
 tags: []
-categories: ["flutter"]
+categories: ["Flutter"]
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
@@ -52,28 +52,28 @@ Flutter作为一门新**开源**的移动UI框架，在设计之初，谷歌的�
 
 掌握Widget，在Flutter中，万物皆Widget！Widget作为我们搭建应用的组件，需要至少掌握我们常见的Widget
 
-|      Widget       |                             说明                             |
-| :---------------: | :----------------------------------------------------------: |
-|     Container     |           一个拥有绘制、定位、调整大小的 widget。            |
-|        Row        |               在水平方向上排列子widget的列表。               |
-|      Column       |               在垂直方向上排列子widget的列表。               |
-|       Image       |                     一个显示图片的widget                     |
-|       Text        |                        单一格式的文本                        |
-|       Icon        |                   A Material Design icon.                    |
-|   RaisedButton    |      Material Design中的button， 一个凸起的材质矩形按钮      |
-|     Scaffold      | Material Design布局结构的基本实现。此类提供了用于显示drawer、snackbar和底部sheet的API。 |
+|      Widget       |                                             说明                                              |
+| :---------------: | :-------------------------------------------------------------------------------------------: |
+|     Container     |                            一个拥有绘制、定位、调整大小的 widget。                            |
+|        Row        |                               在水平方向上排列子widget的列表。                                |
+|      Column       |                               在垂直方向上排列子widget的列表。                                |
+|       Image       |                                     一个显示图片的widget                                      |
+|       Text        |                                        单一格式的文本                                         |
+|       Icon        |                                    A Material Design icon.                                    |
+|   RaisedButton    |                      Material Design中的button， 一个凸起的材质矩形按钮                       |
+|     Scaffold      |    Material Design布局结构的基本实现。此类提供了用于显示drawer、snackbar和底部sheet的API。    |
 |      Appbar       | 一个Material Design应用程序栏，由工具栏和其他可能的widget（如TabBar和FlexibleSpaceBar）组成。 |
-|     ListView      |                           列表显示                           |
-|       Icon        |                             图标                             |
-|      Switch       |                           单选开关                           |
-|     Checkbox      |                            复选框                            |
-|     TextField     |                            输入框                            |
-|       Form        |                           表单组件                           |
-|  Flex、Expanded   |                           弹性布局                           |
-|       Wrap        |                           流式布局                           |
-| Stack、Positioned |               层叠布局，用于页面定位，层叠摆放               |
-|       Align       |                        对齐与相对定位                        |
-|  GestureDetector  |                           手势识别                           |
+|     ListView      |                                           列表显示                                            |
+|       Icon        |                                             图标                                              |
+|      Switch       |                                           单选开关                                            |
+|     Checkbox      |                                            复选框                                             |
+|     TextField     |                                            输入框                                             |
+|       Form        |                                           表单组件                                            |
+|  Flex、Expanded   |                                           弹性布局                                            |
+|       Wrap        |                                           流式布局                                            |
+| Stack、Positioned |                               层叠布局，用于页面定位，层叠摆放                                |
+|       Align       |                                        对齐与相对定位                                         |
+|  GestureDetector  |                                           手势识别                                            |
 
 > Widget拓展 进阶学习：https://flutter.cn/docs/development/ui/widgets
 

@@ -2,8 +2,8 @@
 title: "Go语言基础之函数"
 date: 2021-09-03T23:10:11+08:00
 draft: false
-tags: ["Go"]
-categories: ["Go"]
+tags: ["go"]
+categories: ["go"]
  
 ---
 
@@ -562,14 +562,14 @@ func main() {
 
 # 内置函数介绍
 
-|    内置函数    |                             介绍                             |
-| :------------: | :----------------------------------------------------------: |
-|     close      |                     主要用来关闭channel                      |
-|      len       |      用来求长度，比如string、array、slice、map、channel      |
+|    内置函数    |                              介绍                               |
+| :------------: | :-------------------------------------------------------------: |
+|     close      |                       主要用来关闭channel                       |
+|      len       |       用来求长度，比如string、array、slice、map、channel        |
 |      new       | 用来分配内存，主要用来分配值类型，比如int、struct。返回的是指针 |
-|      make      |   用来分配内存，主要用来分配引用类型，比如chan、map、slice   |
-|     append     |                 用来追加元素到数组、slice中                  |
-| panic和recover |                        用来做错误处理                        |
+|      make      |    用来分配内存，主要用来分配引用类型，比如chan、map、slice     |
+|     append     |                   用来追加元素到数组、slice中                   |
+| panic和recover |                         用来做错误处理                          |
 
 ### panic/recover
 

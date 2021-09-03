@@ -8,8 +8,8 @@ author: ""
 authorLink: ""
 description: ""
 images: []
-tags: ["Go"]
-categories: ["Go"]
+tags: ["go"]
+categories: ["go"]
 
 hiddenFromHomePage: false
 hiddenFromSearch: false

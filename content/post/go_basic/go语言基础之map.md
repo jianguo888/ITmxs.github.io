@@ -2,8 +2,8 @@
 title: "Go语言基础之map"
 date: 2021-09-03T23:10:11+08:00
 draft: false
-tags: ["Go"]
-categories: ["Go"]
+tags: ["go"]
+categories: ["go"]
  
 ---
 

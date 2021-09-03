@@ -9,7 +9,7 @@ authorLink: ""
 description: ""
 
 tags: []
-categories: ["flutter"]
+categories: ["Flutter"]
 
 hiddenFromHomePage: false
 hiddenFromSearch: false

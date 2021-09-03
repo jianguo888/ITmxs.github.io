@@ -2,8 +2,8 @@
 title: "go-flag"
 date: 2021-09-03T23:10:11+08:00
 draft: false
-tags: ["Go"]
-categories: ["Go"]
+tags: ["go"]
+categories: ["go"]
  
 ---
 
@@ -59,12 +59,12 @@ import flag
 
 flag包支持的命令行参数类型有`bool`、`int`、`int64`、`uint`、`uint64`、`float` `float64`、`string`、`duration`。
 
-|   flag参数   |                            有效值                            |
-| :----------: | :----------------------------------------------------------: |
-|  字符串flag  |                          合法字符串                          |
-|   整数flag   |           1234、0664、0x1234等类型，也可以是负数。           |
-|  浮点数flag  |                          合法浮点数                          |
-| bool类型flag |  1, 0, t, f, T, F, true, false, TRUE, FALSE, True, False。   |
+|   flag参数   |                                                  有效值                                                   |
+| :----------: | :-------------------------------------------------------------------------------------------------------: |
+|  字符串flag  |                                                合法字符串                                                 |
+|   整数flag   |                                 1234、0664、0x1234等类型，也可以是负数。                                  |
+|  浮点数flag  |                                                合法浮点数                                                 |
+| bool类型flag |                         1, 0, t, f, T, F, true, false, TRUE, FALSE, True, False。                         |
 |  时间段flag  | 任何合法的时间段字符串。如”300ms”、”-1.5h”、”2h45m”。 合法的单位有”ns”、”us” /“µs”、”ms”、”s”、”m”、”h”。 |
 
 ## 定义命令行flag参数
