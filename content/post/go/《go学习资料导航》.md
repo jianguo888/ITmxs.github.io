@@ -5,8 +5,8 @@ lastmod: 2021-05-17T10:08:48+08:00
 draft: false
 keywords: []
 description: ""
-tags: ["go"]
-categories: ["go"]
+tags: ["Go"]
+categories: ["Go"]
 author: ""
 featuredImage: ""
 featuredImagePreview: "https://luckly007.oss-cn-beijing.aliyuncs.com/img/f77be1f477e980732d57475d3ddb69d.png"
