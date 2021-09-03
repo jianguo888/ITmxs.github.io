@@ -2,8 +2,8 @@
 title: "如何将flutter_Web项目部署到github上"
 date: 2021-08-15T17:49:29+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 ![如何将 flutter web 项目部署到 GitHub](https://miro.medium.com/max/1400/1*1orxIbVfgZa4mB_qEL17Yg.jpeg)

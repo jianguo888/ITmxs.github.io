@@ -2,8 +2,8 @@
 title: "Flutter中的ScrollPhysics"
 date: 2021-08-15T20:00:27+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 使用 ListView 或 PageView 变体？如何改变滚动条的性质，让您的用户在使用时感觉更真实？让我们看看如何使用不同的 ScrollPhysics 做到这一点。

@@ -6,8 +6,8 @@ author: ""
 authorLink: ""
 description: ""
 images: []
-tags: ["flutter","dart"]
-categories: ["flutter","dart"]
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
  `Tooltip` 组件主要的作用是在`鼠标悬浮`或`长按手势`下触发消息提示。它继承自 `StatefulWidget` ，其中必须传入 `String` 类型的 `message` ，还有很多其他的参数用于配置。

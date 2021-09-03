@@ -2,8 +2,8 @@
 title: "Flutter架构 我的provider实施指南"
 date: 2021-08-20T23:47:46+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 > 本文主要介绍Flutter Provider 架构实现。使用 Provider 实现生产就绪应用程序的明确指南和编码约定。

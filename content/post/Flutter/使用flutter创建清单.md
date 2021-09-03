@@ -2,8 +2,8 @@
 title: "使用flutter创建清单"
 date: 2021-08-16T23:32:17+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 

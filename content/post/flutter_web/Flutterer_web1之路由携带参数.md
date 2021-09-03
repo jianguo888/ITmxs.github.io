@@ -2,8 +2,8 @@
 title: "Flutterer_web1之路由携带参数"
 date: 2021-08-21T19:00:58+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 > 本文主要介绍

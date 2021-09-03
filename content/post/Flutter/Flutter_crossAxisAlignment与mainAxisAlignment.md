@@ -2,8 +2,8 @@
 title: "Flutter_crossAxisAlignment与mainAxisAlignment"
 date: 2021-08-15T12:20:22+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 在本文中，我们试图消除对这两个主要使用的两个不同小部件中这两个属性的混淆。

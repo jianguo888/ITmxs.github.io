@@ -2,8 +2,8 @@
 title: "使用fluttertoast"
 date: 2021-08-19T20:06:29+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 https://pub.flutter-io.cn/packages/flutter_sliding_up_panel

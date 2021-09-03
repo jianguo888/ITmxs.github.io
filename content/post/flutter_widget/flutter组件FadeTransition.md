@@ -2,8 +2,8 @@
 title: "Flutter组件FadeTransition"
 date: 2021-08-19T22:51:57+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
  
 ---
 

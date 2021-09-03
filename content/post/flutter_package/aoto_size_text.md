@@ -2,8 +2,8 @@
 title: "Aoto_size_text"
 date: 2021-09-02T13:42:42+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 # auto_size_text

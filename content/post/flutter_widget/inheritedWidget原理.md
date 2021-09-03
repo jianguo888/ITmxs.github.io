@@ -2,8 +2,8 @@
 title: "InheritedWidget原理"
 date: 2021-09-02T20:48:05+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 > 本文主要介绍

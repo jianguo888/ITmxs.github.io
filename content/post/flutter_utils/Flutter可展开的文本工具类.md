@@ -2,8 +2,8 @@
 title: "Flutter可展开的文本工具类"
 date: 2021-08-18T12:45:05+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 

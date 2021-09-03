@@ -2,8 +2,8 @@
 title: "Flutter中的PhysicalModel小部件"
 date: 2021-08-15T12:09:10+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 ![img](https://miro.medium.com/max/1400/1*ZSez7P9nLpytK7HwIEd3-w.jpeg)

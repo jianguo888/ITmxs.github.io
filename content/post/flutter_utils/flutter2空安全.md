@@ -6,8 +6,8 @@ author: ""
 authorLink: ""
 description: ""
 images: []
-tags: ["flutter","dart"]
-categories: ["flutter","dart"]
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 作为开发人员，我们总是努力处理*NullPointerException*，这会在开发软件时导致大量时间和金钱。它被称为一个*十亿美元的错误。*（[维基](https://en.wikipedia.org/wiki/Tony_Hoare#Apologies_and_retractions)）

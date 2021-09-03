@@ -2,8 +2,8 @@
 title: "学习flutter时千万不要犯这个错误"
 date: 2021-08-15T13:07:25+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 # 学习 Flutter 时不要犯这个错误！

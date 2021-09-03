@@ -6,8 +6,8 @@ author: ""
 authorLink: ""
 description: ""
 images: []
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 

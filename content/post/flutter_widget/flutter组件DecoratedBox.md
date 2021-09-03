@@ -6,8 +6,8 @@ author: ""
 authorLink: ""
 description: ""
 images: []
-tags: ["flutter","dart"]
-categories: ["flutter","dart"]
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 #### 1.认识 DecoratedBox 组件

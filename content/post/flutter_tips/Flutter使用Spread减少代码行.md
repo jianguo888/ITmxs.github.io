@@ -2,8 +2,8 @@
 title: "Flutter使用Spread减少代码行"
 date: 2021-08-19T23:34:21+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
  
 ---
 

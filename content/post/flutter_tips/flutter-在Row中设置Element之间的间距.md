@@ -2,8 +2,8 @@
 title: "Flutter 在Row中设置Element之间的间距"
 date: 2021-08-30T20:52:59+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 > 本文主要介绍

@@ -6,8 +6,8 @@ author: ""
 authorLink: ""
 description: ""
 images: []
-tags: ["flutter","dart"]
-categories: ["flutter","dart"]
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 从[here](https://dart.dev/guides/language/extension-methods#implementing-generic-extensions)

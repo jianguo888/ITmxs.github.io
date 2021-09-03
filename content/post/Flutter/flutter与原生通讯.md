@@ -2,8 +2,8 @@
 title: "Flutter与原生通讯"
 date: 2021-08-14T16:39:47+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 

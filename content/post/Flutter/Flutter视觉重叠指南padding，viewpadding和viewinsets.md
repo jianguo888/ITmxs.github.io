@@ -2,8 +2,8 @@
 title: "Flutter视觉重叠指南padding，viewpadding和viewinsets"
 date: 2021-08-16T15:41:43+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 ![img](https://miro.medium.com/max/4167/1*2YGkZRsdzjXFkEoiPtu03A.png)

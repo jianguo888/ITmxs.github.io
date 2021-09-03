@@ -2,8 +2,8 @@
 title: "在Flutter中解析json"
 date: 2021-08-15T20:06:29+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 使用 API？响应通常采用 JSON 格式！

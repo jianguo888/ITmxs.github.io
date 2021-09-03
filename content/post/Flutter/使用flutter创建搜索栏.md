@@ -2,8 +2,8 @@
 title: "使用flutter创建搜索栏"
 date: 2021-08-16T23:03:08+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 # 动画扩展搜索栏

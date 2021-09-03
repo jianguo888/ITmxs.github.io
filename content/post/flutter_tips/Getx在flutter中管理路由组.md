@@ -2,8 +2,8 @@
 title: "Getx在flutter中管理路由组"
 date: 2021-08-28T14:31:07+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 > 本文主要介绍

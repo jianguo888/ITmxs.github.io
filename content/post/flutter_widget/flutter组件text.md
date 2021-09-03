@@ -2,8 +2,8 @@
 title: "Flutter组件text"
 date: 2021-08-19T13:02:25+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 https://gitee.com/itmxs/flutter_native

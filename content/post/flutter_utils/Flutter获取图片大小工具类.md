@@ -2,8 +2,8 @@
 title: "Flutter获取图片大小工具类"
 date: 2021-08-18T11:14:11+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 

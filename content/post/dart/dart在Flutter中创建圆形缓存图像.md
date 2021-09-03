@@ -6,8 +6,8 @@ author: ""
 authorLink: ""
 description: ""
 images: []
-tags: ["flutter","dart"]
-categories: ["flutter","dart"]
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 我想创建一个圆形图像，其中图像是从网络中获取的，并且也缓存在 Flutter 中。

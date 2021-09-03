@@ -2,8 +2,8 @@
 title: "Flutter组件Switch"
 date: 2021-08-17T13:38:45+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 #### 一、 Switch 组件使用详解

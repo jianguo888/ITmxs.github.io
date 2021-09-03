@@ -2,8 +2,8 @@
 title: "解决flutter使用listview时留白的两种办法"
 date: 2021-09-02T10:43:35+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 Flutter ListView解决底部或顶部留白问题

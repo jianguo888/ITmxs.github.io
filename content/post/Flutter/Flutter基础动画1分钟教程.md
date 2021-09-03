@@ -2,8 +2,8 @@
 title: "Flutter基础动画1分钟教程"
 date: 2021-08-15T13:05:00+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 另一个一分钟的教程。

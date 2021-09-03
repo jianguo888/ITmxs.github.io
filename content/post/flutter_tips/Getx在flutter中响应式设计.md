@@ -2,8 +2,8 @@
 title: "Getx在flutter中响应式设计"
 date: 2021-08-24T23:09:53+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 > 本文主要介绍

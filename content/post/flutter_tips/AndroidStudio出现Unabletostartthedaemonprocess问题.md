@@ -2,8 +2,8 @@
 title: "AndroidStudio出现Unabletostartthedaemonprocess问题"
 date: 2021-08-29T21:21:03+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 > 本文主要介绍

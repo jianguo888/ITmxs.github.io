@@ -2,8 +2,8 @@
 title: "Flutter学习资源"
 date: 2021-08-21T21:13:53+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 > 本文主要介绍

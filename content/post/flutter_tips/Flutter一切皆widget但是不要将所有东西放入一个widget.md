@@ -2,8 +2,8 @@
 title: "Flutter一切皆widget但是不要将所有东西放入一个widget"
 date: 2021-08-21T09:45:13+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 > 本文主要介绍Flutter一切皆widget但是不要将所有东西放入一个widget

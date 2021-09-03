@@ -2,8 +2,8 @@
 title: "Flutter获取随机颜色工具类"
 date: 2021-08-18T12:42:22+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 

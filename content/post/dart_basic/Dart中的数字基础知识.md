@@ -6,8 +6,8 @@ author: ""
 authorLink: ""
 description: ""
 images: []
-tags: ["flutter","dart"]
-categories: ["flutter","dart"]
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 其他语言一样，[**Dart Programming**](https://www.geeksforgeeks.org/html-document-object-model-and-dart-programming/)也支持数值作为 Number 对象。Dart Programming 中的数字是用于保存数值的数据类型。飞镖数可分为： 

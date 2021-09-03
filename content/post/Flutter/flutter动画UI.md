@@ -2,8 +2,8 @@
 title: "Flutter动画UI"
 date: 2021-08-15T17:44:05+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 

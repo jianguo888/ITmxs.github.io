@@ -2,8 +2,8 @@
 title: "Dart Flutter的动态AppBar"
 date: 2021-09-02T13:48:00+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 我必须动态更改AppBar的外观和项目(通过点击另一个UI元素)。

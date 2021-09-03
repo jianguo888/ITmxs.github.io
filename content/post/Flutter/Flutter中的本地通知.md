@@ -2,8 +2,8 @@
 title: "Flutter中的本地通知"
 date: 2021-08-15T12:35:13+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 颤振中的本地通知。

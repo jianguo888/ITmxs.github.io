@@ -2,8 +2,8 @@
 title: "Flutter本地图片缓存工具类"
 date: 2021-08-18T11:11:47+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 

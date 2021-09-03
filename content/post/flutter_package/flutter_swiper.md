@@ -2,8 +2,8 @@
 title: "Flutter_swiper"
 date: 2021-08-19T22:41:49+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
  
 ---
 

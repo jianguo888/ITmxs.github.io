@@ -2,8 +2,8 @@
 title: "Flutter系列列表和网格"
 date: 2021-08-16T15:53:01+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 ![img](https://miro.medium.com/max/1400/1*5fwM69fZ7-R17TZQGgQHtQ.png)

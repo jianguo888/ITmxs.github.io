@@ -2,8 +2,8 @@
 title: "Flutter中的机器学习"
 date: 2021-08-15T20:18:16+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 对机器学习充满热情？如何在 Flutter 中创建一个使用机器学习模型的应用程序❤

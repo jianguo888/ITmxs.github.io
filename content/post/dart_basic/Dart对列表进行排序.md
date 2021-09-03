@@ -6,8 +6,8 @@ author: ""
 authorLink: ""
 description: ""
 images: []
-tags: ["flutter","dart"]
-categories: ["flutter","dart"]
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 在 Dart 编程中，List 数据类型类似于其他编程语言中的数组。列表用于表示对象的集合。它是一组有序的对象。Dart 中的核心库负责 List 类的存在、创建和操作。列表的排序取决于我们正在排序的列表类型，即如果我们正在对整数列表进行排序，那么我们可以使用简单的排序函数，而如果它是一个字符串列表，那么我们使用 compareTo 对列表进行排序。

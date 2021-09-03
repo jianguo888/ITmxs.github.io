@@ -6,8 +6,8 @@ author: ""
 authorLink: ""
 description: ""
 images: []
-tags: ["flutter","dart"]
-categories: ["flutter","dart"]
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 在 Dart 编程中，Map 是类似字典的数据类型，以键值形式（称为锁键）存在。map数据类型中的数据类型没有限制。map非常灵活，可以根据需求改变其大小。但是，需要注意的是，所有锁（键）在map数据类型中都必须是唯一的。

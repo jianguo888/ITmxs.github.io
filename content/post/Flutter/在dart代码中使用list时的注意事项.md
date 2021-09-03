@@ -2,8 +2,8 @@
 title: "在dart代码中使用list时的注意事项"
 date: 2021-08-15T19:27:36+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 列表是 Flutter 开发人员最喜欢的数据结构。但是有一些错误即使是资深开发者也可能会犯，这不会影响用户，但会严重影响您的应用程序的性能！那么让我们一一看看它们。

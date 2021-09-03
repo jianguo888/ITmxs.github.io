@@ -2,8 +2,8 @@
 title: "Hugo插件之代码拷贝插件"
 date: 2021-08-04T20:15:53+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 # hugo插件之代码块拷贝插件

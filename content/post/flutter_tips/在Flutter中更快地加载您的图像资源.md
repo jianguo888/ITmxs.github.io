@@ -2,8 +2,8 @@
 title: "在Flutter中更快地加载您的图像资源"
 date: 2021-08-30T22:11:11+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 > 本文主要介绍

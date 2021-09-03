@@ -2,8 +2,8 @@
 title: "如何在Flutter中使Expanded中的文本可滚动"
 date: 2021-09-02T12:36:16+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 我正在忙着用闪存卡构建一个应用程序，其中包含有关它们的信息，但我遇到了一个我似乎无法弄清楚的愚蠢问题。

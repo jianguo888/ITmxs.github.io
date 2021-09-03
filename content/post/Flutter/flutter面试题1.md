@@ -2,8 +2,8 @@
 title: "Flutter面试题1"
 date: 2021-08-20T23:18:42+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 > 本文主要介绍我对flutter的想法和理解

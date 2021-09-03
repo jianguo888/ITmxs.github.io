@@ -2,8 +2,8 @@
 title: "使用flutter创建响应式下拉导航栏"
 date: 2021-08-16T22:15:47+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 

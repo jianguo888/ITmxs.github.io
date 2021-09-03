@@ -2,8 +2,8 @@
 title: "Dart & Flutter 开发技巧 29-35"
 date: 2021-08-08T19:25:26+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 
 ---
 

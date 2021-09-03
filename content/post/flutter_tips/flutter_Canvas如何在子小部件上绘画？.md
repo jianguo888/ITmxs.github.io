@@ -2,8 +2,8 @@
 title: "Flutter_Canvas如何在子小部件上绘画？"
 date: 2021-09-02T13:50:42+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 我试图在子文本框小部件上绘制红点，如下所示:

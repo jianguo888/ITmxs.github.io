@@ -6,8 +6,8 @@ author: ""
 authorLink: ""
 description: ""
 images: []
-tags: ["flutter","dart"]
-categories: ["flutter","dart"]
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 我正在使用`ListTile`创建列表中的每个项目。每个项目都是从数据数组动态创建的。 `ListTile`提供`onTap`，但这对我来说还不够，因为我需要通过获取键或索引来找出单击了哪个项目。

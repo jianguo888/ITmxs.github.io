@@ -2,8 +2,8 @@
 title: "Flutter中的bloc"
 date: 2021-08-15T13:37:29+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 **在这篇文章中，我们将通过一个例子来看看如何使用 flutter_bloc 包在 Flutter 中使用 Bloc。**

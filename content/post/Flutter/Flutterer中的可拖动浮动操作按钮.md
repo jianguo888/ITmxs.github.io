@@ -2,8 +2,8 @@
 title: "Flutterer中的可拖动浮动操作按钮"
 date: 2021-08-15T19:06:10+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 **lutter**允许您使用 FloatingActionButton 小部件添加浮动操作按钮。尽管如此，它不允许您拖动按钮。考虑您需要使其可拖动的可能性。这篇文章有一个模型，它揭示了你需要做什么来制作一个浮动的动作按钮，只要它在父小部件内，就可以在屏幕周围的任何地方拖拽。

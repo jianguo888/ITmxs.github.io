@@ -2,8 +2,8 @@
 title: "Flutter中的流管理"
 date: 2021-08-15T12:50:01+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 

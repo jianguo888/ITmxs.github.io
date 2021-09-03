@@ -6,8 +6,8 @@ author: ""
 authorLink: ""
 description: ""
 images: []
-tags: ["flutter","dart"]
-categories: ["flutter","dart"]
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 List、Set 和 Map 共享许多集合中的通用功能。其中一些常见功能是由 Iterable 类定义的，List 和 Set 实现了该类。

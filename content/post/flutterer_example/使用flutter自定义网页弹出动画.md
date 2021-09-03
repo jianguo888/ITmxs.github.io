@@ -2,8 +2,8 @@
 title: "使用flutter自定义网页弹出动画"
 date: 2021-09-01T22:14:55+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 > 本文主要介绍使用flutter自定义网页弹出动画

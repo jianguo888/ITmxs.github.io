@@ -2,8 +2,8 @@
 title: "Flutter插件flutter_staggered_grid_view"
 date: 2021-08-14T13:40:23+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 

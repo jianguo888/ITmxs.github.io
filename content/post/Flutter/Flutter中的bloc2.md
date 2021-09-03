@@ -2,8 +2,8 @@
 title: "Flutter中的bloc2"
 date: 2021-08-15T16:33:23+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 

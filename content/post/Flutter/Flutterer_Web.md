@@ -2,8 +2,8 @@
 title: "Flutterer_Web"
 date: 2021-08-15T13:12:19+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 ![img](https://miro.medium.com/max/1400/0*hFGJsbL4PDw3wGkk.jpeg)

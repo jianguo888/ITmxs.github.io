@@ -2,8 +2,8 @@
 title: "Flutter开发tips9"
 date: 2021-08-30T22:21:26+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 > 本文主要介绍

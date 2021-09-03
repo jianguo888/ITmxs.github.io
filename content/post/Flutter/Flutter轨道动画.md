@@ -2,8 +2,8 @@
 title: "Flutter轨道动画"
 date: 2021-08-16T17:21:54+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 在本文中，我们将学习如何重新创建此动画。这是一个基本的动画，主要使用这两个小部件，**Stack**和**RotationTransition。**

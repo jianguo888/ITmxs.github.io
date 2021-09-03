@@ -2,8 +2,8 @@
 title: "如何发布你的第一个flutter包"
 date: 2021-08-15T17:24:16+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 长期使用 Flutter 包？

@@ -2,8 +2,8 @@
 title: "Flutter中的ImageFilter小部件"
 date: 2021-08-15T12:14:36+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 在本文中，我们将讨论**ImageFiltered**类，它用作图像模糊、变换任何像素，或者换句话说，我们称为矩阵变换。

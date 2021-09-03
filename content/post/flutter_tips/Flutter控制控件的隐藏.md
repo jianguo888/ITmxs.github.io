@@ -2,8 +2,8 @@
 title: "Flutter控制控件的隐藏"
 date: 2021-08-22T13:19:16+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 > 本文主要介绍flutter中如何隐藏/显示控件？
