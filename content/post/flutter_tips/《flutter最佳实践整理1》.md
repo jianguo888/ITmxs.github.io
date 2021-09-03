@@ -53,7 +53,7 @@ https://github.com/flutter/flutter/issues/52869
 
 Dart系统定义的截断模式
 
-```
+```dart
 /// How overflowing text should be handled.
 ///
 /// A [TextOverflow] can be passed to [Text] and [RichText] via their
@@ -81,7 +81,7 @@ enum TextOverflow {
 
 下面是Example实现
 
-```
+```dart
 extension TextOverflowUtil on String {
   /// 将flutter系统默认的单词截断模式转换成字符截断模式
   /// 通过向文本中插入宽度为0的空格实现
