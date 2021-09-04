@@ -2,7 +2,7 @@
 title: "利用Gin框架获取form参数"
 date: 2021-09-05T23:10:11+08:00
 draft: false
-tags: ["go",""gin]
+tags: ["go","gin"]
 categories: ["go","gin"]
  
 ---
