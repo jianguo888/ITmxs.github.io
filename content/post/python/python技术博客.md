@@ -54,7 +54,28 @@ categories: ["python"]
 
 ### 20、[峰云就她了](http://xiaorui.cc/)
 
-### 21、[python]()
+### 21、[Yu's Tech Lab](http://blog.rainy.im/)
 
 ### 22、[PyHubWeekly](https://github.com/Jackpopc/PyHubWeekly)
 
+### 23、[]()
+
+### 24、[]()
+
+### 25、[]()
+
+### 26、[]()
+
+### 27、[]()
+
+### 28、[]()
+
+### 29、[]()
+
+### 30、[]()
+
+### 31、[]()
+
+### 32、[]()
+
+### 
