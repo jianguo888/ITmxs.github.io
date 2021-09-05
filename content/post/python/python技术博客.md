@@ -78,4 +78,33 @@ categories: ["python"]
 
 ### 32、[]()
 
-### 
+
+![img](https://luckly007.oss-cn-beijing.aliyuncs.com/img/16959493-114bdb87b5d32dc4.gif)
+
+**五、用Pandas处理大数据**
+
+[Pandas ](http://blog.itpub.net/69912078/viewspace-2640191/%3A%2F%2Fjvns.ca%2Fblog%2F2013%2F12%2F22%2Fcooking-with-pandas%2F)的开发基于前面提到的iPython Notebook，Python只能帮你处理加载到内存中的数据，Pandas可以让你高效读取更大规模数据，例如海量的CSV文件，进行数据清洗并用于数据透1视或者可视化。
+
+**六、用Flask开发小型程序**
+
+Flask是一个微框架，你可以用它来开发一些小型web项目，Flask包含了互动网站项目常用的一些可复用的数据通讯模块，只需要几行代码，你就能生成一个互动功能。
+
+**七、用Django开发大型项目**
+
+如果你想开发一个完整的web框架，那么就试试 [Django ](http://blog.itpub.net/69912078/viewspace-2640191/s%3A%2F%2F%2F)吧，很多Pinterests和Instagram这样的超大规模网站都是用Django开发的。
+
+**八、用Python玩转API**
+
+API是web经济的支柱之一，这里介绍一个 [Python 第三方API精华列表 ](http://blog.itpub.net/69912078/viewspace-2640191/s%3A%2F%2Fgithub.com%2Fvinta%2Fawesome-python%23third-party-apis)，你可以用Python调用那些很酷的数据，让你的应用与众不同。
+
+**九、 [Python的机器学习资源库](http://blog.itpub.net/69912078/viewspace-2640191/s%3A%2F%2Fgithub.com%2Fhangtwenty%2Fdive-into-machine-learning)**
+
+这个Github上的Python机器学习库提供大量优秀资源，让你快速入门。
+
+**十、Plotly帮你用数据讲故事**
+
+柴静的雾霾演讲为什么火？因为她用数据讲故事呗。只需几行代码，你就能用 [Plot.ly ](http://blog.itpub.net/69912078/viewspace-2640191/s%3A%2F%2Fplot.ly%2Fpython%2F)生成各种常见数据图表。
+
+**十一、测试你的Python段位**
+
+当你自以为学得差不多了，开始膨胀的时候，就可以考虑去 [HackerRank ](http://blog.itpub.net/69912078/viewspace-2640191/s%3A%2F%2F%2F)测试一下你的“段位”，高段位的还有可能值得获得工作机会哟。
