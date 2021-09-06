@@ -48,7 +48,7 @@ flutter:
 
 ### **完整代码**
 
-广告
+ 
 
 将以下内容添加到您的**main.dart**：
 
@@ -128,7 +128,7 @@ dependencies:
 flutter pub get
 ```
 
-广告
+ 
 
 并找到如下路径：
 

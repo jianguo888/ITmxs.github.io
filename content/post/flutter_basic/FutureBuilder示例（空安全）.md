@@ -132,6 +132,6 @@ class _HomePageState extends State<HomePage> {
 
 ## 结论
 
-广告
+ 
 
 我们已经研究了在 Flutter 中使用 FutureBuilder 从互联网异步加载数据的完整示例。
