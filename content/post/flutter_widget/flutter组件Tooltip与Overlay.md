@@ -78,7 +78,7 @@ Tooltip(
   message: "宝塔镇河妖",
   child: Icon(Icons.info_outline)
 );
-复制代码
+
 ```
 
 ------
@@ -110,7 +110,7 @@ Tooltip(
   ]),
   child: Icon(Icons.info_outline)
 );
-复制代码
+
 ```
 
 ------
@@ -126,7 +126,7 @@ Tooltip(
   showDuration:const Duration(seconds: 2),
   child: Icon(Icons.info_outline)
 );
-复制代码
+
 ```
 
 `Tooltip` 组件的属性就是这些，下面我们来看一下它的源码实现。
@@ -170,7 +170,7 @@ void _handleLongPress() {
   if (tooltipCreated)
     Feedback.forLongPress(context);
 }
-复制代码
+
 ```
 
 ------
@@ -197,7 +197,7 @@ bool ensureTooltipVisible() {
   _controller.forward();
   return true;
 }
-复制代码
+
 ```
 
 ------
@@ -226,7 +226,7 @@ void _createNewEntry() {
   overlayState.insert(_entry!);
   SemanticsService.tooltip(widget.message);
 }
-复制代码
+
 ```
 
 ------
@@ -246,9 +246,8 @@ void _removeEntry() {
   _entry?.remove();
   _entry = null;
 }
-复制代码
+
 ```
 
 `Overlay` 组件本身的使用并不复杂，这是 `Tooltip` 中有延迟和动画的处理，让显隐的逻辑复杂了一些。这些在计时器的控制人常开发中也是值得我们学习的。虽然是很小的一个组件，但其中包含了很多知识，这种小巧的组件很适合我们去细细品读。
-
 
