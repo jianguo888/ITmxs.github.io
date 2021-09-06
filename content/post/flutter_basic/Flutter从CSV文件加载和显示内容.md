@@ -1,7 +1,13 @@
 ---
 title: "Flutter从CSV文件加载和显示内容"
 date: 2021-09-06T17:08:52+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 CSV 代表逗号分隔值，是一种广泛用于以纯文本形式存储表格数据（数字和文本）的文件类型，其中每行将具有相同数量的字段。在本文中，我们将探索如何在 Flutter 中从 CSV 文件中读取内容并将该内容显示在屏幕上。

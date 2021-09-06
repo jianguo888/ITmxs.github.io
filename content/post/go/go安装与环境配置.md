@@ -1,7 +1,13 @@
 ---
 title: "Go安装与环境配置"
 date: 2021-09-06T13:38:30+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["go"]
+categories: ["go"]
 ---
 
 ### 一、Goland官网下载

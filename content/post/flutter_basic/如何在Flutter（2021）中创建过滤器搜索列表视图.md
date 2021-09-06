@@ -1,7 +1,13 @@
 ---
 title: "如何在Flutter（2021）中创建过滤器搜索列表视图"
 date: 2021-09-06T17:13:18+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 

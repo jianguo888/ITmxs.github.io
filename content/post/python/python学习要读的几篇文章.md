@@ -1,7 +1,13 @@
 ---
 title: "Python学习要读的几篇文章"
 date: 2021-09-06T10:43:57+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["go"]
+categories: ["go"]
 ---
 
 **[1. PEP8 Style Guide for Python Code](http://www.python.org/dev/peps/pep-0008/)**

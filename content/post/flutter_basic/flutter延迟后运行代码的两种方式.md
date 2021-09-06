@@ -1,7 +1,13 @@
 ---
 title: "Flutter延迟后运行代码的两种方式"
 date: 2021-09-06T16:03:09+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 本文演示了在 Flutter 中延迟后执行一段代码的 2 种不同方式。第一种方法是使用**Future.delayed**，第二种方法是使用**计时器**。闲话少说，让我们动手编写一些代码

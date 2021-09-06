@@ -1,7 +1,13 @@
 ---
 title: "Flutter如何读写文本文件"
 date: 2021-09-06T17:05:31+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 这篇文章是关于在 Flutter 中读写文本文件的。

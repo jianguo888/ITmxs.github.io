@@ -1,7 +1,13 @@
 ---
 title: "从Dart列表中删除重复项的2种方法"
 date: 2021-09-06T16:41:28+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 本文向您展示了从 Flutter 中的列表中删除重复项的 2 种方法。第一个适用于**原始数据类型列表**。第二个稍微复杂一些，但适用**于地图****列表**或**对象列表**。

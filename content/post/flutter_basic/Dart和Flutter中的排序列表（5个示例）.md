@@ -1,7 +1,13 @@
 ---
 title: "Dart和Flutter中的排序列表（5个示例）"
 date: 2021-09-06T16:21:30+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 在本文中，我们将介绍几个在 Dart（以及 Flutter）中排序列表的示例，这是您在绝大多数项目中可能必须处理的常见任务。示例按照从易到高级、从简单到复杂的顺序排列，涵盖了您在现实生活中可能遇到的大多数场景。

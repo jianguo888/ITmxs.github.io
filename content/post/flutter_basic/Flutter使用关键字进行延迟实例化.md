@@ -1,7 +1,13 @@
 ---
 title: "Flutter使用关键字进行延迟实例化"
 date: 2021-09-06T15:03:58+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 随着 Dart 2.12 中 NNBD 的引入，创建了一个新关键字：`late`. 创建它的主要原因是允许非空字段，不必*立即*初始化。

@@ -1,7 +1,13 @@
 ---
 title: "在Flutter中使用Timer和Timer"
 date: 2021-09-06T16:05:46+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 在本文中，我们将了解Flutter 中**Timer**类的基础知识，并介绍在应用程序中使用它的几个不同示例。

@@ -1,7 +1,13 @@
 ---
 title: "Flutter使用“FocusableActionDetector”构建自定义控件"
 date: 2021-09-06T15:12:34+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 在 Flutter 中构建自定义 UI 控件时，很容易只使用 a`GestureDetector`并称其为一天，但这样做将是错误的！特别是如果您打算使用鼠标或键盘等替代输入来支持用户。

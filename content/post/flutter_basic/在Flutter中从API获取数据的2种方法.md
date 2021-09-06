@@ -1,7 +1,13 @@
 ---
 title: "在Flutter中从API获取数据的2种方法"
 date: 2021-09-06T16:54:53+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 本文向您展示了从 Flutter 中的 API 获取数据的几种不同方法。第一种方法是使用**HttpClient的**类和第二个是使用[**HTTP**插件](https://pub.dev/packages/http)从**pub.dev**。
