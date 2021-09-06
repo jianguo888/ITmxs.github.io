@@ -342,7 +342,3 @@ Go 语言以`channel`以及`select和go`语句来支持并发。`如果Go语言�
    常用的命令为 `go list ./... | xargs -n 1 golint`
 
 
-
-> 转自：陈国林
->
-> 链接：https://blog.csdn.net/chenguolinblog/article/details/90665174

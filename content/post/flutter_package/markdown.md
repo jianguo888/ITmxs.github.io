@@ -209,3 +209,44 @@ MarkdownBody(
     },
 )
 ```
+
+
+
+
+
+
+
+```
+Material(
+      color: Colors.orange,
+      child: Container(
+        child: FutureBuilder(
+          future: rootBundle.loadString('assets/markdown/markdown.md'),
+          builder: (BuildContext context, AsyncSnapshot snapshot) {
+            if (snapshot.hasData) {
+              return Markdown(
+                controller: ScrollController(),
+                selectable: true,
+                data: snapshot.data,
+                syntaxHighlighter: new HighLight(),
+                //代码高亮
+                styleSheet: MarkdownStyleSheet(
+                  // 支持修改样式
+                  h1: TextStyle(fontSize: 14), p: new TextStyle(fontSize: 16),
+                  h2: new TextStyle(color: Colors.blue, fontSize: 24),
+                ),
+                onTapLink: (text, url, title) {
+                  launch(url);
+                },
+              );
+            } else {
+              return Center(
+                child: Text("加载中..."),
+              );
+            }
+          },
+        ),
+      ),
+    );
+```
+
