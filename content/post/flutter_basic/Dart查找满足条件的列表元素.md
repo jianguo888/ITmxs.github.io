@@ -1,7 +1,13 @@
 ---
 title: "Dart查找满足条件的列表元素"
 date: 2021-09-07T11:12:23+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 使用 Flutter 和 Dart 开发应用程序时，您将大量使用列表。使用列表时最常见的任务之一是查找满足单个或多个条件的元素。本文将向您介绍如何完成该任务的几个示例。我们将使用**Iterable**类中的**where()**方法。此方法将返回一个新的 Iterable 而不更改原始列表。

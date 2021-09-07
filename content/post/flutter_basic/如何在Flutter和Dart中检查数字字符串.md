@@ -1,7 +1,13 @@
 ---
 title: "如何在Flutter和Dart中检查数字字符串"
 date: 2021-09-07T10:52:34+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 # 如何在 Flutter 和 Dart 中检查数字字符串

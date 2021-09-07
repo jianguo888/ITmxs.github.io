@@ -1,7 +1,13 @@
 ---
 title: "Flutter向应用栏添加搜索字段（2种方法）"
 date: 2021-09-07T10:48:31+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 # Flutter：向应用栏添加搜索字段（2 种方法）

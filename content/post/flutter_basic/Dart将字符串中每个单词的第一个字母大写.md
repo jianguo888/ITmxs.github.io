@@ -1,7 +1,13 @@
 ---
 title: "Dart将字符串中每个单词的第一个字母大写"
 date: 2021-09-07T11:14:05+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 # Dart：将字符串中每个单词的第一个字母大写
