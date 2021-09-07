@@ -27,13 +27,13 @@ categories: ["Flutter","dart"]
 
 自己使用它是相当简单的。让我们看看我们如何使用这个小部件构建一个完全自定义的按钮。
 
-***注意：**要遵循代码，请在此处查看要点：[https](https://gist.github.com/esDotDev/04a6301a3858769d4baf5ab1230f7fa2) : [//gist.github.com/esDotDev/04a6301a3858769d4baf5ab1230f7fa2](https://gist.github.com/esDotDev/04a6301a3858769d4baf5ab1230f7fa2)*
+**注意：**要遵循代码，请在此处查看要点：[https](https://gist.github.com/esDotDev/04a6301a3858769d4baf5ab1230f7fa2) : [//gist.github.com/esDotDev/04a6301a3858769d4baf5ab1230f7fa2](https://gist.github.com/esDotDev/04a6301a3858769d4baf5ab1230f7fa2)
 
 ## 我的自定义按钮
 
 首先，创建一个`StatefulWidget`可以容纳您`_isFocused`和`_isHovered`状态的对象。我们还将创建一个`FocusNode`我们可以使用它来请求对新闻的关注，这是按钮的常见行为。还要创建一些典型`onPressed`和`label`字段来配置按钮。
 
-```
+```dart
 class MyCustomButton extends StatefulWidget {
   @override
   State<MyCustomButton> createState() => _MyCustomButtonState();
@@ -55,7 +55,7 @@ class _MyCustomButtonState extends State<MyCustomButton> {
 
 因为我们正在制作一个按钮，所以我们将添加一些基本的配置选项：
 
-```
+```dart
  const MyCustomButton({Key? key, required this.onPressed, required this.label}) : super(key: key);
   final VoidCallback onPressed;
   final String label;
@@ -63,7 +63,7 @@ class _MyCustomButtonState extends State<MyCustomButton> {
 
 现在剩下的就是填写`build()`方法。
 
-```
+```dart
 Widget build(BuildContext context) {
 // Change visuals based on focus/hover state
 Color outlineColor = _isFocused ? Colors.black : Colors.transparent;
@@ -98,7 +98,7 @@ return GestureDetector(
 
 任何控件的最后一步是键盘绑定。**默认情况下，大多数操作系统控件支持 [Space] 和 [Enter] 以“提交”**。您可以通过`ActivateIntent`在`.actions`现场连接内置模块来做到这一点：
 
-```
+```dart
 FocusableActionDetector(
   // Hook up the built-in `ActivateIntent` to submit on [Enter] and [Space]
   actions: {
@@ -112,7 +112,7 @@ FocusableActionDetector(
 
 您还可以使用`.shortcuts`参数添加其他键绑定。在这里，我们将 [Ctrl + X] 绑定到相同的`ActivateIntent`. 现在我们的控件将在 [Enter]、[Space] 和 [Ctrl + X] 上提交！
 
-```
+```dart
 FocusableActionDetector(
   // Add 'Ctrl + X' key to the default [Enter] and [Space]
   shortcuts: {
@@ -132,7 +132,7 @@ TAB、ENTER、SPACE、TAPS 都按预期工作！
 
 以下是新自定义按钮的完整代码：
 
-```
+```dart
 class MyCustomButton extends StatefulWidget {
   const MyCustomButton({Key? key, required this.onPressed, required this.label}) : super(key: key);
   final VoidCallback onPressed;
@@ -197,7 +197,7 @@ class _MyCustomButtonState extends State<MyCustomButton> {
 
 如果我们转换前面的例子，它看起来像：
 
-```
+```dart
 class MyCustomButton extends StatelessWidget {
   const MyCustomButton(this.label, {Key? key, required this.onPressed}) : super(key: key);
   final String label;

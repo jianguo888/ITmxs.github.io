@@ -14,7 +14,7 @@ categories: ["Flutter"]
 
 该继承图为flutter2.2版本最新继承关系图。
 
- [![img](https://luckly007.oss-cn-beijing.aliyuncs.com/img/Main.png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/Main.png)
+ [![img](https://luckly007.oss-cn-beijing.aliyuncs.com/img/Main.png)
 
 ## 2、Flutter Widget组件继承图
 
@@ -28,24 +28,26 @@ categories: ["Flutter"]
 - **StateFulWidget**：具有可变状态的 `Widget`
 - **StatelessWidget**：不需要可变状态的 `Widget`
 
-[![img](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image.png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image.png)
+![image-20210907090040597](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image-20210907090040597.png)
 
 ## 3、**PreferredSizeWidget**
 
-[![img](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (1).png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (1).png)
+![image-20210907090110341](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image-20210907090110341.png)
 
 ## 4、**ProxyWidget**
 
-[![img](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (2).png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (2).png) [![img](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (3).png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (3).png)
+![image-20210907090152141](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image-20210907090152141.png)
+
+![image-20210907090225417](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image-20210907090225417.png)
 
 ## 5、**RenderObjectWidget**
 
-[![img](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (4).png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (4).png)
+![image-20210907090244320](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image-20210907090244320.png)
 
 ## 6、**StateFulWidget**
 
-[![img](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (5).png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (5).png) [![img](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (6).png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (6).png) [![img](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (7).png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (7).png) [![img](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (8).png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (8).png) [![img](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (9).png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (9).png) [![img](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (10).png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (10).png)
+[![img](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image%20(5).png)https://luckly007.oss-cn-beijing.aliyuncs.com/image/image%20(6).png)[![img](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image%20(7).png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (7).png) [![img](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image%20(8).png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (8).png) [![img](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image%20(9).png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (9).png) [![img](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image%20(10).png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (10).png)
 
 ## 7、StatelessWidget
 
-[![img](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (11).png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (11).png) [![img](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (12).png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (12).png) [![img](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (13).png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (13).png) [![img](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (14).png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (14).png)
+[![img](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image%20(11).png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (11).png) [![img](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image%20(12).png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (12).png) [![img](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (13).png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (13).png) [![img](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (14).png)](https://gz-ljm-blog.oss-cn-guangzhou.aliyuncs.com/blog/image (14).png)
