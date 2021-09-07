@@ -1,7 +1,13 @@
 ---
 title: "Flutter_ValueListenableBuilder_Example"
 date: 2021-09-07T08:39:47+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 本文将带您**了解**在多页面（或多屏幕）Flutter 应用程序中使用**ValueListenableBuilder、ValueNotifier**和**ValueListenable**的完整示例
