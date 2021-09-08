@@ -1,7 +1,13 @@
 ---
 title: "Flutter_AnimatedList–教程和示例"
 date: 2021-09-07T13:01:49+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 AnimatedList 是 Flutter 中的一个内置小部件，用于实现一个列表视图，该视图在插入或删除项目时对其进行动画处理。这有助于用户对列表的更改感觉不那么突然和更愉快。

@@ -65,4 +65,4 @@ print(products[1]['name']);
 Product #2
 ```
 
-希望这有帮助![🙂](https://s.w.org/images/core/emoji/13.1.0/svg/1f642.svg)
+希望这对你有帮🐖
