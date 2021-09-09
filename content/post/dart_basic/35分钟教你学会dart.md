@@ -8,8 +8,8 @@ draft: true
 
 - 变量、数据类型和运算符
 - 条件和循环
-- 收藏
-- 职能
+- collection
+- function
 
 完成后，您就可以直接使用 Dart 进行 Flutter 开发了。
 
@@ -251,7 +251,7 @@ print(areThereKittens); // false
 
 [![Dart bool 数据类型](https://luckly007.oss-cn-beijing.aliyuncs.com/image/bool_data_type-650x276.png)](https://koenig-media.raywenderlich.com/uploads/2021/05/bool_data_type.png)
 
-## 运算符
+## 操作符
 
 Dart 具有您在其他语言（如 C、Swift 和 Kotlin）中熟悉的所有常用运算符。
 
@@ -763,7 +763,7 @@ print("The sum is $sum"); // The sum is 55
 
 [![Dart for 循环](https://luckly007.oss-cn-beijing.aliyuncs.com/image/dart_for_loop-650x221.png)](https://koenig-media.raywenderlich.com/uploads/2021/05/dart_for_loop.png)
 
-## Collections
+# Collections
 
 集合对于对相关数据进行分组很有用。Dart 包括几种不同类型的集合，但本教程将介绍两种最常见的：`List`和`Map`.
 
@@ -887,7 +887,7 @@ print(calories);
 
 运行该代码，您将看到以水平格式打印的地图，最后是您的新甜点。
 
-## Functions
+# Functions
 
 函数使您可以将多行相关代码打包到一个主体中。然后调用该函数以避免在整个 Dart 应用程序中重复这些代码行。
 
@@ -1100,3 +1100,21 @@ print(bigDrinks); // (WATER, JUICE, MILK)
 另外，请查看[官方 Dart 文档](https://dart.dev/guides)。
 
 我们希望您喜欢这篇关于 Dart 基础知识的简短介绍。如果您有任何问题或意见，请关注我。
+
+
+
+
+
+flutter
+
+电子书  https://www.syncfusion.com/succinctly-free-ebooks/flutter-succinctly
+
+
+
+我计划出40集左右，给大家展示flutter基础使用
+
+https://kodestat.gitbook.io/flutter/
+
+
+
+https://hackr.io/blog/how-to-learn-flutter
