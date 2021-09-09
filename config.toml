@@ -83,6 +83,13 @@ disqusShortname = ""  ## 是否开启disqus评论，不要和utteranc同时开�
   title = "大俊"
   name = "大俊Blog"
   url = "https://darjun.github.io/"
+[[params.links]]
+  title = "极客兔兔"
+  name = "极客兔兔Blog"
+  url = "https://geektutu.com/post/quick-golang.html"
+
+
+  
 # ## 侧边栏广告位
 # [[params.ads]]
 #   title = "我的CSDN"

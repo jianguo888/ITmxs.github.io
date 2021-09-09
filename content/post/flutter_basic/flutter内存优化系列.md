@@ -1,7 +1,13 @@
 ---
 title: "Flutter内存优化系列"
 date: 2021-09-09T09:26:31+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 您可能已经知道，**Flutter 中的**几乎所有内容都默认进行了优化和增强，这要归功于**Flutter**团队，他们为我们提供了非常有用的**开发工具**，可以帮助我们更有效地优化我们的应用程序......但我们不会谈论这些工具中的任何一个以及如何使用它们，相反，我们将谈论我们应该如何编写适当的代码段来更仔细和有效地处理内存。
