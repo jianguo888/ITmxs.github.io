@@ -12,7 +12,7 @@ categories: ["Flutter"]
 
 我们可以将图像放在我们的资产文件夹中，但如何更快地加载它们？这是 Flutter 中的一个秘密函数，可以帮助我们做到这一点 — **precacheImage()**
 
-![img](https://miro.medium.com/max/1400/1*fHEjLZ6HcGGnmmZ53_7LGA.png)
+![image-20210909104753613](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image-20210909104753613.png)
 
 很多时候（尤其是在 Flutter Web 中），您的本地资源图像需要花费大量时间在屏幕上加载和渲染！
 
@@ -52,6 +52,9 @@ super.didChangeDependencies();
 
 这是一个方便的提示，可以更快地加载您的图像资源！这是一个关于使用和不使用**precacheImage()**加载图像所需时间的小统计数据
 
-![img](https://miro.medium.com/max/1104/1*XNYOmLeF9QOMDAR6NPSc4Q.png)
+![image-20210909104830215](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image-20210909104830215.png)
 
-你可以看到，开始的 3 个打印语句是没有 precacheImage 的，每次都花费近 10 毫秒。现在，下一个是 precacheImage，它在缓存中存储图像需要 14 毫秒。随后的加载只用了 5 毫秒。所以我们可以得出结论，它将加载时间减少到近 50%！您可以在[GitHub](https://github.com/AbhishekDoshi26/precache_image_example)上[找到](https://github.com/AbhishekDoshi26/precache_image_example)相同的代码！
+你可以看到，开始的 3 个打印语句是没有 precacheImage 的，每次都花费近 10 毫秒。现在，下一个是 precacheImage，它在缓存中存储图像需要 14 毫秒。随后的加载只用了 5 毫秒。所以我们可以得出结论，它将加载时间减少到近 50%！
+
+您可以在[GitHub](https://github.com/AbhishekDoshi26/precache_image_example)上[找到](https://github.com/AbhishekDoshi26/precache_image_example)相同的代码！
+
