@@ -24,11 +24,9 @@ categories: ["flutter"]
 
 # 如何提高 Flutter 应用程序的性能
 
-[How to improve the performance of your Flutter app | Codemagic BlogWritten by Diego Velásquez There are many doubts and questions related to how we can improve the performance of our…blog.codemagic.io](https://blog.codemagic.io/how-to-improve-the-performance-of-your-flutter-app./#dont-split-your-widgets-into-methods)
 
-[What is the difference between functions and classes to create reusable widgets?Lets I will explain it from very scratch.🙂 (only about imperative) Programming history ,we all know started with…stackoverflow.com](https://stackoverflow.com/questions/53234825/what-is-the-difference-between-functions-and-classes-to-create-reusable-widgets)
 
-[Splitting widgets to methods is an antipatternAlmost 6 months ago, I advised you to split long build methods into multiple smaller methods. And it turns out I was…iiro.dev](https://iiro.dev/splitting-widgets-to-methods-performance-antipattern/)
+[Splitting](https://iiro.dev/splitting-widgets-to-methods-performance-antipattern/)
 
 # 2. **尽可能使用 const**
 
@@ -77,7 +75,7 @@ if (text != null) Text(text)
 
 ## Long Explanation
 
-[nil | Flutter PackageA simple widget to add in the widget tree when you want to show nothing, with minimal impact on performance. Sometimes…pub.dev](https://pub.dev/packages/nil)
+[nil](https://pub.dev/packages/nil)
 
 # 5. 尽量使用状态管理工具
 
@@ -87,7 +85,7 @@ if (text != null) Text(text)
 
 ## Long Explanation
 
-[How to improve the performance of your Flutter app | Codemagic BlogWritten by Diego Velásquez There are many doubts and questions related to how we can improve the performance of our…blog.codemagic.io](https://blog.codemagic.io/how-to-improve-the-performance-of-your-flutter-app./#avoid-rebuilding-all-the-widgets-repetitively)
+[How to improve the performance of your Flutter app ](https://blog.codemagic.io/how-to-improve-the-performance-of-your-flutter-app./#avoid-rebuilding-all-the-widgets-repetitively)
 
 # 6.`itemExtent`在ListView中使用长列表
 
@@ -97,11 +95,11 @@ if (text != null) Text(text)
 
 ## Long Explanation
 
-[How to improve the performance of your Flutter app | Codemagic BlogWritten by Diego Velásquez There are many doubts and questions related to how we can improve the performance of our…blog.codemagic.io](https://blog.codemagic.io/how-to-improve-the-performance-of-your-flutter-app./#use-itemextent-in-listview-for-long-lists)
+
 
 # 7.  避免将 AnimationController 与 setState 一起使用
 
-```
+```dart
 void initState() {
   _controller = AnimationController(
     vsync: this,
@@ -123,7 +121,7 @@ void initState() {
 
 TO
 
-```
+```dart
 void initState() {
   _controller = AnimationController(
     vsync: this,
@@ -148,7 +146,7 @@ void initState() {
 
 ## Long Explanation
 
-[Flutter Laggy Animations: How Not To setStateCreating animations in Flutter is really fun and easy, but there is one bad practice that might make those animations…medium.com](https://medium.com/flutter-community/flutter-laggy-animations-how-not-to-setstate-f2dd9873b8fc)
+[](https://medium.com/flutter-community/flutter-laggy-animations-how-not-to-setstate-f2dd9873b8fc)
 
 # 8. 避免在 AnimatedBuilder 中使用 Opacity
 
@@ -178,7 +176,7 @@ void initState() {
 
 ## Long Explanation
 
-[Flutter Laggy Animations: How Not To setStateCreating animations in Flutter is really fun and easy, but there is one bad practice that might make those animations…medium.com](https://medium.com/flutter-community/flutter-laggy-animations-how-not-to-setstate-f2dd9873b8fc)
+[](https://medium.com/flutter-community/flutter-laggy-animations-how-not-to-setstate-f2dd9873b8fc)
 
 # 9. 使用 Keys 加速 Flutter 性能
 
@@ -209,7 +207,7 @@ Flutter 在使用按键时可以更好地识别 Widget。这为我们提供了�
 
 ## Long Explanation
 
-[Elements, Keys and Flutter’s performanceTL;DR: Widget Keys can improve the performance of our application in places where you do not get the promised 60 FPS.medium.com](https://medium.com/flutter-community/elements-keys-and-flutters-performance-3ef15c90f607)
+
 
 # 10.优化图片ListView使用时的内存
 
@@ -229,6 +227,6 @@ ListView 无法杀死它的孩子在屏幕上不可见。如果孩子有高分�
 
 ## Long Explanation
 
-[Flutter Memory Optimization SeriesAlmost anything in Flutter is optimized and enhanced by default as you may already know, thanks to the Flutter teams in…devmuaz.medium.com](https://devmuaz.medium.com/flutter-memory-optimization-series-8c4a73f3ea81)
+
 
 感谢您的阅读。
