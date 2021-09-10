@@ -140,3 +140,4 @@ JetBrains 系列大部分在官方的插件中心直接安装使用了。
 目前全网 Jetbrains 全家桶激活码激活方式都不稳定，请使用无限重置试用的方法。
 
 https://www.macwk.com/article/jetbrains-crack
+

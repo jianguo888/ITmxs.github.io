@@ -15,7 +15,7 @@ math:
 [![GitHub stars](https://img.shields.io/github/stars/ITmxs?style=social)](https://github.com/ITmxs)
 [![GitHub forks](https://img.shields.io/github/forks/ITmxs/flutter_bloc_super?style=social)](https://github.com/ITmxs/flutter_bloc_super/fork)
 
-> 本名徐建国，就读于兰州某一高校，担任过班长，一个人如果抱着义务的意识去读书，便不了解读书的艺术
+> 本名徐建国，就任职于宁波，从事软件开发方面工作
 
 ### 所获荣誉
 
@@ -30,9 +30,21 @@ math:
 - 2017-2028年度获得校级“优秀学生干部”，
 - 2017-2018学年获得学校“三等奖学金”
 
-### 
+## 无题
 
-现就职于
+一路上我们都没话说
+我们眼睛里看的会不会是同一片云朵
+
+岁月变成沙漠
+喧哗变成寂寞
+
+你是你
+我是我
+
+虽然可以彼此诉说忧伤
+但是我们的痛苦却一直沉默
+
+
 
 https://amiworthy.in/
 

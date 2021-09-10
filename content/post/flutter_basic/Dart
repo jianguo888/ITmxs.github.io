@@ -1,5 +1,5 @@
 ---
-title: "Dart"
+title: "Flutter Raw Image Provider"
 date: 2021-09-07T11:09:12+08:00
 draft: false
 author: ""
@@ -9,4 +9,143 @@ images: []
 tags: ["Flutter","dart"]
 categories: ["Flutter","dart"]
 ---
+
+Flutter 中的 Image Widget 内置支持 file、network、memory三种形式的文件。
+但这几种都只支持常规的经过压缩后的图片文件或二进制数据，如jpg、png、webp文件等。并没有支持原始的`rgba` 二进制数据。
+这里说的原始二进制数据是指图像的每个像素的色彩值所组成的字节数组。一张图有宽x高个像素点，一个像素点的色彩值用32bit来存储，分为4个通道，每个通道各占用8bit，分别为红、绿、蓝、透明度（RGBA），这个数组就是每个像素点色彩值的集合，dart 中一般用`Uint8List`。
+
+一般情况下，考虑网络传输效率，会采用算法来压缩这个数据，故而你会看到有各种各样的图像压缩算法和文件格式。
+
+你可能会问什么情况下会有需要直接去加载一张图的原始rgba数据？
+
+这里举个简单例子：分块加载图片。将图片解码后，分割成一个个矩形区域，每个矩形就有一个 raw rgba 数据，将其交给Image渲染，这样做可以降低一定的GPU 内存压力，减少出现GPU OOM 或黑屏的概率。（可以参考我的试验项目：https://github.com/yrom/image_pieces）
+
+要支持 raw rgba ，其实很简单，在 `dart:ui`包下有个方法`decodeImageFromPixels`可以直接使用，前提是需要有原始的二进制数据、宽、高。
+
+```
+import 'dart:ui';
+
+Future<Image> decodeRawRgba(ByteData bytes, int width, int height) {
+  final Completer<Image> completer = Completer<Image>();
+  decodeImageFromPixels(
+    bytes.buffer.asUint8List(),
+    width,
+    height,
+    PixelFormat.rgba8888,
+    completer.complete,
+  );
+  return completer.future;
+}
+```
+
+有了这个 `Image`(dart:ui)对象就可以交给 `RawImage` Widget 来加载了。但`RawImage`太过于底层了，能不能只用 `Image` Widget呢？因为需要复用 `LoadingBuilder`这些逻辑。
+
+当然可以。查看一下 `Image` Widget 的构造函数就知道，我们需要一个 `ImageProvider`，那么问题进一步简化到如何写一个`ImageProvider` 支持 raw rgba 数据。
+
+实现一个 `ImageProvider`，我们需要实现 `load`这个关键方法。以`MemoryImage`为例：
+
+```
+class MemoryImage extends ImageProvider<MemoryImage> {
+  @override
+  ImageStreamCompleter load(MemoryImage key, DecoderCallback decode) {
+    return MultiFrameImageStreamCompleter(
+      codec: _loadAsync(key, decode),
+      scale: key.scale,
+      debugLabel: 'MemoryImage(${describeIdentity(key.bytes)})',
+    );
+  }
+
+  Future<ui.Codec> _loadAsync(MemoryImage key, DecoderCallback decode) {
+    return decode(bytes);
+  }
+}
+```
+
+很显然，我们需要想一个方法构造出raw rgba 数据的 `Codec`。
+
+
+
+其实秘密就在 `decodeImageFromPixels`这个方法实现里：
+
+```
+void decodeImageFromPixels(
+  Uint8List pixels,
+  int width,
+  int height,
+  PixelFormat format,
+  ImageDecoderCallback callback, {
+  int? rowBytes,
+  int? targetWidth,
+  int? targetHeight,
+  bool allowUpscaling = true,
+}) {
+  if (targetWidth != null) {
+    assert(allowUpscaling || targetWidth <= width);
+  }
+  if (targetHeight != null) {
+    assert(allowUpscaling || targetHeight <= height);
+  }
+
+  ImmutableBuffer.fromUint8List(pixels)
+    .then((ImmutableBuffer buffer) {
+      final ImageDescriptor descriptor = ImageDescriptor.raw(
+        buffer,
+        width: width,
+        height: height,
+        rowBytes: rowBytes,
+        pixelFormat: format,
+      );
+
+      if (!allowUpscaling) {
+        if (targetWidth != null && targetWidth! > descriptor.width) {
+          targetWidth = descriptor.width;
+        }
+        if (targetHeight != null && targetHeight! > descriptor.height) {
+          targetHeight = descriptor.height;
+        }
+      }
+
+      descriptor
+        .instantiateCodec(
+          targetWidth: targetWidth,
+          targetHeight: targetHeight,
+        )
+        .then((Codec codec) => codec.getNextFrame())
+        .then((FrameInfo frameInfo) => callback(frameInfo.image));
+  });
+}
+```
+
+先从数据构造出`ImageDescriptor`，再把`descriptor.instantiateCodec()`这一步抽出来就可以获取 raw rgba 数据的 `Codec`，进而实现一个自己的`RawImageProvider`了。
+
+如：
+
+```
+class RawImageProvider extends ImageProvider<_RawImageKey> {
+  final RawImageData image;
+  /// see [ui.decodeImageFromPixels]
+  Future<ui.Codec> _loadAsync(_RawImageKey key) async {
+    var buffer = await ui.ImmutableBuffer.fromUint8List(image.pixels);
+
+    final descriptor = ui.ImageDescriptor.raw(
+      buffer,
+      width: image.width,
+      height: image.height,
+      pixelFormat: image.pixelFormat,
+    );
+    return descriptor.instantiateCodec(
+        targetWidth: targetWidth, targetHeight: targetHeight);
+  }
+```
+
+详细代码见：https://github.com/yrom/flutter_raw_image_provider/blob/master/lib/raw_image_provider.dart
+
+如果你恰好也有这个需要，可以直接添加 pub 依赖
+
+```
+dependencies:
+    raw_image_provider: ^0.1.0
+```
+
+完。
 

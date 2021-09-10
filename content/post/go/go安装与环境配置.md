@@ -14,7 +14,7 @@ categories: ["go"]
 
 官网下载地址：https://www.jetbrains.com/go/download/other.html
 
-![image-20210906133904206](C:\Users\85285\AppData\Roaming\Typora\typora-user-images\image-20210906133904206.png)
+![image-20210906133904206](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image-20210906133904206.png)
 
 ## **运行并激活Goland**
 
@@ -25,7 +25,7 @@ categories: ["go"]
 
 将下载好的文件解压，并将破解补丁`jetbrains-agent.jar`复制到 Goland 安装目录下的 bin 目录中，放到这里没有什么特殊的意义，只是为了防止误删。
 
- Goland 安装目录的 bin 目录下找到`goland.exe.vmoptions`和`goland64.exe.vmoptions`两个文件。用记事本将它们打开，并分别在两个文件的最后面追加`-javaagent:Goland 的安装目录\bin\jetbrains-agent.jar`，注意将路径修改成你电脑上 Goland 的安装目录，例如：`-javaagent:D:\WindowsSoftware\GoLand 2019.2.3\bin\jetbrains-agent.jar`，修改完成后记得保存。
+ Goland 安装目录的 bin 目录下找到`goland.exe.vmoptions`和`goland64.exe.vmoptions`两个文件。用记事本将它们打开，并分别在两个文件的最后面追加`-javaagent:Goland 的安装目录\bin\jetbrains-agent.jar`，注意将路径修改成你电脑上 Goland 的安装目录，例如：`-javaagent:D:\WindowsSoftware\GoLand 2021.2.1\bin\jetbrains-agent.jar`，修改完成后记得保存。
 
 运行Goland进入激活界面，选择Active，选择激活码激活，将解压的激活码打开复制到文本框中，然后OK即可。
 
