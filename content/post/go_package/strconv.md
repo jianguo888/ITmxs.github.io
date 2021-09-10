@@ -79,7 +79,7 @@ func ParseInt(s string, base int, bitSize int) (i int64, err error)
 
 返回字符串表示的整数值，接受正负号。
 
-base指定进制（2到36），如果base为0，则会从字符串前置判断，”0x”是16进制，”0”是8进制，否则是10进制；
+base指定进制(2到36)，如果base为0，则会从字符串前置判断，”0x”是16进制，”0”是8进制，否则是10进制；
 
 bitSize指定结果必须能无溢出赋值的整数类型，0、8、16、32、64 分别代表 int、int8、int16、int32、int64；
 
@@ -101,9 +101,9 @@ func ParseFloat(s string, bitSize int) (f float64, err error)
 
 解析一个表示浮点数的字符串并返回其值。
 
-如果s合乎语法规则，函数会返回最为接近s表示值的一个浮点数（使用IEEE754规范舍入）。
+如果s合乎语法规则，函数会返回最为接近s表示值的一个浮点数(使用IEEE754规范舍入)。
 
-bitSize指定了期望的接收类型，32是float32（返回值可以不改变精确值的赋值给float32），64是float64；
+bitSize指定了期望的接收类型，32是float32(返回值可以不改变精确值的赋值给float32)，64是float64；
 
 返回值err是*NumErr类型的，语法有误的，err.Error=ErrSyntax；结果超出表示范围的，返回值f为±Inf，err.Error= ErrRange。
 
@@ -154,11 +154,11 @@ func FormatFloat(f float64, fmt byte, prec, bitSize int) string
 
 函数将浮点数表示为字符串并返回。
 
-bitSize表示f的来源类型（32：float32、64：float64），会据此进行舍入。
+bitSize表示f的来源类型(32：float32、64：float64)，会据此进行舍入。
 
-fmt表示格式：’f’（-ddd.dddd）、’b’（-ddddp±ddd，指数为二进制）、’e’（-d.dddde±dd，十进制指数）、’E’（-d.ddddE±dd，十进制指数）、’g’（指数很大时用’e’格式，否则’f’格式）、’G’（指数很大时用’E’格式，否则’f’格式）。
+fmt表示格式：’f’(-ddd.dddd)、’b’(-ddddp±ddd，指数为二进制)、’e’(-d.dddde±dd，十进制指数)、’E’(-d.ddddE±dd，十进制指数)、’g’(指数很大时用’e’格式，否则’f’格式)、’G’(指数很大时用’E’格式，否则’f’格式)。
 
-prec控制精度（排除指数部分）：对’f’、’e’、’E’，它表示小数点后的数字个数；对’g’、’G’，它控制总的数字个数。如果prec 为-1，则代表使用最少数量的、但又必需的数字来表示f。
+prec控制精度(排除指数部分)：对’f’、’e’、’E’，它表示小数点后的数字个数；对’g’、’G’，它控制总的数字个数。如果prec 为-1，则代表使用最少数量的、但又必需的数字来表示f。
 
 ### 代码示例
 
@@ -177,7 +177,7 @@ s4 := strconv.FormatUint(2, 16)
 func IsPrint(r rune) bool
 ```
 
-返回一个字符是否是可打印的，和`unicode.IsPrint`一样，r必须是：字母（广义）、数字、标点、符号、ASCII空格。
+返回一个字符是否是可打印的，和`unicode.IsPrint`一样，r必须是：字母(广义)、数字、标点、符号、ASCII空格。
 
 ### CanBackquote()
 

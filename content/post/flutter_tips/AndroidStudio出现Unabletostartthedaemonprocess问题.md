@@ -33,13 +33,13 @@ Could not reserve enough space for 1572864KB object heap
 
 ![image-20210829212429432](https://luckly007.oss-cn-beijing.aliyuncs.com/img/image-20210829212429432.png)
 
-（方法一）
+(方法一)
 
 将org.gradle.jvmargs=-Xmx1536m中的值设置小一些，一般为1024或512
 
-（方法二）
+(方法二)
 
-将org.gradle.jvmargs=-Xmx1536m前面加上“#”注释掉即可（Gradle的jvm的内存分配设置，注释掉就是使用默认或者系统配置。）
+将org.gradle.jvmargs=-Xmx1536m前面加上“#”注释掉即可(Gradle的jvm的内存分配设置，注释掉就是使用默认或者系统配置。)
 
 
 
@@ -54,13 +54,13 @@ Could not reserve enough space for 1572864KB object heap
 
 1)OPEN项目
 
-2）点击gradle脚本
+2)点击gradle脚本
 
-3）打开gradle.properties
+3)打开gradle.properties
 
 4) 将 org.gradle.jvmargs=-Xmx1536m 改为 org.gradle.jvmargs=-Xmx1024m
 
-5）保存工作
+5)保存工作
 
 6)打开文件->无效缓存/重启
 

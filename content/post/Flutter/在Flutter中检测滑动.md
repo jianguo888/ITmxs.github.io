@@ -6,7 +6,7 @@ tags: ["Flutter"]
 categories: ["Flutter"]
 ---
 
-想要根据用户滑动导航到屏幕？例如，如果用户从左向右滑动，则导航到下一个屏幕，如果用户从右向左滑动，则导航到上一个屏幕。（类似于iOS 😉）。让我们看看你如何做到这一点！
+想要根据用户滑动导航到屏幕？例如，如果用户从左向右滑动，则导航到下一个屏幕，如果用户从右向左滑动，则导航到上一个屏幕。(类似于iOS 😉)。让我们看看你如何做到这一点！
 
 ![img](https://miro.medium.com/max/700/0*IU8v5lkYJ23ulijY.png)
 
@@ -27,7 +27,7 @@ GestureDetector(
 
 `GestureDetector`，我们有许多可用于检测滑动的回调。但是，水平和垂直滑动有 2 个回调，它们非常易于使用和理解。这两个分别是`onHorizontalDragUpdate`和`onVerticalDragUpdate`。让我们看看它们是如何工作的！
 
-让我们创建一个小应用程序，用户可以在 Page1 上从右向左滑动以导航到 Page2。在Page2上，用户可以从左向右滑动来弹出当前页面并导航到Page1！（类似于iOS的东西）。
+让我们创建一个小应用程序，用户可以在 Page1 上从右向左滑动以导航到 Page2。在Page2上，用户可以从左向右滑动来弹出当前页面并导航到Page1！(类似于iOS的东西)。
 
 要检测从右向左滑动，我们可以使用`onHorizontalDragUpdate`如下：
 

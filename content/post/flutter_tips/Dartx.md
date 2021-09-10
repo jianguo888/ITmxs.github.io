@@ -10,7 +10,7 @@ categories: ["Flutter"]
 
 <!--more-->
 
-[**dartx**](https://pub.dev/packages/dartx)包允许开发人员对集合（和其他 Dart 类型）使用优雅且可读的单行操作。
+[**dartx**](https://pub.dev/packages/dartx)包允许开发人员对集合(和其他 Dart 类型)使用优雅且可读的单行操作。
 
 下面我们将比较如何使用普通 Dart 与[dartx](https://pub.dev/packages/dartx)解决这些任务：
 
@@ -414,7 +414,7 @@ final report = people.joinToString(
 );
 ```
 
-## 所有（每个）/无
+## 所有(每个)/无
 
 ```dart
 final allAreAdults = people.all((person) => person.age >= 18);

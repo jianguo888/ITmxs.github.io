@@ -96,7 +96,7 @@ Container(
   static const Alignment bottomRight = Alignment(1.0, 1.0);
 ```
 
-Flutter 中 View（典型表现是 Container Widget）中心点（0,0）实际上是真正的中心位置，而不是平常理解的 `topLeft` 这个点
+Flutter 中 View(典型表现是 Container Widget)中心点(0,0)实际上是真正的中心位置，而不是平常理解的 `topLeft` 这个点
 
 所以上面渐变的效果如下：
 

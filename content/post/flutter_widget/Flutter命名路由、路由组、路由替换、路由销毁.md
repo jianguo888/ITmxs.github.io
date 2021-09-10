@@ -191,7 +191,7 @@ FlatButton(
 )
 ```
 
-`pushNamedAndRemoveUntil` 接受两个参数，第一个是路由名，（这里我们使用了根路由）第二个则是对堆栈中的 route 的处理：
+`pushNamedAndRemoveUntil` 接受两个参数，第一个是路由名，(这里我们使用了根路由)第二个则是对堆栈中的 route 的处理：
 
 下面的处理中我们清空了 route 全部置为 null，则会路由到 '/' 根路由前的所有 route 都被干掉。
 

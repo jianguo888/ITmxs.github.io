@@ -21,7 +21,7 @@ categories: ["Flutter"]
 # 什么是 Flutter Web 以及它是如何工作的？
 
 - **Flutter 的 Web**支持使复杂的独立**Web**应用程序具有丰富的图形和交互式内容，以覆盖各种设备上的最终用户。**Flutter 的Web**支持为现有的**Flutter**移动应用程序提供了基于浏览器的交付模型。
-- Flutter 以与渲染您的 android/iOS 应用程序相同的方式呈现 Web 应用程序，即 Flutter Web 会在您希望部署时将您的项目转换为原生代码（HTML、CSS、JS）。现在，您需要记住的一件事是 Flutter Web 创建**单页 Web 应用程序！**你当然可以有多个页面，但是当 Flutter 框架将 Web 应用程序转换为本地语言时，将只有一个 html 文件，即**index.html。**
+- Flutter 以与渲染您的 android/iOS 应用程序相同的方式呈现 Web 应用程序，即 Flutter Web 会在您希望部署时将您的项目转换为原生代码(HTML、CSS、JS)。现在，您需要记住的一件事是 Flutter Web 创建**单页 Web 应用程序！**你当然可以有多个页面，但是当 Flutter 框架将 Web 应用程序转换为本地语言时，将只有一个 html 文件，即**index.html。**
 - **那么我们如何拥有多个页面呢？**这个问题的答案非常简单。如果我们仔细研究**Navigator 的**工作原理，我们会发现它适用于`Stack`数据结构。因此，Flutter Web 是单个页面，但它在同一个原生页面上推送多个页面。
 
 ![img](https://miro.medium.com/max/1400/0*b6x35BeO8JFJt4j_.png)
@@ -122,7 +122,7 @@ import 'package:flutter/material.dart';void main() => runApp(MyApp());class MyAp
 
 - 与原生相比，Flutter Web 的工作非常流畅，因为它只创建单页应用程序，因此在浏览器上的负载更少。
 - 使用 Flutter，与原生动画相比，您可以非常轻松地创建一些出色的动画，从而使您的 Web 应用程序更加美观。
-- Flutter Web 直接支持将您的网站安装为独立应用程序（Web-App），如果是原生应用程序，您需要为其单独编码。
+- Flutter Web 直接支持将您的网站安装为独立应用程序(Web-App)，如果是原生应用程序，您需要为其单独编码。
 - Flutter，因为它是跨平台的框架，你可以添加一些特定于平台的代码而无需任何配置更改。
 
 # 结论！

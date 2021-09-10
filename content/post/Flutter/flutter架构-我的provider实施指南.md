@@ -16,7 +16,7 @@ categories: ["Flutter"]
 
 ## 一般概述
 
-Provider 基本上是 ScopedModel v2。我已经在 Redux、BLoC 和 ScopedModel 中实现了应用程序，我仍然认为 ScopedModel 是在 Flutter 中构建应用程序的最实用和最直接的方法。即使对于大型或大型应用程序（假设您遵循一些编码指南）。本指南的设置与我的[ScopedModel 指南](https://www.filledstacks.com/post/flutter-architecture-scoped-model-implementation-guide)非常相似。让我们看看我们正在构建的应用程序，以便我们可以了解一些上下文。
+Provider 基本上是 ScopedModel v2。我已经在 Redux、BLoC 和 ScopedModel 中实现了应用程序，我仍然认为 ScopedModel 是在 Flutter 中构建应用程序的最实用和最直接的方法。即使对于大型或大型应用程序(假设您遵循一些编码指南)。本指南的设置与我的[ScopedModel 指南](https://www.filledstacks.com/post/flutter-architecture-scoped-model-implementation-guide)非常相似。让我们看看我们正在构建的应用程序，以便我们可以了解一些上下文。
 
 ![Flutter Provder 应用程序所有屏幕](https://www.filledstacks.com/assets/static/010-all-screens.42db587.33b003e8aedccaf6c90f5b46dc5c0e52.jpg)
 
@@ -29,10 +29,10 @@ Provider 基本上是 ScopedModel v2。我已经在 Redux、BLoC 和 ScopedModel
 - 每个视图都有自己的模型来扩展 ChangeNotifier。
 - 只有当视图的状态发生变化时，才会调用视图的通知侦听器。
 - 每个视图只有 2 个状态。空闲和忙碌。视图中包含的任何其他需要逻辑和状态/UI 更新的 UI 将具有与其关联的自己的模型。这样主视图只在主视图状态改变时绘制。
-- Providers 不会通过应用程序级别的全局提供程序传递，除非应用程序架构中的 1 个以上视图（用户信息）需要它。
+- Providers 不会通过应用程序级别的全局提供程序传递，除非应用程序架构中的 1 个以上视图(用户信息)需要它。
 - 提供者和服务将使用[get_it](https://pub.dev/packages/get_it)注入。
 - 模型只会从服务请求数据并从该数据减少状态。没有别的。
-- 专用服务（只是普通对象，不要混淆初学者）将执行所有实际工作。Api 类将请求和序列化数据。模型只会调用函数来做到这一点。身份验证服务将使用 Api 获取用户详细信息并对其进行跟踪。该模型只是调用该函数并将值传递给它。
+- 专用服务(只是普通对象，不要混淆初学者)将执行所有实际工作。Api 类将请求和序列化数据。模型只会调用函数来做到这一点。身份验证服务将使用 Api 获取用户详细信息并对其进行跟踪。该模型只是调用该函数并将值传递给它。
 
 这就是高水平。随着我们的进步，请记住这一点。
 
@@ -178,7 +178,7 @@ class LoginModel extends ChangeNotifier {
 }
 ```
 
-AuthenticationService 将使用 Api 来获取用户配置文件。如果用户配置文件不为空，我们将返回 true 以表示成功。在 services 下创建 authentication_service.dart 文件并添加`Future<bool>`登录功能。此函数将使用 API 并请求用户配置文件。Api（以及所有其他服务和模型）将使用定位器注入。
+AuthenticationService 将使用 Api 来获取用户配置文件。如果用户配置文件不为空，我们将返回 true 以表示成功。在 services 下创建 authentication_service.dart 文件并添加`Future<bool>`登录功能。此函数将使用 API 并请求用户配置文件。Api(以及所有其他服务和模型)将使用定位器注入。
 
 ```dart
 import 'dart:async';
@@ -327,7 +327,7 @@ class LoginModel extends BaseModel {
 
 现在 LoginModel 更简洁一些，我们可以添加一些额外的功能。我们将处理一种错误情况。如果用户输入的值不是数字，我们将显示错误消息。我们将添加一个新的 String errorMessage 属性来存储我们的消息。
 
-在 tryParse 代码下的登录函数中，我们将检查 userId 是否为空（不是数字）。如果是，我们会将消息和状态设置回空闲并返回 false。
+在 tryParse 代码下的登录函数中，我们将检查 userId 是否为空(不是数字)。如果是，我们会将消息和状态设置回空闲并返回 false。
 
 ```dart
 String errorMessage;

@@ -75,7 +75,7 @@ Container(
 
 我们将为这样的小部件创建一个类。我们需要处理的主要事情是使按钮在指针之后可拖动的能力。可以使用的小部件之一是侦听器，它可以识别指针移动事件并提供移动细节。本质上，按钮应该被包装为 Listener 的孩子。
 
-该`Listener`具有`onPointerMove`可被利用来传递当指针移动，这将被认为是一个回呼的争用。回调函数应该有一个边界 PointerMoveEvent，它包含 x 和 y 标题（delta.dx 和 delta.dy）中的发展增量。捕获的偏移量应由移动增量刷新。
+该`Listener`具有`onPointerMove`可被利用来传递当指针移动，这将被认为是一个回呼的争用。回调函数应该有一个边界 PointerMoveEvent，它包含 x 和 y 标题(delta.dx 和 delta.dy)中的发展增量。捕获的偏移量应由移动增量刷新。
 
 以下是用于制作可拖动浮动操作按钮的类。它有一些包含`child`、initialOffset 和 onPressed 的争用。该`child`部件交付利用被定位小部件依赖于电流偏移。它另外包装为 Listener 小部件的子级。还有一个策略 _updatePosition 可以根据移动增量刷新当前偏移量。
 

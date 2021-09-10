@@ -243,7 +243,7 @@ RenderObject 中两个重要的属性是 `_parent` 和 `parentData`。
 
 什么是布局/绘制模型？可以看到协议中并没有指定该如何处理如下这些问题：
 
-- 是允许0个，1个还是多个子节点？ （子节点模型 children model)
+- 是允许0个，1个还是多个子节点？ (子节点模型 children model)
 - 使用什么坐标系，笛卡尔坐标系还是极坐标系或是别的？
 
 这些问题描述了模型。RenderBox (RenderObject 子类) 正是一个具体的模型，它要求使用笛卡尔坐标系，并提供定义了明确的子节点模型：
@@ -454,4 +454,4 @@ void paint(PaintingContext context, Offset offset)
 
 - [Flutter rendering](https://github.com/flutter/website/blob/master/src/docs/resources/rendering.md)
 - [Flutter, what are Widgets, RenderObjects and Elements?](https://medium.com/flutter-community/flutter-what-are-widgets-renderobjects-and-elements-630a57d05208)
-- [Flutter框架分析（一）– 总览和Window - 掘金](https://juejin.im/post/5c7cd2f4e51d4537b05b0974)
+- [Flutter框架分析(一)– 总览和Window - 掘金](https://juejin.im/post/5c7cd2f4e51d4537b05b0974)

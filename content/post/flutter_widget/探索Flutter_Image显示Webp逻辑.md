@@ -214,7 +214,7 @@ ImageStreamCompleter putIfAbsentImageStreamCompleter putIfAbsent(Object key, Ima
  }
 ```
 
-这个方法是在imageCache里面的，提供的是内存缓存api的入口方法，putIfAbsent会先通过key获取之前的ImageStreamCompleter对象，这个key就是NetworkImage对象，当然我们也可以重写obtainKey方法自定义key，如果存在则直接返回，如果不存在则执行load方法加载ImageStreamCompleter对象，并将其放到首位（最少最近使用算法）。 也就是说ImageProvider已经实现了内存缓存：默认缓存图片的最大个数是1000，默认缓存图片的最大空间是10MiB。 第一次加载图片肯定是没有缓存的，所以会调用loader方法，那就是方法外面传进去的load()方法。
+这个方法是在imageCache里面的，提供的是内存缓存api的入口方法，putIfAbsent会先通过key获取之前的ImageStreamCompleter对象，这个key就是NetworkImage对象，当然我们也可以重写obtainKey方法自定义key，如果存在则直接返回，如果不存在则执行load方法加载ImageStreamCompleter对象，并将其放到首位(最少最近使用算法)。 也就是说ImageProvider已经实现了内存缓存：默认缓存图片的最大个数是1000，默认缓存图片的最大空间是10MiB。 第一次加载图片肯定是没有缓存的，所以会调用loader方法，那就是方法外面传进去的load()方法。
 
 FileImage的load方法
 

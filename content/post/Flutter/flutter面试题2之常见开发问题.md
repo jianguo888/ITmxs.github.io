@@ -88,7 +88,7 @@ button.setOnClickListener(new View.OnClickListener() {
 );
 ```
 
-（注意，这只是设置监听器的代码。定义按钮需要单独的 XML 代码。）
+(注意，这只是设置监听器的代码。定义按钮需要单独的 XML 代码。)
 
 **Dart equivalent:**
 
@@ -100,6 +100,6 @@ FlatButton(
 )
 ```
 
-（Dart 既做声明又设置回调。）
+(Dart 既做声明又设置回调。)
 
 这变得更加清晰和有条理，并帮助我们避免不必要的复杂化

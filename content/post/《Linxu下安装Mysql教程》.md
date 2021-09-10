@@ -157,37 +157,37 @@ new password为你设置的root密码 这里有个问题，新密码设置的时
 
 ##### 2.5.1 开放端口
 
-（1）开放3306端口
+(1)开放3306端口
 
 ```shell
 firewall-cmd --permanent --zone=public --add-port=3306/tcp
 ```
 
-（2）如果提示FirewallD is not running，如下图所示
+(2)如果提示FirewallD is not running，如下图所示
 
 ![Linux 安装 MySQL 8 数据库9.png](https://geshanzsq.com/geshanzsq-file/profile/upload/2020/12/07/255341b9-e8be-45ed-8b94-70e39d501ec2.png)
 
-（3）通过systemctl status firewalld查看firewalld状态，发现当前是dead状态，即防火墙未开启。
+(3)通过systemctl status firewalld查看firewalld状态，发现当前是dead状态，即防火墙未开启。
 
 ![Linux 安装 MySQL 8 数据库10.png](https://geshanzsq.com/geshanzsq-file/profile/upload/2020/12/07/76f1334f-29a2-482c-bede-f935918e3c98.png)
 
-（4）通过systemctl start firewalld开启防火墙，没有任何提示即开启成功。
+(4)通过systemctl start firewalld开启防火墙，没有任何提示即开启成功。
 
 ![Linux 安装 MySQL 8 数据库11.png](https://geshanzsq.com/geshanzsq-file/profile/upload/2020/12/07/18db6527-c26f-4bf2-ad8a-47b5dfa67671.png)
 
-（5）再次通过systemctl status firewalld查看firewalld状态，显示running即已开启了。
+(5)再次通过systemctl status firewalld查看firewalld状态，显示running即已开启了。
 
 ![Linux 安装 MySQL 8 数据库12.png](https://geshanzsq.com/geshanzsq-file/profile/upload/2020/12/07/1b408e36-9ba5-44c7-a4c9-d11e6e10739a.png)
 
-（6）如果要关闭防火墙设置，可能通过systemctl stop firewalld这条指令来关闭该功能。
+(6)如果要关闭防火墙设置，可能通过systemctl stop firewalld这条指令来关闭该功能。
 
 ![Linux 安装 MySQL 8 数据库13.png](https://geshanzsq.com/geshanzsq-file/profile/upload/2020/12/07/5a88a2db-3bbb-44ab-9b45-68a28af5f179.png)
 
-（7）再次执行firewall-cmd --permanent --zone=public --add-port=3306/tcp ，提示success，表示设置成功，这样就可以继续后面的设置了。
+(7)再次执行firewall-cmd --permanent --zone=public --add-port=3306/tcp ，提示success，表示设置成功，这样就可以继续后面的设置了。
 
 ![Linux 安装 MySQL 8 数据库14.png](https://geshanzsq.com/geshanzsq-file/profile/upload/2020/12/07/55085161-ee77-4b89-bd36-9f5ed60e3598.png)
 
-（8）刷新
+(8)刷新
 
 ```shell
 firewall-cmd --reload
@@ -201,13 +201,13 @@ firewall-cmd --reload
 
 ![Linux 安装 MySQL 8 数据库16.png](https://geshanzsq.com/geshanzsq-file/profile/upload/2020/12/07/0b2fa002-f236-475a-a044-619d27fe824a.png)
 
-（1）设置认证方式。 如果你没有设置认证方式，默认的密码加密方式是：caching_sha2_password，而现在很多客户端工具还不支持这种加密认证方式，连接测试的时候就会报错：
+(1)设置认证方式。 如果你没有设置认证方式，默认的密码加密方式是：caching_sha2_password，而现在很多客户端工具还不支持这种加密认证方式，连接测试的时候就会报错：
 
 ```shell
 client does not support  authentication protocol requested by server; consider upgrading MySQL client
 ```
 
-这里的错误信息就是不支持身份认证方式，没关系，编辑/etc/my.cnf（编辑命令：vim /etc/my.cnf）文件里面在[mysqld]下面加上这句话即可：
+这里的错误信息就是不支持身份认证方式，没关系，编辑/etc/my.cnf(编辑命令：vim /etc/my.cnf)文件里面在[mysqld]下面加上这句话即可：
 
 ```shell
 default_authentication_plugin=mysql_native_password
@@ -215,7 +215,7 @@ default_authentication_plugin=mysql_native_password
 
 ![Linux 安装 MySQL 8 数据库17.png](https://geshanzsq.com/geshanzsq-file/profile/upload/2020/12/07/494fd374-539e-47fa-8f2d-b30b0dd00b6b.png)
 
-（2）登陆到mysql命令行：然后输入密码
+(2)登陆到mysql命令行：然后输入密码
 
 ```shell
 mysql -u root -p
@@ -223,7 +223,7 @@ mysql -u root -p
 
 ![Linux 安装 MySQL 8 数据库18.png](https://geshanzsq.com/geshanzsq-file/profile/upload/2020/12/07/63477ce0-4fcf-41fe-b70e-ff267566a586.png)
 
-（3）进入之后选择mysql库，用户信息都存在这个库的user表中
+(3)进入之后选择mysql库，用户信息都存在这个库的user表中
 
 ```SQL
 use mysql;
@@ -232,7 +232,7 @@ select host, user, authentication_string, plugin from user;
 
 ![Linux 安装 MySQL 8 数据库19.png](https://geshanzsq.com/geshanzsq-file/profile/upload/2020/12/07/426377bb-751d-4890-9dc3-d191f15721a5.png)居中
 
-可以看到，用户对应的主机是localhost，而不是%，所以不能连接。 （4）授权root用户可以远程登陆
+可以看到，用户对应的主机是localhost，而不是%，所以不能连接。 (4)授权root用户可以远程登陆
 
 ```SQL
 update user set host='%' where user = 'root';
@@ -241,7 +241,7 @@ flush privileges;
 
 ![Linux 安装 MySQL 8 数据库20.png](https://geshanzsq.com/geshanzsq-file/profile/upload/2020/12/07/0eca199c-1a32-4a83-a634-44648f0ec276.png)
 
-（5）刷新权限
+(5)刷新权限
 
 ```SQL
 flush privileges;
@@ -264,7 +264,7 @@ flush privileges;
 
 #### 2.7 2059错误的解决方案
 
-MySQL新版本（8以上版本）的用户登录账户加密方式是【caching_sha2_password】，Navicat不支持这种用户登录账户加密方式。
+MySQL新版本(8以上版本)的用户登录账户加密方式是【caching_sha2_password】，Navicat不支持这种用户登录账户加密方式。
 
 执行
 

@@ -61,7 +61,7 @@ mapbox:
 
 ## [**[5] 李华明：Android游戏开发系列1-25**](http://blog.csdn.net/xiaominghimi/article/category/762640)
 
-前几天群成员讨论过关于9patch的工具（我比较喜欢喊它9妹子）、然后研究了一下，比较简单但是很实用的一个Android SDK 自带工具、这里给大家做一个分享下经验！
+前几天群成员讨论过关于9patch的工具(我比较喜欢喊它9妹子)、然后研究了一下，比较简单但是很实用的一个Android SDK 自带工具、这里给大家做一个分享下经验！
 
 ## [**[6] 宣雨松：Android游戏开发系列1-29**](http://blog.csdn.net/xys289187120)
 
@@ -73,7 +73,7 @@ mapbox:
 
 ## **[[8] Gavin：贪吃蛇—Java程序员写Android游戏1-6](http://blog.csdn.net/deaboway/article/category/808360)**
 
-本系列文章初步的计划是，由Android SDK Sample的贪吃蛇游戏（Snake）为切入点，通过跟J2ME手机游戏和J2SE桌面游戏开发的比较，逐步介绍Android游戏开发的相关知识和流行框架。
+本系列文章初步的计划是，由Android SDK Sample的贪吃蛇游戏(Snake)为切入点，通过跟J2ME手机游戏和J2SE桌面游戏开发的比较，逐步介绍Android游戏开发的相关知识和流行框架。
 
 ## [**[9] 老罗：Android应用程序源码分析**](http://blog.csdn.net/Luoshengyang/)
 

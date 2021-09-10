@@ -29,7 +29,7 @@ https://tsvillain.medium.com/flutter-reduce-line-of-code-using-spread-8d6988bac0
 
 > 现在我们的任务是减少这种重复的线条。
 
-2.**嵌套列（一般方法）**
+2.**嵌套列(一般方法)**
 
 通常我们遇到过这样的事情，我们在 Column 中使用一个 Column 并将一个 List 传递给它的孩子。
 

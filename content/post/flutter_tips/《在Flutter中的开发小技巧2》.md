@@ -395,7 +395,7 @@ pageview
 
 ## 使用`?? `和`?.`操作符
 
-更喜欢使用 ?? （如果为空）和？。（空感知）运算符而不是条件表达式中的空检查。
+更喜欢使用 ?? (如果为空)和？。(空感知)运算符而不是条件表达式中的空检查。
 
 <iframe src="https://medium.com/media/dd3e4681e86760f27c385632f235de9f" allowfullscreen="" frameborder="0" height="303" width="680" title="运营商.dart" class="t u v ta aj" scrolling="auto" style="box-sizing: inherit; position: absolute; top: 0px; left: 0px; width: 680px; height: 303px;"></iframe>
 
@@ -425,7 +425,7 @@ pageview
 
 ## 使用表达式函数体
 
-对于仅包含一个表达式的函数，您可以使用表达式函数。的`=>`（箭头）符号用于表达功能。
+对于仅包含一个表达式的函数，您可以使用表达式函数。的`=>`(箭头)符号用于表达功能。
 
 <iframe src="https://medium.com/media/45f400c9eb5f31e5fe360e61ef600dc7" allowfullscreen="" frameborder="0" height="391" width="680" title="arrow_operator.dart" class="t u v ta aj" scrolling="auto" style="box-sizing: inherit; position: absolute; top: 0px; left: 0px; width: 680px; height: 391px;"></iframe>
 

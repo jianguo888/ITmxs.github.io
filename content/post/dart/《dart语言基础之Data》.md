@@ -173,7 +173,7 @@ int w = DateTime.now().weekday;
 print(w);  // 4
 ```
 
-取得当前时区的偏移时差 （北京时区是东八区，领先UTC八个小时）
+取得当前时区的偏移时差 (北京时区是东八区，领先UTC八个小时)
 
 ```java
 Duration offset = DateTime.now().timeZoneOffset;
@@ -187,49 +187,49 @@ int year = DateTime.now().year;
 print(year);      // 2020
 ```
 
-取得当前月份 （1-12）, 这跟JS里有点不同
+取得当前月份 (1-12), 这跟JS里有点不同
 
 ```java
 int month = DateTime.now().month;
 print(month);      // 2
 ```
 
-取得当前月份的第几天 （1-31）
+取得当前月份的第几天 (1-31)
 
 ```java
 int day = DateTime.now().day;
 print(day);      // 21
 ```
 
-取得当前小时 （0-23）
+取得当前小时 (0-23)
 
 ```java
 int hour = DateTime.now().hour;
 print(hour);      // 8
 ```
 
-取得当前分钟 （0-59）
+取得当前分钟 (0-59)
 
 ```java
 int minute = DateTime.now().minute;
 print(minute);      // 18
 ```
 
-取得当前秒 （0-59）
+取得当前秒 (0-59)
 
 ```java
 int second = DateTime.now().second;
 print(second);      // 18
 ```
 
-取得当前毫秒 （0-999）
+取得当前毫秒 (0-999)
 
 ```java
 int millisecond = DateTime.now().millisecond;
 print(millisecond);      // 249
 ```
 
-取得当前微秒 （0-999）
+取得当前微秒 (0-999)
 
 ```java
 int microsecond = DateTime.now().microsecond;

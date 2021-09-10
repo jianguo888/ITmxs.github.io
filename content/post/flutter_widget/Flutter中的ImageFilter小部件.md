@@ -30,7 +30,7 @@ ImageFiltered(
         ), 
 ```
 
-其次是像这样的任何**矩阵**变换（缩放，平移，旋转，squing），
+其次是像这样的任何**矩阵**变换(缩放，平移，旋转，squing)，
 
 ```dart
 ImageFiltered( 

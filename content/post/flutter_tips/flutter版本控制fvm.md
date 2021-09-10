@@ -499,7 +499,7 @@ C:\Users\85285>
 `fvm install`: Installs Flutter SDK Version. Gives you the ability to install Flutter `releases` or `channels`.
 
 - `fvm install dev/beta/stable/...`: 安装指定channel的当前版本 flutter SDK；
-- `fvm install 2.2.0`: 安装指定版本（2.2.0）的 flutter SDK；
+- `fvm install 2.2.0`: 安装指定版本(2.2.0)的 flutter SDK；
 
 > 如果没有配置 `FVM_HOME` 或 `FVM_GIT_CACHE` 环境变量，则默认安装到 `~/fvm/versions/` 目录下。
 
@@ -625,7 +625,7 @@ fvm use {version} --flavor {flavor_name}
  
 ```
 
-This will pin `version` to `flavor_name`，flavors 映射（flavor_name -> version）将被记录到配置文件 `.fvm/fvm_config.json` 中。
+This will pin `version` to `flavor_name`，flavors 映射(flavor_name -> version)将被记录到配置文件 `.fvm/fvm_config.json` 中。
 
 ```javascript
 fantasy@MBP ~/Projects//my_flutter_project $ fvm use 1.22.6 --flavor production
@@ -650,7 +650,7 @@ fantasy@MBP ~/Projects//my_flutter_project $ cat .fvm/fvm_config.json
 
 ### View flavors
 
-列举当前项目配置的 flavors（To list all configured flavors）。
+列举当前项目配置的 flavors(To list all configured flavors)。
 
 ```javascript
 fantasy@MBP ~/Projects//my_flutter_project $ fvm flavor
@@ -689,7 +689,7 @@ fvm flavor {flavor_name}
 
 ### vscode
 
-可全局配置 vscode（`～/Library/Application\ Support/Code\ -\ Insiders/User/settings.json`）：
+可全局配置 vscode(`～/Library/Application\ Support/Code\ -\ Insiders/User/settings.json`)：
 
 ```javascript
 {
@@ -712,7 +712,7 @@ fvm flavor {flavor_name}
  
 ```
 
-则可在 vscode 控制面板中执行 `Flutter: Change SDK` 切换 Flutter SDK 版本，将同步记录到当前项目的 vscode 配置文件 `.vscode/settings.json` 中（dart.flutterSdkPath）。
+则可在 vscode 控制面板中执行 `Flutter: Change SDK` 切换 Flutter SDK 版本，将同步记录到当前项目的 vscode 配置文件 `.vscode/settings.json` 中(dart.flutterSdkPath)。
 
 ------
 

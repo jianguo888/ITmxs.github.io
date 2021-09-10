@@ -117,7 +117,7 @@ class CustomDraggable extends StatelessWidget {
   }
 ```
 
-但是有一个更简单的方法（注意使用`?.`）：
+但是有一个更简单的方法(注意使用`?.`)：
 
 ```
   Future<void> _dragComplete() async {
@@ -319,7 +319,7 @@ ListView.builder(
 
 *注意：这两个参数是不同的 (`_`和`__`)，因为它们是**单独的标识符**。*
 
-## 11. 需要一个只能实例化一次的类（又名单例）？使用带有私有构造函数的静态实例变量。
+## 11. 需要一个只能实例化一次的类(又名单例)？使用带有私有构造函数的静态实例变量。
 
 单例最重要的特性是整个程序中只能有**一个**它的**实例**。这对于建模文件系统之类的东西很有用。
 
@@ -360,7 +360,7 @@ const citiesList = [
 ];
 ```
 
-我们可以`Set`在需要一组唯一值时使用 a （请注意 的使用`final`）：
+我们可以`Set`在需要一组唯一值时使用 a (请注意 的使用`final`)：
 
 ```
 // set is final, compiles
@@ -432,7 +432,7 @@ Future<void> printWeather() async {
 
 Dart`Future`类带有一些方便的工厂构造函数：`Future.delayed`,`Future.value`和`Future.error`。
 
-我们可以`Future.delayed`用来创建一个`Future`等待一定延迟的。第二个参数是一个（可选的）匿名函数，你可以用它来完成一个值或抛出一个错误：
+我们可以`Future.delayed`用来创建一个`Future`等待一定延迟的。第二个参数是一个(可选的)匿名函数，你可以用它来完成一个值或抛出一个错误：
 
 ```
 await Future.delayed(Duration(seconds: 2), () => 'Latte');

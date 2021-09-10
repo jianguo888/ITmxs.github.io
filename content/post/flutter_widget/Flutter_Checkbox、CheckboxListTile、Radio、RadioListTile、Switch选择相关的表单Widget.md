@@ -124,9 +124,9 @@ Row(
 
 `Radio` 和 `Checkbox` 不同的地方在于，一般都是两个或以上的 `Radio` Wdiget 一起起作用
 
-因此多个 Radio 往往绑定的是同一个值或者说是 state（同一个值得说法并不准确）
+因此多个 Radio 往往绑定的是同一个值或者说是 state(同一个值得说法并不准确)
 
-因此 Radio 又多了一个 required 的属性 `groupValue`，所谓的 `groupValue` 其实就是绑定在同一个 state 上的，当一个 Radio 被选中的时候，它的 `value` 就会传递给 `groupValue`（在 onchanged 中处理）
+因此 Radio 又多了一个 required 的属性 `groupValue`，所谓的 `groupValue` 其实就是绑定在同一个 state 上的，当一个 Radio 被选中的时候，它的 `value` 就会传递给 `groupValue`(在 onchanged 中处理)
 
 只要 `groupValue` 指向同一个变量，就说明这些 Radio 是同一个 group 中的，只会有一个被选中
 

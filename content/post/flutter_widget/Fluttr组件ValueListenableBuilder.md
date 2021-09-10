@@ -24,7 +24,7 @@ ChangeNotifier
 
 ### ValueListenable
 
-通过该参数 添加了一个变化的回调，回调是setState()。这样当发送了值变化的通知后，该widget就会setState（），就实现了与value的同步。通常使用的是ValueNotifer，因为ValueNotifer可以快捷的发送通知。
+通过该参数 添加了一个变化的回调，回调是setState()。这样当发送了值变化的通知后，该widget就会setState()，就实现了与value的同步。通常使用的是ValueNotifer，因为ValueNotifer可以快捷的发送通知。
 
 ### ValueWidgetBuilder
 

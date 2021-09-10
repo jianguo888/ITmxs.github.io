@@ -71,7 +71,7 @@ $ go1.16.4 download
 几个注意的点：
 
 - 有一个特殊的版本标记：gotip，用来安装最新的开发版本；
-- 因为 golang.org 访问不了，你应该配置 GOPROXY（所以，启用 Module 是必须的）；
+- 因为 golang.org 访问不了，你应该配置 GOPROXY(所以，启用 Module 是必须的)；
 - 跟安装其他包一样，go get 之后，go1.16.4 这个命令会被安装到 `$GOBIN` 目录下，默认是`~/go/bin` 目录，所以该目录应该放入 PATH 环境变量；
 - 没有执行 download 之前，运行 go1.16.4，会提示 `go1.16.4: not downloaded. Run 'go1.16.4 download' to install to ~/sdk/go1.16.4`；
 

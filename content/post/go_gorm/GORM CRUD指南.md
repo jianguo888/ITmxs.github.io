@@ -738,7 +738,7 @@ db.Model(&user).UpdateColumns(User{Name: "hello", Age: 18})
 
 ### 批量更新
 
-批量更新时`Hooks（钩子函数）`不会运行。
+批量更新时`Hooks(钩子函数)`不会运行。
 
 ```go
 db.Table("users").Where("id IN (?)", []int{10, 11}).Updates(map[string]interface{}{"name": "hello", "age": 18})

@@ -146,7 +146,7 @@ Map<Type, InheritedElement> _inheritedWidgets;
 
 @override
   T dependOnInheritedWidgetOfExactType<T extends InheritedWidget>({Object aspect}) {
-   	/// 断言，用于在调试状态下检测是否有正在使用（激活）的祖先
+   	/// 断言，用于在调试状态下检测是否有正在使用(激活)的祖先
     assert(_debugCheckStateIsActiveForAncestorLookup());
     /// 获取到_inheritedWidgets数组数据
     final InheritedElement ancestor = _inheritedWidgets == null ? null : _inheritedWidgets[T];

@@ -174,9 +174,9 @@ AutoSizeText(
 
 ## 富文本
 
-您还可以将富文本（如不同的文本样式或链接）与`AutoSizeText`. 只需使用`AutoSizeText.rich()`构造函数（它的工作原理与`Text.rich()`构造函数完全相同）。
+您还可以将富文本(如不同的文本样式或链接)与`AutoSizeText`. 只需使用`AutoSizeText.rich()`构造函数(它的工作原理与`Text.rich()`构造函数完全相同)。
 
-你必须要知道的唯一的事情是字体大小的计算工作原理如下：`fontSize`在`style` 参数`AutoSizeText`（或继承`fontSize`，如果没有设置）作为参考。
+你必须要知道的唯一的事情是字体大小的计算工作原理如下：`fontSize`在`style` 参数`AutoSizeText`(或继承`fontSize`，如果没有设置)作为参考。
 
 例如：
 

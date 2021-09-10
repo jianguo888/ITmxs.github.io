@@ -48,7 +48,7 @@ mapbox:
 
 ## 效果
 
-可以显示gif动图哦，真强大，某些模拟器中可能有闪烁现象，但是我的手机上没有，可能是兼容问题 ）
+可以显示gif动图哦，真强大，某些模拟器中可能有闪烁现象，但是我的手机上没有，可能是兼容问题 )
 ![img](https://uploadfiles.nowcoder.com/images/20200417/2967044_1587086827827_F3E1A26286A1814C96AE9A791F8885FB)
 
 ## 原理
@@ -185,7 +185,7 @@ List listData=[
 
 ```
 
-在main.dart中，我们传入以下代码（import的路径可能需要修改）
+在main.dart中，我们传入以下代码(import的路径可能需要修改)
 将listData通过map形式传入成为value,然后取相应的key值传入对应的参数，listView会自动循环遍历value中的内容
 
 ```

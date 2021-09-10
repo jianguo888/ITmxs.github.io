@@ -287,7 +287,7 @@ Flutter 应用内存可优化的点分别是：
 
 - Private Others，Dart 代码分配的对象属于这一类。优化点是减少 Dart 代码中不必要的对象分配，尤其是大对象
 - Code - 用于处理代码和资源，如 dex 字节码，so 库和字体。优化点是减少 `libflutter.so` 和 `libapp.so` 大小
-- Graphics - 图形缓冲区队列向屏幕显示像素（包括 GL 表面、GL 纹理等等）所使用的内存。比较好入手的一个优化是减少 Dart 代码中图片占用的内存。另外可以考虑优化 Flutter UI 这一块(同样使用 skia，为什么 Android 原生 UI 占用的内存比 Flutter UI 少？)
+- Graphics - 图形缓冲区队列向屏幕显示像素(包括 GL 表面、GL 纹理等等)所使用的内存。比较好入手的一个优化是减少 Dart 代码中图片占用的内存。另外可以考虑优化 Flutter UI 这一块(同样使用 skia，为什么 Android 原生 UI 占用的内存比 Flutter UI 少？)
 - Native - C 或 C++ 代码分配的对象的内存。优化点是减少 Flutter 引擎占用的内存，比如单引擎比多引擎使用更少的内存
 
 ![-w1261](https://blog-1251688504.cos.ap-shanghai.myqcloud.com/2020/07/15/15947874114688.jpg)

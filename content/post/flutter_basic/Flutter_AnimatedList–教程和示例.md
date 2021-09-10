@@ -24,7 +24,7 @@ AnimatedList 是 Flutter 中的一个内置小部件，用于实现一个列表�
 
 <video class="" autoplay="" controls="" loop="" muted="" data-lazy-type="video" data-src="https://www.kindacode.com/wp-content/uploads/2021/01/Flutter-AnimatedList.mp4" playsinline="" src="https://www.kindacode.com/wp-content/uploads/2021/01/Flutter-AnimatedList.mp4" __idm_id__="566868993" style="margin: 0px; padding: 0px; box-sizing: border-box; width: 720px;"></video>
 
-为简单起见，示例应用程序仅包含一个列表和一个浮动按钮（我们将在第二个示例中进行高级操作）。
+为简单起见，示例应用程序仅包含一个列表和一个浮动按钮(我们将在第二个示例中进行高级操作)。
 
 ### **重点是什么？**
 
@@ -288,7 +288,7 @@ AnimatedList({
 
 | 范围                | 类型                                                         | 描述                                                         |
 | ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| itemBuilder（必需） | [动画列表项生成器](https://api.flutter.dev/flutter/widgets/AnimatedListItemBuilder.html) | 当列表中的项目滚动到视图中时构建它们                         |
+| itemBuilder(必需) | [动画列表项生成器](https://api.flutter.dev/flutter/widgets/AnimatedListItemBuilder.html) | 当列表中的项目滚动到视图中时构建它们                         |
 | 初始物品计数        | 整数                                                         | 开始时的项目数                                               |
 | 控制器              | 滚动控制器                                                   | 控制列表的滚动位置                                           |
 | 钥匙                | 钥匙                                                         | 用于从外部访问列表                                           |

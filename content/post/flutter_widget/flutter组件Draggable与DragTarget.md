@@ -142,7 +142,7 @@ List<Widget> _buildDraggable() {
 
 void _onDragUpdate(DragUpdateDetails details) {
   print('坐标:'
-      '（${details.localPosition.dx.toStringAsFixed(1)},'
+      '(${details.localPosition.dx.toStringAsFixed(1)},'
       '${details.localPosition.dy.toStringAsFixed(1)})');
 }
 

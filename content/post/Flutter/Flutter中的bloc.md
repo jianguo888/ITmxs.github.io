@@ -99,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 ```
 
-所以这就是我们从头开始创建的基本应用程序（Counter Application）。现在，让我们处理我们的**BLOC。**
+所以这就是我们从头开始创建的基本应用程序(Counter Application)。现在，让我们处理我们的**BLOC。**
 
 **第 4 步：**让我们创建我们的事件。由于这是一个简单的例子，我们只有 1 个事件，即**增量**，我们甚至不需要传递任何参数。所以我们将`enum`在这种情况下使用。所以，我们`counter_event.dart`将看起来像这样：
 
@@ -134,7 +134,7 @@ class CounterBloc extends Bloc<CounterEvent, int> {
 - **class CounterBloc extends Bloc<CounterEvent, int>**
   这里，**CounterEvent**是我们的事件即枚举我们在创建`counter_event.dart`和**INT**是状态，因为我们简单地递增的整数变量。如果您的应用程序很复杂，而不是 int，您可以指定您的 State 类。
 - **CounterBloc() : super(0);**
-  所以，这基本上是 CounterBloc() 类的构造函数，在我们的例子中，我们将一个初始值（即 0）传递给父类，即 Bloc 类，因为我们的 CounterBloc 扩展了 Bloc。
+  所以，这基本上是 CounterBloc() 类的构造函数，在我们的例子中，我们将一个初始值(即 0)传递给父类，即 Bloc 类，因为我们的 CounterBloc 扩展了 Bloc。
 - 然后我们需要实现一个名为 的方法`mapEventToState`。该方法基本上将我们的输入事件与相应的输出状态映射。
   **Stream<int> mapEventToState(CounterEvent event) async\*
   **此方法将事件作为输入并返回状态流，因此我们需要使其成为异步。现在，如果您有自定义状态文件，则必须将**int**替换为您的状态类。
@@ -188,7 +188,7 @@ BlocProvider<CounterBloc>(
       ),
 ```
 
-这里， CounterBloc 是我们在上一步中创建的 bloc 类。我们需要提供要创建的块（这里是 CounterBloc()）以及应该可以访问该块的子块。是的！这就是`main.dart`文件。现在让我们转到`home.dart`😍
+这里， CounterBloc 是我们在上一步中创建的 bloc 类。我们需要提供要创建的块(这里是 CounterBloc())以及应该可以访问该块的子块。是的！这就是`main.dart`文件。现在让我们转到`home.dart`😍
 
 **第 7 步：**打开`home.dart`文件并创建一个实例`**CounterBloc()**`
 
@@ -204,7 +204,7 @@ _counterBloc = BlocProvider.of<CounterBloc>(context);
 
 上面的语句是做什么的？？？它实际上使您可以访问我们创建的 CounterBloc。现在，使用`_counterBloc`我们可以访问我们的事件和状态。
 
-**第 8 步：**现在，将 Text() 小部件（显示计数的地方）与`**BlocBuilder**`
+**第 8 步：**现在，将 Text() 小部件(显示计数的地方)与`**BlocBuilder**`
 
 ```dart
 body: Center(

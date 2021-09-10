@@ -12,7 +12,7 @@ categories: ["go"]
 
 **[1. PEP8 Style Guide for Python Code](http://www.python.org/dev/peps/pep-0008/)**
 
-排第一的当属Python的编码规范PEP8，这个就不用我多说吧，无论是初学还是高手PEP8都是必须烂熟于胸的。在遵循里面讲述的规则的同时，大家也要记住两句比较特殊的话，不过这两句话千万别滥用了:）
+排第一的当属Python的编码规范PEP8，这个就不用我多说吧，无论是初学还是高手PEP8都是必须烂熟于胸的。在遵循里面讲述的规则的同时，大家也要记住两句比较特殊的话，不过这两句话千万别滥用了:)
 
 ```
     Two good reasons to break a particular rule:     (1) When applying the rule would make the code less readable, even for
@@ -48,4 +48,4 @@ a = re.compile(r"""\d +  # the integral part
 
 **[5. PEP333 Python Web Server Gateway Interface v1.0](http://www.python.org/dev/peps/pep-0333/)**
 
-如果你要用Python来做Web相关的开发（对大多说人来说主要就是指Web运用）WSGI是必读的，WSGI是Python web server、application、middleware之间的官方规范标准，现在主流的Python web server和framework都肯定支持WSGI的。只有了解了WSGI你才能更好的理解Python的web framework的工作机制、middleware为啥可以串联起来、web server是怎么跟web application交互的。WSGI有两个为人诟病的地方，一是不支持异步，Tornado是一个异步的Web server，但是若要在上面运行WSGI的framework如Django，则Tornado的异步特性完全用不上；二是WSGI v1.0不支持Python3.x，为了支持Python3.x，有两篇还在Draft状态的PEP文档[PEP3333](http://www.python.org/dev/peps/pep-3333/)和[PEP444](http://www.python.org/dev/peps/pep-0444/)可供参考。
+如果你要用Python来做Web相关的开发(对大多说人来说主要就是指Web运用)WSGI是必读的，WSGI是Python web server、application、middleware之间的官方规范标准，现在主流的Python web server和framework都肯定支持WSGI的。只有了解了WSGI你才能更好的理解Python的web framework的工作机制、middleware为啥可以串联起来、web server是怎么跟web application交互的。WSGI有两个为人诟病的地方，一是不支持异步，Tornado是一个异步的Web server，但是若要在上面运行WSGI的framework如Django，则Tornado的异步特性完全用不上；二是WSGI v1.0不支持Python3.x，为了支持Python3.x，有两篇还在Draft状态的PEP文档[PEP3333](http://www.python.org/dev/peps/pep-3333/)和[PEP444](http://www.python.org/dev/peps/pep-0444/)可供参考。

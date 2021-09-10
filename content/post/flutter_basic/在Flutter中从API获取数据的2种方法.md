@@ -15,7 +15,7 @@ categories: ["Flutter","dart"]
 
 ![img](https://luckly007.oss-cn-beijing.aliyuncs.com/image/Screen-Shot-2020-11-10-at-14.35.47.jpg)
 
-出于演示目的，我们将使用一个包含 5000 张照片信息的开放 API 端点（感谢 Typicode 团队为此）：
+出于演示目的，我们将使用一个包含 5000 张照片信息的开放 API 端点(感谢 Typicode 团队为此)：
 
 ```dart
 https://jsonplaceholder.typicode.com/photos

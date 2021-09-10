@@ -125,7 +125,7 @@ ListView.separated(
 
 这种类型的列表允许您动态定义分隔符、为不同类型的项目设置不同类型的分隔符、在需要时添加或删除分隔符等。
 
-此实现还可用于轻松**插入其他类型的元素**（例如 ），无需对列表项中间的主列表进行任何修改。
+此实现还可用于轻松**插入其他类型的元素**(例如 )，无需对列表项中间的主列表进行任何修改。
 
 
 
@@ -142,7 +142,7 @@ custom() 构造函数顾名思义，允许您使用自定义功能构建 ListVie
 1. **SliverChildListDelegate**
 2. **SliverChildBuilderDelegate**
 
-SliverChildListDelegate 接受子项的直接列表，而 SliverChildBuiderDelegate 接受 IndexedWidgetBuilder（我们使用的构建器函数）。
+SliverChildListDelegate 接受子项的直接列表，而 SliverChildBuiderDelegate 接受 IndexedWidgetBuilder(我们使用的构建器函数)。
 
 您可以使用或子类化这些来构建您自己的delegates。
 

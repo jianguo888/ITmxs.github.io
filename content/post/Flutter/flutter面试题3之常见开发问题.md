@@ -28,7 +28,7 @@ categories: ["Flutter"]
 
 # 4.flutter中的material app是什么？
 
-**MaterialApp**是一个小部件，它引入了许多有趣的工具，例如 Navigator 或 Theme 来帮助您开发您的**应用程序**。…然后当您想使用 Text 或 InkWell 时，使用引入**Material**实例（如 Scaffold 、 Appbar 、 Dialog 等）的小部件。
+**MaterialApp**是一个小部件，它引入了许多有趣的工具，例如 Navigator 或 Theme 来帮助您开发您的**应用程序**。…然后当您想使用 Text 或 InkWell 时，使用引入**Material**实例(如 Scaffold 、 Appbar 、 Dialog 等)的小部件。
 
 # 5.flutter中setState有什么用？
 
@@ -53,7 +53,7 @@ msg = "Hello world again.";
 final msg = "Hello world.";
 ```
 
-使用**final**（自由地）将帮助您发现您无意中更改了变量赋值的情况。
+使用**final**(自由地)将帮助您发现您无意中更改了变量赋值的情况。
 
 请注意，在对象方面，**final**和**const**之间存在细微差别。 **final**不一定使对象本身不可变，而**const**则：
 

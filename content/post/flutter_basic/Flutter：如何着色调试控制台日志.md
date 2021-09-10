@@ -45,7 +45,7 @@ import 'dart:developer' as developer;
 developer.log('[ANSI color code][your text][ANSI reset code]');
 ```
 
-您可能想知道为什么我们不使用**print()**函数。这里的原因是ANSI颜色代码在使用时被忽略（至少它不适用于VS Code）。
+您可能想知道为什么我们不使用**print()**函数。这里的原因是ANSI颜色代码在使用时被忽略(至少它不适用于VS Code)。
 
 您可以在 Wikipedia 上的[这篇文章中](https://en.wikipedia.org/wiki/ANSI_escape_code)找到有关 ANSI 转义码的更多信息。
 

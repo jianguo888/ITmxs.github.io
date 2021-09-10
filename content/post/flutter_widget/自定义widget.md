@@ -15,13 +15,13 @@ categories: ["Flutter"]
 
 
 
-# 在 Flutter 中编写自定义小部件（第 2.b 部分）——ChildSize（无助手）
+# 在 Flutter 中编写自定义小部件(第 2.b 部分)——ChildSize(无助手)
 
 https://rlesovyi.medium.com/writing-custom-widgets-in-flutter-part-2-b-childsize-no-helpers-61c578c9bbd2
 
 
 
-# 在 Flutter 中编写自定义小部件（第 1 部分）——EllipsizedText
+# 在 Flutter 中编写自定义小部件(第 1 部分)——EllipsizedText
 
 https://itnext.io/writing-custom-widgets-in-flutter-part-1-ellipsizedtext-a0efdc1368a8
 
@@ -37,9 +37,9 @@ Flutter 中的声明式 UI 非常好，易于使用，并且尽可能多地使�
 
 在查看代码之前，我们需要了解一些基本知识。
 
-`Widget`-仅是一个不可变（优选常数）类，它包含用于配置属性`Elements`和`RenderObjects`。它还负责创建所述`Elements`和`RenderObjects`。重要的是要理解——小部件从不包含状态或任何业务逻辑，只传递它们。
+`Widget`-仅是一个不可变(优选常数)类，它包含用于配置属性`Elements`和`RenderObjects`。它还负责创建所述`Elements`和`RenderObjects`。重要的是要理解——小部件从不包含状态或任何业务逻辑，只传递它们。
 
-`Element`— 是负责实际 UI 树的实体。它具有对所有子项和（与 不同`Widget`）其父项的引用。`Elements`大部分时间都被重用，除非`key`或被`Widget`改变。因此，如果仅`Widget`更改属性，即使`Widget`分配了new ，`Element`也将保持不变。
+`Element`— 是负责实际 UI 树的实体。它具有对所有子项和(与 不同`Widget`)其父项的引用。`Elements`大部分时间都被重用，除非`key`或被`Widget`改变。因此，如果仅`Widget`更改属性，即使`Widget`分配了new ，`Element`也将保持不变。
 
 `State`— 只不过是一个用户定义的类`Element`，其中也有一些来自其`Element`公开的回调。
 
@@ -49,7 +49,7 @@ Flutter 中的声明式 UI 非常好，易于使用，并且尽可能多地使�
 
 # 代码
 
-第一个示例将是一个非常简单的 Widget，它在文本不适合时将其椭圆化。您可能会问，当内置 Text 已经支持省略号时，为什么我们需要这样一个 Widget？答案很简单——到目前为止，它只按单词而不是按字符（https://github.com/flutter/flutter/issues/18761）进行切割。因此，如果您有一个很长的单词结尾——大多数情况下您只会看到这个单词的第一个字母，即使有足够的空间需要填充。
+第一个示例将是一个非常简单的 Widget，它在文本不适合时将其椭圆化。您可能会问，当内置 Text 已经支持省略号时，为什么我们需要这样一个 Widget？答案很简单——到目前为止，它只按单词而不是按字符(https://github.com/flutter/flutter/issues/18761)进行切割。因此，如果您有一个很长的单词结尾——大多数情况下您只会看到这个单词的第一个字母，即使有足够的空间需要填充。
 
 那么让我们开始吧。Flutter 有很多内置的基类和 mixin，它们将有助于构建完全自定义的 Widget。以下是其中一些：
 
@@ -91,7 +91,7 @@ class EllipsizedText extends LeafRenderObjectWidget {
 - createRenderObject — 负责实际创建我们的 RenderObject
 - updateRenderObject — 将在 Widget 的数据更改但 RenderObject 保持不变时调用。在这种情况下，我们需要更新 RenderObject 中的数据，否则它将呈现旧文本。
 
-我还需要注意的是，最好将每个值从 Widget 复制到 RenderObject。但是我会传递整个 Widget，因为它们无论如何都是不可变的（而且我懒得写所有的样板代码）。
+我还需要注意的是，最好将每个值从 Widget 复制到 RenderObject。但是我会传递整个 Widget，因为它们无论如何都是不可变的(而且我懒得写所有的样板代码)。
 
 现在让我们从实际的 RenderObject 开始：
 
@@ -171,7 +171,7 @@ class RenderEllipsizedText extends RenderBox {
 }
 ```
 
-我不会遍历所有这些逻辑（如果您愿意，可以阅读它）。但重要的是 TextPainter 用于计算文本大小。如果文本大小比我们的约束长——我会试着让它越来越短，直到它符合我们的约束。
+我不会遍历所有这些逻辑(如果您愿意，可以阅读它)。但重要的是 TextPainter 用于计算文本大小。如果文本大小比我们的约束长——我会试着让它越来越短，直到它符合我们的约束。
 
 `_layoutText` 用于计算我们裁剪的文本大小：
 

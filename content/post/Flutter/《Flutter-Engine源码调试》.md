@@ -99,11 +99,11 @@ ninja -C out/host_debug_unopt -j 8
 
 我这里原来有一个比较简单的Flutter项目`flutter_app`，工程位置在`/Users/sunwenwu/project/flutter_app/flutter_app`。
 
-在查看下编译好的Flutter目录（也就是android_debug_unopt目录下），可以看到有两个重要文件`flutter_java.jar`以及`libflutter.so`，这个就是Android项目中必须的两个依赖库。
+在查看下编译好的Flutter目录(也就是android_debug_unopt目录下)，可以看到有两个重要文件`flutter_java.jar`以及`libflutter.so`，这个就是Android项目中必须的两个依赖库。
 
 下面我们设置flutter应用使用我们编译好的依赖库。
 
-将手机通过USB线连接到PC上，开启调试模式（手机不需要ROOT）。
+将手机通过USB线连接到PC上，开启调试模式(手机不需要ROOT)。
 
 ```
 cd /Users/sunwenwu/project/flutter_app/flutter_app

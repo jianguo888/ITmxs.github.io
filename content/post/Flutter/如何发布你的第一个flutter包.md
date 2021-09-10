@@ -24,7 +24,7 @@ categories: ["Flutter"]
 
 **Flutter 包总是有一个返回小部件的类此外，该类不得具有任何 hard-coded values.
 
-所有的 functionalities 要提供给用户，将其创建为一个属性（变量）并创建一个构造函数来获取值
+所有的 functionalities 要提供给用户，将其创建为一个属性(变量)并创建一个构造函数来获取值
 
 例如：
 如果您希望用户设置容器的高度，则创建一个名为**double height**的属性**。**添加构造函数，然后将其传递给 Container 的 height 属性。
@@ -64,7 +64,7 @@ class <class_name>{
 
 编辑 Pubspec.YAML 文件。**
 
-- **添加**包装**说明**（最少 20 个字）。发布后，这会为你在您在[pub.dev](http://pub.dev/)上获得[积分](http://pub.dev/)
+- **添加**包装**说明**(最少 20 个字)。发布后，这会为你在您在[pub.dev](http://pub.dev/)上获得[积分](http://pub.dev/)
 - **删除作者，**因为它现在不使用。
 - **添加主页**。HomePage 可以是您自己的网站，也可以提供 Github Profile Page 链接。
 - **添加** **存储库**。不要在这方面做错！！如果链接出错，将不会生成[pub.dev](http://pub.dev/)上的**“问题”**链接。下面是一个例子：
@@ -416,7 +416,7 @@ SOFTWARE.
 
 ## **第 9 步：创建示例。**
 
-- 在包文件夹本身内，创建一个**新的 flutter 项目，命名为 example。**（不要更改名称。名称必须是强制性**示例，**因为它将在[pub.dev 中使用](http://pub.dev/)）
+- 在包文件夹本身内，创建一个**新的 flutter 项目，命名为 example。**(不要更改名称。名称必须是强制性**示例，**因为它将在[pub.dev 中使用](http://pub.dev/))
 - 要在不发布的情况下使用示例中的包，请在**pubspec.yaml 中**添加以下行：
 
 ```
@@ -470,7 +470,7 @@ Tadaaaaaaaaaaaaaa!!!!!!!!!🌟🎉👏 您的包裹已发布！！
 
 **现在，无论何时更改包/示例的代码/任何文件中的任何内容，都需要更新以下文件：**
 
-- pubspec.yaml（版本号）
-- CHANGELOG.md（添加新版本、日期和描述）
+- pubspec.yaml(版本号)
+- CHANGELOG.md(添加新版本、日期和描述)
 
 **每当你觉得自己什么都没有做的时候，就在开始时和自己比较！！**

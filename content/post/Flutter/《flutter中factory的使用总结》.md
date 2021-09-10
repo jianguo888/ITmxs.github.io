@@ -52,7 +52,7 @@ mapbox:
 ## 0x02使用场景
 
 1. 避免创建过多的重复实例，如果该实例已创建，则直接从缓存获取。
-2. 调用子类的构造函数(工厂模式 factory pattern）
+2. 调用子类的构造函数(工厂模式 factory pattern)
 3. 实现单例模式(singleton pattern)
 
 ## 0x03 Demo

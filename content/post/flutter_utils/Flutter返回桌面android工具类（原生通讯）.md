@@ -1,5 +1,5 @@
 ---
-title: "Flutter返回桌面android工具类（原生通讯）"
+title: "Flutter返回桌面android工具类(原生通讯)"
 date: 2021-08-18T11:29:31+08:00
 draft: false
 tags: ["Flutter"]

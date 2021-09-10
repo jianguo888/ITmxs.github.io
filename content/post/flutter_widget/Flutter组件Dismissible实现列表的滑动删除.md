@@ -12,7 +12,7 @@ categories: ["Flutter","dart"]
 
 ## 一、Dismissible
 
-`Dismissible` 在某些列表型页面中非常实用，iOS 的操作中，手势滑动清除是非常常见的需求（Android Native 开发实际上推崇的是长按弹菜单），但不可否认这种操作模式对用户而言是更加友好的。
+`Dismissible` 在某些列表型页面中非常实用，iOS 的操作中，手势滑动清除是非常常见的需求(Android Native 开发实际上推崇的是长按弹菜单)，但不可否认这种操作模式对用户而言是更加友好的。
 
 ```dart
   const Dismissible({
@@ -87,7 +87,7 @@ categories: ["Flutter","dart"]
 
 上面代码中，使用 `ListView.builder` 构建整个列表，然后将列表的每个子项包装在 `Dismissible` 中
 
-`direction` 能够指定滑动的方向，默认是从 右往左（end to start）
+`direction` 能够指定滑动的方向，默认是从 右往左(end to start)
 
 然后 child 中传入 `ListTile` 这个真正的子项
 

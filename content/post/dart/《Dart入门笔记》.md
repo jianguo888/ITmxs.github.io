@@ -50,9 +50,9 @@ mapbox:
 - 所有对象都从 `Object` 类继承
 - Dart 是强类型
 - 当您想明确地不希望有任何类型时，使用特殊类型 `dynamic`
-- Dart 可以在函数内创建函数（ 嵌套 函数或局部函数 ），可以创建匿名函数
+- Dart 可以在函数内创建函数( 嵌套 函数或局部函数 )，可以创建匿名函数
 - Dart 支持顶级变量
-- 标识符以下划线（_）开头时表示私有成员变量
+- 标识符以下划线(_)开头时表示私有成员变量
 - Dart 支持类型推断，`var name = 'Bob';` 这里的 name 类型推断为 String
 - 未初始化的变量的初始值为 `null`，包括数字类型
 - Dart 字符串是 UTF-16 代码单元(code unit)的序列，在字符串中表示32位 Unicode 值时需要特殊语法 `Runes`
@@ -70,7 +70,7 @@ mapbox:
 - Dart 中的 `switch` 语句使用 `==` 比较整数、字符串、枚举或编译时常量
 - Dart的所有异常都是未经检查的异常
 - Dart 提供 `Exception` 和 `Error` 类型，并且支持将任何非 `null` 对象作为异常抛出
-- 某些语言（例如Java）将文件的组织与类的组织联系在一起-每个文件只能定义一个顶级类. Dart没有此限制
+- 某些语言(例如Java)将文件的组织与类的组织联系在一起-每个文件只能定义一个顶级类. Dart没有此限制
 - Dart 是一种具有类和基于 Mixin 的继承的面向对象语言
 - Object 的 `runtimeType` 属性返回对象类型
 - 所有实例变量都会生成一个隐式的 getter 方法. 非 final 的实例变量还会生成隐式的 setter 方法
@@ -97,7 +97,7 @@ Future greet() async {
 开发过程中可以使用 `assert(condition , optionalMessage)` 断言，检查某些条件是否为真。断言通常由工具或框架决定是否生效：
 
 - Flutter 在 debug 模式下启用断言
-- 默认情况下，仅开发工具（例如 [dartdevc](http://s0dart0dev.icopy.site/tools/dartdevc)）启用断言
+- 默认情况下，仅开发工具(例如 [dartdevc](http://s0dart0dev.icopy.site/tools/dartdevc))启用断言
 - 某些工具，比如 [dart](http://s0dart0dev.icopy.site/server/tools/dart-vm) 通过 `--enable-asserts` 标志启用断言
 
 # 构造函数

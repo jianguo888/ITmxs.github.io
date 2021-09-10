@@ -14,9 +14,9 @@ categories: ["Flutter","dart"]
 
 ## 介绍
 
-文本文件（具有**.txt**扩展名）广泛用于持久存储信息，从数字数据到长文本。今天，我们将介绍 2 个使用此文件类型的 Flutter 应用程序示例。
+文本文件(具有**.txt**扩展名)广泛用于持久存储信息，从数字数据到长文本。今天，我们将介绍 2 个使用此文件类型的 Flutter 应用程序示例。
 
-第一个示例快速而简单。它仅使用 rootBundle（来自 services.dart）从 assets 文件夹（或根项目中的另一个文件夹）中的文本加载内容，然后将结果输出到屏幕上。当您只需要读取数据而不需要写入数据时，这很有用。
+第一个示例快速而简单。它仅使用 rootBundle(来自 services.dart)从 assets 文件夹(或根项目中的另一个文件夹)中的文本加载内容，然后将结果输出到屏幕上。当您只需要读取数据而不需要写入数据时，这很有用。
 
 第二个例子稍微复杂一点。它不仅可以读取用户输入的内容，还可以将用户输入的内容写入文本文件。您将学习如何使用**File 异步方法，**包括**readAsString**和**writeAsString**。
 
@@ -32,7 +32,7 @@ categories: ["Flutter","dart"]
 
 **将文本文件添加到您的项目中**
 
-在项目根目录的**资产**文件夹中创建一个名为**data.txt**的新文本文件（如果尚不存在，则创建一个），然后向其中添加一些虚拟内容，如下所示：
+在项目根目录的**资产**文件夹中创建一个名为**data.txt**的新文本文件(如果尚不存在，则创建一个)，然后向其中添加一些虚拟内容，如下所示：
 
 ```dart
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lacus et mi blandit iaculis sed eget elit. Nulla facilisi. Sed pulvinar erat vel odio pretium, id malesuada tortor sollicitudin.
@@ -113,7 +113,7 @@ class _HomePageState extends State<HomePage> {
 
 出于安全原因，Android 和 iOS 不允许我们在硬盘驱动器上的任何位置进行读写。我们需要将文本文件保存到**Documents**目录中，应用程序只能在该目录中访问其文件。只有在删除应用程序时才会删除这些文件。
 
-该**文件**目录是**NSDocumentDirectory** iOS和**应用程序数据**在Android上。要获取该目录的完整路径，我们使用**[path_provider](https://pub.dev/packages/path_provider)**包（这是 Flutter 的官方包）。
+该**文件**目录是**NSDocumentDirectory** iOS和**应用程序数据**在Android上。要获取该目录的完整路径，我们使用**[path_provider](https://pub.dev/packages/path_provider)**包(这是 Flutter 的官方包)。
 
 通过将**path_provider**及其版本添加到**pubspec.yaml**文件的**依赖项**部分来安装包，如下所示：
 

@@ -128,7 +128,7 @@ mapbox:
 - [FlutterUnit](https://github.com/toly1994328/FlutterUnit) — 组件演示项目， Star 1.8k
 - [flutter-samples](https://github.com/diegoveloper/flutter-samples) — Flutter 演示项目，很多动画效果 , Star 1.5k
 - [flutter_deer](https://github.com/simplezhli/flutter_deer) — Flutter 练手项目 ,功能很丰富， Star 4.1k
-- [FlutterExampleApps](https://github.com/iampawan/FlutterExampleApps) — Flutter 示例App，包含常见流行作品（WhatsApp，Instagram等）, Star 13.8k
+- [FlutterExampleApps](https://github.com/iampawan/FlutterExampleApps) — Flutter 示例App，包含常见流行作品(WhatsApp，Instagram等), Star 13.8k
 
 ## PPT
 

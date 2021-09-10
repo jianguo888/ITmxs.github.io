@@ -26,8 +26,8 @@ Flutter 中的列表是使用 ListView 小部件创建的。
 
 有两种类型的列表：
 
-1. 用户定义列表中的所有项目（大致相当于 Android 中的 ScrollView）
-2. 用户定义了一个在列表中重复的项目（相当于一个 RecyclerView）
+1. 用户定义列表中的所有项目(大致相当于 Android 中的 ScrollView)
+2. 用户定义了一个在列表中重复的项目(相当于一个 RecyclerView)
 
 **第一类**
 
@@ -73,7 +73,7 @@ androidVersionNames 是所有 android 版本名称的列表。
 
 ![img](https://miro.medium.com/max/700/1*_7Nb6Yw9Hj23n3EDfe5F9w.png)
 
-这将向您显示一个（相当不漂亮的）带有 Android 版本名称的卡片列表。
+这将向您显示一个(相当不漂亮的)带有 Android 版本名称的卡片列表。
 
 构建器中有两个属性，itemBuilder 和 itemCount。
 
@@ -81,7 +81,7 @@ androidVersionNames 是所有 android 版本名称的列表。
 
 **itemBuilder**是您返回要显示的项目本身的地方。在这里，我们制作了一张卡片，里面有一个简单的文本小部件。项目构建器需要一个具有上下文和位置参数的 lambda 函数。Position 为您提供它是列表的哪个索引。
 
-总之，当你制作一个列表时，你必须向它提供两件事：1）列表中有多少项目？2）每个项目是什么样子的，它包含什么数据？
+总之，当你制作一个列表时，你必须向它提供两件事：1)列表中有多少项目？2)每个项目是什么样子的，它包含什么数据？
 
 **对于 Android 开发者：这完全等同于 RecyclerView。**itemCount 构建 ViewHolder 并将索引数据绑定到它。这样就完成了ViewHolder布局文件的作用和RecyclerView Adapter的绑定功能。因为没有单独的布局文件，所以也没有 LayoutManager 和适配器的实例化。
 
@@ -107,7 +107,7 @@ GridView.builder(
 
 在网格中，唯一的根本区别是它有多列。因此，GridView 还采用 gridDelegate 来帮助您设置列数。
 
-（gridDelegate 这个名字给了我强烈的 Java 怀旧之情）
+(gridDelegate 这个名字给了我强烈的 Java 怀旧之情)
 
 gridDelegate 中的 crossAxisCount 是列数。这也可以根据方向改变。
 

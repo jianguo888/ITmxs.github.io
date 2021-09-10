@@ -27,9 +27,9 @@ categories: ["Flutter"]
 
 ![优先使用工厂构造函数而不是静态方法进行反序列化。](https://luckly007.oss-cn-beijing.aliyuncs.com/img/025.prefer-factory-static.png)
 
-## [26. 需要一个只能实例化一次的类（又名单例）？使用带有私有构造函数的静态实例变量。](https://codewithandrea.com/tips/dart-flutter-easy-wins-22-28/#26-need-a-class-that-can-only-be-instantiated-once-aka-singleton?-use-static-instance-variable-with-a-private-constructor)
+## [26. 需要一个只能实例化一次的类(又名单例)？使用带有私有构造函数的静态实例变量。](https://codewithandrea.com/tips/dart-flutter-easy-wins-22-28/#26-need-a-class-that-can-only-be-instantiated-once-aka-singleton?-use-static-instance-variable-with-a-private-constructor)
 
-![需要一个只能实例化一次的类（又名单例）？ 使用带有私有构造函数的静态实例变量。](https://luckly007.oss-cn-beijing.aliyuncs.com/img/026.singleton-private-constructor.png)
+![需要一个只能实例化一次的类(又名单例)？ 使用带有私有构造函数的静态实例变量。](https://luckly007.oss-cn-beijing.aliyuncs.com/img/026.singleton-private-constructor.png)
 
 ## [27. 需要收集独特的items？使用集合而不是列表。](https://codewithandrea.com/tips/dart-flutter-easy-wins-22-28/#27-need-a-collection-of-unique-items?-use-a-set-rather-than-a-list)
 

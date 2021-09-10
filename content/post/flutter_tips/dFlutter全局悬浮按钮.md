@@ -89,11 +89,11 @@ void _insertOverlay(BuildContext context) {
 现在需要做一个Test按钮，悬浮在所有页面之上，并且可以拖拽。
 
 2.思路
-1）悬浮按钮可以使用flutter提供的Overlay + OverlayEntry 组合实现
+1)悬浮按钮可以使用flutter提供的Overlay + OverlayEntry 组合实现
 
-2）拖拽功能可以使用GestureDetector手势按钮或者Draggable实现（PS：我做了一版Draggable实现的，但是发现它会有原本的widget浮在原地，显然不是我要的效果）
+2)拖拽功能可以使用GestureDetector手势按钮或者Draggable实现(PS：我做了一版Draggable实现的，但是发现它会有原本的widget浮在原地，显然不是我要的效果)
 
-3）点击的时候我是让它弹出一个底部弹框，这里你们可以自由发挥，本篇文章不做多余赘述
+3)点击的时候我是让它弹出一个底部弹框，这里你们可以自由发挥，本篇文章不做多余赘述
 
 ```dart
 PubScaffold(
@@ -147,7 +147,7 @@ PubScaffold(
     );
 ```
 
-这里的`PubScaffold`就是我封装的一个悬浮按钮组件，把它包裹在MaterialApp外面，就可以实现悬浮在所有的组件之上的一个按钮啦（当然也可以不是按钮，具体样式可以自己定义）。下面我们来看一下`PubScaffold`中的代码吧～
+这里的`PubScaffold`就是我封装的一个悬浮按钮组件，把它包裹在MaterialApp外面，就可以实现悬浮在所有的组件之上的一个按钮啦(当然也可以不是按钮，具体样式可以自己定义)。下面我们来看一下`PubScaffold`中的代码吧～
 
 ```dart
 import 'dart:math';
@@ -228,7 +228,7 @@ class _PubScaffoldState extends State<PubScaffold> {
     );
   }
 
-  // 悬浮按钮，可以拖拽（可自定义样式）
+  // 悬浮按钮，可以拖拽(可自定义样式)
   void _insertOverlay(BuildContext context) {
     return Overlay.of(context).insert(
       OverlayEntry(builder: (context) {

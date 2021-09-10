@@ -194,7 +194,7 @@ func main() {
 - 以下场景必须严格进行长度限制：
   - 作为数组索引
   - 作为对象的长度或者大小
-  - 作为数组的边界（如作为循环计数器）
+  - 作为数组的边界(如作为循环计数器)
 
 ```go
 // bad: 未限制长度，导致整数溢出
@@ -434,8 +434,8 @@ ioutil.WriteFile(p, []byte("present"), 0640)
 
 **1.3.1【必须】命令执行检查**
 
-- 使用`exec.Command`、`exec.CommandContext`、`syscall.StartProcess`、`os.StartProcess`等函数时，第一个参数（path）直接取外部输入值时，应使用白名单限定可执行的命令范围，不允许传入`bash`、`cmd`、`sh`等命令；
-- 使用`exec.Command`、`exec.CommandContext`等函数时，通过`bash`、`cmd`、`sh`等创建shell，-c后的参数（arg）拼接外部输入，应过滤\n  $  &  ;  |  '  "  ( )  `等潜在恶意字符；
+- 使用`exec.Command`、`exec.CommandContext`、`syscall.StartProcess`、`os.StartProcess`等函数时，第一个参数(path)直接取外部输入值时，应使用白名单限定可执行的命令范围，不允许传入`bash`、`cmd`、`sh`等命令；
+- 使用`exec.Command`、`exec.CommandContext`等函数时，通过`bash`、`cmd`、`sh`等创建shell，-c后的参数(arg)拼接外部输入，应过滤\n  $  &  ;  |  '  "  ( )  `等潜在恶意字符；
 
 ```go
 // bad
@@ -548,7 +548,7 @@ func doAuthReq(authReq *http.Request) *http.Response {
 #### 1.5.2【必须】敏感数据输出
 
 - 只输出必要的最小数据集，避免多余字段暴露引起敏感信息泄露
-- 不能在日志保存密码（包括明文密码和密文密码）、密钥和其它敏感信息
+- 不能在日志保存密码(包括明文密码和密文密码)、密钥和其它敏感信息
 - 对于必须输出的敏感信息，必须进行合理脱敏展示
 
 ```go
@@ -787,7 +787,7 @@ func handlerGood(db *sql.DB, req *http.Request) {
 
 ####  1.3.1【必须】资源请求过滤验证
 
-- 使用`"net/http"`下的方法`http.Get(url)`、`http.Post(url, contentType, body)`、`http.Head(url )`、`http.PostForm(url, data)`、`http.Do(req)`时，如变量值外部可控（指从参数中动态获取），应对请求目标进行严格的安全校验。
+- 使用`"net/http"`下的方法`http.Get(url)`、`http.Post(url, contentType, body)`、`http.Head(url )`、`http.PostForm(url, data)`、`http.Do(req)`时，如变量值外部可控(指从参数中动态获取)，应对请求目标进行严格的安全校验。
 
 - 如请求资源域名归属固定的范围，如只允许`a.qq.com`和`b.qq.com`，应做白名单限制。如不适用白名单，则推荐的校验逻辑步骤是：
 

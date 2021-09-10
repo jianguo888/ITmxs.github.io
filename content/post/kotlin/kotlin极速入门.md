@@ -34,7 +34,7 @@ Kotlin为什么可以编写Android程序？
 
 我们为什么要使用Kotlin开发Android程序？
  1、每行代码行尾毫无意义的分号。
- 2、switch语句只支持int条件（java1.8版本后也支持String了），且case最后要加break。
+ 2、switch语句只支持int条件(java1.8版本后也支持String了)，且case最后要加break。
  3、不是全面向对象语言，而是半面向对象语言。
  4、不支持字符串内嵌表达式，拼接字符串繁杂。
 
@@ -111,7 +111,7 @@ fun main(args: Array<String>) {
 
 ## 安装 Kotlin 插件
 
-Android Studio 从 3.0（preview）版本开始将内置安装 Kotlin 插件。
+Android Studio 从 3.0(preview)版本开始将内置安装 Kotlin 插件。
 
 打开 Settings ( Mac 为 Preferences) 面板，在右侧找到 Plugins 选项 (快捷键 Ctrl+, Mac 下为 command+)，搜索框输入 "Kotlin" 查找，点击 Search in repositories(仓库中搜索)，然后安装即可，安装完成之后需要重启 Android Studio。
 
@@ -125,7 +125,7 @@ Android Studio 从 3.0（preview）版本开始将内置安装 Kotlin 插件。
 
 ![image-20210826220713278](https://luckly007.oss-cn-beijing.aliyuncs.com/img/image-20210826220713278.png)
 
-Android Studio 3.0 在当前对话框中提供启用 Kotlin 支持的选项，勾选后可以跳过 "配置 Kotlin 工程（Configuring Kotlin in the project）"的步骤。
+Android Studio 3.0 在当前对话框中提供启用 Kotlin 支持的选项，勾选后可以跳过 "配置 Kotlin 工程(Configuring Kotlin in the project)"的步骤。
 
 选择 Android 版本:
 
@@ -139,7 +139,7 @@ Android Studio 3.0 在当前对话框中提供启用 Kotlin 支持的选项，�
 
 ![img](https://luckly007.oss-cn-beijing.aliyuncs.com/img/1495853838-8955-1-create-new-project.png)
 
-在 Android Studio 3.0 中，可以选择使用 Kotlin 创建 activity，因此也不需要"将Java 代码转换为 Kotlin（Converting Java code to Kotlin）"这一步骤。
+在 Android Studio 3.0 中，可以选择使用 Kotlin 创建 activity，因此也不需要"将Java 代码转换为 Kotlin(Converting Java code to Kotlin)"这一步骤。
 
 早期版本中则会先使用 Java 创建 activity，然后再使用自动转换工具 进行转换。
 
@@ -173,7 +173,7 @@ Kotlin 配置完成后，应用程序的 build.gradle 文件会更新。 你能�
 
 ![img](https://luckly007.oss-cn-beijing.aliyuncs.com/img/1495854750-1825-sync-project-with-gradle.png)
 
-同步工程，在提示框中点击"立即同步（Sync Now）"或者使用 Sync Project with Gradle Files命令。
+同步工程，在提示框中点击"立即同步(Sync Now)"或者使用 Sync Project with Gradle Files命令。
 
 ![img](https://luckly007.oss-cn-beijing.aliyuncs.com/img/1495854764-6190-sync-project-with-gradle-2.png)
 
@@ -682,7 +682,7 @@ fun main(args: Array<String>) {
 
 如上所述，[] 运算符代表调用成员函数 get() 和 set()。
 
-注意: 与 Java 不同的是，Kotlin 中数组是不协变的（invariant）。
+注意: 与 Java 不同的是，Kotlin 中数组是不协变的(invariant)。
 
 除了类Array，还有ByteArray, ShortArray, IntArray，用来表示各个类型的数组，省去了装箱操作，因此效率更高，其用法同Array一样：
 
@@ -737,7 +737,7 @@ fun main(args: Array<String>) {
 
 ## 字符串模板
 
-字符串可以包含模板表达式 ，即一些小段代码，会求值并把结果合并到字符串中。 模板表达式以美元符（$）开头，由一个简单的名字构成:
+字符串可以包含模板表达式 ，即一些小段代码，会求值并把结果合并到字符串中。 模板表达式以美元符($)开头，由一个简单的名字构成:
 
 ```kotlin
 fun main(args: Array<String>) {
@@ -757,7 +757,7 @@ fun main(args: Array<String>) {
 }
 ```
 
-原生字符串和转义字符串内部都支持模板。 如果你需要在原生字符串中表示字面值 $ 字符（它不支持反斜杠转义），你可以用下列语法：
+原生字符串和转义字符串内部都支持模板。 如果你需要在原生字符串中表示字面值 $ 字符(它不支持反斜杠转义)，你可以用下列语法：
 
 ```kotlin
 fun main(args: Array<String>) {
@@ -891,7 +891,7 @@ when (x) {
 }
 ```
 
-我们也可以检测一个值在（in）或者不在（!in）一个区间或者集合中：
+我们也可以检测一个值在(in)或者不在(!in)一个区间或者集合中：
 
 ```kotlin
 when (x) {
@@ -902,7 +902,7 @@ when (x) {
 }
 ```
 
-另一种可能性是检测一个值是（is）或者不是（!is）一个特定类型的值。注意： 由于智能转换，你可以访问该类型的方法和属性而无需 任何额外的检测。
+另一种可能性是检测一个值是(is)或者不是(!is)一个特定类型的值。注意： 由于智能转换，你可以访问该类型的方法和属性而无需 任何额外的检测。
 
 ```kotlin
 fun hasPrefix(x: Any) = when(x) {
@@ -980,7 +980,7 @@ apple is fine too
 
 ## For 循环
 
-for 循环可以对任何提供迭代器（iterator）的对象进行遍历，语法如下:
+for 循环可以对任何提供迭代器(iterator)的对象进行遍历，语法如下:
 
 ```kotlin
 for (item in collection) print(item)
@@ -1131,7 +1131,7 @@ fun main(args: Array<String>) {
 
 ### Break 和 Continue 标签
 
-在 Kotlin 中任何表达式都可以用标签（label）来标记。 标签的格式为标识符后跟 @ 符号，例如：abc@、fooBar@都是有效的标签。 要为一个表达式加标签，我们只要在其前加标签即可。
+在 Kotlin 中任何表达式都可以用标签(label)来标记。 标签的格式为标识符后跟 @ 符号，例如：abc@、fooBar@都是有效的标签。 要为一个表达式加标签，我们只要在其前加标签即可。
 
 ```kotlin
 loop@ for (i in 1..100) {
@@ -1164,7 +1164,7 @@ fun foo() {
 }
 ```
 
-这个 return 表达式从最直接包围它的函数即 foo 中返回。 （注意，这种非局部的返回只支持传给内联函数的 lambda 表达式。） 如果我们需要从 lambda 表达式中返回，我们必须给它加标签并用以限制 return。
+这个 return 表达式从最直接包围它的函数即 foo 中返回。 (注意，这种非局部的返回只支持传给内联函数的 lambda 表达式。) 如果我们需要从 lambda 表达式中返回，我们必须给它加标签并用以限制 return。
 
 ```kotlin
 fun foo() {
@@ -1391,7 +1391,7 @@ class Person constructor(firstName: String) {
 }
 ```
 
-注意：主构造器的参数可以在初始化代码段中使用，也可以在类主体n定义的属性初始化代码中使用。 一种简洁语法，可以通过主构造器来定义属性并初始化属性值（可以是var或val）：
+注意：主构造器的参数可以在初始化代码段中使用，也可以在类主体n定义的属性初始化代码中使用。 一种简洁语法，可以通过主构造器来定义属性并初始化属性值(可以是var或val)：
 
 ```kotlin
 class People(val firstName: String, val lastName: String) {
@@ -1818,7 +1818,7 @@ fun main(args: Array<String>) {
 我在读大学
 ```
 
-如果有多个相同的方法（继承或者实现自其他类，如A、B类），则必须要重写该方法，使用super范型去选择性地调用父类的实现。
+如果有多个相同的方法(继承或者实现自其他类，如A、B类)，则必须要重写该方法，使用super范型去选择性地调用父类的实现。
 
 ```kotlin
 open class A {
@@ -1940,7 +1940,7 @@ class C : A(), B {
 
 3、关于子类不能用 val 重写父类中的 var，我的猜测是：子类重写父类属性，也就相当于必须重写该属性的 getter 和 setter 方法，而子类中的 val 不能有 setter 方法，所以无法“覆盖”父类中 var 的 setter 方法，相当于缩小了父类中相应属性的使用范围，是不允许的，就像我们不能把父类中一个 public 方法重写成 private 方法一样。
 
-4、如果一个变量想要在定义的时候被初始化，则该变量必须拥有 backing field 字段，该变量的默认 getter 和 setter 方法中是有定义 field 字段的，但是如果我们重写了这个变量的 getter 方法和 setter 方法，并且在 getter 方法和 setter 方法中都没有出现过 filed 这个关键字，则编译器会报错，提示 Initializer is not allowed here because this property has no backing field，除非显式写出 filed 关键字（哪怕它什么都不干，只要放在那里就可以了，我理解是出现一次就相当于“声明”过了，就可以用了，而在定义变量的时候初始化是要求 field 被“声明”过才可以）：
+4、如果一个变量想要在定义的时候被初始化，则该变量必须拥有 backing field 字段，该变量的默认 getter 和 setter 方法中是有定义 field 字段的，但是如果我们重写了这个变量的 getter 方法和 setter 方法，并且在 getter 方法和 setter 方法中都没有出现过 filed 这个关键字，则编译器会报错，提示 Initializer is not allowed here because this property has no backing field，除非显式写出 filed 关键字(哪怕它什么都不干，只要放在那里就可以了，我理解是出现一次就相当于“声明”过了，就可以用了，而在定义变量的时候初始化是要求 field 被“声明”过才可以)：
 
 ```kotlin
 var aaa: Int = 0
@@ -2223,7 +2223,7 @@ val <T> List<T>.lastIndex: Int
  
 ```
 
-扩展属性允许定义在类或者kotlin文件中，不允许定义在函数中。初始化属性因为属性没有后端字段（backing field），所以不允许被初始化，只能由显式提供的 getter/setter 定义。
+扩展属性允许定义在类或者kotlin文件中，不允许定义在函数中。初始化属性因为属性没有后端字段(backing field)，所以不允许被初始化，只能由显式提供的 getter/setter 定义。
 
 ```
 val Foo.bar = 1 // 错误：扩展属性不能有初始化器
@@ -2422,12 +2422,12 @@ D.foo in C
 
 伴生对象内的成员相当于 Java 中的静态成员，其生命周期伴随类始终，在伴生对象内部可以定义变量和函数，这些变量和函数可以直接用类名引用。
 
-对于伴生对象扩展函数，有两种形式，一种是在类内扩展，一种是在类外扩展，这两种形式扩展后的函数互不影响（甚至名称都可以相同），即使名称相同，它们也完全是两个不同的函数，并且有以下特点：
+对于伴生对象扩展函数，有两种形式，一种是在类内扩展，一种是在类外扩展，这两种形式扩展后的函数互不影响(甚至名称都可以相同)，即使名称相同，它们也完全是两个不同的函数，并且有以下特点：
 
--  （1）类内扩展的伴随对象函数和类外扩展的伴随对象可以同名，它们是两个独立的函数，互不影响；
--  （2）当类内扩展的伴随对象函数和类外扩展的伴随对象同名时，类内的其它函数优先引用类内扩展的伴随对象函数，即对于类内其它成员函数来说，类内扩展屏蔽类外扩展；
--  （3）类内扩展的伴随对象函数只能被类内的函数引用，不能被类外的函数和伴随对象内的函数引用；
--  （4）类外扩展的伴随对象函数可以被伴随对象内的函数引用，；
+-  (1)类内扩展的伴随对象函数和类外扩展的伴随对象可以同名，它们是两个独立的函数，互不影响；
+-  (2)当类内扩展的伴随对象函数和类外扩展的伴随对象同名时，类内的其它函数优先引用类内扩展的伴随对象函数，即对于类内其它成员函数来说，类内扩展屏蔽类外扩展；
+-  (3)类内扩展的伴随对象函数只能被类内的函数引用，不能被类外的函数和伴随对象内的函数引用；
+-  (4)类外扩展的伴随对象函数可以被伴随对象内的函数引用，；
 
 例如以下代码：
 
@@ -2446,7 +2446,7 @@ class MyClass {
         }
     }
     fun MyClass.Companion.foo() {
-        println("伴随对象的扩展函数（内部）")
+        println("伴随对象的扩展函数(内部)")
     }
     fun test2() {
         MyClass.foo()
@@ -2632,7 +2632,7 @@ fun execute(view: View, op: UiOp) = when (op) {
 
 以上代码中，TranslateX 是一个类，它可以携带多于一个的信息，比如除了告诉 view 需要水平平移之外，还可以告诉 view 平移多少像素，甚至还可以告诉 view 平移的动画类型等信息，我想这大概就是密封类出现的意义吧。
 
-除此之外，如果 when 语句的分支不需要携带除“显示或隐藏view之外的其它信息”时（即只需要表明 when 语句分支，不需要携带额外数据时），用 object 关键字创建单例就可以了，并且此时 when 子句不需要使用 is 关键字。只有需要携带额外信息时才定义密封类的子类，而且使用了密封类就不需要使用 else 子句，每当我们多增加一个密封类的子类或单例，编译器就会在 when 语句中给出提示，可以在编译阶段就及时发现错误，这也是以往 switch-case 语句和枚举不具备的功能。
+除此之外，如果 when 语句的分支不需要携带除“显示或隐藏view之外的其它信息”时(即只需要表明 when 语句分支，不需要携带额外数据时)，用 object 关键字创建单例就可以了，并且此时 when 子句不需要使用 is 关键字。只有需要携带额外信息时才定义密封类的子类，而且使用了密封类就不需要使用 else 子句，每当我们多增加一个密封类的子类或单例，编译器就会在 when 语句中给出提示，可以在编译阶段就及时发现错误，这也是以往 switch-case 语句和枚举不具备的功能。
 
 最后，我们甚至可以把这一组操作封装成一个函数，以便日后调用，如下：
 
@@ -2693,7 +2693,7 @@ fun execute(view: View, op: UiOp) = when (op) {
 
 以上代码中，TranslateX 是一个类，它可以携带多于一个的信息，比如除了告诉 view 需要水平平移之外，还可以告诉 view 平移多少像素，甚至还可以告诉 view 平移的动画类型等信息，我想这大概就是密封类出现的意义吧。
 
-除此之外，如果 when 语句的分支不需要携带除“显示或隐藏view之外的其它信息”时（即只需要表明 when 语句分支，不需要携带额外数据时），用 object 关键字创建单例就可以了，并且此时 when 子句不需要使用 is 关键字。只有需要携带额外信息时才定义密封类的子类，而且使用了密封类就不需要使用 else 子句，每当我们多增加一个密封类的子类或单例，编译器就会在 when 语句中给出提示，可以在编译阶段就及时发现错误，这也是以往 switch-case 语句和枚举不具备的功能。
+除此之外，如果 when 语句的分支不需要携带除“显示或隐藏view之外的其它信息”时(即只需要表明 when 语句分支，不需要携带额外数据时)，用 object 关键字创建单例就可以了，并且此时 when 子句不需要使用 is 关键字。只有需要携带额外信息时才定义密封类的子类，而且使用了密封类就不需要使用 else 子句，每当我们多增加一个密封类的子类或单例，编译器就会在 when 语句中给出提示，可以在编译阶段就及时发现错误，这也是以往 switch-case 语句和枚举不具备的功能。
 
 最后，我们甚至可以把这一组操作封装成一个函数，以便日后调用，如下：
 
@@ -2846,7 +2846,7 @@ fun <T> copyWhenGreater(list: List<T>, threshold: T): List<String>
 
 ## 型变
 
-Kotlin 中没有通配符类型，它有两个其他的东西：声明处型变（declaration-site variance）与类型投影（type projections）。
+Kotlin 中没有通配符类型，它有两个其他的东西：声明处型变(declaration-site variance)与类型投影(type projections)。
 
 ### 声明处型变
 
@@ -3267,7 +3267,7 @@ class MyClass {
 
 - 对象表达式是在使用他们的地方立即执行的
 - 对象声明是在第一次被访问到时延迟初始化的
-- 伴生对象的初始化是在相应的类被加载（解析）时，与 Java 静态初始化器的语义相匹配
+- 伴生对象的初始化是在相应的类被加载(解析)时，与 Java 静态初始化器的语义相匹配
 
 # kotlin 委托
 
@@ -3430,7 +3430,7 @@ fun main(args: Array<String>) {
 
 ## 把属性储存在映射中
 
-一个常见的用例是在一个映射（map）里存储属性的值。 这经常出现在像解析 JSON 或者做其他"动态"事情的应用中。 在这种情况下，你可以使用映射实例自身作为委托来实现委托属性。
+一个常见的用例是在一个映射(map)里存储属性的值。 这经常出现在像解析 JSON 或者做其他"动态"事情的应用中。 在这种情况下，你可以使用映射实例自身作为委托来实现委托属性。
 
 ```
 class Site(val map: Map<String, Any?>) {
@@ -3539,10 +3539,10 @@ memoizedFoo 变量只会在第一次访问时计算。 如果 someCondition 失�
 
 对于只读属性(也就是说val属性), 它的委托必须提供一个名为getValue()的函数。该函数接受以下参数：
 
-- thisRef —— 必须与属性所有者类型（对于扩展属性——指被扩展的类型）相同或者是它的超类型
+- thisRef —— 必须与属性所有者类型(对于扩展属性——指被扩展的类型)相同或者是它的超类型
 - property —— 必须是类型 KProperty<*> 或其超类型
 
-这个函数必须返回与属性相同的类型（或其子类型）。
+这个函数必须返回与属性相同的类型(或其子类型)。
 
 对于一个值可变(mutable)属性(也就是说,var 属性),除 getValue()函数之外,它的委托还必须 另外再提供一个名为setValue()的函数, 这个函数接受以下参数:
 
@@ -3576,7 +3576,7 @@ Kotlin 编译器在参数中提供了关于 prop 的所有必要信息：第一�
 
 通过定义 provideDelegate 操作符，可以扩展创建属性实现所委托对象的逻辑。 如果 by 右侧所使用的对象将 provideDelegate 定义为成员或扩展函数，那么会调用该函数来 创建属性委托实例。
 
-provideDelegate 的一个可能的使用场景是在创建属性时（而不仅在其 getter 或 setter 中）检查属性一致性。
+provideDelegate 的一个可能的使用场景是在创建属性时(而不仅在其 getter 或 setter 中)检查属性一致性。
 
 例如，如果要在绑定之前检查属性名称，可以这样写：
 
@@ -3603,7 +3603,7 @@ class MyUI {
 
 provideDelegate 的参数与 getValue 相同：
 
-- thisRef —— 必须与 属性所有者 类型（对于扩展属性——指被扩展的类型）相同或者是它的超类型
+- thisRef —— 必须与 属性所有者 类型(对于扩展属性——指被扩展的类型)相同或者是它的超类型
 - property —— 必须是类型 KProperty<*> 或其超类型。
 
 在创建 MyUI 实例期间，为每个属性调用 provideDelegate 方法，并立即执行必要的验证。
@@ -3626,7 +3626,7 @@ fun <T> MyUI.bindResource(
 }
 ```
 
-在生成的代码中，会调用 provideDelegate 方法来初始化辅助的 prop$delegate 属性。 比较对于属性声明 val prop: Type by MyDelegate() 生成的代码与 上面（当 provideDelegate 方法不存在时）生成的代码：
+在生成的代码中，会调用 provideDelegate 方法来初始化辅助的 prop$delegate 属性。 比较对于属性声明 val prop: Type by MyDelegate() 生成的代码与 上面(当 provideDelegate 方法不存在时)生成的代码：
 
 ```
 class C {

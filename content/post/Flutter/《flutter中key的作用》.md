@@ -85,9 +85,9 @@ Key 官方介绍：
 
 > 控制一个小部件如何替换树中的另一个小部件。
 >
-> 如果两个widget的[runtimeType](https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html)和[key](https://api.flutter.dev/flutter/widgets/Widget/key.html)属性分别是相等的([==](https://api.flutter.dev/flutter/widgets/Widget/operator_equals.html))，则新widget通过更新基础element（即，通过使用新的widget调用[Element.update](https://api.flutter.dev/flutter/widgets/Element/update.html)）来替换旧widget。否则，将从树中删除旧element，将新widget放大为一个element，然后将新element插入到树中。
+> 如果两个widget的[runtimeType](https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html)和[key](https://api.flutter.dev/flutter/widgets/Widget/key.html)属性分别是相等的([==](https://api.flutter.dev/flutter/widgets/Widget/operator_equals.html))，则新widget通过更新基础element(即，通过使用新的widget调用[Element.update](https://api.flutter.dev/flutter/widgets/Element/update.html))来替换旧widget。否则，将从树中删除旧element，将新widget放大为一个element，然后将新element插入到树中。
 >
-> 另外，使用[GlobalKey](https://api.flutter.dev/flutter/widgets/GlobalKey-class.html)作为窗口小部件的[key](https://api.flutter.dev/flutter/widgets/Widget/key.html)允许该element在树上移动（更改父级）而不会丢失状态。当找到新的widget（其键和类型与相同位置的先前widget不匹配），但是在前一帧的树中其他位置有一个具有相同全局键的widget时，该widget的element将移至新位置。
+> 另外，使用[GlobalKey](https://api.flutter.dev/flutter/widgets/GlobalKey-class.html)作为窗口小部件的[key](https://api.flutter.dev/flutter/widgets/Widget/key.html)允许该element在树上移动(更改父级)而不会丢失状态。当找到新的widget(其键和类型与相同位置的先前widget不匹配)，但是在前一帧的树中其他位置有一个具有相同全局键的widget时，该widget的element将移至新位置。
 >
 > 通常，作为另一个widget的唯一child的widget不需要显式key。
 
@@ -99,7 +99,7 @@ Key 官方介绍：
 
 ### 无状态组件
 
-下面这段代码在一个Row中展示了两个彩色方片（StatelessContainer），当点击按钮时，会交换两个方片的位置：
+下面这段代码在一个Row中展示了两个彩色方片(StatelessContainer)，当点击按钮时，会交换两个方片的位置：
 
 [![img_key_screen](https://luckly007.oss-cn-beijing.aliyuncs.com/img/img_key.png)](https://blog.wangruofeng007.com/images/flutter_key/img_key_screen.png)
 
@@ -159,7 +159,7 @@ class _ScreenState extends State<Screen> {
 
 ### 有状态组件
 
-有状态组件的状态信息（如颜色）通常是存储在state中的，而state是存储在element树中的。
+有状态组件的状态信息(如颜色)通常是存储在state中的，而state是存储在element树中的。
 
 那么Key到底应该用到哪呢？
 我们再来一个例子，我们把色块用Padding包装一下。运行之后会发现，色块并没有交换，而是以随机的形式在变换颜色。为什么呢？
@@ -234,7 +234,7 @@ class _StatefulContainerState extends State<StatefulContainer> {
 
 结合我们上面的理论，我们分析一下这次的Widget Tree 和 Element Tree，当我们交换元素后，Flutter element-to-widget matching algorithm,(元素-组件匹配算法)，开始进行对比，算法每次只对比一层，即Padding这一层。显然，Padding并没有发生本质的变化。
 
-于是开始进行第二层对比，在对比时Flutter发现元素与组件的Key并不匹配，于是，把它设置成不可用状态，但是这里所使用的Key只是本地Key（Local Key），Flutter并不能找到另一层里面的Key（即另外一个Padding Widget中的Key）所以，Flutter就创建了一个新的Widget，而这个Widget的颜色就成了我们看到的『随机色』。
+于是开始进行第二层对比，在对比时Flutter发现元素与组件的Key并不匹配，于是，把它设置成不可用状态，但是这里所使用的Key只是本地Key(Local Key)，Flutter并不能找到另一层里面的Key(即另外一个Padding Widget中的Key)所以，Flutter就创建了一个新的Widget，而这个Widget的颜色就成了我们看到的『随机色』。
 
 通过上面的示例，我们能明显的看出，我们的Key要设置到组件树的 **顶层**，而这一层在改变时，才能复用或者更新状态。
 
@@ -365,7 +365,7 @@ return TodoItem(
 
 如果组合的 Object 都无法满足唯一性的时候，你想要确保每一个 Key 都具有唯一性。那么，你可以使用 UniqueKey。它将会通过该对象生成一个具有唯一性的 hash 码。
 
-不过这样做，每次 Widget 被构建时都会去重新生成一个新的 UniqueKey，失去了一致性。也就是说你的小部件还是会改变。（还不如不用😂）
+不过这样做，每次 Widget 被构建时都会去重新生成一个新的 UniqueKey，失去了一致性。也就是说你的小部件还是会改变。(还不如不用😂)
 
 ### PageStorageKey
 

@@ -54,7 +54,7 @@ Flutter优势主要体现在UI上--高性能且跨平台表现一致。但是针
 
 ### Flutter Plugin
 
-包含针对Android（Java或Kotlin代码）或iOS（Objective-C或Swift代码）的原生实现，通过`Platform Channels`与FLutter(dart)层通讯并暴露API。
+包含针对Android(Java或Kotlin代码)或iOS(Objective-C或Swift代码)的原生实现，通过`Platform Channels`与FLutter(dart)层通讯并暴露API。
 
 
 

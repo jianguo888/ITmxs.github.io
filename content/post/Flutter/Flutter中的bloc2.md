@@ -48,7 +48,7 @@ BlocBuilder<BlocA, BlocAState>(
 )
 ```
 
-- **BlocListener：** BlocListener 是一个 Flutter 小部件，它采用 a`BlocWidgetListener`和 an 可选`bloc`并调用`listener`以响应 bloc 中的状态更改。它应该用于需要在每次状态更改时发生一次的功能，例如导航、显示 a `SnackBar`、显示 a`Dialog`等......`listener`与`builder`in不同的`BlocBuilder`是，每次状态更改（不包括初始状态）只调用一次并且是一个`void`函数。句法：
+- **BlocListener：** BlocListener 是一个 Flutter 小部件，它采用 a`BlocWidgetListener`和 an 可选`bloc`并调用`listener`以响应 bloc 中的状态更改。它应该用于需要在每次状态更改时发生一次的功能，例如导航、显示 a `SnackBar`、显示 a`Dialog`等......`listener`与`builder`in不同的`BlocBuilder`是，每次状态更改(不包括初始状态)只调用一次并且是一个`void`函数。句法：
 
 ```dart
 BlocListener<BlocA, BlocAState>(
@@ -155,7 +155,7 @@ class ApiService {
 ```
 
 在这里，我们创建了一个名为 getWeather() 的方法，该方法将城市名称作为参数。然后我们将城市名称附加到 baseUrl。这将成为我们的 requestUrl。下一步是创建对 requestUrl的**get**请求。
-我们将得到一个**Response**对象作为 get 请求的响应。我们现在必须解码它，以便我们可以提取它的值。因此，如果我们成功获得响应（状态代码 == 200），我们将使用名为 jsonDecode() 的方法解码响应对象并将 response.body 传递给它。一旦我们解码了响应，我们就可以创建模型的对象并返回它🥳
+我们将得到一个**Response**对象作为 get 请求的响应。我们现在必须解码它，以便我们可以提取它的值。因此，如果我们成功获得响应(状态代码 == 200)，我们将使用名为 jsonDecode() 的方法解码响应对象并将 response.body 传递给它。一旦我们解码了响应，我们就可以创建模型的对象并返回它🥳
 
 **第 6 步：**现在，让我们创建我们的 bloc 文件。创建一个名为`bloc`(lib/bloc)的文件夹并在其中创建 3 个文件。在这里，我们将它们命名为`weather_bloc`,`weather_event`和`weather_state`。它看起来像这样：
 

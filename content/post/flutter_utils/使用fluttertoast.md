@@ -10,7 +10,7 @@ https://pub.flutter-io.cn/packages/flutter_sliding_up_panel
 
 ## 前言
 
-Flutter似乎不支持直接调用安卓的Toast，只能用Flutter自己的方式去实现Toast弹窗。（那岂不是iOS也能用，美滋滋）
+Flutter似乎不支持直接调用安卓的Toast，只能用Flutter自己的方式去实现Toast弹窗。(那岂不是iOS也能用，美滋滋)
 
 ## 导包
 

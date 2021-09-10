@@ -157,7 +157,7 @@ I/flutter (14407): fixed-length[32](RunTime): 0.3052065645659146 us.
 
 Flutter 和 Dart 已经为开发人员提供了足够的工具来弄清楚为什么基准数据会这样。不幸的是，其中一些工具有些晦涩难懂且难以发现。
 
-例如，众所周知，您可以使用`flutter run --profile`Observatory 来分析您的应用程序，但您还可以使用本机分析器（例如`simpleperf` 在 Android 上或在 iOS 上的 Instruments）来分析发布版本，这一点并不为人所知。同样，不知道（很可能在一组从事 VM 的工程师之外根本不知道）您可以通过执行以下操作从 AOT 构建中转储特定方法的带注释的反汇编
+例如，众所周知，您可以使用`flutter run --profile`Observatory 来分析您的应用程序，但您还可以使用本机分析器(例如`simpleperf` 在 Android 上或在 iOS 上的 Instruments)来分析发布版本，这一点并不为人所知。同样，不知道(很可能在一组从事 VM 的工程师之外根本不知道)您可以通过执行以下操作从 AOT 构建中转储特定方法的带注释的反汇编
 
 ```
 $ flutter build apk --extra-gen-snapshot-options=--print-flow-graph,\
@@ -183,7 +183,7 @@ void main() { print('Running benchmarks...'); }
 ^D
 ```
 
-最后我改变`pubspec.yaml`了`ubench`项目（记住它是我们创建的一个空的 Flutter 项目来托管我们的基准测试）以对我的版本有路径依赖`benchmark_harness`
+最后我改变`pubspec.yaml`了`ubench`项目(记住它是我们创建的一个空的 Flutter 项目来托管我们的基准测试)以对我的版本有路径依赖`benchmark_harness`
 
 ```
 # ubench/pubspec.yaml
@@ -207,7 +207,7 @@ Running benchmarks...
 
 你有没有看过`benchmark_harness`你的基准测试是如何运行的？
 
-事实证明，这个包正在做一些相当简单的事情（并且在某种程度上很天真）：它启动 a `Stopwatch`，然后`exercise` 根据秒表重复调用直到 2 秒过去。经过的时间除以`exercise`被调用的次数是报告的基准分数。自己看看：
+事实证明，这个包正在做一些相当简单的事情(并且在某种程度上很天真)：它启动 a `Stopwatch`，然后`exercise` 根据秒表重复调用直到 2 秒过去。经过的时间除以`exercise`被调用的次数是报告的基准分数。自己看看：
 
 ```
 // benchmark_harness/lib/src/benchmark_base.dart
@@ -418,7 +418,7 @@ I/flutter (12463): benchmark_harness[{"event":"benchmark.done"}]
 Application finished.
 ```
 
-但是手动执行此操作并不是我的目标。相反，我要改变`bin/benchmark_harness.dart`脚本既构建基准，然后运行所有生成的文件，收集的基准测试结果（全代码中看到[这个](https://github.com/mraleph/benchmark_harness/commit/13941c5e0d58c94bf78d694e619dacb4bfc3ba3c)承诺）。
+但是手动执行此操作并不是我的目标。相反，我要改变`bin/benchmark_harness.dart`脚本既构建基准，然后运行所有生成的文件，收集的基准测试结果(全代码中看到[这个](https://github.com/mraleph/benchmark_harness/commit/13941c5e0d58c94bf78d694e619dacb4bfc3ba3c)承诺)。
 
 ```
 // benchmark_harness/bin/benchmark_harness.dart
@@ -472,7 +472,7 @@ allocateGrowableArray: 0.00018900632858276367 ms/iteration (62.5 times as slow)
 
 Flutter 的*发布*版本不包括 Dart 的内置分析器，因此我们将不得不使用原生分析器，例如`simpleperf`在 Android 上。
 
-Android有全面[的文档](https://android.googlesource.com/platform/system/extras/+/master/simpleperf/doc/android_application_profiling.md)使用`simpleperf`，这我不打算在这里重复。`simpleperf`还带有调用的 C++（和 Java）代码[`app_api`](https://android.googlesource.com/platform/system/extras/+/master/simpleperf/app_api/cpp/simpleperf.cpp)，这些代码可以链接到应用程序中以允许以编程方式访问分析器。
+Android有全面[的文档](https://android.googlesource.com/platform/system/extras/+/master/simpleperf/doc/android_application_profiling.md)使用`simpleperf`，这我不打算在这里重复。`simpleperf`还带有调用的 C++(和 Java)代码[`app_api`](https://android.googlesource.com/platform/system/extras/+/master/simpleperf/app_api/cpp/simpleperf.cpp)，这些代码可以链接到应用程序中以允许以编程方式访问分析器。
 
 实际上`app_api`并没有做任何过于花哨的事情：它只是`simpleperf`使用正确的命令行选项运行 二进制文件。这就是我决定将相关部分移植`app_api`到纯 Dart 的原因。我们也可以绑定到`app_api`使用 Dart FFI 的C++ 版本，但这需要将这个 C++ 打包成一个*Flutter 插件*，这使事情变得复杂，因为它`benchmark_harness`是一个纯 Dart 包，它不能依赖于 Flutter 插件包。
 
@@ -545,7 +545,7 @@ NDK 还附带了一个辅助脚本`api_profiler.py`，它实现了两个命令�
 
 ### 显示收集的分析数据
 
-NDK 的`simpleperf`二进制文件同时支持`record`和`report`命令，就像 Linux 一样`perf`。在 NDK 中环顾四周，我还发现了一堆用 Python 编写的帮助脚本（例如`report_html.py`，可以生成 HTML 报告）。深入了解这些脚本，我发现它们利用了`libsimpleperf_report.so`处理收集到的配置文件的解析和符号化的库。此库的 API 定义[`simpleperf/report_lib_interface.cpp`](https://android.googlesource.com/platform/system/extras/+/refs/heads/master/simpleperf/report_lib_interface.cpp#34)在`simpleperf`源文件 的顶部。
+NDK 的`simpleperf`二进制文件同时支持`record`和`report`命令，就像 Linux 一样`perf`。在 NDK 中环顾四周，我还发现了一堆用 Python 编写的帮助脚本(例如`report_html.py`，可以生成 HTML 报告)。深入了解这些脚本，我发现它们利用了`libsimpleperf_report.so`处理收集到的配置文件的解析和符号化的库。此库的 API 定义[`simpleperf/report_lib_interface.cpp`](https://android.googlesource.com/platform/system/extras/+/refs/heads/master/simpleperf/report_lib_interface.cpp#34)在`simpleperf`源文件 的顶部。
 
 使用[`ffigen`](https://pub.dev/packages/ffigen)我`dart:ffi` 为此库生成的基于绑定，允许我从`benchmark_harness` 脚本中使用它来处理收集的分析样本：
 
@@ -578,7 +578,7 @@ Future<void> _printProfile(String profileData) async {
 }
 ```
 
-当我第一次运行它时，我发现`simpleperf`无论 for `libapp.so`（包含 AOT 编译的 Dart 代码）还是 for `libflutter.so` （包含 Flutter 引擎代码）都不能真正将大多数样本归因于一个有意义的符号 。这是我收到的第一份报告：
+当我第一次运行它时，我发现`simpleperf`无论 for `libapp.so`(包含 AOT 编译的 Dart 代码)还是 for `libflutter.so` (包含 Flutter 引擎代码)都不能真正将大多数样本归因于一个有意义的符号 。这是我收到的第一份报告：
 
 ```
 Hot methods when running allocateGrowableArray:
@@ -610,7 +610,7 @@ Hot methods when running allocateGrowableArray:
   3.66% unknown ([kernel.kallsyms])
 ```
 
-然后我更进一步，并使用 DWARF 中可用的信息来漂亮地打印符号名称（这`simpleperf`似乎并不行）。幸运的是，我实际上不必手动解析 DWARF，`package:native_stack_traces` 已经拥有所有必要的工具来为我们处理 ELF/DWARF 解析：
+然后我更进一步，并使用 DWARF 中可用的信息来漂亮地打印符号名称(这`simpleperf`似乎并不行)。幸运的是，我实际上不必手动解析 DWARF，`package:native_stack_traces` 已经拥有所有必要的工具来为我们处理 ELF/DWARF 解析：
 
 ```
 String _userFriendlyName(Dwarf dwarf, elf_lib.Elf elf, String symbol) {
@@ -656,7 +656,7 @@ Hot methods when running allocateGrowableArray:
 
 有多种可能的方法来实现这一点，例如我可以选择将此任务委托给`perf annotate`或类似的东西。然而`perf` ，在搜索符号时对文件夹结构相当挑剔，而且似乎没有一个 NDK 脚本符合要求，所以我选择只使用 `llvm-objdump`分析信息并注释结果。
 
-通过一些后期处理，使用 Dart VM 特定名称作为保留寄存器`thr`（为当前`Thread`指针保留）和对符号名称（通过`_userFriendlyName`帮助程序）进行解构，我们得到如下输出：
+通过一些后期处理，使用 Dart VM 特定名称作为保留寄存器`thr`(为当前`Thread`指针保留)和对符号名称(通过`_userFriendlyName`帮助程序)进行解构，我们得到如下输出：
 
 ```
 Hot methods when running allocateFixedArray:
@@ -690,7 +690,7 @@ Hot methods when running allocateFixedArray:
                      68: bl	Stub::NullErrorSharedWithoutFPURegsStub
 ```
 
-熟悉 ARM 汇编语言的开发人员可能能够仅从这个输出中发现我们的基准测试的问题（是的，显然存在问题）。
+熟悉 ARM 汇编语言的开发人员可能能够仅从这个输出中发现我们的基准测试的问题(是的，显然存在问题)。
 
 但是我决定花更多的时间在上面，并在程序集之上覆盖有关 Dart VM 编译器的中间语言的信息，使其更容易理解。
 
@@ -701,7 +701,7 @@ Hot methods when running allocateFixedArray:
 - 添加一个标志`--write-code-comments-to=output.json`，告诉编译器将偏移量到注释的映射转储到 JSON 文件中，然后在我们的基准测试 CLI 中摄取此 JSON。
 - 添加一个标志`--write-code-comments-as-synthetic-source-to=comments.txt`，告诉编译器从所有代码注释中合成一个巨大的文件，并将偏移量到注释的映射作为 DWARF 行程序写入`.debug_line` 部分。
 
-最后我决定第二种方法更好，因为它使*任何*能够理解`.debug_line`在反汇编的同时显示代码注释的工具成为可能（例如，`gdb`也将开始显示它）。
+最后我决定第二种方法更好，因为它使*任何*能够理解`.debug_line`在反汇编的同时显示代码注释的工具成为可能(例如，`gdb`也将开始显示它)。
 
 这是[我](https://github.com/mraleph/sdk/commit/6612e52dc01cc843f04a205b2dc56c2d0d69d852#diff-c21c72c7a0fbe730891dd0c86bd141f23c33fddc11b512025ac7381fbda7563a)针对 Dart SDK 实现必要管道的[补丁](https://github.com/mraleph/sdk/commit/6612e52dc01cc843f04a205b2dc56c2d0d69d852#diff-c21c72c7a0fbe730891dd0c86bd141f23c33fddc11b512025ac7381fbda7563a)。有了这个，我唯一要做的改变就是添加`-S`到`llvm-objdump` 调用中，它处理其余的：
 
@@ -821,7 +821,7 @@ Hot methods when running allocateGrowableArray:
   ..(run with -v to disassemble all hot methods in libapp.so)..
 ```
 
-现在它应该在`allocateFixedArray`实际上不包含*任何数组分配*的输出中可见，它被编译器消除（沉没），因此我们的基准测试似乎将空`while (N-- > 0);`循环的性能与实际执行一些数组分配的循环的性能进行比较 .
+现在它应该在`allocateFixedArray`实际上不包含*任何数组分配*的输出中可见，它被编译器消除(沉没)，因此我们的基准测试似乎将空`while (N-- > 0);`循环的性能与实际执行一些数组分配的循环的性能进行比较 .
 
 然而，空循环远非微不足道。它本身似乎包含两个开销来源：
 
@@ -884,7 +884,7 @@ void _$measuredLoop$allocateGrowableArray(int numIterations) {
 }
 ```
 
-为什么要被`numIterations`编译器装箱？这里有多种因素在起作用。最重要的是，编译器根本无法证明它`numIterations`不在`null`函数的入口处，这是因为我们使用了一个可测量的循环方法来调用它。*TFA*（*类型流分析*，我们的全局类型传播算法）不会尝试推断闭包参数的精确类型信息。如果我们的代码是使用类构建的，例如：如果我们在默认情况下以声音不可为空 (NNBD) 模式运行，那么编译器也将能够依赖于`numIterations`永远不能为`null`. 这说明了 NNBD 的好处之一：为编译器提供更多信息以供使用。
+为什么要被`numIterations`编译器装箱？这里有多种因素在起作用。最重要的是，编译器根本无法证明它`numIterations`不在`null`函数的入口处，这是因为我们使用了一个可测量的循环方法来调用它。*TFA*(*类型流分析*，我们的全局类型传播算法)不会尝试推断闭包参数的精确类型信息。如果我们的代码是使用类构建的，例如：如果我们在默认情况下以声音不可为空 (NNBD) 模式运行，那么编译器也将能够依赖于`numIterations`永远不能为`null`. 这说明了 NNBD 的好处之一：为编译器提供更多信息以供使用。
 
 ```
 abstract class MeasuredLoop {
@@ -959,7 +959,7 @@ void _$measuredLoop$allocateGrowableArray(int numIterations) {
 
 ### 消除 `CheckStackOverflow`
 
-`CheckStackOverflow`编译器插入的指令有双重目的：它们检查堆栈溢出（顾名思义），但也用作中断点，允许 VM 干净地中断执行 Dart 代码的线程。例如，GC 可以使用此机制将 mutator 线程停放在安全点。`CheckStackOverflow`的速度相当快：它们由通常会访问 CPU 缓存的内存负载和几乎从不使用的比较和分支组成。然而，它们在非常紧凑的循环中仍然具有可见的成本。
+`CheckStackOverflow`编译器插入的指令有双重目的：它们检查堆栈溢出(顾名思义)，但也用作中断点，允许 VM 干净地中断执行 Dart 代码的线程。例如，GC 可以使用此机制将 mutator 线程停放在安全点。`CheckStackOverflow`的速度相当快：它们由通常会访问 CPU 缓存的内存负载和几乎从不使用的比较和分支组成。然而，它们在非常紧凑的循环中仍然具有可见的成本。
 
 作为一项实验，我更改了 VM 以完全消除`CheckStackOverflow`标有`@pragma('vm:no-interrupts')`.
 
@@ -1032,11 +1032,11 @@ Hot methods when running allocateGrowableArray:
 
 因此，与分配具有 32 个元素的固定长度列表相比，分配具有 32 个元素的可增长列表需要多出约 30% 的时间，这比我们使用初始基准获得的结果要合理得多。
 
-这也是有道理的：可增长数组只是一个包含在固定长度数组中的对象，因此分配可增长数组比分配固定长度数组要慢一些，因为您需要分配和初始化更多内存，并且需要跳过更多圈套到达那里：`allocateFixedArray` 大部分时间都花在分配数组的存根（一段手写机器代码）上，在完成`allocateGrowableArray`这项工作时涉及多个功能。
+这也是有道理的：可增长数组只是一个包含在固定长度数组中的对象，因此分配可增长数组比分配固定长度数组要慢一些，因为您需要分配和初始化更多内存，并且需要跳过更多圈套到达那里：`allocateFixedArray` 大部分时间都花在分配数组的存根(一段手写机器代码)上，在完成`allocateGrowableArray`这项工作时涉及多个功能。
 
 ## 关于基准测试的最后评论
 
-总的来说，我选择在这篇文章中忽略一些与微基准测试相关的最困难的问题：例如，我决定完全忽略 JIT，专门关注 AOT。对 JIT 进行基准测试真的很难，因为它们的行为就像活的有机体，即使经过长时间的预热，性能也会出现剧烈波动（参见例如[虚拟机预热吹冷热](https://soft-dev.org/pubs/html/barrett_bolz-tereick_killick_mount_tratt__virtual_machine_warmup_blows_hot_and_cold_v6/)论文）。我还决定专注于简单化的*平均运营成本*指标，这可能会隐藏一些重要但不经常出现的开销。数组分配实际上是一个很好的例子：它通常可能相当便宜，但它可能经常触发 GC——其成本将与实时数据量成正比，在微基准测试中可能接近 0。平均数以千计的操作将完全消除 GC 的成本，但是在实际应用程序中，像这样的 GC 可能很重要，因为它们可能会导致丢失帧。
+总的来说，我选择在这篇文章中忽略一些与微基准测试相关的最困难的问题：例如，我决定完全忽略 JIT，专门关注 AOT。对 JIT 进行基准测试真的很难，因为它们的行为就像活的有机体，即使经过长时间的预热，性能也会出现剧烈波动(参见例如[虚拟机预热吹冷热](https://soft-dev.org/pubs/html/barrett_bolz-tereick_killick_mount_tratt__virtual_machine_warmup_blows_hot_and_cold_v6/)论文)。我还决定专注于简单化的*平均运营成本*指标，这可能会隐藏一些重要但不经常出现的开销。数组分配实际上是一个很好的例子：它通常可能相当便宜，但它可能经常触发 GC——其成本将与实时数据量成正比，在微基准测试中可能接近 0。平均数以千计的操作将完全消除 GC 的成本，但是在实际应用程序中，像这样的 GC 可能很重要，因为它们可能会导致丢失帧。
 
 ## 下一部分
 

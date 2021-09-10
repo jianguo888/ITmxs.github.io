@@ -16,7 +16,7 @@ categories: ["Flutter","dart"]
 
 
 
-## 使用 equals() 方法（DeepCollectionEquality 类）
+## 使用 equals() 方法(DeepCollectionEquality 类)
 
 [DeepCollectionEquality](https://api.flutter.dev/flutter/package-collection_collection/DeepCollectionEquality-class.html)类的[equals](https://api.flutter.dev/flutter/package-collection_collection/DeepCollectionEquality/equals.html)方法可以帮助我们用几行代码比较 2 个嵌套映射。要使用它，您需要导入**集合**库：
 

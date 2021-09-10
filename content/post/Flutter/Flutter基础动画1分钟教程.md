@@ -20,7 +20,7 @@ categories: ["Flutter"]
 
 ![img](https://miro.medium.com/max/700/1*8ZQ8tgHfzRezDRZ6rtXeGw.png)
 
-如果你注意到这里，我在我的类中使用 singleTickerProviderStateMixin ，它会给我们一个 Ticker Provider，我们将在动画控制器中使用 Ticker provider（如果你想构建多个动画控制器，你必须使用 TickerProviderStateMixin 代替）。
+如果你注意到这里，我在我的类中使用 singleTickerProviderStateMixin ，它会给我们一个 Ticker Provider，我们将在动画控制器中使用 Ticker provider(如果你想构建多个动画控制器，你必须使用 TickerProviderStateMixin 代替)。
 
 to后^ h时，我们将定义我们的动画控制器。
 
@@ -36,6 +36,6 @@ to后^ h时，我们将定义我们的动画控制器。
 
 ![img](https://miro.medium.com/max/700/1*XjtZGTwzraCTGuzRjg3obA.png)
 
-这里我们有一个动画构建器，我们在其中提供图像，动画构建器接受一个动画，即 animationController，还有一个构建器，我们在其中定义了一个 Transform（Transform 创建一个转换其子项的小部件）。这里我们使用 Transform.scale 来做缩放动画，我们提供了一个缩放值，我们希望在其中为图像设置动画。
+这里我们有一个动画构建器，我们在其中提供图像，动画构建器接受一个动画，即 animationController，还有一个构建器，我们在其中定义了一个 Transform(Transform 创建一个转换其子项的小部件)。这里我们使用 Transform.scale 来做缩放动画，我们提供了一个缩放值，我们希望在其中为图像设置动画。
 
 **这就是运行应用程序以查看放大动画，该动画会重复播放。**

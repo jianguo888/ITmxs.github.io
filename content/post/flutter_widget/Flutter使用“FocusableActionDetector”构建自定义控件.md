@@ -17,9 +17,9 @@ categories: ["Flutter","dart"]
 事实证明，为各种输入制作一个行为“正确”的 UI 控件比仅仅检测点击要复杂得多。一般来说，您创建的每个控件都需要以下功能：
 
 - 悬停状态
-- 焦点状态（用于 Tab 键或箭头键遍历）
+- 焦点状态(用于 Tab 键或箭头键遍历)
 - 改变鼠标光标的区域
-- [Space] 和 [Enter] 键（或其他键）的键处理程序
+- [Space] 和 [Enter] 键(或其他键)的键处理程序
 
 传统上，你可以创建一个通过组成部件包括一个大的块`Focus`，`Actions`，`Shortcuts`和`MouseRegion`。这有效，但有很多样板和缩进。幸运的是，Flutter 为此提供了一个专门的小部件：`FocusableActionDetector`.
 

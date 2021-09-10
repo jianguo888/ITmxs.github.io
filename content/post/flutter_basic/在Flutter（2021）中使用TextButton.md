@@ -1,5 +1,5 @@
 ---
-title: "在Flutter（2021）中使用TextButton"
+title: "在Flutter(2021)中使用TextButton"
 date: 2021-09-06T16:51:04+08:00
 draft: false
 author: ""
@@ -86,7 +86,7 @@ TextButton.icon(
 
  
 
-禁用按钮是对触摸没有反应的按钮。要禁用文本按钮，只需将**onPressed**和**onLongPress**设置为**null**（默认情况下**onLongPress**为 null）。
+禁用按钮是对触摸没有反应的按钮。要禁用文本按钮，只需将**onPressed**和**onLongPress**设置为**null**(默认情况下**onLongPress**为 null)。
 
 例子：
 

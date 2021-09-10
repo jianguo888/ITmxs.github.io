@@ -12,7 +12,7 @@ categories: ["Flutter","dart"]
 
 ## 一、SnackBar
 
-SnackBar 是 Flutter 提供的一种提示 Widget，附带操作（Action）功能
+SnackBar 是 Flutter 提供的一种提示 Widget，附带操作(Action)功能
 
 构造如下：
 

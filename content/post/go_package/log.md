@@ -15,7 +15,7 @@ Go语言内置的`log`包实现了简单的日志服务。本文介绍了标准�
 
 ## 使用Logger
 
-log包定义了Logger类型，该类型提供了一些格式化输出的方法。本包也提供了一个预定义的“标准”logger，可以通过调用函数`Print系列`(Print|Printf|Println）、`Fatal系列`（Fatal|Fatalf|Fatalln）、和`Panic系列`（Panic|Panicf|Panicln）来使用，比自行创建一个logger对象更容易使用。
+log包定义了Logger类型，该类型提供了一些格式化输出的方法。本包也提供了一个预定义的“标准”logger，可以通过调用函数`Print系列`(Print|Printf|Println)、`Fatal系列`(Fatal|Fatalf|Fatalln)、和`Panic系列`(Panic|Panicf|Panicln)来使用，比自行创建一个logger对象更容易使用。
 
 例如，我们可以像下面的代码一样直接通过`log`包来调用上面提到的方法，默认它们会将日志信息打印到终端界面：
 
@@ -68,9 +68,9 @@ const (
     // 输出的日志在每一项后会有一个冒号分隔：例如2009/01/23 01:23:23.123123 /a/b/c/d.go:23: message
     Ldate         = 1 << iota     // 日期：2009/01/23
     Ltime                         // 时间：01:23:23
-    Lmicroseconds                 // 微秒级别的时间：01:23:23.123123（用于增强Ltime位）
+    Lmicroseconds                 // 微秒级别的时间：01:23:23.123123(用于增强Ltime位)
     Llongfile                     // 文件全路径名+行号： /a/b/c/d.go:23
-    Lshortfile                    // 文件名+行号：d.go:23（会覆盖掉Llongfile）
+    Lshortfile                    // 文件名+行号：d.go:23(会覆盖掉Llongfile)
     LUTC                          // 使用UTC时间
     LstdFlags     = Ldate | Ltime // 标准logger的初始值
 )
@@ -166,7 +166,7 @@ func init() {
 func New(out io.Writer, prefix string, flag int) *Logger
 ```
 
-New创建一个Logger对象。其中，参数out设置日志信息写入的目的地。参数prefix会添加到生成的每一条日志前面。参数flag定义日志的属性（时间、文件等等）。
+New创建一个Logger对象。其中，参数out设置日志信息写入的目的地。参数prefix会添加到生成的每一条日志前面。参数flag定义日志的属性(时间、文件等等)。
 
 举个例子：
 

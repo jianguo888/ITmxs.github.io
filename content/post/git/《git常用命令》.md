@@ -225,7 +225,7 @@ If you are sure you want to delete it, run 'git branch -D testBranch'.
   git merge aBranch
   ```
 
-这种方式叫做直接合并（straight merge）
+这种方式叫做直接合并(straight merge)
 注意没参数的情况下`merge`是`fast-forward`的，即Git将`master`分支的指针直接移到`aBranch`的最前方。
 
 换句话说，如果顺着一个分支走下去可以到达另一个分支的话，那么Git在合并两者时，只会简单移动指针，所以这种合并成为快进式(`Fast-forward`)
@@ -278,7 +278,7 @@ git cherry-pick –n 321d76f
 
 如果发生冲突，解决冲突完后执行`git cherry-pick --continue`继续拣选合并。
 
-### 解决冲突（conflicts）
+### 解决冲突(conflicts)
 
 1. 通过`CONFLICT (content):`找到冲突文件所在的位置
 2. 打开冲突文件，修改冲突后保存

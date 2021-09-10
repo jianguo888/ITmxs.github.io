@@ -43,7 +43,7 @@ mapbox:
 
 <!--more-->
 
-# Flutter常用的快捷键 AS（Android Studio一下简称AS）
+# Flutter常用的快捷键 AS(Android Studio一下简称AS)
 
 ## 代码块
 
@@ -99,7 +99,7 @@ option + Enter 自动import未导入的文件
 
 ![img](https://i2.wp.com/img-blog.csdnimg.cn/20200607200118441.png)
 
-Shift + F6 重命名（如果是Touch Bar就是Shift + Rename...）
+Shift + F6 重命名(如果是Touch Bar就是Shift + Rename...)
 
 CMD + -/+ 折起/展开代码块
 
@@ -125,7 +125,7 @@ CMD + / 注释
 
 CMD + Y 查看选中类的属性
 
-CMD + O 快速打开（一般用于快速打开某个文件）
+CMD + O 快速打开(一般用于快速打开某个文件)
 
 option + Enter 扩展功能(很重要！)
 
@@ -133,10 +133,10 @@ option + Enter 扩展功能(很重要！)
 
 - CMD + Click(鼠标左键)
 - CMD + B
-- CMD + Down（小键盘↓）
-- F4（非Touch Bar键盘）
+- CMD + Down(小键盘↓)
+- F4(非Touch Bar键盘)
 
-Option + up(↑) 选中上一层代码（比如选中当前光标的单词，选中当前小部件的所有代码，自己试~）
+Option + up(↑) 选中上一层代码(比如选中当前光标的单词，选中当前小部件的所有代码，自己试~)
 
 CMD + option + M 将选中代码提取到某个方法中
 
@@ -148,7 +148,7 @@ Option + Shift + Up/Down 上下移动行
 
 Command + Shift + Up/Down 上下移动方法
 
-自动格式化代码 （这是一个AS的设置）
+自动格式化代码 (这是一个AS的设置)
 
 Settings -> Editor -> Languages & Frameworks -> Flutter -> Editor
 

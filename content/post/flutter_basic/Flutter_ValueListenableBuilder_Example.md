@@ -10,7 +10,7 @@ tags: ["Flutter","dart"]
 categories: ["Flutter","dart"]
 ---
 
-本文将带您**了解**在多页面（或多屏幕）Flutter 应用程序中使用**ValueListenableBuilder、ValueNotifier**和**ValueListenable**的完整示例
+本文将带您**了解**在多页面(或多屏幕)Flutter 应用程序中使用**ValueListenableBuilder、ValueNotifier**和**ValueListenable**的完整示例
 
 ## 快速说明
 
@@ -31,7 +31,7 @@ ValueListenable 是一个公开值的接口，可以由 ValueNotifier 实现。V
 
 ## 应用预览
 
-我们要构建的应用程序是一个任务应用程序。它包含 2 个页面（屏幕）：**HomePage**和**ArchivePage**：
+我们要构建的应用程序是一个任务应用程序。它包含 2 个页面(屏幕)：**HomePage**和**ArchivePage**：
 
 - **主页**显示**未完成的**任务。这个还有一个浮动操作按钮，可用于添加新任务。每个任务旁边都会有一个复选框，用于将任务标记为已完成。您可以按“查看已完成按钮”导航到**ArchivePage**。
 - **ArchivePage**显示**已完成的**任务。每个任务旁边都有一个图标按钮，用于将该任务置于“未完成”状态。

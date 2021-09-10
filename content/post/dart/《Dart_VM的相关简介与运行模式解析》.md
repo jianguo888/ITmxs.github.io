@@ -86,9 +86,9 @@ Dart VM 有多种执行代码的方式，例如：
 
 ![图片](https://mmbiz.qpic.cn/sz_mmbiz_png/j9CXw3c38v6Lqw7mkwmkfib9WmbMgt9689vIg63k7WHqicrwcD21Odo3X72HBpMqQc0YbESicA8QQccic4WYErcz9Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
-VM 中的任何 Dart 代码都在某个 `isolate` 中运行，可以将其描述为：**「具有自己的内存（堆）并且通常具有自己的控制线程（mutator 线程）的 Dart 隔离宇宙」**。
+VM 中的任何 Dart 代码都在某个 `isolate` 中运行，可以将其描述为：**「具有自己的内存(堆)并且通常具有自己的控制线程(mutator 线程)的 Dart 隔离宇宙」**。
 
-VM 可以有许多 `isolate` 同时执行 Dart 代码，但它们不能直接共享任何状态，只能通过端口传递消息进行通信（不要与网络端口混淆！）。
+VM 可以有许多 `isolate` 同时执行 Dart 代码，但它们不能直接共享任何状态，只能通过端口传递消息进行通信(不要与网络端口混淆！)。
 
 这里的 OS 线程和 `isolate` 之间的关系有点模糊，并且高度依赖于虚拟机嵌入到应用程序的方式，但是主要需要保证以下内容：
 
@@ -127,7 +127,7 @@ $ dart hello.dart
 Hello, World!
 ```
 
-**「Dart 2 VM 开始不再具有从原始代码直接执行 Dart 的能力，相反 VM 希望获得包含序列化内核 AST 的内核二进制文件（也称为 dill 文件）」**。将 Dart 源代码翻译成 Kernel AST 的任务是由通用前端 (CFE)处理的，CFE 是用 Dart 编写并在不同 Dart 工具上共享（例如 VM、dart2js、Dart Dev Compiler）。
+**「Dart 2 VM 开始不再具有从原始代码直接执行 Dart 的能力，相反 VM 希望获得包含序列化内核 AST 的内核二进制文件(也称为 dill 文件)」**。将 Dart 源代码翻译成 Kernel AST 的任务是由通用前端 (CFE)处理的，CFE 是用 Dart 编写并在不同 Dart 工具上共享(例如 VM、dart2js、Dart Dev Compiler)。
 
 ![图片](https://mmbiz.qpic.cn/sz_mmbiz_png/j9CXw3c38v6Lqw7mkwmkfib9WmbMgt968iblLicybcFcRKx9O8e4R9k7q6SB5rgz6fq0NgTHFCORJcZY9cmo8ZmWg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
@@ -135,7 +135,7 @@ Hello, World!
 
 ![图片](https://mmbiz.qpic.cn/sz_mmbiz_png/j9CXw3c38v6Lqw7mkwmkfib9WmbMgt968g99LLKfZaWbcJicKMH5MIdD89WkB494ib3hxaJRicD31XlauggxwsTSrg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
-然而这种设置并不是 CFE 和 VM 运行 Dart 代码的唯一方法，例如 **「Flutter 是将编译到 Kernel 的过程和从 Kernel 执行的过程完全分离」**，并将它们放在不同的设备上实现：编译发生在开发者机器（主机）上，执行在目标移动设备上处理，目标移动设备接收由 flutter 工具发送给它的内核二进制文件。
+然而这种设置并不是 CFE 和 VM 运行 Dart 代码的唯一方法，例如 **「Flutter 是将编译到 Kernel 的过程和从 Kernel 执行的过程完全分离」**，并将它们放在不同的设备上实现：编译发生在开发者机器(主机)上，执行在目标移动设备上处理，目标移动设备接收由 flutter 工具发送给它的内核二进制文件。
 
 ![图片](https://mmbiz.qpic.cn/sz_mmbiz_png/j9CXw3c38v6Lqw7mkwmkfib9WmbMgt968fcic7jMgVH3b50vKrPH3PPoxfumQWQWg10MEfY01LSBCvdic2v4UGu0g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
@@ -153,7 +153,7 @@ Hello, World!
 >
 > ❞
 
-**「只有在运行时需要它时（例如查找类成员、分配实例等），有关类的信息才会完全反序列化」**，在这个阶段，类成员会从内核二进制文件中读取，然而在此阶段不会反序列化完整的函数体，只会反序列化它们的签名。
+**「只有在运行时需要它时(例如查找类成员、分配实例等)，有关类的信息才会完全反序列化」**，在这个阶段，类成员会从内核二进制文件中读取，然而在此阶段不会反序列化完整的函数体，只会反序列化它们的签名。
 
 ![图片](https://mmbiz.qpic.cn/sz_mmbiz_png/j9CXw3c38v6Lqw7mkwmkfib9WmbMgt968eTkWnwJibsiaEubKC9sbEyGM7MsVR3xnlxveZUMSSk2Ribwk1WU0zicZzg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
@@ -197,7 +197,7 @@ Hello, World!
 
 **「内联缓存背后的核心思想，是在特定的调用点中缓存方法解析的结果」**，VM 使用的内联缓存机制包括：
 
-- 一个调用特定的缓存（ `dart::UntaggedICData`），它将接收者的类映射到一个方法，如果接收者是匹配的类，则应该调用该方法，缓存还存储一些辅助信息，例如调用频率计数器，用于跟踪给定类在此调用点上出现的频率；
+- 一个调用特定的缓存( `dart::UntaggedICData`)，它将接收者的类映射到一个方法，如果接收者是匹配的类，则应该调用该方法，缓存还存储一些辅助信息，例如调用频率计数器，用于跟踪给定类在此调用点上出现的频率；
 - 一个共享查找 stub ，它实现了方法调用的快速路径。这个 stub 搜索给定的缓存，以查看它是否包含与接收者的类匹配的条目。如果找到该条目，则 stub 将增加频率计数器和 `tail-calls` 用缓存方法。否则 stub 将调用一个运行时系统助手来实现方法解析逻辑。如果方法解析成功，则缓存将被更新，后续调用将不需要进入运行时系统。
 
 如下图所示，展示了与 `animal.toFace()` 调用关联的内联缓存的结构和状态，该缓存使用 `Dog` 的实例执行了两次，使用 `Cat` 的实例执行了一次C。
@@ -217,13 +217,13 @@ Hello, World!
 
 然而不是直接将 IL 处理为机器代码，而是基于表单的优化 IL， 优化编译器继续将未优化的 IL 转换为静态单赋值(SSA) ，然后基于 SSA 的 IL 根据收集的类型反馈进行专业化的推测，并通过一系列Dart 的特定优化，例如：
 
-- 内联（inlining）；
-- 范围分析（range analysis）；
-- 类型传播（ type propagation）；
-- 代理选择（representation selection）；
-- 存储加载和加载转发（store-to-load and load-to-load forwarding）；
-- 全局值编号（global value numbering）；
-- 分配下沉（,allocation sinking）等，；
+- 内联(inlining)；
+- 范围分析(range analysis)；
+- 类型传播( type propagation)；
+- 代理选择(representation selection)；
+- 存储加载和加载转发(store-to-load and load-to-load forwarding)；
+- 全局值编号(global value numbering)；
+- 分配下沉(,allocation sinking)等，；
 
 最后使用线性扫描寄存器和简单的一对多降低 IL 指令，将优化的 IL 转化为机器代码。
 
@@ -231,7 +231,7 @@ Hello, World!
 
 > ❝
 >
-> 广义上讲，当与线程相关联的状态（例如堆栈帧、堆等）一致，并且可以在不受线程本身中断的情况下访问或修改时，托管环境（虚拟机）中的线程被认为处于安全点。通常这意味着线程要么暂停，要么正在执行托管环境之外一些代码，例如运行非托管 native 代码。
+> 广义上讲，当与线程相关联的状态(例如堆栈帧、堆等)一致，并且可以在不受线程本身中断的情况下访问或修改时，托管环境(虚拟机)中的线程被认为处于安全点。通常这意味着线程要么暂停，要么正在执行托管环境之外一些代码，例如运行非托管 native 代码。
 >
 > ❞
 
@@ -279,7 +279,7 @@ VM 通常在去优化后丢弃函数的优化版本，而之后再次重新优�
 
 VM 有两种方式保护编译器做出的推测性假设：
 
-- 内联检查（例如CheckSmi，CheckClassIL 指令）验证假设在编译器做出此假设的使用站点是否成立。例如将动态调用转换为直接调用时，编译器会在直接调用之前添加这些检查。
+- 内联检查(例如CheckSmi，CheckClassIL 指令)验证假设在编译器做出此假设的使用站点是否成立。例如将动态调用转换为直接调用时，编译器会在直接调用之前添加这些检查。
 - Global guards 会运行时丢弃优化代码，当依赖的内容变化时。例如优化编译器可能会观察到某个 `C` 类从未被扩展，并在类型传播过程中使用此信息。然而随后的动态代码加载或类终结可能会引入一个子类 C。此时运行时需要查找并丢弃在 `C` 没有子类的假设下编译的所有优化代码。运行时可能会在执行堆栈上找到一些现在无效的优化代码，在这种情况下受影响的帧将被标记为“去优化”，并在执行返回时取消优化。**「这种去优化被称为惰性去优化: 因为它被延迟执行，直到控制返回到优化的代码」**。
 
 > ❝
@@ -312,7 +312,7 @@ VM 能够将 `isolate` 的堆，或位于堆中的更精确地序列化对象的
 
 > ❝
 >
-> `runtime/vm/clustered_snapshot.cc` 处理快照的序列化和反序列化；API 函数 `Dart_CreateXyzSnapshot[AsAssembly]` 负责写出堆的快照（例如`Dart_CreateAppJITSnapshotAsBlobs` 和 `Dart_CreateAppAOTSnapshotAssembly` ）； `Dart_CreateIsolateGroup` 可选择获取快照数据以启动 `isolate`。
+> `runtime/vm/clustered_snapshot.cc` 处理快照的序列化和反序列化；API 函数 `Dart_CreateXyzSnapshot[AsAssembly]` 负责写出堆的快照(例如`Dart_CreateAppJITSnapshotAsBlobs` 和 `Dart_CreateAppAOTSnapshotAssembly` )； `Dart_CreateIsolateGroup` 可选择获取快照数据以启动 `isolate`。
 >
 > ❞
 
@@ -320,7 +320,7 @@ VM 能够将 `isolate` 的堆，或位于堆中的更精确地序列化对象的
 
 **「引入 AppJIT 快照是为了减少大型 Dart 应用程序的 JIT 预热时间」**，例如 `dartanalyzer` 或 `dart2js`。当这些工具用于小型项目时，它们花在实际工作上的时间与 VM 花在 JIT 编译这些应用程序上的时间一样多。
 
-AppJIT 快照可以解决这个问题：可以使用一些模拟训练数据在 VM 上运行应用程序，然后将所有生成的代码和 VM 内部数据结构序列化为 AppJIT 快照，然后分发此快照，而不是以源（或内核二进制）形式分发应用程序。
+AppJIT 快照可以解决这个问题：可以使用一些模拟训练数据在 VM 上运行应用程序，然后将所有生成的代码和 VM 内部数据结构序列化为 AppJIT 快照，然后分发此快照，而不是以源(或内核二进制)形式分发应用程序。
 
 从这个快照开始的 VM 仍然可以 JIT。
 
@@ -333,7 +333,7 @@ AOT 快照最初是为无法进行 JIT 编译的平台引入的，但它们也�
 关于 JIT 和 AOT 的性能特征比较通常存在很多混淆的概念：
 
 - JIT 可以访问正在运行的应用程序的本地类型信息和执行配置文件，但是它必须为预热付出代价；
-- AOT 可以在全局范围内推断和证明各种属性（为此它必须支付编译时间），没有关于程序实际执行方式的信息， 但 AOT 编译代码几乎立即达到其峰值性能，几乎没有任何预热.
+- AOT 可以在全局范围内推断和证明各种属性(为此它必须支付编译时间)，没有关于程序实际执行方式的信息， 但 AOT 编译代码几乎立即达到其峰值性能，几乎没有任何预热.
 
 > ❝
 >
@@ -346,11 +346,11 @@ AOT 快照最初是为无法进行 JIT 编译的平台引入的，但它们也�
 - 1、AOT 快照必须包含可以在应用程序执行期间调用的每个函数的可执行代码；
 - 2、可执行代码不得依赖任何可能在执行过程中会被违反的推测性假设；
 
-为了满足这些要求，AOT 编译过程会进行全局静态分析（类型流分析或TFA），以确定应用程序的哪些部分可以从已知的入口点集合、分配哪些类的实例，以及类型如何在程序运转。
+为了满足这些要求，AOT 编译过程会进行全局静态分析(类型流分析或TFA)，以确定应用程序的哪些部分可以从已知的入口点集合、分配哪些类的实例，以及类型如何在程序运转。
 
 所有这些分析都是保守的：意味着它们在没办法和 JIT 一样执行更多的优化执行，因为它总是可以反优化为未优化的代码以实现正确的行为。
 
-所有可能用到的函数都会被编译为本机代码，无需任何推测优化，而类型流信息仍然用专门代码处理（例如去虚拟化调用）。
+所有可能用到的函数都会被编译为本机代码，无需任何推测优化，而类型流信息仍然用专门代码处理(例如去虚拟化调用)。
 
 编译完所有函数后，就可以拍摄堆的快照，然后就可以使用预编译运行时运行生成的快照，这是 Dart VM 的一种特殊变体，它不包括 JIT 和动态代码加载工具等组件。
 
@@ -364,12 +364,12 @@ AOT 快照最初是为无法进行 JIT 编译的平台引入的，但它们也�
 
 ## 可切换调用
 
-即使进行了全局和局部分析，AOT 编译代码仍可能包含无法去虚拟化的调用（意味着它们无法静态解析）。为了补偿这种 AOT 编译代码，运行时使用 JIT 中的内联缓存技术扩展，此扩展版本称为 `switchable calls`。
+即使进行了全局和局部分析，AOT 编译代码仍可能包含无法去虚拟化的调用(意味着它们无法静态解析)。为了补偿这种 AOT 编译代码，运行时使用 JIT 中的内联缓存技术扩展，此扩展版本称为 `switchable calls`。
 
 JIT 部分已经描述了与调用点关联的每个内联缓存由两部分组成：
 
-- 缓存对象（由 `dart::UntaggedICData` 实例表示）;
-- 要调用的本地代码块（例如 `InlineCacheStub`）;
+- 缓存对象(由 `dart::UntaggedICData` 实例表示);
+- 要调用的本地代码块(例如 `InlineCacheStub`);
 
 在 JIT 模式下，运行时只会更新缓存本身，但是在 AOT 运行时可以根据内联缓存的状态选择替换缓存和要调用的本机代码。
 
@@ -387,6 +387,6 @@ JIT 部分已经描述了与调用点关联的每个内联缓存由两部分组�
 
 但是它会将 `C.method` 通过一个特殊的入口点进入，这将验证它 `obj` 仍然是 `C`， 如果不是这种情况，将调用 `DRT_SwitchableCallMiss` 并尝试选择下一个呼叫点状态。
 
-`C.method` 可能仍然是调用的有效目标，例如 `obj` 是 D `extends` C ， 但不覆盖的类的实例 `C.method`，在这种情况下，我们会检查调用点是否可以转换为单个目标状态，由 `SingleTargetCallStub` 实现（另见 `dart::UntaggedSingleTargetCache`）。
+`C.method` 可能仍然是调用的有效目标，例如 `obj` 是 D `extends` C ， 但不覆盖的类的实例 `C.method`，在这种情况下，我们会检查调用点是否可以转换为单个目标状态，由 `SingleTargetCallStub` 实现(另见 `dart::UntaggedSingleTargetCache`)。
 
 ![图片](https://mmbiz.qpic.cn/sz_mmbiz_png/j9CXw3c38v6Lqw7mkwmkfib9WmbMgt968ogicR7AgmQpp6CoVm0KKiagwS5LXd7snuTRKpDH9TuFC4ds0gvbDERmQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)

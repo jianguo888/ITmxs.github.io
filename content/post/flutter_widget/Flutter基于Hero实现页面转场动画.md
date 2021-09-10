@@ -44,7 +44,7 @@ Hero Widget 构造函数如下：
 
 下面代码中，将 `Hero` 放在了 `GestureDetector` 中，点击的时候打开新的页面。
 
-> 注意，在导航跳转的时候，fullscreenDialog 我设置的属性时 `false`（这里注释了）
+> 注意，在导航跳转的时候，fullscreenDialog 我设置的属性时 `false`(这里注释了)
 
 `Hero` 的 tag 中使用的是 `imgHero`，这应该是一个唯一的标识，而 child 直接放了一张图片
 

@@ -48,8 +48,8 @@ mapbox:
 
 | **按 Press**       | **功能 Function**                                           |
 | ------------------ | ----------------------------------------------------------- |
-| Ctrl+X             | 剪切行（空选定） Cut line (empty selection)                 |
-| Ctrl+C             | 复制行（空选定）Copy line (empty selection)                 |
+| Ctrl+X             | 剪切行(空选定) Cut line (empty selection)                 |
+| Ctrl+C             | 复制行(空选定)Copy line (empty selection)                 |
 | Alt+ ↑  / ↓        | 向上/向下移动行 Move line up/down                           |
 | Shift+Alt  + ↓ / ↑ | 向上/向下复制行 Copy line up/down                           |
 | Ctrl+Shift+K       | 删除行 Delete line                                          |
@@ -63,12 +63,12 @@ mapbox:
 | Ctrl+End           | 转到文件末尾 Go to end of file                              |
 | Ctrl+↑  / ↓        | 向上/向下滚动行 Scroll line up/down                         |
 | Alt+PgUp  / PgDown | 向上/向下滚动页面 Scroll page up/down                       |
-| Ctrl+Shift+[       | 折叠（折叠）区域 Fold (collapse) region                     |
-| Ctrl+Shift+]       | 展开（未折叠）区域 Unfold (uncollapse) region               |
-| Ctrl+K  Ctrl+[     | 折叠（未折叠）所有子区域 Fold (collapse) all subregions     |
-| Ctrl+K  Ctrl+]     | 展开（未折叠）所有子区域 Unfold (uncollapse) all subregions |
-| Ctrl+K  Ctrl+0     | 折叠（折叠）所有区域 Fold (collapse) all regions            |
-| Ctrl+K  Ctrl+J     | 展开（未折叠）所有区域 Unfold (uncollapse) all regions      |
+| Ctrl+Shift+[       | 折叠(折叠)区域 Fold (collapse) region                     |
+| Ctrl+Shift+]       | 展开(未折叠)区域 Unfold (uncollapse) region               |
+| Ctrl+K  Ctrl+[     | 折叠(未折叠)所有子区域 Fold (collapse) all subregions     |
+| Ctrl+K  Ctrl+]     | 展开(未折叠)所有子区域 Unfold (uncollapse) all subregions |
+| Ctrl+K  Ctrl+0     | 折叠(折叠)所有区域 Fold (collapse) all regions            |
+| Ctrl+K  Ctrl+J     | 展开(未折叠)所有区域 Unfold (uncollapse) all regions      |
 | Ctrl+K  Ctrl+C     | 添加行注释 Add line comment                                 |
 | Ctrl+K  Ctrl+U     | 删除行注释 Remove line comment                              |
 | Ctrl+/             | 切换行注释 Toggle line comment                              |
@@ -115,9 +115,9 @@ mapbox:
 | Ctrl +  F2                          | 选择当前字的所有出现 Select all occurrences of current word  |
 | Shift  + Alt + →                    | 展开选择 Expand selection                                    |
 | Shift  + Alt + ←                    | 缩小选择 Shrink selection                                    |
-| Shift  + Alt + （拖动鼠标）         | 列（框）选择 Column (box) selection                          |
-| Ctrl +  Shift + Alt +（箭头键）     | 列（框）选择 Column (box) selection                          |
-| Ctrl +  Shift + Alt + PgUp / PgDown | 列（框）选择页上/下 Column (box) selection page up/down      |
+| Shift  + Alt + (拖动鼠标)         | 列(框)选择 Column (box) selection                          |
+| Ctrl +  Shift + Alt +(箭头键)     | 列(框)选择 Column (box) selection                          |
+| Ctrl +  Shift + Alt + PgUp / PgDown | 列(框)选择页上/下 Column (box) selection page up/down      |
 
 ## 丰富的语言编辑 Rich languages editing
 

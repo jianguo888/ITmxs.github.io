@@ -42,12 +42,12 @@ categories: ["android"]
  **Target SDK**：最终应用程序测试版本。随着Android新版本的推送，我们应尽可能的让我们的应用程序在最新的版本上进行测试，更新Target SDK，并且易于使用最新的系统特性。
 
 **三、简述Android应用程序中，各个文件以及文件夹的作用**
- 1、**AndroidManifest.xml**：描述应用的基本特性（权限声明、应用配置版本、应用程序组件等）。
+ 1、**AndroidManifest.xml**：描述应用的基本特性(权限声明、应用配置版本、应用程序组件等)。
  2、**src**：应用程序主要的源代码目录。
  3、**res**：应用程序资源目录。
  drawable-hdpi/：图标资源目录，适应于high-density (hdpi) 屏幕。
  layout：应用程序布局页面，用户能看到的页面的布局配置xml。
- values：文案、配置等资源目录。例如：文案信息、颜色值、大小（dimens）。
+ values：文案、配置等资源目录。例如：文案信息、颜色值、大小(dimens)。
 
 ![image-20210815215419111](https://luckly007.oss-cn-beijing.aliyuncs.com/img/image-20210815215419111.png)
 

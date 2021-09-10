@@ -50,7 +50,7 @@ Tab 标签栏的基本组成是顶部的 Tab标题和内容区域，在 Flutter 
 > /// If a [TabController] is not provided, then there must be a
 > /// [DefaultTabController] ancestor.
 
-TabBar 和 TabBarView 都必须放在一个开发者提供的 TabController 或者 `DefaultTabController`（默认的 TabController）中
+TabBar 和 TabBarView 都必须放在一个开发者提供的 TabController 或者 `DefaultTabController`(默认的 TabController)中
 
 ```dart
 body: DefaultTabController(

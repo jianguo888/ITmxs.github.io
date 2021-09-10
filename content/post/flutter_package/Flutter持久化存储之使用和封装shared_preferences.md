@@ -86,7 +86,7 @@ class SharedPreferencesDataUtils{
 
 # Flutter持久化存储之使用和封装shared_preferences
 
-对NSUserDefaults（在iOS上）和SharedPreferences（在Android上)进行了包装，用于持久化的存储一些较为简单的数据，以键值对的方式存储(key-value) ，不建议存储重要的信息。 复杂数据进行数据库持久化存储请看 Flutter持久化存储之sqflite
+对NSUserDefaults(在iOS上)和SharedPreferences(在Android上)进行了包装，用于持久化的存储一些较为简单的数据，以键值对的方式存储(key-value) ，不建议存储重要的信息。 复杂数据进行数据库持久化存储请看 Flutter持久化存储之sqflite
 默认只能存储 int、double、String、List、bool类型，对其进行封装处理为单例模式，并使其具备存储Map和List的能力，并且不用关注类型，存储和读取都更加方便
 
 ## 1.准备工作
@@ -460,7 +460,7 @@ print(utf.name);
 ## 6.Latin
 
 ```dart
-// Latin1编码是单字节编码（无法编码中文），向下兼容ASCII
+// Latin1编码是单字节编码(无法编码中文)，向下兼容ASCII
 Latin1Codec lc=new Latin1Codec();
 Uint8List list=lc.encode("Hello Dart");
 // Uint8List list2=lc.encode("你好 Dart"); //报错

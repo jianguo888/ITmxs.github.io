@@ -15,7 +15,7 @@ Go语言内置的`net/http`包提供了HTTP客户端和服务端的实现。
 
 ### HTTP协议
 
-超文本传输协议（HTTP，HyperText Transfer Protocol)是互联网上应用最为广泛的一种网络传输协议，所有的WWW文件都必须遵守这个标准。设计HTTP最初的目的是为了提供一种发布和接收HTML页面的方法。
+超文本传输协议(HTTP，HyperText Transfer Protocol)是互联网上应用最为广泛的一种网络传输协议，所有的WWW文件都必须遵守这个标准。设计HTTP最初的目的是为了提供一种发布和接收HTML页面的方法。
 
 ## HTTP客户端
 

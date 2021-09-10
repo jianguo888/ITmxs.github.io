@@ -206,7 +206,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ## 界面构建过程
 
-上面说了几种基础Widget类型，如果将Demo中涉及到的Widget整理成一个树（实际上widget不算是一个真正的树，至少不是一个静态树，真正的树是Element和RenderObject），可以看到如下结构：
+上面说了几种基础Widget类型，如果将Demo中涉及到的Widget整理成一个树(实际上widget不算是一个真正的树，至少不是一个静态树，真正的树是Element和RenderObject)，可以看到如下结构：
 ![Demo的Widget树](https://luckly007.oss-cn-beijing.aliyuncs.com/img/Demo%E7%9A%84Widget%E6%A0%91.png)
 
 在树形结构中可以看到Widget的互相依赖过程，但是这个Widget树是怎样变成我们可见的界面的？中间经过了哪些转换过程？我们先说一下两个开发时没有涉及到的东西：`Element`和`RenderObject`
@@ -257,7 +257,7 @@ void mount(Element parent, dynamic newSlot) {
 
 Android界面开发是命令式的，如果需要变更某一个View，需要获取该View的句柄，然后对view进行参数变更。这样的实现方式有很强的针对性，同时绘制过程中也会自动判断，可以精准的对某一个View进行绘制。但是这种方式有一些缺点，如果变动的view比较多时，就需要为每一项单独设置，而且需要开发人员自己控制的话，较为复杂的界面逻辑需要很强的处理能力。
 
-Flutter界面开发是声明式的，每次只要定义好数据项，同时声明这些数据项与Widget的绑定关系。真正使用时，只需要变更数据内容，然后重建Widget实例就可以了。这种方式的优势就是简单粗暴，并更数据集后，绑定的相关界面项会自动调整。但是所有相关Widget都换了一遍，如果渲染内容的实例（也就是RenderObject）也都重新变更一遍，那对于界面效果来说，是一个非常严重的打击。
+Flutter界面开发是声明式的，每次只要定义好数据项，同时声明这些数据项与Widget的绑定关系。真正使用时，只需要变更数据内容，然后重建Widget实例就可以了。这种方式的优势就是简单粗暴，并更数据集后，绑定的相关界面项会自动调整。但是所有相关Widget都换了一遍，如果渲染内容的实例(也就是RenderObject)也都重新变更一遍，那对于界面效果来说，是一个非常严重的打击。
 
 但是实际上，Flutter的渲染效率很高，Widget虽然重建，但是Element以及RenderObject不一定会进行重建，具体的渲染过程，我们可以跟踪源码来看下。
 
@@ -638,7 +638,7 @@ Element updateChild(Element child, Widget newWidget, dynamic newSlot) {
 这个方法就是Widget实例变更，但是Element实例不变的核心了，这里分成了四种情况分别处理：
 
 - 如果不存在新的Widget，那么说明这一个节点应该取消掉了，执行`deactivateChild`方法。
-- 如果子节点的widget和新的widget一致（这里的一致指的是同一个对象，这个也是允许的），直接返回这个子节点。
+- 如果子节点的widget和新的widget一致(这里的一致指的是同一个对象，这个也是允许的)，直接返回这个子节点。
 - 如果两个widget不是同一个对象，判断类型是否相同，通过`canUpdate`方法判断，依据是Widget类型一致，同时Key一致。这种情况下，只需要更新子节点就好了。因此这一步就是widget变更，但是element不变更的原因。
 - 其它情况下则认为子节点是新增的，调用`inflateWidget`进行子节点创建，里面与创建界面相同，执行了mount操作。
 
@@ -847,7 +847,7 @@ const BoxConstraints({
 
 非四种情况下，则调用`performResize`与`performLayout`遍历所有子节点，直到layout完成。
 
-按照之drawFrame处理，`flushLayout`完成后进行`flushCompositingBits`，这个方法是用来为每个RenderObject设置适当needCompositing值，最终needCompositing将会决定生成多少layer提交给引擎，引擎中叠加绘制每一层layer（skia等经典用法，mix也是类似实现）。查看下面代码：
+按照之drawFrame处理，`flushLayout`完成后进行`flushCompositingBits`，这个方法是用来为每个RenderObject设置适当needCompositing值，最终needCompositing将会决定生成多少layer提交给引擎，引擎中叠加绘制每一层layer(skia等经典用法，mix也是类似实现)。查看下面代码：
 
 ```
 void flushCompositingBits() {
@@ -949,7 +949,7 @@ void _paintWithContext(PaintingContext context, Offset offset) {
 
 isRepaintBoundary为true的RenderObject会创建一个自己的layer，最终调用了`RenderObject.paint`方法。
 
-Flutter会把所有的layer都加入到ui.SceneBuilder对象中。然后在`renderView.compositeFrame()`中 ui.SceneBuilder会构建出ui.Scene（场景），交给ui.window.render方法去做最后真实渲染，最终绘制过程在Flutter引擎中实现并展示。
+Flutter会把所有的layer都加入到ui.SceneBuilder对象中。然后在`renderView.compositeFrame()`中 ui.SceneBuilder会构建出ui.Scene(场景)，交给ui.window.render方法去做最后真实渲染，最终绘制过程在Flutter引擎中实现并展示。
 
 ```
 void compositeFrame() {
@@ -997,14 +997,14 @@ void compositeFrame() {
 除了与界面渲染相关的优化建议，实际上还有一切其它的性能优化项，比如：
 
 - 部分内容考虑延迟加载
-- 较为耗时的计算操作放置到新的isolate中执行（isolate、Runner与event loop中异步处理的会单独说明，这些还是有很大区别的）
+- 较为耗时的计算操作放置到新的isolate中执行(isolate、Runner与event loop中异步处理的会单独说明，这些还是有很大区别的)
 - 内存加载以及内存泄漏等进行优化
 
 ## Flutter生命周期
 
 ### State生命周期
 
-现在使用最多的就是StatefulWidget，先说下State的生命周期。查看State的方法，有这几个需要关注的（按照源码中查找的顺序）：initState、didUpdateWidget、reassemble、setState、deactivate、dispose、build、didChangeDependencies。
+现在使用最多的就是StatefulWidget，先说下State的生命周期。查看State的方法，有这几个需要关注的(按照源码中查找的顺序)：initState、didUpdateWidget、reassemble、setState、deactivate、dispose、build、didChangeDependencies。
 
 其中reassemble是为了开发调试使用的，hot reload时调用该方法，Release版本下该方法不会被调用到，因此通常情况下无需重载该方法。setState与build方法之前已经说明过，不需要再次说明。
 
@@ -1016,7 +1016,7 @@ void compositeFrame() {
 
 - 构造方法不用详细说明，创建State实例后才会执行各种操作。
 - initState 这个方法只在 `void _firstBuild()`中调用到，而_firstBuild方法只会在Element的`mount`方法中调用到，因此`initState`只会在这个控件第一次创建时才会触发。
-- didChangeDependencies 这个方法有很多触发地方，首次同样也是在_firstBuild方法中，在initState方法执行后触发。除此以外，还会在`notifyDependent`方法中触发，而notifyDependent方法在`void notifyClients(InheritedWidget oldWidget)`方法中调用到，最后的方法是InheritedWidget参数变更时的触发方法（InheritedWidget的具体原理以及常用方式在以后会详细说明）。
+- didChangeDependencies 这个方法有很多触发地方，首次同样也是在_firstBuild方法中，在initState方法执行后触发。除此以外，还会在`notifyDependent`方法中触发，而notifyDependent方法在`void notifyClients(InheritedWidget oldWidget)`方法中调用到，最后的方法是InheritedWidget参数变更时的触发方法(InheritedWidget的具体原理以及常用方式在以后会详细说明)。
   所以总结一下，didChangeDependencies有两种执行时机：1、会在initState之后执行；2、会在依赖的InheritedWidget发生变化的时执行
 - didUpdateWidget 这个方法会在`StatefulElement.update(StatefulWidget newWidget)`中执行，而后面一个方法我们很熟悉了，就是之前判断Widget变更的四种条件之一了，再看下源码：
 

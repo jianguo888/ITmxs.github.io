@@ -1,5 +1,5 @@
 ---
-title: "《Flutter之precacheImage（）解析》"
+title: "《Flutter之precacheImage()解析》"
 subtitle: ""
 date: 2021-07-31T21:12:42+08:00
 lastmod: 2021-07-31T21:12:42+08:00

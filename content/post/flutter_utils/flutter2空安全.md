@@ -10,7 +10,7 @@ tags: ["Flutter","dart"]
 categories: ["Flutter","dart"]
 ---
 
-作为开发人员，我们总是努力处理*NullPointerException*，这会在开发软件时导致大量时间和金钱。它被称为一个*十亿美元的错误。*（[维基](https://en.wikipedia.org/wiki/Tony_Hoare#Apologies_and_retractions)）
+作为开发人员，我们总是努力处理*NullPointerException*，这会在开发软件时导致大量时间和金钱。它被称为一个*十亿美元的错误。*([维基](https://en.wikipedia.org/wiki/Tony_Hoare#Apologies_and_retractions))
 
 Flutter 2 支持空安全。您现在可以迁移 Flutter 包以使用不可为 null 的类型。按照以下链接为旧项目执行颤振迁移。
 
@@ -72,7 +72,7 @@ void main() {
 
 ***— — — — — — — — — — — — — — — — — — — — — — — — — — —\***
 
-# 可空类型（使用问号“?”）
+# 可空类型(使用问号“?”)
 
 要强制变量可以为空，请使用**'?'** 如下所示，它告诉系统它可以为空，并分配字母。这将通过空异常导致移动设备上出现红屏。
 

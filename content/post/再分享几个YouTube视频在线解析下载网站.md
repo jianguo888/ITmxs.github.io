@@ -48,11 +48,11 @@ sequenceDiagrams:
 
 以下这些网站都不存在于地球,直接打不开的,自己想办法就不明说了;
 
-https://y2mate.com/zh-cn （极力推荐，功能强大，可以直接访问，速度快） --已挂
+https://y2mate.com/zh-cn (极力推荐，功能强大，可以直接访问，速度快) --已挂
 
 [https://ytmp3.cc](https://ytmp3.cc/) (这个网站可以直接下载mp3和mp4格式)
 
-[https://www.youtubemy.com](https://www.youtubemy.com/) （网友自荐，还不错）
+[https://www.youtubemy.com](https://www.youtubemy.com/) (网友自荐，还不错)
 
 https://pickvideo.net/ (被河蟹，需要爬梯子)
 
@@ -80,7 +80,7 @@ https://en.savefrom.net/18/
 
 https://www.youtube.com/watch?v=nSQPezyEgVs
 
-# Flutter网上商店管理系统| Flutter管理面板（第2部分）
+# Flutter网上商店管理系统| Flutter管理面板(第2部分)
 
  我要教你如何建立Facebook的用户界面为手机和网络使用颤振。您将学习如何创建可重用和响应式的小部件，这些小部件可根据当前屏幕尺寸更改其外观和尺寸。下载入门项目以继续！»资源📁入门项目：[https://github.com/](https://github.com/MarcusNg/flutter_facebook_responsive_ui/tree/starter-project) 完整的源代码：[https://github.com/](https://github.com/MarcusNg/flutter_facebook_responsive_ui)
 

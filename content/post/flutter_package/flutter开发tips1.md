@@ -14,7 +14,7 @@ https://github.com/londonappbrewery/Flutter-Course-Resources
 
 # Syncfusion DataGrid (DataTable)
 
-这个[包](https://pub.dev/packages/syncfusion_flutter_datagrid#datagrid-features)用于以表格形式**显示和编辑数据**表。它的构建非常高效（就像 Syncfusion 的每个包一样）并提供了许多自定义选项。
+这个[包](https://pub.dev/packages/syncfusion_flutter_datagrid#datagrid-features)用于以表格形式**显示和编辑数据**表。它的构建非常高效(就像 Syncfusion 的每个包一样)并提供了许多自定义选项。
 
 # Syncfusion Localizations
 
@@ -22,7 +22,7 @@ https://github.com/londonappbrewery/Flutter-Course-Resources
 
 # Syncfusion OfficeChart
 
-该[包](https://pub.dev/packages/syncfusion_officechart)用于根据数据（逻辑上）创建**Excel 图表**。从下面的示例中可以看出，您确实可以创建任何类型的图表。强烈推荐用于使用大量统计数据的应用程序。
+该[包](https://pub.dev/packages/syncfusion_officechart)用于根据数据(逻辑上)创建**Excel 图表**。从下面的示例中可以看出，您确实可以创建任何类型的图表。强烈推荐用于使用大量统计数据的应用程序。
 
 # Syncfusion Charts
 

@@ -22,7 +22,7 @@ List<int> _items = [];
 
 现在，要添加元素，我们有以下 4 种方法：
 
-- .add(E value)：这个方法在列表的末尾添加一个类型为 E 的元素（这里是 int，因为我们有 List<int>）。
+- .add(E value)：这个方法在列表的末尾添加一个类型为 E 的元素(这里是 int，因为我们有 List<int>)。
 - .addAll(List<E> value)：此方法将列表中存在的所有元素添加`value`到使用 addAll 的另一个列表中。
 - .insert(int index, E element)：这个方法在提到的索引处插入一个 E 类型的元素到列表中。
 - .insertAll(int index, List<E> value)：此方法将`value`提到的索引处的列表插入到使用 insertAll 的列表中。
@@ -57,12 +57,12 @@ print(_items);
 # 2. 删除元素：
 
 - 要删除特定元素，我们可以使用`.remove(E Value)`这 将删除`value`List 中第一次出现的元素。例如：`_items.remove(2)`这将从列表 _items 中删除该值`2`。
-- 要从列表中删除最后一个元素，我们可以使用`.removeLast()`. 例如：`_items.removeLast()`。这将从列表中删除最后一个元素（此处为 value `9`）`_items`
+- 要从列表中删除最后一个元素，我们可以使用`.removeLast()`. 例如：`_items.removeLast()`。这将从列表中删除最后一个元素(此处为 value `9`)`_items`
 - 要删除特定索引处的元素，我们可以使用`.removeAt(int index)`. 例如：`_items.removeAt(5)`。这将删除 的值`_items[5]`。
 
 现在，假设我们要从列表中删除所有偶数。我们可以通过以下方式做到这一点：
 
-- **使用 for 循环（不要使用）**：
+- **使用 for 循环(不要使用)**：
 
 ```
 for (int i = 0; i < _items.length; i++) { 
@@ -73,7 +73,7 @@ for (int i = 0; i < _items.length; i++) {
 
 **同样，尽可能少地使用 for 循环！**
 
-- **使用 for-each 循环（比**`for`***更好***，我们有一个更好的解决方案）：
+- **使用 for-each 循环(比**`for`***更好***，我们有一个更好的解决方案)：
 
 ```
 _items.forEach((element) { 

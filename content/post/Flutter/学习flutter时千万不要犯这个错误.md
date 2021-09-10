@@ -18,7 +18,7 @@ Flutter 于 2018 年首次引入开发者社区，从那时起，Flutter 和 Flu
 
 ## 0. 至少在 Flutter 之前学习 OOP 概念！
 
-这是最重要的一点.如果你不了解原生开发，你仍然可以学习 Flutter。但是如果你不了解 OOP 的概念，那么你学习 Flutter 会变得非常困难。但是，了解原生开发（Android 或 iOS）始终是 Flutter 的加分项。
+这是最重要的一点.如果你不了解原生开发，你仍然可以学习 Flutter。但是如果你不了解 OOP 的概念，那么你学习 Flutter 会变得非常困难。但是，了解原生开发(Android 或 iOS)始终是 Flutter 的加分项。
 
 ## 1. 不要只看教程或阅读文档。！
 

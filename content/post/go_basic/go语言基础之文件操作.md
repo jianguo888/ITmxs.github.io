@@ -11,7 +11,7 @@ categories: ["go"]
 
 文件是什么？
 
-计算机中的文件是存储在外部介质（通常是磁盘）上的数据集合，文件分为文本文件和二进制文件。
+计算机中的文件是存储在外部介质(通常是磁盘)上的数据集合，文件分为文本文件和二进制文件。
 
 # 打开和关闭文件
 
@@ -197,7 +197,7 @@ func OpenFile(name string, flag int, perm FileMode) (*File, error) {
 | `os.O_TRUNC`  |   清空   |
 | `os.O_APPEND` |   追加   |
 
-`perm`：文件权限，一个八进制数。r（读）04，w（写）02，x（执行）01。
+`perm`：文件权限，一个八进制数。r(读)04，w(写)02，x(执行)01。
 
 ## Write和WriteString
 

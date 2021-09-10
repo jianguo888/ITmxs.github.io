@@ -32,7 +32,7 @@ https://carolinamalbuquerque.medium.com/audio-recognition-using-tensorflow-lite-
 
 将训练好的模型导出为 Tensorflow Lite 模型
 
-数据按类分离后，必须**训练**模型并**导出为 Tensorflow Lite 格式**。下载的模型包含两个文件：（`labels.txt`指定类的标签）和`soundclassifier.tflite`（模型）。这些文件将被添加到移动应用程序中，以便在 tensorflow 的帮助下可以读取它们并加载模型。
+数据按类分离后，必须**训练**模型并**导出为 Tensorflow Lite 格式**。下载的模型包含两个文件：(`labels.txt`指定类的标签)和`soundclassifier.tflite`(模型)。这些文件将被添加到移动应用程序中，以便在 tensorflow 的帮助下可以读取它们并加载模型。
 
 **注意：**如果您对 ML 概念感到满意，我建议您开发自己的模型并对其进行训练，因为在您的应用程序中使用 GTM 模型可以提高其大小。Tensorflow 文档有一个帮助创建模型的[指南](https://www.tensorflow.org/tutorials/audio/simple_audio)。
 
@@ -277,7 +277,7 @@ TfliteAudio.loadModel(
 - **RecordingLength** — 确定张量输入的大小
 - **bufferSize** — 处理任何传入音频信号的时间量
 
-由于分类模型是 GTM 模型，因此您必须将音频识别的**inputType**指定为**'rawAudio'。**如果您使用自己的模型（decodedwav 模型）而不是 GTM 模型，则 inputType 必须是“decodedWav”。对于**sampleRate**，[packages文档](https://pub.dev/packages/tflite_audio)上的推荐值是**16000 、 22050**或**44100**，将使用较高的值以提高准确性。该**recordingLength**值**必须等于输入张**和**缓冲区大小**应该是**recordingLenght值的一半**。
+由于分类模型是 GTM 模型，因此您必须将音频识别的**inputType**指定为**'rawAudio'。**如果您使用自己的模型(decodedwav 模型)而不是 GTM 模型，则 inputType 必须是“decodedWav”。对于**sampleRate**，[packages文档](https://pub.dev/packages/tflite_audio)上的推荐值是**16000 、 22050**或**44100**，将使用较高的值以提高准确性。该**recordingLength**值**必须等于输入张**和**缓冲区大小**应该是**recordingLenght值的一半**。
 
 ```
 void _recorder() {
@@ -318,13 +318,13 @@ class _MyHomePageState extends State<MyHomePage> {
 TfliteAudio.stopAudioRecognition(); 
 ```
 
-最后，应用程序可以使用了！😄 请注意，如前所述，该应用程序只能在 Android 和 iOS 物理设备上运行。如果你在 iOS 设备的部署过程中遇到一些问题，我推荐这个[文档](https://flutter.dev/docs/deployment/ios)。另外，请注意，当您第一次在 iOS 设备上运行该应用程序时，它会崩溃，因为您必须信任它（详情[在此处](https://flutter.dev/docs/deployment/ios)解释）。
+最后，应用程序可以使用了！😄 请注意，如前所述，该应用程序只能在 Android 和 iOS 物理设备上运行。如果你在 iOS 设备的部署过程中遇到一些问题，我推荐这个[文档](https://flutter.dev/docs/deployment/ios)。另外，请注意，当您第一次在 iOS 设备上运行该应用程序时，它会崩溃，因为您必须信任它(详情[在此处](https://flutter.dev/docs/deployment/ios)解释)。
 
 ![img](https://miro.medium.com/max/2160/1*2wEA54uAttc-h6EZAzXhvg.gif)
 
 ![img](https://miro.medium.com/max/2160/1*OhOxEOV0JXMw4zeZ_PfQOA.gif)
 
-iOS（左）和 Android（右）设备中的应用程序预览
+iOS(左)和 Android(右)设备中的应用程序预览
 
 # 代码
 

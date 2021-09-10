@@ -41,7 +41,7 @@ SQLite 是一个 C 语言库，它实现了一个小型、快速、自包含、�
 
 SQLite 查询可能会让新手感到困惑，但使用 SQLite 将帮助您轻松地对大量数据执行 INSERT、READ、UPDATE 和 DELETE 操作。
 
-在 Flutter 中，您可以使用[sqflite](https://pub.dev/packages/sqflite)插件（名称包含“f”字符）与 SQLite 进行交互。以下是 UPDATE 查询的示例：
+在 Flutter 中，您可以使用[sqflite](https://pub.dev/packages/sqflite)插件(名称包含“f”字符)与 SQLite 进行交互。以下是 UPDATE 查询的示例：
 
 ```dart
 int count = await database.rawUpdate(
@@ -66,7 +66,7 @@ print('Name: $name');
 
 ## SharedPreferences存储
 
-[SharedPreferences](https://pub.dev/packages/shared_preferences)是一个流行的插件，它为简单数据（iOS 和 macOS 上的 NSUserDefaults，Android 上的 SharedPreferences）提供特定于平台的持久存储。数据可能会异步持久化到磁盘，并**不能保证**写入返回后会持久化到磁盘，因此该插件不得用于存储关键数据。
+[SharedPreferences](https://pub.dev/packages/shared_preferences)是一个流行的插件，它为简单数据(iOS 和 macOS 上的 NSUserDefaults，Android 上的 SharedPreferences)提供特定于平台的持久存储。数据可能会异步持久化到磁盘，并**不能保证**写入返回后会持久化到磁盘，因此该插件不得用于存储关键数据。
 
 示例用法：
 

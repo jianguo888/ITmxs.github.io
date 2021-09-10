@@ -155,7 +155,7 @@ $ yum install -y zlib zlib-devel
 ```
 
 ④ OpenSSL 是一个强大的安全套接字层密码库，囊括主要的密码算法、常用的密钥和证书封装管理功能及 SSL 协议，并提供丰富的应用程序供测试或其它目的使用。
-nginx 不仅支持 http 协议，还支持 https（即在ssl协议上传输http），所以需要在 Centos 安装 OpenSSL 库。
+nginx 不仅支持 http 协议，还支持 https(即在ssl协议上传输http)，所以需要在 Centos 安装 OpenSSL 库。
 
 ```
 $ yum install -y openssl openssl-devel
@@ -167,7 +167,7 @@ $ yum install -y openssl openssl-devel
 
 > a. 直接下载`.tar.gz`安装包，地址：https://nginx.org/en/download.html
 >
-> b. **使用`wget`命令下载（推荐）**。确保系统已经安装了wget，如果没有安装，执行 yum install wget 安装。
+> b. **使用`wget`命令下载(推荐)**。确保系统已经安装了wget，如果没有安装，执行 yum install wget 安装。
 
 ```
 $ wget -c https://nginx.org/download/nginx-1.19.0.tar.gz
@@ -189,7 +189,7 @@ $ cd nginx-1.19.0
 $ ./configure
 ```
 
-2.自定义配置（不推荐）
+2.自定义配置(不推荐)
 
 ```
 $ ./configure \
@@ -434,7 +434,7 @@ $ rpm -q -a keepalived    #查看是否已经安装上
 
 **4、完成高可用配置(主从配置)**
 
-（1）修改keepalived的配置文件`keepalived.conf`为：
+(1)修改keepalived的配置文件`keepalived.conf`为：
 
 ```
 global_defs {
@@ -471,7 +471,7 @@ vrrp_instance VI_1 {
 }
 ```
 
-（2）在路径/usr/local/src/ 下新建检测脚本 nginx_check.sh
+(2)在路径/usr/local/src/ 下新建检测脚本 nginx_check.sh
 
 nginx_check.sh
 

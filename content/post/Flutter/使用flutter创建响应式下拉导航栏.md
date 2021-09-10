@@ -12,7 +12,7 @@ categories: ["Flutter"]
 
 
 
-在这里，我创建了一个仅包含文本的页面，该页面指示我当前移动的页面。为了实现这个设置，我们需要创建一个包含文本列表的列表（在这个程序中创建的字母）。容器必须具有屏幕宽度和高度的大小，创建一个 Text() 小部件并使其居中。创建一个需要在当前创建的 Text() 小部件中使用的文本的构造函数。
+在这里，我创建了一个仅包含文本的页面，该页面指示我当前移动的页面。为了实现这个设置，我们需要创建一个包含文本列表的列表(在这个程序中创建的字母)。容器必须具有屏幕宽度和高度的大小，创建一个 Text() 小部件并使其居中。创建一个需要在当前创建的 Text() 小部件中使用的文本的构造函数。
 
 PageContainer 
 
@@ -35,9 +35,9 @@ Make the paramater like i mentioned below
 scrollDirection: **Axis.vertical**,
 controller: **pagecontroller**,
 
-声明页面控制器和上面作为i的代码做了一些变量，用来初始化所述的PageController在INITSTATE（）。
+声明页面控制器和上面作为i的代码做了一些变量，用来初始化所述的PageController在INITSTATE()。
 
-**Open and Close Functionality:** 制作一个定位小部件并将其放置在右角，大小为“7 个列表项”的高度总和（高度：360）。将手势容器作为定位小部件的子项并设置 onTapFunction 像这样
+**Open and Close Functionality:** 制作一个定位小部件并将其放置在右角，大小为“7 个列表项”的高度总和(高度：360)。将手势容器作为定位小部件的子项并设置 onTapFunction 像这样
 
 **setState(() {
 height == 0 ? height = 300 : height = 0;

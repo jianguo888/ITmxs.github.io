@@ -22,11 +22,11 @@ categories: ["Flutter","dart"]
 
 # **Flutter：如何删除模拟器上的 DEBUG 横幅**
 
-本文将向您展示如何在使用 Flutter 时摆脱位于 iOS/Android 模拟器右上角的丑陋（仅是我个人的想法）调试横幅。
+本文将向您展示如何在使用 Flutter 时摆脱位于 iOS/Android 模拟器右上角的丑陋(仅是我个人的想法)调试横幅。
 
 ![img](https://luckly007.oss-cn-beijing.aliyuncs.com/image/Screen-Shot-2020-06-27-at-23.54.49.jpg)
 
-解决方法很简单。您需要做的就是转到**lib/main.dart**文件并将**MaterialApp**类的**debugShowCheckedModeBanner**属性设置为**false**（默认设置为**true**）。
+解决方法很简单。您需要做的就是转到**lib/main.dart**文件并将**MaterialApp**类的**debugShowCheckedModeBanner**属性设置为**false**(默认设置为**true**)。
 
 要将**debugShowCheckedModeBanner**设置为**false**，请添加以下行：
 
@@ -62,7 +62,7 @@ class MyApp extends StatelessWidget {
 
 # **Flutter/Dart：在最小值和最大值之间生成随机数**
 
-在 Dart（以及 Flutter）中生成给定范围内的随机整数的几个示例。
+在 Dart(以及 Flutter)中生成给定范围内的随机整数的几个示例。
 
 ## 示例 1：使用 Random().nextInt() 方法
 
@@ -120,7 +120,7 @@ void main() {
 }
 ```
 
-输出（当然，输出是随机的，每次重新执行代码时都会改变）。
+输出(当然，输出是随机的，每次重新执行代码时都会改变)。
 
 ```
 47
@@ -162,7 +162,7 @@ void main() {
 
 按钮是移动应用程序中不可或缺的一部分。在 Flutter 中，按钮的形状默认为矩形。但是，在某些情况下，您可能希望您的按钮是圆形的，以最好地突出并融入周围的布局。
 
-本文将向您展示一些在 Flutter 中创建圆形按钮（也称为圆形按钮）的优雅方法。
+本文将向您展示一些在 Flutter 中创建圆形按钮(也称为圆形按钮)的优雅方法。
 
 目录
 
@@ -361,7 +361,7 @@ void main() {
 }
 ```
 
-\3. 重新启动您的应用程序（不使用**热重载**）并通过旋转 Android 和 iOS 模拟器检查结果。
+\3. 重新启动您的应用程序(不使用**热重载**)并通过旋转 Android 和 iOS 模拟器检查结果。
 
 ## 一个完整的例子
 
@@ -438,9 +438,9 @@ flutter pub upgrade
 
 希望这可以帮助你。祝你有美好的一天![🙂](https://luckly007.oss-cn-beijing.aliyuncs.com/image/1f642.svg)
 
-# Windows 和 Mac 上的 Flutter 系统要求（2021）
+# Windows 和 Mac 上的 Flutter 系统要求(2021)
 
-Flutter 是 Google 创建的开源 UI SDK（软件开发工具包）。Flutter 于 2017 年首次推出并迅速发展，迄今为止在 Github 上拥有超过 11 万颗星，并被谷歌、阿里巴巴、宝马、房地产经纪人、Square 等许多大公司使用。
+Flutter 是 Google 创建的开源 UI SDK(软件开发工具包)。Flutter 于 2017 年首次推出并迅速发展，迄今为止在 Github 上拥有超过 11 万颗星，并被谷歌、阿里巴巴、宝马、房地产经纪人、Square 等许多大公司使用。
 
 以下是 2021 年在 Windows 和 macOS 上安装和运行 Flutter 的系统要求。
 
@@ -468,7 +468,7 @@ Flutter 是 Google 创建的开源 UI SDK（软件开发工具包）。Flutter �
 
 **最低要求：**
 
-- 操作系统：macOS（64 位）
+- 操作系统：macOS(64 位)
 - 免费存储空间：2.8 GB
 - 预装工具：bash、curl、git 2.x、mkdir、rm、unzip、which、zip
 
@@ -607,7 +607,7 @@ flutter run
 
 24页
 
-# 如何在 Flutter/Dart 中克隆 List 或 Map（4 种方法）
+# 如何在 Flutter/Dart 中克隆 List 或 Map(4 种方法)
 
 ![img](https://luckly007.oss-cn-beijing.aliyuncs.com/image/Flutter-1.png)
 
@@ -621,7 +621,7 @@ flutter run
 
 ## **使用 json.decode() 和 json.encode()**
 
-这种方法适用于**任何场景**（嵌套列表、嵌套映射……）。您实际上可以在没有引用的情况下克隆多维列表和映射。
+这种方法适用于**任何场景**(嵌套列表、嵌套映射……)。您实际上可以在没有引用的情况下克隆多维列表和映射。
 
 句法：
 
@@ -673,7 +673,7 @@ newMap: {name: {first: Jesse, last: Pinkman}, asset: {money: {bank: 1000, cash: 
 
 这种方法对于一维列表和地图来说既快速又有效。
 
-**注意**：此方法适用于一维 List 或 Map。要克隆多维**（嵌套） List 或 Map**，请使用**第一种方法**。
+**注意**：此方法适用于一维 List 或 Map。要克隆多维**(嵌套) List 或 Map**，请使用**第一种方法**。
 
 句法：
 
@@ -725,7 +725,7 @@ clonedMap: {name: Marry, age: 4}
 
 与第二种方法一样，这种方法对于一维列表和地图来说既快速又有效。
 
-**注意**：此方法适用于一维 List 或 Map。要深度复制**多维（嵌套） List 或 Map**，请使用**第一种方法**。
+**注意**：此方法适用于一维 List 或 Map。要深度复制**多维(嵌套) List 或 Map**，请使用**第一种方法**。
 
 句法：
 
@@ -914,7 +914,7 @@ class HomePage extends StatelessWidget {
 
 ## 概述
 
-Android 系统导航栏位于屏幕底部。它包含 3 个按钮来处理导航的关键方面：后退按钮、主页按钮和概览按钮（用于打开您最近使用过的应用程序和 Chrome 标签页的缩略图列表）。
+Android 系统导航栏位于屏幕底部。它包含 3 个按钮来处理导航的关键方面：后退按钮、主页按钮和概览按钮(用于打开您最近使用过的应用程序和 Chrome 标签页的缩略图列表)。
 
 一般情况下，系统导航栏有黑色背景色和浅色图标按钮：
 
@@ -926,7 +926,7 @@ Android 系统导航栏位于屏幕底部。它包含 3 个按钮来处理导航
 
 在 Flutter 中，您可以使用**SystemChrome** API来控制系统栏。
 
-- **setSystemUIOverlayStyle**方法可用于指定用于可见的系统覆盖（如果有）的样式。
+- **setSystemUIOverlayStyle**方法可用于指定用于可见的系统覆盖(如果有)的样式。
 - **setEnabledSystemUIOverlays**方法可用于确定底部系统栏是否可见。
 
 为了更清楚，请参见下面的示例。
@@ -1200,7 +1200,7 @@ rootScaffoldMessengerKey.currentState.removeCurrentSnackBar(mySnackBar);
 
 要经常看的https://flutter.dev/docs/release/breaking-changes
 
-# Flutter 和 SQLite：CRUD 示例（2021）
+# Flutter 和 SQLite：CRUD 示例(2021)
 
 ![img](https://luckly007.oss-cn-beijing.aliyuncs.com/image/Flutter-SQLite.jpg)
 
@@ -1216,7 +1216,7 @@ SQLite 是一种快速关系数据库，可用于为移动应用程序离线存�
 
 - Flutter 基础知识
 - 知道什么是 SQLite。如果没有，请先查看[官方文档](https://www.sqlite.org/index.html)。
-- 一台安装了 Flutter 的电脑，一个代码编辑器（VS Code 很棒）。
+- 一台安装了 Flutter 的电脑，一个代码编辑器(VS Code 很棒)。
 
 ## 应用预览
 
@@ -1259,7 +1259,7 @@ SQLite 是一种快速关系数据库，可用于为移动应用程序离线存�
 └── sql_helper.dart
 ```
 
-安装[sqflite](https://pub.dev/packages/sqflite/install)插件（注意名字有一个“f”）：
+安装[sqflite](https://pub.dev/packages/sqflite/install)插件(注意名字有一个“f”)：
 
 ```
 flutter pub add sqflite

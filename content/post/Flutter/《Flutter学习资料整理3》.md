@@ -46,7 +46,7 @@ Flutter作为一门新**开源**的移动UI框架，在设计之初，谷歌的�
 
 ##### 1.  学习Dart语言：
 
-官网快速入门：Dart 语言开发文档（dart.cn/guides）
+官网快速入门：Dart 语言开发文档(dart.cn/guides)
 
 ##### 2.  学习Flutter UI框架：
 
@@ -62,7 +62,7 @@ Flutter作为一门新**开源**的移动UI框架，在设计之初，谷歌的�
 |       Icon        |                                    A Material Design icon.                                    |
 |   RaisedButton    |                      Material Design中的button， 一个凸起的材质矩形按钮                       |
 |     Scaffold      |    Material Design布局结构的基本实现。此类提供了用于显示drawer、snackbar和底部sheet的API。    |
-|      Appbar       | 一个Material Design应用程序栏，由工具栏和其他可能的widget（如TabBar和FlexibleSpaceBar）组成。 |
+|      Appbar       | 一个Material Design应用程序栏，由工具栏和其他可能的widget(如TabBar和FlexibleSpaceBar)组成。 |
 |     ListView      |                                           列表显示                                            |
 |       Icon        |                                             图标                                              |
 |      Switch       |                                           单选开关                                            |
@@ -145,14 +145,14 @@ Flutter作为一门新**开源**的移动UI框架，在设计之初，谷歌的�
 > 在 Dart 中标识符有三种类型。
 >
 > - `UpperCamelCase` 每个单词的首字母都大写，包含第一个单词。
-> - `lowerCamelCase` 除了第一个字母始终是小写（即使是缩略词），每个单词的首字母都大写。
+> - `lowerCamelCase` 除了第一个字母始终是小写(即使是缩略词)，每个单词的首字母都大写。
 > - `lowercase_with_underscores` 只是用小写字母单词，即使是缩略词，并且单词之间使用 `_` 连接。
 
 ###### 要使用 `UpperCamelCase` 风格命名类型。
 
 > 每个单词的首字母都大写，包含第一个单词。
 >
-> Classes（类名）、 enums（枚举类型）、 typedefs（类型定义）、扩展名（）、以及 type parameters（类型参数）应该把每个单词的首字母都大写（包含第一个单词），不使用分隔符。
+> Classes(类名)、 enums(枚举类型)、 typedefs(类型定义)、扩展名()、以及 type parameters(类型参数)应该把每个单词的首字母都大写(包含第一个单词)，不使用分隔符。
 
 ```dart
 /// 类名
@@ -188,7 +188,7 @@ import 'package:js/js.dart' as js;
 
 ###### 要使用`lowerCamelCase` 风格来命名。
 
-> 除了第一个字母始终是小写（即使是缩略词），每个单词的首字母都大写。
+> 除了第一个字母始终是小写(即使是缩略词)，每个单词的首字母都大写。
 >
 > 类成员、顶级定义、变量、参数以及命名参数等 。
 
@@ -288,7 +288,7 @@ export 'src/error.dart';
 1. 避免单行超过 80 个字符。
 2. 对所有流控制结构使用花括号。
 
-> 这样可以避免 dangling else（else悬挂）的问题。
+> 这样可以避免 dangling else(else悬挂)的问题。
 
 ```dart
     if (isShow) {
@@ -350,7 +350,7 @@ lib
 **说明**：
 
 - model、provider、page在文件夹中一一对应。
-- 在一些简单（简单的单页面数据展示：详情页）的页面中，我们可以使用简单的原生开发（setstate），不必拘泥于要用provider而用provider导致页面过重，这样就得不偿失。
+- 在一些简单(简单的单页面数据展示：详情页)的页面中，我们可以使用简单的原生开发(setstate)，不必拘泥于要用provider而用provider导致页面过重，这样就得不偿失。
 - 在使用本套开发模式时，请深入了解Flutter的渲染机制、state机制、Provider插件的使用及注意事项。
 
 ## 插件使用规范

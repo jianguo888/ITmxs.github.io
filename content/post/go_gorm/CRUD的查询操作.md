@@ -49,10 +49,10 @@ func main()  {
 
 ```
 //4.查询
-	//var user User  //声明模型结构体类型变量uesr（在A文件夹里）
+	//var user User  //声明模型结构体类型变量uesr(在A文件夹里)
 	// 根据主键查询第一条记录
 	user := new(User) //new和Make的区别
-	db.First(&user)   //（在B文件夹里）
+	db.First(&user)   //(在B文件夹里)
 	//// SELECT * FROM users ORDER BY id LIMIT 1;
 	//fmt.Printf("user:%#v\n", user)
 	var users []User
@@ -686,7 +686,7 @@ db.Model(&user).UpdateColumns(User{Name: "hello", Age: 18})
 
 ### 批量更新
 
-批量更新时`Hooks（钩子函数）`不会运行。
+批量更新时`Hooks(钩子函数)`不会运行。
 
 ```go
 db.Table("users").Where("id IN (?)", []int{10, 11}).Updates(map[string]interface{}{"name": "hello", "age": 18})

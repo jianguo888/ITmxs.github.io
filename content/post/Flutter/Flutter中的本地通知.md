@@ -19,7 +19,7 @@ categories: ["Flutter"]
 如果我们需要一个弹出通知来通知他们。
 
 所以让我们来谈谈这个，这次
-在颤振中，有最好的插件（库）可用于执行此任务
+在颤振中，有最好的插件(库)可用于执行此任务
 
 为了使用这个，
 我们按照这个步骤，
@@ -57,7 +57,7 @@ initState() {
 }
 ```
 
-3.2）这是您的通知显示方法。
+3.2)这是您的通知显示方法。
 
 ```dart
 Future _showNotification() async {
@@ -77,7 +77,7 @@ Future _showNotification() async {
 }
 ```
 
-3.3）这是您的通知对话框，在通知点击时打开，
+3.3)这是您的通知对话框，在通知点击时打开，
 
 ```dart
 Future onSelectNotification(String payload) async {
@@ -93,7 +93,7 @@ Future onSelectNotification(String payload) async {
 }
 ```
 
-4）现在完整的代码在这里（示例），
+4)现在完整的代码在这里(示例)，
 
 ```dart
 import 'dart:async';

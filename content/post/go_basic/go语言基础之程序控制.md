@@ -131,11 +131,11 @@ for循环可以通过`break`、`goto`、`return`、`panic`语句强制退出循�
 
 ## for range(键值循环)
 
-Go语言中可以使用`for range`遍历数组、切片、字符串、map 及通道（channel）。 通过`for range`遍历的返回值有以下规律：
+Go语言中可以使用`for range`遍历数组、切片、字符串、map 及通道(channel)。 通过`for range`遍历的返回值有以下规律：
 
 1. 数组、切片、字符串返回索引和值。
 2. map返回键和值。
-3. 通道（channel）只返回通道内的值。
+3. 通道(channel)只返回通道内的值。
 
 ## switch case
 

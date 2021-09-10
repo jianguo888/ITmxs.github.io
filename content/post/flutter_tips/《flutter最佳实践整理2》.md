@@ -50,7 +50,7 @@ mapbox:
 - TextDecoration.none 没有
 - TextDecoration.underline 下划线
 - TextDecoration.overline 上划线
-- TextDecoration.lineThrough 中间的线（删除线）
+- TextDecoration.lineThrough 中间的线(删除线)
 
 // 划线相关的属性设置
 decorationColor decoration划线的颜色
@@ -58,8 +58,8 @@ decorationStyle decoration划线的样式
 
 - TextDecorationStyle.solid 实线
 - TextDecorationStyle.double 画两条线
-- TextDecorationStyle.dotted 点线（一个点一个点的）
-- TextDecorationStyle.dashed 虚线（一个长方形一个长方形的线）
+- TextDecorationStyle.dotted 点线(一个点一个点的)
+- TextDecorationStyle.dashed 虚线(一个长方形一个长方形的线)
 - TextDecorationStyle.wavy 正玄曲
 
 效果图如下

@@ -14,7 +14,7 @@ TL;DR：Widget`Keys`可以在您无法获得承诺的*60 FPS 的*地方提高我
 
 一个 Element 是由 a 在内部创建的`Widget`。它的主要目的是知道小部件树中创建它的小部件的位置。
 
-`Elements`创建起来很昂贵，如果可能，它们应该被重用。这可以通过键（`ValueKeys`和`GlobalKeys`）来实现。
+`Elements`创建起来很昂贵，如果可能，它们应该被重用。这可以通过键(`ValueKeys`和`GlobalKeys`)来实现。
 
 # 元素的生命周期
 
@@ -189,7 +189,7 @@ Widget build(BuildContext context) {
 
 # 如何改善这一点？
 
-要重用`MaterialApp`小部件，我们需要为其分配一个`GlobalKey`（正常`ValueKey`是不够的）
+要重用`MaterialApp`小部件，我们需要为其分配一个`GlobalKey`(正常`ValueKey`是不够的)
 
 ```
 class _GlobalKeyWidgetState extends State<GlobalKeyWidget> {

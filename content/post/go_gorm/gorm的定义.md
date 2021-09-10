@@ -165,7 +165,7 @@ func main() {
 	}
 	defer db.Close()
 
-	// 创建表 自动迁移 （把结构体和数据进行对应）
+	// 创建表 自动迁移 (把结构体和数据进行对应)
 	db.AutoMigrate(&UserInfo{})
 	u1 := UserInfo{1, "小肆", "男", "篮球"}
 	u2 := UserInfo{2, "昝茜", "女", "居家"}
@@ -188,7 +188,7 @@ func main() {
 
 ## GORM Model定义
 
-在使用ORM工具时，通常我们需要在代码中定义模型（Models）与数据库中的数据表进行映射，在GORM中模型（Models）通常是正常定义的结构体、基本的go类型或它们的指针。 同时也支持`sql.Scanner`及`driver.Valuer`接口（interfaces）。
+在使用ORM工具时，通常我们需要在代码中定义模型(Models)与数据库中的数据表进行映射，在GORM中模型(Models)通常是正常定义的结构体、基本的go类型或它们的指针。 同时也支持`sql.Scanner`及`driver.Valuer`接口(interfaces)。
 
 ### gorm.Model
 
@@ -234,20 +234,20 @@ type User struct {
   Birthday     *time.Time
   Email        string  `gorm:"type:varchar(100);unique_index"`
   Role         string  `gorm:"size:255"` // 设置字段大小为255
-  MemberNumber *string `gorm:"unique;not null"` // 设置会员号（member number）唯一并且不为空
+  MemberNumber *string `gorm:"unique;not null"` // 设置会员号(member number)唯一并且不为空
   Num          int     `gorm:"AUTO_INCREMENT"` // 设置 num 为自增类型
   Address      string  `gorm:"index:addr"` // 给address字段创建名为addr的索引
   IgnoreMe     int     `gorm:"-"` // 忽略本字段
 }
 ```
 
-### 结构体标记（tags）
+### 结构体标记(tags)
 
-使用结构体声明模型时，标记（tags）是可选项。gorm支持以下标记:
+使用结构体声明模型时，标记(tags)是可选项。gorm支持以下标记:
 
-#### 支持的结构体标记（Struct tags）
+#### 支持的结构体标记(Struct tags)
 
-| 结构体标记（Tag） | 描述                                                     |
+| 结构体标记(Tag) | 描述                                                     |
 | ----------------- | -------------------------------------------------------- |
 | Column            | 指定列名                                                 |
 | Type              | 指定列数据类型                                           |
@@ -264,9 +264,9 @@ type User struct {
 | EMBEDDED_PREFIX   | 设置嵌入结构的前缀                                       |
 | -                 | 忽略此字段                                               |
 
-#### 关联相关标记（tags）
+#### 关联相关标记(tags)
 
-| 结构体标记（Tag）                | 描述                               |
+| 结构体标记(Tag)                | 描述                               |
 | -------------------------------- | ---------------------------------- |
 | MANY2MANY                        | 指定连接表                         |
 | FOREIGNKEY                       | 设置外键                           |
@@ -283,7 +283,7 @@ type User struct {
 
 ## 主键、表名、列名的约定
 
-### 主键（Primary Key）
+### 主键(Primary Key)
 
 GORM 默认会使用名为ID的字段作为表的主键。
 
@@ -301,7 +301,7 @@ type Animal struct {
 }
 ```
 
-### 表名（Table Name）
+### 表名(Table Name)
 
 表名默认就是结构体名称的复数，例如：
 
@@ -347,7 +347,7 @@ gorm.DefaultTableNameHandler = func (db *gorm.DB, defaultTableName string) strin
 }
 ```
 
-### 列名（Column Name）
+### 列名(Column Name)
 
 列名由字段名称进行下划线分割来生成
 
@@ -415,7 +415,7 @@ type User struct {
 	Birthday     *time.Time
 	Email        string  `gorm:"type:varchar(100);unique_index"`
 	Role         string  `gorm:"size:255"`        // 设置字段大小为255
-	MemberNumber *string `gorm:"unique;not null"` // 设置会员号（member number）唯一并且不为空
+	MemberNumber *string `gorm:"unique;not null"` // 设置会员号(member number)唯一并且不为空
 	Num          int     `gorm:"AUTO_INCREMENT"`  // 设置 num 为自增类型
 	Address      string  `gorm:"index:addr"`      // 给address字段创建名为addr的索引
 	IgnoreMe     int     `gorm:"-"`               // 忽略本字段
@@ -446,7 +446,7 @@ func main() {
 	defer db.Close()
 	db.SingularTable(true)
 
-	// 创建表 自动迁移 （把结构体和数据进行对应）
+	// 创建表 自动迁移 (把结构体和数据进行对应)
 	db.AutoMigrate(&User{})
 	db.AutoMigrate(&Animal{})
 	// 使用User结构体创建名为`deleted_users`的表

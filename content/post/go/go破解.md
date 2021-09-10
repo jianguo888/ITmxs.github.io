@@ -20,9 +20,9 @@ categories: ["go"]
 
 ### 背景
 
-Jetbrains 家的产品有一个很良心的地方，他会允许你试用 30 天（这个数字写死在代码里了）以评估是否你真的需要为它而付费。 但很多时候会出现一种情况：IDE 并不能按照我们实际的试用时间来计算。
+Jetbrains 家的产品有一个很良心的地方，他会允许你试用 30 天(这个数字写死在代码里了)以评估是否你真的需要为它而付费。 但很多时候会出现一种情况：IDE 并不能按照我们实际的试用时间来计算。
 
-我举个例子：如果我们开始了试用，然后媳妇生孩子要你回去陪产！陪产时我们并无空闲对IDE试用评估，它依旧算试用时间。（只是举个例子，或许你并没有女朋友）
+我举个例子：如果我们开始了试用，然后媳妇生孩子要你回去陪产！陪产时我们并无空闲对IDE试用评估，它依旧算试用时间。(只是举个例子，或许你并没有女朋友)
 
 发现了吗？你未能真的有 30 天来对它进行全面的试用评估，你甚至无法作出是否付费的决定。此时你会想要延长试用时间，然而 Jetbrains 并未提供相关功能，该怎么办？
 
@@ -42,13 +42,13 @@ Jetbrains 家的产品有一个很良心的地方，他会允许你试用 30 天
 
 1. 手动下载安装：
 
-[点击这个链接(v2.1.13)下载插件的 zip 包](https://macwk.lanzoux.com/ikhuRmc6gbc)（macOS可能会自动解压，切记使用的是 zip 包，不是解压后的文件夹！），然后打开 `Settings/Preferences... -> Plugins` 手动安装插件。
+[点击这个链接(v2.1.13)下载插件的 zip 包](https://macwk.lanzoux.com/ikhuRmc6gbc)(macOS可能会自动解压，切记使用的是 zip 包，不是解压后的文件夹！)，然后打开 `Settings/Preferences... -> Plugins` 手动安装插件。
 
 ![img](https://luckly007.oss-cn-beijing.aliyuncs.com/image/jetbrains-crack-screen-09.jpg)![img](https://luckly007.oss-cn-beijing.aliyuncs.com/image/jetbrains-crack-screen-10.jpg)![img](https://luckly007.oss-cn-beijing.aliyuncs.com/image/jetbrains-crack-screen-11.jpg)![img](https://luckly007.oss-cn-beijing.aliyuncs.com/image/jetbrains-crack-screen-12.jpg)
 
 ### 如何使用
 
-一般来说，在 IDE 窗口切出去或切回来时（窗口失去/得到焦点）会触发事件，检测是否长时间（25天）没有重置，给通知让你选择。（初次安装因为无法获取上次重置时间，会直接给予提示）。
+一般来说，在 IDE 窗口切出去或切回来时(窗口失去/得到焦点)会触发事件，检测是否长时间(25天)没有重置，给通知让你选择。(初次安装因为无法获取上次重置时间，会直接给予提示)。
 
 您也可以手动唤出插件的主界面：
 
@@ -59,14 +59,14 @@ b. 如果 IDE 打开了项目，点击 IDE 的菜单：`Help -> Eval Reset`
 唤出的插件主界面中包含了一些显示信息，有 2 个按钮和 1 个勾选项：
 
 - 按钮：`Reload` 用来刷新界面上的显示信息。
-- 按钮：`Reset` 点击会询问是否重置试用信息并重启 IDE。选择 Yes 则执行重置操作并重启 IDE 生效，选择 No 则什么也不做。（此为手动重置方式）
-- 勾选项：`Auto reset before per restart` 如果勾选了，则自勾选后每次重启/退出 IDE 时会自动重置试用信息，你无需做额外的事情。（此为自动重置方式，推荐此方法！）
+- 按钮：`Reset` 点击会询问是否重置试用信息并重启 IDE。选择 Yes 则执行重置操作并重启 IDE 生效，选择 No 则什么也不做。(此为手动重置方式)
+- 勾选项：`Auto reset before per restart` 如果勾选了，则自勾选后每次重启/退出 IDE 时会自动重置试用信息，你无需做额外的事情。(此为自动重置方式，推荐此方法！)
 
 ![img](https://luckly007.oss-cn-beijing.aliyuncs.com/image/jetbrains-crack-screen-13.jpg)![img](https://luckly007.oss-cn-beijing.aliyuncs.com/image/jetbrains-crack-screen-14.jpg)![img](https://cdn.macwk.com/public/uploads/_/originals/jetbrains-crack-screen-15.jpg)
 
 ### 如何更新
 
-1. 插件更新机制（推荐）：
+1. 插件更新机制(推荐)：
 
 IDE 会自行检测其自身和所安装插件的更新并给予提示。如果本插件有更新，你会收到提示看到更新日志，自行选择是否更新。
 
@@ -87,14 +87,14 @@ MyBatisCodeHelperPro 插件有两个版本如下，功能完全相同，安装�
 - [MyBatisCodeHelperPro](https://plugins.jetbrains.com/plugin/14522-mybatiscodehelperpro-marketplace-edition-) (Marketplace Edition)，`可重置`！
 - [MyBatisCodeHelperPro](https://plugins.jetbrains.com/plugin/9837-mybatiscodehelperpro)，`不可重置`！
 
-对于某些付费插件（如: Iedis 2, MinBatis）来说，你可能需要去取掉 javaagent 配置（如果有）后重启IDE：
+对于某些付费插件(如: Iedis 2, MinBatis)来说，你可能需要去取掉 javaagent 配置(如果有)后重启IDE：
 
 - 如果IDE没有打开项目，在 Welcome 界面点击菜单：Configure -> Edit Custom VM Options... -> 移除 -javaagent: 开头的行。
 - 如果IDE打开了项目，点击菜单：Help -> Edit Custom VM Options... -> 移除 -javaagent: 开头的行。
 
 重置需要重启IDE生效！
 
-重置后并不弹出 Licenses 对话框让你选择输入 License 或试用，这和之前的重置脚本/插件不同（省去这烦人的一步）。
+重置后并不弹出 Licenses 对话框让你选择输入 License 或试用，这和之前的重置脚本/插件不同(省去这烦人的一步)。
 
 如果长达 25 天不曾有任何重置动作，IDE 会有通知询问你是否进行重置。
 

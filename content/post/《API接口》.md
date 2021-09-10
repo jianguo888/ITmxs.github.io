@@ -44,7 +44,7 @@ sequenceDiagrams:
 
 
 
-今天我就来单纯做个API的“搬砖工”，方便广大开发同学，你想要的这一篇就足够了。（tips：部分接口来源于第三方，需注册会员就可以免费使用）
+今天我就来单纯做个API的“搬砖工”，方便广大开发同学，你想要的这一篇就足够了。(tips：部分接口来源于第三方，需注册会员就可以免费使用)
 
 ![img](https://luckly007.oss-cn-beijing.aliyuncs.com/images/20210224165252.jpeg)
 

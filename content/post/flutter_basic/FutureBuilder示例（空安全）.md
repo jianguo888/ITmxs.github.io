@@ -1,5 +1,5 @@
 ---
-title: "FutureBuilder示例（空安全）"
+title: "FutureBuilder示例(空安全)"
 date: 2021-09-06T17:17:07+08:00
 draft: false
 author: ""
@@ -20,7 +20,7 @@ categories: ["Flutter","dart"]
 
 我们将制作一个小的 Flutter 应用程序，它从一个开放的 API中获取和显示一些**帖子**。在加载数据时，应用程序会显示一个**CircularProgressIndicator**。完成后，它会显示帖子。
 
-API URL（感谢 Typicode 团队为测试目的提供了很棒的 API）：
+API URL(感谢 Typicode 团队为测试目的提供了很棒的 API)：
 
 ```dart
 https://jsonplaceholder.typicode.com/posts

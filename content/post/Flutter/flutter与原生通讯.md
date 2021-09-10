@@ -34,7 +34,7 @@ Flutter 混合开发系列 包含如下：
 
 Flutter与原生之间的通信依赖灵活的消息传递方式：
 
-- 应用的Flutter部分通过平台通道（platform channel）将消息发送到其应用程序的所在的宿主（iOS或Android）应用（原生应用）。
+- 应用的Flutter部分通过平台通道(platform channel)将消息发送到其应用程序的所在的宿主(iOS或Android)应用(原生应用)。
 - 宿主监听平台通道，并接收该消息。然后它会调用该平台的API，并将响应发送回客户端，即应用程序的Flutter部分。
 
 > 1. MethodChannel  // Flutter与原生方法相互调用，用于方法掉用
@@ -124,7 +124,7 @@ DispatchQueue.main.async {
 
 
 
-#### MethodChannel（互相调用方法）
+#### MethodChannel(互相调用方法)
 
 **Android调用Flutter方法：**
 
@@ -139,7 +139,7 @@ static const batteryChannel = const MethodChannel('battery');
 
 
 ```
-//初始化，传递1. flutterView（MainActivity中getFlutter获取），2. name常量，Flutter中使用同名常量
+//初始化，传递1. flutterView(MainActivity中getFlutter获取)，2. name常量，Flutter中使用同名常量
 MethodChannel methodChannel = new MethodChannel(flutterView, “battery”);
 
 ```
@@ -256,7 +256,7 @@ public void onMethodCall(MethodCall methodCall, MethodChannel.Result result) {
     result.notImplemented();
   }
 }
-//在onMethodCall中监听Flutter调用什么名字的方法（此处getBatterLevel），通过result返回方法的执行结果。
+//在onMethodCall中监听Flutter调用什么名字的方法(此处getBatterLevel)，通过result返回方法的执行结果。
  
 ```
 
@@ -288,7 +288,7 @@ Future<Null> _getBatteryLevel() async {
  
 ```
 
-#### BasicMessageChannel（互相发送消息）
+#### BasicMessageChannel(互相发送消息)
 
 **Android给Flutter发消息：**
 
@@ -389,7 +389,7 @@ Future<dynamic> _sendMessageToNative(String message) async {
  
 ```
 
-#### EventChannel（原生发送消息，Flutter接收）
+#### EventChannel(原生发送消息，Flutter接收)
 
 Android：
 

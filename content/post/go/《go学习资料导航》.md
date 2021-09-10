@@ -71,7 +71,7 @@ sequenceDiagrams:
 
 **[Go 语言编程之旅 ](https://golang2.eddycjy.com/)**
 
-[Go语言圣经（中文版）](https://books.studygolang.com/gopl-zh/)
+[Go语言圣经(中文版)](https://books.studygolang.com/gopl-zh/)
 
 **[《Go入门指南》](https://github.com/Unknwon/the-way-to-go_ZH_CN)**
 
