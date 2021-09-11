@@ -90,6 +90,8 @@ mapbox:
 的考验，有报告表明能支持高达50000个并发连接数。
 ```
 
+![img](https://raw.githubusercontent.com/dunwu/images/dev/cs/web/nginx/nginx.jpg)
+
 #### **2、反向代理**
 
 **a. 正向代理**
@@ -104,6 +106,10 @@ mapbox:
 需要将请求发送到反向代理服务器，由反向代理服务器去选择目标服务器获取数据后,在返
 回给客户端，此时反向代理服务器和目标服务器对外就是一个服务器，暴露的是代理服务器
 地址，隐藏了真实服务器IP地址。
+
+反向代理（Reverse Proxy）方式是指以代理服务器来接受 internet 上的连接请求，然后将请求转发给内部网络上的服务器，并将从服务器上得到的结果返回给 internet 上请求连接的客户端，此时代理服务器对外就表现为一个反向代理服务器。
+
+![img](https://raw.githubusercontent.com/dunwu/images/dev/cs/web/nginx/reverse-proxy.png)
 
 ![反向代理](https://nishigouzi.github.io/2020/06/07/Nginx笔记/image-20200606150932688.png)
 
@@ -166,19 +172,31 @@ $ yum install -y openssl openssl-devel
 ① 下载nginx，两种方式
 
 > a. 直接下载`.tar.gz`安装包，地址：https://nginx.org/en/download.html
->
+
+```
+ cd /usr/local/src/
+```
+
+
+
 > b. **使用`wget`命令下载(推荐)**。确保系统已经安装了wget，如果没有安装，执行 yum install wget 安装。
 
 ```
-$ wget -c https://nginx.org/download/nginx-1.19.0.tar.gz
+$ wget -c https://nginx.org/download/nginx-1.20.tar.gz
 ```
+
+![image-20210911115041034](https://luckly007.oss-cn-beijing.aliyuncs.com/img/image-20210911115041034.png)
+
+
 
 ② 依然是直接命令：
 
 ```
-$ tar -zxvf nginx-1.19.0.tar.gz
-$ cd nginx-1.19.0
+$ tar -zxvf nginx-1.20.0.tar.gz
+$ cd nginx-1.20.0
 ```
+
+![image-20210911115212076](https://luckly007.oss-cn-beijing.aliyuncs.com/img/image-20210911115212076.png)
 
 ③ 配置：
 
@@ -186,7 +204,8 @@ $ cd nginx-1.19.0
 1.使用默认配置
 
 ```
-$ ./configure
+$ ls
+
 ```
 
 2.自定义配置(不推荐)
@@ -229,6 +248,25 @@ $ whereis nginx
 
 ⑤ 启动，停止nginx
 
+直接启动
+
+
+
+```
+ /usr/local/webserver/nginx/sbin/nginx
+
+```
+
+## Nginx 其他命令
+
+以下包含了 Nginx 常用的几个命令：
+
+```
+/usr/local/nginx/sbin/nginx -s reload            # 重新载入配置文件
+/usr/local/nginx/sbin/nginx -s reopen            # 重启 Nginx
+/usr/local/nginx/sbin/nginx -s stop              # 停止 Nginx
+```
+
 ```
 $ cd /usr/local/nginx/sbin/
 $ ./nginx 
@@ -236,6 +274,157 @@ $ ./nginx -s stop
 $ ./nginx -s quit
 $ ./nginx -s reload
 ```
+
+```
+nginx -s stop       快速关闭Nginx，可能不保存相关信息，并迅速终止web服务。
+nginx -s quit       平稳关闭Nginx，保存相关信息，有安排的结束web服务。
+nginx -s reload     因改变了Nginx相关配置，需要重新加载配置而重载。
+nginx -s reopen     重新打开日志文件。
+nginx -c filename   为 Nginx 指定一个配置文件，来代替缺省的。
+nginx -t            不运行，仅仅测试配置文件。nginx 将检查配置文件的语法的正确性，并尝试打开配置文件中所引用到的文件。
+nginx -v            显示 nginx 的版本。
+nginx -V            显示 nginx 的版本，编译器版本和配置参数。
+```
+
+如果不想每次都敲命令，可以在 nginx 安装目录下新添一个启动批处理文件**startup.bat**，双击即可运行。内容如下：
+
+```
+@echo off
+rem 如果启动前已经启动nginx并记录下pid文件，会kill指定进程
+nginx.exe -s stop
+
+rem 测试配置文件语法正确性
+nginx.exe -t -c conf/nginx.conf
+
+rem 显示版本信息
+nginx.exe -v
+
+rem 按照指定配置去启动nginx
+nginx.exe -c conf/nginx.conf
+```
+
+
+
+如果是运行在 Linux 下，写一个 shell 脚本，大同小异。
+
+`nginx.conf` 配置文件如下：
+
+> ***注：`conf/nginx.conf` 是 nginx 的默认配置文件。你也可以使用 nginx -c 指定你的配置文件\***
+
+```
+#运行用户
+#user somebody;
+
+#启动进程,通常设置成和cpu的数量相等
+worker_processes  1;
+
+#全局错误日志
+error_log  D:/Tools/nginx-1.10.1/logs/error.log;
+error_log  D:/Tools/nginx-1.10.1/logs/notice.log  notice;
+error_log  D:/Tools/nginx-1.10.1/logs/info.log  info;
+
+#PID文件，记录当前启动的nginx的进程ID
+pid        D:/Tools/nginx-1.10.1/logs/nginx.pid;
+
+#工作模式及连接数上限
+events {
+    worker_connections 1024;    #单个后台worker process进程的最大并发链接数
+}
+
+#设定http服务器，利用它的反向代理功能提供负载均衡支持
+http {
+    #设定mime类型(邮件支持类型),类型由mime.types文件定义
+    include       D:/Tools/nginx-1.10.1/conf/mime.types;
+    default_type  application/octet-stream;
+
+    #设定日志
+	log_format  main  '[$remote_addr] - [$remote_user] [$time_local] "$request" '
+                      '$status $body_bytes_sent "$http_referer" '
+                      '"$http_user_agent" "$http_x_forwarded_for"';
+
+    access_log    D:/Tools/nginx-1.10.1/logs/access.log main;
+    rewrite_log     on;
+
+    #sendfile 指令指定 nginx 是否调用 sendfile 函数（zero copy 方式）来输出文件，对于普通应用，
+    #必须设为 on,如果用来进行下载等应用磁盘IO重负载应用，可设置为 off，以平衡磁盘与网络I/O处理速度，降低系统的uptime.
+    sendfile        on;
+    #tcp_nopush     on;
+
+    #连接超时时间
+    keepalive_timeout  120;
+    tcp_nodelay        on;
+
+	#gzip压缩开关
+	#gzip  on;
+
+    #设定实际的服务器列表
+    upstream zp_server1{
+        server 127.0.0.1:8089;
+    }
+
+    #HTTP服务器
+    server {
+        #监听80端口，80端口是知名端口号，用于HTTP协议
+        listen       80;
+
+        #定义使用www.xx.com访问
+        server_name  www.helloworld.com;
+
+		#首页
+		index index.html
+
+		#指向webapp的目录
+		root D:\01_Workspace\Project\github\zp\SpringNotes\spring-security\spring-shiro\src\main\webapp;
+
+		#编码格式
+		charset utf-8;
+
+		#代理配置参数
+        proxy_connect_timeout 180;
+        proxy_send_timeout 180;
+        proxy_read_timeout 180;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarder-For $remote_addr;
+
+        #反向代理的路径（和upstream绑定），location 后面设置映射的路径
+        location / {
+            proxy_pass http://zp_server1;
+        }
+
+        #静态文件，nginx自己处理
+        location ~ ^/(images|javascript|js|css|flash|media|static)/ {
+            root D:\01_Workspace\Project\github\zp\SpringNotes\spring-security\spring-shiro\src\main\webapp\views;
+            #过期30天，静态文件不怎么更新，过期可以设大一点，如果频繁更新，则可以设置得小一点。
+            expires 30d;
+        }
+
+        #设定查看Nginx状态的地址
+        location /NginxStatus {
+            stub_status           on;
+            access_log            on;
+            auth_basic            "NginxStatus";
+            auth_basic_user_file  conf/htpasswd;
+        }
+
+        #禁止访问 .htxxx 文件
+        location ~ /\.ht {
+            deny all;
+        }
+
+		#错误处理页面（可选择性配置）
+		#error_page   404              /404.html;
+		#error_page   500 502 503 504  /50x.html;
+        #location = /50x.html {
+        #    root   html;
+        #}
+    }
+}
+```
+
+好了，让我们来试试吧：
+
+1. 启动 webapp，注意启动绑定的端口要和 nginx 中的 `upstream` 设置的端口保持一致。
+2. 更改 host：在 C:\Windows\System32\drivers\etc 目录下的 host 文件中添加一条 DNS 记录
 
 查询nginx进程：
 
@@ -245,13 +434,17 @@ $ ps aux|grep nginx
 
 启动成功后，在浏览器可以看到这样的页面：
 
+![image-20210911120628054](https://luckly007.oss-cn-beijing.aliyuncs.com/img/image-20210911120628054.png)
+
 ![image-20210829090820571](https://luckly007.oss-cn-beijing.aliyuncs.com/img/image-20210829090820571.png)
 
 
 
 **实现工作**
 
-修改nginx配置文件, `nginx.conf`
+修改nginx配置文件, `cd./`
+
+`nginx.conf`
 
 ![image-20210829090845318](https://luckly007.oss-cn-beijing.aliyuncs.com/img/image-20210829090845318.png)
 

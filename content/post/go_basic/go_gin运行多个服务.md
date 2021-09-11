@@ -1,7 +1,13 @@
 ---
 title: "Go_gin运行多个服务"
 date: 2021-09-10T09:28:49+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["go"]
+categories: ["go"]
 ---
 
 ### 第一个Gin示例：

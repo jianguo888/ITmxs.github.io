@@ -1,7 +1,13 @@
 ---
 title: "Go学习资料及路线推荐"
 date: 2021-09-10T11:14:29+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["go"]
+categories: ["go"]
 ---
 
 ## go 语言网站
