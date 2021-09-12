@@ -19,6 +19,10 @@ categories: ["go"]
 
 Go语言中的指针不能进行偏移和运算，因此Go语言中的指针操作非常简单，我们只需要记住两个符号：`&`(取地址)和`*`(根据地址取值)。
 
+![image-20210912161610959](https://luckly007.oss-cn-beijing.aliyuncs.com/img/image-20210912161610959.png)
+
+![image-20210912161655936](https://luckly007.oss-cn-beijing.aliyuncs.com/img/image-20210912161655936.png)
+
 ## 指针地址和指针类型
 
 每个变量在运行时都拥有一个地址，这个地址代表变量在内存中的位置。Go语言中使用`&`字符放在变量前面对变量进行“取地址”操作。 Go语言中的值类型(int、float、bool、string、array、struct)都有对应的指针类型，如：`*int`、`*int64`、`*string`等。

@@ -65,6 +65,10 @@ map[小明:100 张三:90]
 type of a:map[string]int
 ```
 
+
+
+![image-20210912153837991](https://luckly007.oss-cn-beijing.aliyuncs.com/img/image-20210912153837991.png)
+
 map也支持在声明的时候填充元素，例如：
 
 ```go
