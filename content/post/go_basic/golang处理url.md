@@ -88,4 +88,4 @@ func main() {
 }
 ```
 
-[❮ 上一页](https://www.tizi365.com/archives/351.html)
+[❮ 上一页](https://space.bilibili.com/480883651/archives/351.html)

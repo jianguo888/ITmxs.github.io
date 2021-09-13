@@ -12,7 +12,7 @@ import (
 
 func main() {
 	// 待加密字符串
-	s := "https://www.tizi365.com"
+	s := "https://space.bilibili.com/480883651"
 
 	// 进行md5加密，因为Sum函数接受的是字节数组，因此需要注意类型转换
 	srcCode := md5.Sum([]byte(s))
