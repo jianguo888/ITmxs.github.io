@@ -32,11 +32,13 @@ func main() {
 }
 ```
 
-
+![image-20210913171814341](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image-20210913171814341.png)
 
 
 
 dart 加密mds
+
+dart有内置的md5加密包，先引入头文件：
 
 ```dart
 import 'dart:convert';
@@ -52,4 +54,6 @@ void main() {
   print(digest);
 }
 ```
+
+![image-20210913171828452](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image-20210913171828452.png)
 
