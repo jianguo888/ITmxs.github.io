@@ -20,7 +20,7 @@ import (
 
 func main() {
 	// 解析url地址
-	u, err := url.Parse("http://bing.com/search?q=dotnet")
+	u, err := url.Parse("http://bing.com/search?q=flutter")
 	if err != nil {
 		panic(err)
 	}
