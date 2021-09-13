@@ -10,7 +10,7 @@ go语言内置的crypto/md5包，提供了md5加密处理的函数库，下面�
 
 例子:
 
-```
+```go
 package main
 
 import (
@@ -29,6 +29,27 @@ func main() {
 	code := fmt.Sprintf("%x", srcCode)
 
 	fmt.Println(string(code))
+}
+```
+
+
+
+
+
+dart 加密mds
+
+```dart
+import 'dart:convert';
+import 'package:crypto/crypto.dart';
+
+void main() {
+
+  // 待加密字符串
+  var s = "https://space.bilibili.com/480883651";
+
+  var content = new Utf8Encoder().convert(s);
+  var digest = md5.convert(content);
+  print(digest);
 }
 ```
 

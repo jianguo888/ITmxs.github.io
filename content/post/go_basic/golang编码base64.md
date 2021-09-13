@@ -15,7 +15,7 @@ import "encoding/base64"
 
 ## 1.base64编码
 
-```
+```go
 // 待编码字符串，因为base64编码函数接受的参数是字节数组，因此需要转换下类型
 data := []byte("any + old & data")
 // base64编码
@@ -25,7 +25,7 @@ fmt.Println(str)
 
 ## 2.base64解码
 
-```
+```go
 str := "c29tZSBkYXRhIHdpdGggACBhbmQg77u/"
 // 对字符串进行base64解码， 返回的结果是字节数组，自己根据需要转换类型
 data, err := base64.StdEncoding.DecodeString(str)

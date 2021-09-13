@@ -10,7 +10,7 @@ golang语言net/url包，提供了url解析，url参数处理的函数。
 
 ## 1.url地址解析
 
-```
+```go
 package main
 
 import (
@@ -41,7 +41,7 @@ func main() {
 
 url包提供了url.Values类型，专门用来处理url参数。
 
-```
+```go
 // 定一个Values
 v := url.Values{}
 
@@ -63,7 +63,7 @@ fmt.Println(v["friend"])
 
 ## 3.url参数解码(decode)
 
-```
+```go
 package main
 
 import (
