@@ -87,6 +87,12 @@ disqusShortname = ""  ## 是否开启disqus评论，不要和utteranc同时开�
   title = "极客兔兔"
   name = "极客兔兔Blog"
   url = "https://geektutu.com/post/quick-golang.html"
+[[params.links]]
+  title = "赵雪峰"
+  name = "雪峰Blog"
+  url = "http://zxfcumtcs.github.io/"
+
+ 
 
 
   

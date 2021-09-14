@@ -1,7 +1,9 @@
 ---
 title: "Centos安装redis"
 date: 2021-09-13T17:27:26+08:00
-draft: true
+draft: false
+tags: ["redis"]
+categories: ["redis"]
 ---
 
 # centos7安装redis

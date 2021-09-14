@@ -57,3 +57,17 @@ void main() {
 
 ![image-20210913171828452](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image-20210913171828452.png)
 
+
+
+
+
+```go
+
+  static String generateMD5(String data) {
+    var content = new Utf8Encoder().convert(data);
+    var digest = md5.convert(content);
+    // 这里其实就是 digest.toString()
+    return hex.encode(digest.bytes);
+  }
+```
+
