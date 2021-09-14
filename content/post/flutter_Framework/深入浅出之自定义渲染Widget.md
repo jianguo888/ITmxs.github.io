@@ -1,7 +1,9 @@
 ---
 title: "深入浅出之自定义渲染Widget"
 date: 2021-09-14T10:10:05+08:00
-draft: true
+draft: false
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 本文是『 深入浅出 Flutter Framework 』系列文章的第八篇，也是收官之作。通过自定义渲染型 Widget，我们一步步地实现了一个评分组件。

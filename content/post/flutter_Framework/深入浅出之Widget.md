@@ -1,7 +1,9 @@
 ---
 title: "深入浅出之Widget"
 date: 2021-09-14T10:07:24+08:00
-draft: true
+draft: false
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 本文是『 深入浅出 Flutter Framework 』系列文章的第一篇，主要以不同类型 Widget 的核心方法为切入点，对其展开详细分析。

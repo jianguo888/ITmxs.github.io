@@ -1,7 +1,9 @@
 ---
 title: "深入浅出之Layer"
 date: 2021-09-14T10:08:35+08:00
-draft: true
+draft: false
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 本文是『 深入浅出 Flutter Framework 』系列文章的第五篇，对 Layer 的类层级结构以及 Layer 的状态管理进行了简要的分析介绍

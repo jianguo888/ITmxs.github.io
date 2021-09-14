@@ -1,7 +1,9 @@
 ---
 title: "深入浅出之PipelineOwner"
 date: 2021-09-14T10:09:08+08:00
-draft: true
+draft: false
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 本文是『 深入浅出 Flutter Framework 』系列文章的第六篇，详细介绍了 PipelineOwner 在整个 Rendering Pipeline 中是如何协助『 RenderObject Tree 』、『 RendererBinding』以及『 Window』完成 UI 刷新。

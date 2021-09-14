@@ -1,7 +1,9 @@
 ---
 title: "深入浅出之RenderObject"
 date: 2021-09-14T10:09:30+08:00
-draft: true
+draft: false
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 本文是『 深入浅出 Flutter Framework 』系列文章的第七篇。

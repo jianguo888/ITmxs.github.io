@@ -1,7 +1,9 @@
 ---
 title: "深入浅出之PaintingContext"
 date: 2021-09-14T10:08:18+08:00
-draft: true
+draft: false
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 本文是『 深入浅出 Flutter Framework 』系列文章的第四篇，主要目的是为后面介绍 RenderObject 作准备。

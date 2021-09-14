@@ -1,7 +1,9 @@
 ---
 title: "深入浅出之Element"
 date: 2021-09-14T10:07:58+08:00
-draft: true
+draft: false
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 本文是『 深入浅出 Flutter Framework 』系列文章的第三篇，主要围绕 Element 相关内容进行分析介绍，包括 Element 分类、Element 与其他几个核心元素的关系、Element 生命周期以及核心方法解读等。

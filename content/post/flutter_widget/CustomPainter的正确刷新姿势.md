@@ -1,7 +1,9 @@
 ---
 title: "CustomPainter的正确刷新姿势"
 date: 2021-09-14T08:59:23+08:00
-draft: true
+draft: false
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 #### 二、动画中画板的刷新
