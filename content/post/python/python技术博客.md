@@ -24,7 +24,7 @@ categories: ["python"]
 
 ### 7、[酷Python](http://www.coolpython.net/)
 
-### 8、[the5fire](https://www.the5fire.com/category/python/)
+
 
 ### 9、[Python最佳实践指南](https://pythonguidecn.readthedocs.io/zh/latest/)
 
