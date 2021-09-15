@@ -25,7 +25,7 @@ Python 有 6 个序列的内置类型，但最常见的是列表和元组。
 创建一个列表，只要把逗号分隔的不同的数据项使用方括号括起来即可。如下所示：
 
 ```
-list1 = ['Google', 'Runoob', 1997, 2000]
+list1 = ['Google', 'luckly', 1997, 2000]
 list2 = [1, 2, 3, 4, 5 ]
 list3 = ["a", "b", "c", "d"]
 list4 = ['red', 'green', 'blue', 'yellow', 'white', 'black']
@@ -111,7 +111,7 @@ print(nums[0:4])
 ```
 #!/usr/bin/python3
  
-list = ['Google', 'Runoob', "Zhihu", "Taobao", "Wiki"]
+list = ['Google', 'luckly', "Zhihu", "Taobao", "Wiki"]
  
 # 读取第二位
 print ("list[1]: ", list[1])
@@ -122,8 +122,8 @@ print ("list[1:-2]: ", list[1:-2])
 以上实例输出结果：
 
 ```
-list[1]:  Runoob
-list[1:-2]:  ['Runoob', 'Zhihu']
+list[1]:  luckly
+list[1:-2]:  ['luckly', 'Zhihu']
 ```
 
 ------
@@ -137,13 +137,13 @@ list[1:-2]:  ['Runoob', 'Zhihu']
 ```
 #!/usr/bin/python3
  
-list = ['Google', 'Runoob', 1997, 2000]
+list = ['Google', 'luckly', 1997, 2000]
  
 print ("第三个元素为 : ", list[2])
 list[2] = 2001
 print ("更新后的第三个元素为 : ", list[2])
  
-list1 = ['Google', 'Runoob', 'Taobao']
+list1 = ['Google', 'luckly', 'Taobao']
 list1.append('Baidu')
 print ("更新后的列表 : ", list1)
 ```
@@ -155,7 +155,7 @@ print ("更新后的列表 : ", list1)
 ```
 第三个元素为 :  1997
 更新后的第三个元素为 :  2001
-更新后的列表 :  ['Google', 'Runoob', 'Taobao', 'Baidu']
+更新后的列表 :  ['Google', 'luckly', 'Taobao', 'Baidu']
 ```
 
 ------
@@ -169,7 +169,7 @@ print ("更新后的列表 : ", list1)
 ```
 #!/usr/bin/python3
  
-list = ['Google', 'Runoob', 1997, 2000]
+list = ['Google', 'luckly', 1997, 2000]
  
 print ("原始列表 : ", list)
 del list[2]
@@ -179,8 +179,8 @@ print ("删除第三个元素 : ", list)
 以上实例输出结果：
 
 ```
-原始列表 :  ['Google', 'Runoob', 1997, 2000]
-删除第三个元素 :  ['Google', 'Runoob', 2000]
+原始列表 :  ['Google', 'luckly', 1997, 2000]
+删除第三个元素 :  ['Google', 'luckly', 2000]
 ```
 
 **注意：**我们会在接下来的章节讨论 remove() 方法的使用
@@ -208,7 +208,7 @@ print ("删除第三个元素 : ", list)
 Python的列表截取与字符串操作类型，如下所示：
 
 ```
-L=['Google', 'Runoob', 'Taobao']
+L=['Google', 'luckly', 'Taobao']
 ```
 
 操作：
@@ -216,17 +216,17 @@ L=['Google', 'Runoob', 'Taobao']
 | Python 表达式 | 结果                 | 描述                                               |
 | :------------ | :------------------- | :------------------------------------------------- |
 | L[2]          | 'Taobao'             | 读取第三个元素                                     |
-| L[-2]         | 'Runoob'             | 从右侧开始读取倒数第二个元素: count from the right |
-| L[1:]         | ['Runoob', 'Taobao'] | 输出从第二个元素开始后的所有元素                   |
+| L[-2]         | 'luckly'             | 从右侧开始读取倒数第二个元素: count from the right |
+| L[1:]         | ['luckly', 'Taobao'] | 输出从第二个元素开始后的所有元素                   |
 
 ```
->>>L=['Google', 'Runoob', 'Taobao']
+>>>L=['Google', 'luckly', 'Taobao']
 >>> L[2]
 'Taobao'
 >>> L[-2]
-'Runoob'
+'luckly'
 >>> L[1:]
-['Runoob', 'Taobao']
+['luckly', 'Taobao']
 >>>
 ```
 

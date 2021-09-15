@@ -19,7 +19,7 @@ Python 的元组与列表类似，不同之处在于元组的元素不能修改�
 ## 实例(Python 3.0+)
 
 ```
->>> tup1 = ('Google', 'Runoob', 1997, 2000)
+>>> tup1 = ('Google', 'luckly', 1997, 2000)
 >>> tup2 = (1, 2, 3, 4, 5 )
 >>> tup3 = "a", "b", "c", "d"   #  不需要括号也可以
 >>> type(tup3)
@@ -61,7 +61,7 @@ tup1 = ()
 ```
 #!/usr/bin/python3
  
-tup1 = ('Google', 'Runoob', 1997, 2000)
+tup1 = ('Google', 'luckly', 1997, 2000)
 tup2 = (1, 2, 3, 4, 5, 6, 7 )
  
 print ("tup1[0]: ", tup1[0])
@@ -114,7 +114,7 @@ print (tup3)
 ```
 #!/usr/bin/python3
  
-tup = ('Google', 'Runoob', 1997, 2000)
+tup = ('Google', 'luckly', 1997, 2000)
  
 print (tup)
 del tup
@@ -155,32 +155,32 @@ NameError: name 'tup' is not defined
 元组：
 
 ```
-tup = ('Google', 'Runoob', 'Taobao', 'Wiki', 'Weibo','Weixin')
+tup = ('Google', 'luckly', 'Taobao', 'Wiki', 'Weibo','Weixin')
 ```
 
 ![img](https://luckly007.oss-cn-beijing.aliyuncs.com/image/py-tup-7.png)
 
 | Python 表达式 | 结果                                            | 描述                                             |
 | :------------ | :---------------------------------------------- | :----------------------------------------------- |
-| tup[1]        | 'Runoob'                                        | 读取第二个元素                                   |
+| tup[1]        | 'luckly'                                        | 读取第二个元素                                   |
 | tup[-2]       | 'Weibo'                                         | 反向读取，读取倒数第二个元素                     |
-| tup[1:]       | ('Runoob', 'Taobao', 'Wiki', 'Weibo', 'Weixin') | 截取元素，从第二个开始后的所有元素。             |
-| tup[1:4]      | ('Runoob', 'Taobao', 'Wiki')                    | 截取元素，从第二个开始到第四个元素（索引为 3）。 |
+| tup[1:]       | ('luckly', 'Taobao', 'Wiki', 'Weibo', 'Weixin') | 截取元素，从第二个开始后的所有元素。             |
+| tup[1:4]      | ('luckly', 'Taobao', 'Wiki')                    | 截取元素，从第二个开始到第四个元素（索引为 3）。 |
 
 运行实例如下：
 
 ## 实例
 
 ```
->>> tup = ('Google', 'Runoob', 'Taobao', 'Wiki', 'Weibo','Weixin')
+>>> tup = ('Google', 'luckly', 'Taobao', 'Wiki', 'Weibo','Weixin')
 >>> tup[1]
-'Runoob'
+'luckly'
 >>> tup[-2]
 'Weibo'
 >>> tup[1:]
-('Runoob', 'Taobao', 'Wiki', 'Weibo', 'Weixin')
+('luckly', 'Taobao', 'Wiki', 'Weibo', 'Weixin')
 >>> tup[1:4]
-('Runoob', 'Taobao', 'Wiki')
+('luckly', 'Taobao', 'Wiki')
 >>>
 ```
 
@@ -194,10 +194,10 @@ Python元组包含了以下内置函数
 
 | 序号 | 方法及描述                               | 实例                                                         |
 | :--- | :--------------------------------------- | :----------------------------------------------------------- |
-| 1    | len(tuple) 计算元组元素个数。            | `>>> tuple1 = ('Google', 'Runoob', 'Taobao') >>> len(tuple1) 3 >>> ` |
+| 1    | len(tuple) 计算元组元素个数。            | `>>> tuple1 = ('Google', 'luckly', 'Taobao') >>> len(tuple1) 3 >>> ` |
 | 2    | max(tuple) 返回元组中元素最大值。        | `>>> tuple2 = ('5', '4', '8') >>> max(tuple2) '8' >>> `      |
 | 3    | min(tuple) 返回元组中元素最小值。        | `>>> tuple2 = ('5', '4', '8') >>> min(tuple2) '4' >>> `      |
-| 4    | tuple(iterable) 将可迭代系列转换为元组。 | `>>> list1= ['Google', 'Taobao', 'Runoob', 'Baidu'] >>> tuple1=tuple(list1) >>> tuple1 ('Google', 'Taobao', 'Runoob', 'Baidu')` |
+| 4    | tuple(iterable) 将可迭代系列转换为元组。 | `>>> list1= ['Google', 'Taobao', 'luckly', 'Baidu'] >>> tuple1=tuple(list1) >>> tuple1 ('Google', 'Taobao', 'luckly', 'Baidu')` |
 
 ### 关于元组是不可变的
 

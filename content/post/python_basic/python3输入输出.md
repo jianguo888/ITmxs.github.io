@@ -30,11 +30,11 @@ Python两种输出值的方式: 表达式语句和 print() 函数。
 ### 例如
 
 ```
->>> s = 'Hello, Runoob'
+>>> s = 'Hello, luckly'
 >>> str(s)
-'Hello, Runoob'
+'Hello, luckly'
 >>> repr(s)
-"'Hello, Runoob'"
+"'Hello, luckly'"
 >>> str(1/7)
 '0.14285714285714285'
 >>> x = 10 * 3.25
@@ -48,8 +48,8 @@ x 的值为： 32.5,  y 的值为：40000...
 >>> print(hellos)
 'hello, runoob\n'
 >>> # repr() 的参数可以是 Python 的任何对象
-... repr((x, y, ('Google', 'Runoob')))
-"(32.5, 40000, ('Google', 'Runoob'))"
+... repr((x, y, ('Google', 'luckly')))
+"(32.5, 40000, ('Google', 'luckly'))"
 ```
 
 这里有两种方式输出一个平方与立方的表:
@@ -115,10 +115,10 @@ str.format() 的基本使用如下:
 在括号中的数字用于指向传入对象在 format() 中的位置，如下所示：
 
 ```
->>> print('{0} 和 {1}'.format('Google', 'Runoob'))
-Google 和 Runoob
->>> print('{1} 和 {0}'.format('Google', 'Runoob'))
-Runoob 和 Google
+>>> print('{0} 和 {1}'.format('Google', 'luckly'))
+Google 和 luckly
+>>> print('{1} 和 {0}'.format('Google', 'luckly'))
+luckly 和 Google
 ```
 
 
@@ -133,8 +133,8 @@ Runoob 和 Google
 位置及关键字参数可以任意的结合:
 
 ```
->>> print('站点列表 {0}, {1}, 和 {other}。'.format('Google', 'Runoob', other='Taobao'))
-站点列表 Google, Runoob, 和 Taobao。
+>>> print('站点列表 {0}, {1}, 和 {other}。'.format('Google', 'luckly', other='Taobao'))
+站点列表 Google, luckly, 和 Taobao。
 ```
 
 **!a** (使用 **ascii()**), **!s** (使用 **str()**) 和 **!r** (使用 **repr()**) 可以用于在格式化某个值之前对其进行转化:
@@ -158,12 +158,12 @@ Runoob 和 Google
 在 **:** 后传入一个整数, 可以保证该域至少有这么多的宽度。 用于美化表格时很有用。
 
 ```
->>> table = {'Google': 1, 'Runoob': 2, 'Taobao': 3}
+>>> table = {'Google': 1, 'luckly': 2, 'Taobao': 3}
 >>> for name, number in table.items():
 ...     print('{0:10} ==> {1:10d}'.format(name, number))
 ...
 Google     ==>          1
-Runoob     ==>          2
+luckly     ==>          2
 Taobao     ==>          3
 ```
 
@@ -172,17 +172,17 @@ Taobao     ==>          3
 最简单的就是传入一个字典, 然后使用方括号 **[]** 来访问键值 :
 
 ```
->>> table = {'Google': 1, 'Runoob': 2, 'Taobao': 3}
->>> print('Runoob: {0[Runoob]:d}; Google: {0[Google]:d}; Taobao: {0[Taobao]:d}'.format(table))
-Runoob: 2; Google: 1; Taobao: 3
+>>> table = {'Google': 1, 'luckly': 2, 'Taobao': 3}
+>>> print('luckly: {0[luckly]:d}; Google: {0[Google]:d}; Taobao: {0[Taobao]:d}'.format(table))
+luckly: 2; Google: 1; Taobao: 3
 ```
 
 也可以通过在 table 变量前使用 ***\*** 来实现相同的功能：
 
 ```
->>> table = {'Google': 1, 'Runoob': 2, 'Taobao': 3}
->>> print('Runoob: {Runoob:d}; Google: {Google:d}; Taobao: {Taobao:d}'.format(**table))
-Runoob: 2; Google: 1; Taobao: 3
+>>> table = {'Google': 1, 'luckly': 2, 'Taobao': 3}
+>>> print('luckly: {luckly:d}; Google: {Google:d}; Taobao: {Taobao:d}'.format(**table))
+luckly: 2; Google: 1; Taobao: 3
 ```
 
 

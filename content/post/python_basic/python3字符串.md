@@ -12,7 +12,7 @@ categories: ["python"]
 
 创建字符串很简单，只要为变量分配一个值即可。例如：
 
-var1 = 'Hello World!' var2 = "Runoob"
+var1 = 'Hello World!' var2 = "luckly"
 
 ------
 
@@ -40,7 +40,7 @@ Python 访问子字符串，可以使用方括号 **[]** 来截取字符串，�
 #!/usr/bin/python3
  
 var1 = 'Hello World!'
-var2 = "Runoob"
+var2 = "luckly"
  
 print ("var1[0]: ", var1[0])
 print ("var2[1:5]: ", var2[1:5])
@@ -66,13 +66,13 @@ var2[1:5]:  unoo
  
 var1 = 'Hello World!'
  
-print ("已更新字符串 : ", var1[:6] + 'Runoob!')
+print ("已更新字符串 : ", var1[:6] + 'luckly!')
 ```
 
 以上实例执行结果
 
 ```
-已更新字符串 :  Hello Runoob!
+已更新字符串 :  Hello luckly!
 ```
 
 ------
@@ -278,9 +278,9 @@ f-string 是 python3.6 之后版本添加的，称之为字面量格式化字符
 ## 实例
 
 ```
->>> name = 'Runoob'
+>>> name = 'luckly'
 >>> 'Hello %s' % name
-'Hello Runoob'
+'Hello luckly'
 ```
 
 **f-string** 格式化字符串以 **f** 开头，后面跟着字符串，字符串中的表达式用大括号 {} 包起来，它会将变量或表达式计算后的值替换进去，实例如下：
@@ -288,15 +288,15 @@ f-string 是 python3.6 之后版本添加的，称之为字面量格式化字符
 ## 实例
 
 ```
->>> name = 'Runoob'
+>>> name = 'luckly'
 >>> f'Hello {name}'  # 替换变量
-'Hello Runoob'
+'Hello luckly'
 >>> f'{1+2}'         # 使用表达式
 '3'
 
->>> w = {'name': 'Runoob', 'url': 'www.runoob.com'}
+>>> w = {'name': 'luckly', 'url': 'www.runoob.com'}
 >>> f'{w["name"]}: {w["url"]}'
-'Runoob: www.runoob.com'
+'luckly: www.runoob.com'
 ```
 
 用了这种方式明显更简单了，不用再去判断使用 %s，还是 %d。

@@ -202,9 +202,9 @@ Python
 ```
 #!/usr/bin/python3
  
-sites = ["Baidu", "Google","Runoob","Taobao"]
+sites = ["Baidu", "Google","luckly","Taobao"]
 for site in sites:
-    if site == "Runoob":
+    if site == "luckly":
         print("菜鸟教程!")
         break
     print("循环数据 " + site)
@@ -213,7 +213,7 @@ else:
 print("完成循环!")
 ```
 
-执行脚本后，在循环到 "Runoob"时会跳出循环体：
+执行脚本后，在循环到 "luckly"时会跳出循环体：
 
 ```
 循环数据 Baidu
@@ -293,13 +293,13 @@ print("完成循环!")
 ## 实例
 
 ```
->>>a = ['Google', 'Baidu', 'Runoob', 'Taobao', 'QQ']
+>>>a = ['Google', 'Baidu', 'luckly', 'Taobao', 'QQ']
 >>> for i in range(len(a)):
 ...     print(i, a[i])
 ... 
 0 Google
 1 Baidu
-2 Runoob
+2 luckly
 3 Taobao
 4 QQ
 >>>
@@ -396,7 +396,7 @@ print('循环结束。')
 ```
 #!/usr/bin/python3
  
-for letter in 'Runoob':     # 第一个实例
+for letter in 'luckly':     # 第一个实例
    if letter == 'b':
       break
    print ('当前字母为 :', letter)
@@ -427,14 +427,14 @@ print ("Good bye!")
 Good bye!
 ```
 
-以下实例循环字符串 Runoob，碰到字母 o 跳过输出：
+以下实例循环字符串 luckly，碰到字母 o 跳过输出：
 
 ## 实例
 
 ```
 #!/usr/bin/python3
  
-for letter in 'Runoob':     # 第一个实例
+for letter in 'luckly':     # 第一个实例
    if letter == 'o':        # 字母为 o 时跳过输出
       continue
    print ('当前字母 :', letter)
@@ -532,7 +532,7 @@ pass 不做任何事情，一般用做占位语句，如下实例
 ```
 #!/usr/bin/python3
  
-for letter in 'Runoob': 
+for letter in 'luckly': 
    if letter == 'o':
       pass
       print ('执行 pass 块')

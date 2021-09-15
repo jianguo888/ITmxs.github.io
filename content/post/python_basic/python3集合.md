@@ -76,10 +76,10 @@ s.add( x )
 ## 实例(Python 3.0+)
 
 ```
->>> thisset = set(("Google", "Runoob", "Taobao"))
+>>> thisset = set(("Google", "luckly", "Taobao"))
 >>> thisset.add("Facebook")
 >>> print(thisset)
-{'Taobao', 'Facebook', 'Google', 'Runoob'}
+{'Taobao', 'Facebook', 'Google', 'luckly'}
 ```
 
 还有一个方法，也可以添加元素，且参数可以是列表，元组，字典等，语法格式如下：
@@ -93,13 +93,13 @@ x 可以有多个，用逗号分开。
 ## 实例(Python 3.0+)
 
 ```
->>> thisset = set(("Google", "Runoob", "Taobao"))
+>>> thisset = set(("Google", "luckly", "Taobao"))
 >>> thisset.update({1,3})
 >>> print(thisset)
-{1, 3, 'Google', 'Taobao', 'Runoob'}
+{1, 3, 'Google', 'Taobao', 'luckly'}
 >>> thisset.update([1,4],[5,6])  
 >>> print(thisset)
-{1, 3, 4, 5, 6, 'Google', 'Taobao', 'Runoob'}
+{1, 3, 4, 5, 6, 'Google', 'Taobao', 'luckly'}
 >>>
 ```
 
@@ -118,10 +118,10 @@ s.remove( x )
 ## 实例(Python 3.0+)
 
 ```
->>> thisset = set(("Google", "Runoob", "Taobao"))
+>>> thisset = set(("Google", "luckly", "Taobao"))
 >>> thisset.remove("Taobao")
 >>> print(thisset)
-{'Google', 'Runoob'}
+{'Google', 'luckly'}
 >>> thisset.remove("Facebook")   # 不存在会发生错误
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -138,10 +138,10 @@ s.discard( x )
 ## 实例(Python 3.0+)
 
 ```
->>> thisset = set(("Google", "Runoob", "Taobao"))
+>>> thisset = set(("Google", "luckly", "Taobao"))
 >>> thisset.discard("Facebook")  # 不存在不会发生错误
 >>> print(thisset)
-{'Taobao', 'Google', 'Runoob'}
+{'Taobao', 'Google', 'luckly'}
 ```
 
 我们也可以设置随机删除集合中的一个元素，语法格式如下：
@@ -153,7 +153,7 @@ s.pop()
 ## 脚本模式实例(Python 3.0+)
 
 ```
-thisset = set(("Google", "Runoob", "Taobao", "Facebook"))
+thisset = set(("Google", "luckly", "Taobao", "Facebook"))
 x = thisset.pop()
 
 print(x)
@@ -163,7 +163,7 @@ print(x)
 
 ```
 $ python3 test.py 
-Runoob
+luckly
 ```
 
 多次执行测试结果都不一样。
@@ -183,7 +183,7 @@ len(s)
 ## 实例(Python 3.0+)
 
 ```
->>> thisset = set(("Google", "Runoob", "Taobao"))
+>>> thisset = set(("Google", "luckly", "Taobao"))
 >>> len(thisset)
 3
 ```
@@ -203,7 +203,7 @@ s.clear()
 ## 实例(Python 3.0+)
 
 ```
->>> thisset = set(("Google", "Runoob", "Taobao"))
+>>> thisset = set(("Google", "luckly", "Taobao"))
 >>> thisset.clear()
 >>> print(thisset)
 set()
@@ -224,8 +224,8 @@ x in s
 ## 实例(Python 3.0+)
 
 ```
->>> thisset = set(("Google", "Runoob", "Taobao"))
->>> "Runoob" in thisset
+>>> thisset = set(("Google", "luckly", "Taobao"))
+>>> "luckly" in thisset
 True
 >>> "Facebook" in thisset
 False

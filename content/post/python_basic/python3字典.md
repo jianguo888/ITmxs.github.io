@@ -48,7 +48,7 @@ dict2 = { 'abc': 123, 98.6: 37 }
 ```
 #!/usr/bin/python3
  
-dict = {'Name': 'Runoob', 'Age': 7, 'Class': 'First'}
+dict = {'Name': 'luckly', 'Age': 7, 'Class': 'First'}
  
 print ("dict['Name']: ", dict['Name'])
 print ("dict['Age']: ", dict['Age'])
@@ -57,7 +57,7 @@ print ("dict['Age']: ", dict['Age'])
 以上实例输出结果：
 
 ```
-dict['Name']:  Runoob
+dict['Name']:  luckly
 dict['Age']:  7
 ```
 
@@ -68,7 +68,7 @@ dict['Age']:  7
 ```
 #!/usr/bin/python3
  
-dict = {'Name': 'Runoob', 'Age': 7, 'Class': 'First'}
+dict = {'Name': 'luckly', 'Age': 7, 'Class': 'First'}
  
 print ("dict['Alice']: ", dict['Alice'])
 ```
@@ -95,7 +95,7 @@ KeyError: 'Alice'
 ```
 #!/usr/bin/python3
  
-dict = {'Name': 'Runoob', 'Age': 7, 'Class': 'First'}
+dict = {'Name': 'luckly', 'Age': 7, 'Class': 'First'}
  
 dict['Age'] = 8               # 更新 Age
 dict['School'] = "菜鸟教程"  # 添加信息
@@ -127,7 +127,7 @@ dict['School']:  菜鸟教程
 ```
 #!/usr/bin/python3
  
-dict = {'Name': 'Runoob', 'Age': 7, 'Class': 'First'}
+dict = {'Name': 'luckly', 'Age': 7, 'Class': 'First'}
  
 del dict['Name'] # 删除键 'Name'
 dict.clear()     # 清空字典
@@ -167,7 +167,7 @@ TypeError: 'type' object is not subscriptable
 ```
 #!/usr/bin/python3
  
-dict = {'Name': 'Runoob', 'Age': 7, 'Name': '小菜鸟'}
+dict = {'Name': 'luckly', 'Age': 7, 'Name': '小菜鸟'}
  
 print ("dict['Name']: ", dict['Name'])
 ```
@@ -185,7 +185,7 @@ dict['Name']:  小菜鸟
 ```
 #!/usr/bin/python3
  
-dict = {['Name']: 'Runoob', 'Age': 7}
+dict = {['Name']: 'luckly', 'Age': 7}
  
 print ("dict['Name']: ", dict['Name'])
 ```
@@ -195,7 +195,7 @@ print ("dict['Name']: ", dict['Name'])
 ```
 Traceback (most recent call last):
   File "test.py", line 3, in <module>
-    dict = {['Name']: 'Runoob', 'Age': 7}
+    dict = {['Name']: 'luckly', 'Age': 7}
 TypeError: unhashable type: 'list'
 ```
 
@@ -209,9 +209,9 @@ Python字典包含了以下内置函数：
 
 | 序号 | 函数及描述                                                   | 实例                                                         |
 | :--- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| 1    | len(dict) 计算字典元素个数，即键的总数。                     | `>>> dict = {'Name': 'Runoob', 'Age': 7, 'Class': 'First'} >>> len(dict) 3` |
-| 2    | str(dict) 输出字典，可以打印的字符串表示。                   | `>>> dict = {'Name': 'Runoob', 'Age': 7, 'Class': 'First'} >>> str(dict) "{'Name': 'Runoob', 'Class': 'First', 'Age': 7}"` |
-| 3    | type(variable) 返回输入的变量类型，如果变量是字典就返回字典类型。 | `>>> dict = {'Name': 'Runoob', 'Age': 7, 'Class': 'First'} >>> type(dict) <class 'dict'>` |
+| 1    | len(dict) 计算字典元素个数，即键的总数。                     | `>>> dict = {'Name': 'luckly', 'Age': 7, 'Class': 'First'} >>> len(dict) 3` |
+| 2    | str(dict) 输出字典，可以打印的字符串表示。                   | `>>> dict = {'Name': 'luckly', 'Age': 7, 'Class': 'First'} >>> str(dict) "{'Name': 'luckly', 'Class': 'First', 'Age': 7}"` |
+| 3    | type(variable) 返回输入的变量类型，如果变量是字典就返回字典类型。 | `>>> dict = {'Name': 'luckly', 'Age': 7, 'Class': 'First'} >>> type(dict) <class 'dict'>` |
 
 Python字典包含了以下内置方法：
 

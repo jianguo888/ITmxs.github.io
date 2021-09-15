@@ -60,7 +60,7 @@ import json
 # Python 字典类型转换为 JSON 对象
 data = {
     'no' : 1,
-    'name' : 'Runoob',
+    'name' : 'luckly',
     'url' : 'http://luckly.work'
 }
  
@@ -72,8 +72,8 @@ print ("JSON 对象：", json_str)
 执行以上代码输出结果为：
 
 ```python
-Python 原始数据： {'url': 'http://luckly.work', 'no': 1, 'name': 'Runoob'}
-JSON 对象： {"url": "http://luckly.work", "no": 1, "name": "Runoob"}
+Python 原始数据： {'url': 'http://luckly.work', 'no': 1, 'name': 'luckly'}
+JSON 对象： {"url": "http://luckly.work", "no": 1, "name": "luckly"}
 ```
 
 通过输出的结果可以看出，简单类型通过编码后跟其原始的repr()输出结果非常相似。
@@ -90,7 +90,7 @@ import json
 # Python 字典类型转换为 JSON 对象
 data1 = {
     'no' : 1,
-    'name' : 'Runoob',
+    'name' : 'luckly',
     'url' : 'http://luckly.work'
 }
  
@@ -107,9 +107,9 @@ print ("data2['url']: ", data2['url'])
 执行以上代码输出结果为：
 
 ```python
-Python 原始数据： {'name': 'Runoob', 'no': 1, 'url': 'http://luckly.work'}
-JSON 对象： {"name": "Runoob", "no": 1, "url": "http://luckly.work"}
-data2['name']:  Runoob
+Python 原始数据： {'name': 'luckly', 'no': 1, 'url': 'http://luckly.work'}
+JSON 对象： {"name": "luckly", "no": 1, "url": "http://luckly.work"}
+data2['name']:  luckly
 data2['url']:  http://luckly.work
 ```
 

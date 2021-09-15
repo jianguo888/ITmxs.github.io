@@ -233,7 +233,7 @@ Python中的字符串用单引号 **'** 或双引号 **"** 括起来，同时使
 ```
 #!/usr/bin/python3
 
-str = 'Runoob'
+str = 'luckly'
 
 print (str)          # 输出字符串
 print (str[0:-1])    # 输出第一个到倒数第二个的所有字符
@@ -247,7 +247,7 @@ print (str + "TEST") # 连接字符串
 执行以上程序会输出如下结果：
 
 ```
-Runoob
+luckly
 Runoo
 R
 noo
@@ -502,15 +502,15 @@ set(value)
 ```
 #!/usr/bin/python3
 
-sites = {'Google', 'Taobao', 'Runoob', 'Facebook', 'Zhihu', 'Baidu'}
+sites = {'Google', 'Taobao', 'luckly', 'Facebook', 'Zhihu', 'Baidu'}
 
 print(sites)   # 输出集合，重复的元素被自动去掉
 
 # 成员测试
-if 'Runoob' in sites :
-    print('Runoob 在集合中')
+if 'luckly' in sites :
+    print('luckly 在集合中')
 else :
-    print('Runoob 不在集合中')
+    print('luckly 不在集合中')
 
 
 # set可以进行集合运算
@@ -531,8 +531,8 @@ print(a ^ b)     # a 和 b 中不同时存在的元素
 以上实例输出结果：
 
 ```
-{'Zhihu', 'Baidu', 'Taobao', 'Runoob', 'Google', 'Facebook'}
-Runoob 在集合中
+{'Zhihu', 'Baidu', 'Taobao', 'luckly', 'Google', 'Facebook'}
+luckly 在集合中
 {'b', 'c', 'a', 'r', 'd'}
 {'r', 'b', 'd'}
 {'b', 'c', 'a', 'z', 'm', 'r', 'l', 'd'}
@@ -588,12 +588,12 @@ dict_values(['runoob', 1, 'www.runoob.com'])
 ## 实例
 
 ```
->>> dict([('Runoob', 1), ('Google', 2), ('Taobao', 3)])
-{'Runoob': 1, 'Google': 2, 'Taobao': 3}
+>>> dict([('luckly', 1), ('Google', 2), ('Taobao', 3)])
+{'luckly': 1, 'Google': 2, 'Taobao': 3}
 >>> {x: x**2 for x in (2, 4, 6)}
 {2: 4, 4: 16, 6: 36}
->>> dict(Runoob=1, Google=2, Taobao=3)
-{'Runoob': 1, 'Google': 2, 'Taobao': 3}
+>>> dict(luckly=1, Google=2, Taobao=3)
+{'luckly': 1, 'Google': 2, 'Taobao': 3}
 >>>
 ```
 

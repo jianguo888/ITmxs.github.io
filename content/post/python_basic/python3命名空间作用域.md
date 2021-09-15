@@ -111,10 +111,10 @@ Python 中只有模块（module），类（class）以及函数（def、lambda�
 
 ```
 >>> if True:
-...  msg = 'I am from Runoob'
+...  msg = 'I am from luckly'
 ... 
 >>> msg
-'I am from Runoob'
+'I am from luckly'
 >>> 
 ```
 
@@ -124,7 +124,7 @@ Python 中只有模块（module），类（class）以及函数（def、lambda�
 
 ```
 >>> def test():
-...     msg_inner = 'I am from Runoob'
+...     msg_inner = 'I am from luckly'
 ... 
 >>> msg_inner
 Traceback (most recent call last):

@@ -83,14 +83,14 @@ test.py 引入 support 模块：
 import support
  
 # 现在可以调用模块里包含的函数了
-support.print_func("Runoob")
+support.print_func("luckly")
 ```
 
 
 
 ```
 $ python3 test.py 
-Hello :  Runoob
+Hello :  luckly
 ```
 
 一个模块只会被导入一次，不管你执行了多少次import。这样可以防止导入模块被一遍又一遍地执行。
@@ -337,8 +337,8 @@ Python 本身带着一些标准的模块库，在 Python 库参考文档中将�
 >>> sys.ps2
 '... '
 >>> sys.ps1 = 'C> '
-C> print('Runoob!')
-Runoob!
+C> print('luckly!')
+luckly!
 C> 
 ```
 

@@ -92,7 +92,7 @@ def area(width, height):
 def print_welcome(name):
     print("Welcome", name)
  
-print_welcome("Runoob")
+print_welcome("luckly")
 w = 4
 h = 5
 print("width =", w, " height =", h, " area =", area(w, h))
@@ -101,7 +101,7 @@ print("width =", w, " height =", h, " area =", area(w, h))
 以上实例输出结果：
 
 ```
-Welcome Runoob
+Welcome luckly
 width = 4  height = 5  area = 20
 ```
 
@@ -147,10 +147,10 @@ printme("再次调用同一函数")
 ```
 a=[1,2,3]
 
-a="Runoob"
+a="luckly"
 ```
 
-以上代码中，**[1,2,3]** 是 List 类型，**"Runoob"** 是 String 类型，而变量 a 是没有类型，她仅仅是一个对象的引用（一个指针），可以是指向 List 类型对象，也可以是指向 String 类型对象。
+以上代码中，**[1,2,3]** 是 List 类型，**"luckly"** 是 String 类型，而变量 a 是没有类型，她仅仅是一个对象的引用（一个指针），可以是指向 List 类型对象，也可以是指向 String 类型对象。
 
 ### 可更改(mutable)与不可更改(immutable)对象
 
