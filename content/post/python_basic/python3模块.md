@@ -16,7 +16,18 @@ draft: true
 
 ## 实例(Python 3.0+)
 
-\#!/usr/bin/python3 # 文件名: using_sys.py  import sys  print('命令行参数如下:') for i in sys.argv:   print(i)  print('\n\nPython 路径为：', sys.path, '\n')
+```
+#!/usr/bin/python3
+# 文件名: using_sys.py
+ 
+import sys
+ 
+print('命令行参数如下:')
+for i in sys.argv:
+   print(i)
+ 
+print('\n\nPython 路径为：', sys.path, '\n')
+```
 
 执行结果如下所示：
 
@@ -51,15 +62,31 @@ import module1[, module2[,... moduleN]
 
 ## support.py 文件代码
 
-\#!/usr/bin/python3 # Filename: support.py  def print_func( par ):    print ("Hello : ", par)    return
+```
+#!/usr/bin/python3
+# Filename: support.py
+ 
+def print_func( par ):
+    print ("Hello : ", par)
+    return
+```
 
 test.py 引入 support 模块：
 
 ## test.py 文件代码
 
-\#!/usr/bin/python3 # Filename: test.py  # 导入模块 import support  # 现在可以调用模块里包含的函数了 support.print_func("Runoob")
+```
+#!/usr/bin/python3
+# Filename: test.py
+ 
+# 导入模块
+import support
+ 
+# 现在可以调用模块里包含的函数了
+support.print_func("Runoob")
+```
 
-以上实例输出结果：
+
 
 ```
 $ python3 test.py 

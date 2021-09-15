@@ -41,12 +41,14 @@ def 函数名（参数列表）:
 
 让我们使用函数来输出"Hello World！"：
 
-\#!/usr/bin/python3
+```
+#!/usr/bin/python3
 
-**def** hello() :
-  **print**("Hello World!")
+def hello() :
+    print("Hello World!")
 
 hello()
+```
 
 更复杂点的应用，函数中带上参数变量:
 
@@ -54,7 +56,19 @@ hello()
 
 比较两个数，并返回较大的数:
 
-\#!/usr/bin/python3  def max(a, b):    if a > b:        return a    else:        return b  a = 4 b = 5 print(max(a, b))
+```
+#!/usr/bin/python3
+ 
+def max(a, b):
+    if a > b:
+        return a
+    else:
+        return b
+ 
+a = 4
+b = 5
+print(max(a, b))
+```
 
 以上实例输出结果：
 
@@ -66,7 +80,21 @@ hello()
 
 计算面积函数:
 
-\#!/usr/bin/python3  # 计算面积函数 def area(width, height):    return width * height  def print_welcome(name):    print("Welcome", name)  print_welcome("Runoob") w = 4 h = 5 print("width =", w, " height =", h, " area =", area(w, h))
+```
+#!/usr/bin/python3
+ 
+# 计算面积函数
+def area(width, height):
+    return width * height
+ 
+def print_welcome(name):
+    print("Welcome", name)
+ 
+print_welcome("Runoob")
+w = 4
+h = 5
+print("width =", w, " height =", h, " area =", area(w, h))
+```
 
 以上实例输出结果：
 
@@ -87,7 +115,19 @@ width = 4  height = 5  area = 20
 
 ## 实例(Python 3.0+)
 
-\#!/usr/bin/python3  # 定义函数 def printme( str ):   # 打印任何传入的字符串   print (str)   return  # 调用函数 printme("我要调用用户自定义函数!") printme("再次调用同一函数")
+```
+#!/usr/bin/python3
+ 
+# 定义函数
+def printme( str ):
+   # 打印任何传入的字符串
+   print (str)
+   return
+ 
+# 调用函数
+printme("我要调用用户自定义函数!")
+printme("再次调用同一函数")
+```
 
 以上实例输出结果：
 
@@ -130,7 +170,15 @@ python 中一切都是对象，严格意义我们不能说值传递还是引用�
 
 ## 实例(Python 3.0+)
 
-def change(a):    print(id(a))   # 指向的是同一个对象    a=10    print(id(a))   # 一个新对象  a=1 print(id(a)) change(a)
+```
+    print(id(a))   # 指向的是同一个对象
+    a=10
+    print(id(a))   # 一个新对象
+ 
+a=1
+print(id(a))
+change(a)
+```
 
 以上实例输出结果为：
 
@@ -148,7 +196,21 @@ def change(a):    print(id(a))   # 指向的是同一个对象    a=10    print(
 
 ## 实例(Python 3.0+)
 
-\#!/usr/bin/python3  # 可写函数说明 def changeme( mylist ):   "修改传入的列表"   mylist.append([1,2,3,4])   print ("函数内取值: ", mylist)   return  # 调用changeme函数 mylist = [10,20,30] changeme( mylist ) print ("函数外取值: ", mylist)
+```
+#!/usr/bin/python3
+ 
+# 可写函数说明
+def changeme( mylist ):
+   "修改传入的列表"
+   mylist.append([1,2,3,4])
+   print ("函数内取值: ", mylist)
+   return
+ 
+# 调用changeme函数
+mylist = [10,20,30]
+changeme( mylist )
+print ("函数外取值: ", mylist)
+```
 
 传入函数的和在末尾添加新内容的对象用的是同一个引用。故输出结果如下：
 
@@ -176,7 +238,18 @@ def change(a):    print(id(a))   # 指向的是同一个对象    a=10    print(
 
 ## 实例(Python 3.0+)
 
-\#!/usr/bin/python3  #可写函数说明 def printme( str ):   "打印任何传入的字符串"   print (str)   return  # 调用 printme 函数，不加参数会报错 printme()
+```
+#!/usr/bin/python3
+ 
+#可写函数说明
+def printme( str ):
+   "打印任何传入的字符串"
+   print (str)
+   return
+ 
+# 调用 printme 函数，不加参数会报错
+printme()
+```
 
 以上实例输出结果：
 
@@ -197,7 +270,18 @@ TypeError: printme() missing 1 required positional argument: 'str'
 
 ## 实例(Python 3.0+)
 
-\#!/usr/bin/python3  #可写函数说明 def printme( str ):   "打印任何传入的字符串"   print (str)   return  #调用printme函数 printme( str = "菜鸟教程")
+```
+#!/usr/bin/python3
+ 
+#可写函数说明
+def printme( str ):
+   "打印任何传入的字符串"
+   print (str)
+   return
+ 
+#调用printme函数
+printme( str = "菜鸟教程")
+```
 
 以上实例输出结果：
 
@@ -209,7 +293,19 @@ TypeError: printme() missing 1 required positional argument: 'str'
 
 ## 实例(Python 3.0+)
 
-\#!/usr/bin/python3  #可写函数说明 def printinfo( name, age ):   "打印任何传入的字符串"   print ("名字: ", name)   print ("年龄: ", age)   return  #调用printinfo函数 printinfo( age=50, name="runoob" )
+```
+#!/usr/bin/python3
+ 
+#可写函数说明
+def printinfo( name, age ):
+   "打印任何传入的字符串"
+   print ("名字: ", name)
+   print ("年龄: ", age)
+   return
+ 
+#调用printinfo函数
+printinfo( age=50, name="runoob" )
+```
 
 以上实例输出结果：
 
@@ -224,7 +320,21 @@ TypeError: printme() missing 1 required positional argument: 'str'
 
 ## 实例(Python 3.0+)
 
-\#!/usr/bin/python3  #可写函数说明 def printinfo( name, age = 35 ):   "打印任何传入的字符串"   print ("名字: ", name)   print ("年龄: ", age)   return  #调用printinfo函数 printinfo( age=50, name="runoob" ) print ("------------------------") printinfo( name="runoob" )
+```
+#!/usr/bin/python3
+ 
+#可写函数说明
+def printinfo( name, age = 35 ):
+   "打印任何传入的字符串"
+   print ("名字: ", name)
+   print ("年龄: ", age)
+   return
+ 
+#调用printinfo函数
+printinfo( age=50, name="runoob" )
+print ("------------------------")
+printinfo( name="runoob" )
+```
 
 以上实例输出结果：
 
@@ -251,7 +361,19 @@ def functionname([formal_args,] *var_args_tuple ):
 
 ## 实例(Python 3.0+)
 
-\#!/usr/bin/python3   # 可写函数说明 def printinfo( arg1, *vartuple ):   "打印任何传入的参数"   print ("输出: ")   print (arg1)   print (vartuple)  # 调用printinfo 函数 printinfo( 70, 60, 50 )
+```
+#!/usr/bin/python3
+  
+# 可写函数说明
+def printinfo( arg1, *vartuple ):
+   "打印任何传入的参数"
+   print ("输出: ")
+   print (arg1)
+   print (vartuple)
+ 
+# 调用printinfo 函数
+printinfo( 70, 60, 50 )
+```
 
 以上实例输出结果：
 
@@ -269,7 +391,22 @@ def functionname([formal_args,] *var_args_tuple ):
 
 ## 实例(Python 3.0+)
 
-\#!/usr/bin/python3  # 可写函数说明 def printinfo( arg1, *vartuple ):   "打印任何传入的参数"   print ("输出: ")   print (arg1)   for var in vartuple:      print (var)   return  # 调用printinfo 函数 printinfo( 10 ) printinfo( 70, 60, 50 )
+```
+#!/usr/bin/python3
+ 
+# 可写函数说明
+def printinfo( arg1, *vartuple ):
+   "打印任何传入的参数"
+   print ("输出: ")
+   print (arg1)
+   for var in vartuple:
+      print (var)
+   return
+ 
+# 调用printinfo 函数
+printinfo( 10 )
+printinfo( 70, 60, 50 )
+```
 
 以上实例输出结果：
 
@@ -295,7 +432,18 @@ def functionname([formal_args,] **var_args_dict ):
 
 ## 实例(Python 3.0+)
 
-\#!/usr/bin/python3   # 可写函数说明 def printinfo( arg1, **vardict ):   "打印任何传入的参数"   print ("输出: ")   print (arg1)   print (vardict)  # 调用printinfo 函数 printinfo(1, a=2,b=3)
+```
+#!/usr/bin/python3
+  
+# 可写函数说明
+def printinfo( arg1, **vardict ):
+   "打印任何传入的参数"
+   print ("输出: ")
+   print (arg1)
+   print (vardict)
+ 
+# 调用printinfo 函数
+```
 
 以上实例输出结果：
 
@@ -352,7 +500,16 @@ lambda [arg1 [,arg2,.....argn]]:expression
 
 ## 实例(Python 3.0+)
 
-\#!/usr/bin/python3  # 可写函数说明 sum = lambda arg1, arg2: arg1 + arg2  # 调用sum函数 print ("相加后的值为 : ", sum( 10, 20 )) print ("相加后的值为 : ", sum( 20, 20 ))
+```
+#!/usr/bin/python3
+ 
+# 可写函数说明
+sum = lambda arg1, arg2: arg1 + arg2
+ 
+# 调用sum函数
+print ("相加后的值为 : ", sum( 10, 20 ))
+print ("相加后的值为 : ", sum( 20, 20 ))
+```
 
 以上实例输出结果：
 
@@ -369,7 +526,20 @@ lambda [arg1 [,arg2,.....argn]]:expression
 
 ## 实例(Python 3.0+)
 
-\#!/usr/bin/python3  # 可写函数说明 def sum( arg1, arg2 ):   # 返回2个参数的和."   total = arg1 + arg2   print ("函数内 : ", total)   return total  # 调用sum函数 total = sum( 10, 20 ) print ("函数外 : ", total)
+```
+#!/usr/bin/python3
+ 
+# 可写函数说明
+def sum( arg1, arg2 ):
+   # 返回2个参数的和."
+   total = arg1 + arg2
+   print ("函数内 : ", total)
+   return total
+ 
+# 调用sum函数
+total = sum( 10, 20 )
+print ("函数外 : ", total)
+```
 
 以上实例输出结果：
 

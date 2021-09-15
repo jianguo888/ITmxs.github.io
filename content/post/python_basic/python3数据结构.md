@@ -34,24 +34,26 @@ Python中列表是可变的，这是它区别于字符串和元组的最重要�
 
 ## 实例
 
-\>>> a = [66.25, 333, 333, 1, 1234.5]
-\>>> **print**(a.count(333), a.count(66.25), a.count('x'))
+```
+>>> a = [66.25, 333, 333, 1, 1234.5]
+>>> print(a.count(333), a.count(66.25), a.count('x'))
 2 1 0
-\>>> a.insert(2, -1)
-\>>> a.append(333)
-\>>> a
+>>> a.insert(2, -1)
+>>> a.append(333)
+>>> a
 [66.25, 333, -1, 333, 1, 1234.5, 333]
-\>>> a.index(333)
+>>> a.index(333)
 1
-\>>> a.remove(333)
-\>>> a
+>>> a.remove(333)
+>>> a
 [66.25, -1, 333, 1, 1234.5, 333]
-\>>> a.reverse()
-\>>> a
+>>> a.reverse()
+>>> a
 [333, 1234.5, 1, 333, -1, 66.25]
-\>>> a.sort()
-\>>> a
+>>> a.sort()
+>>> a
 [-1, 1, 66.25, 333, 333, 1234.5]
+```
 
 注意：类似 insert, remove 或 sort 等修改列表的方法没有返回值。
 
@@ -63,21 +65,25 @@ Python中列表是可变的，这是它区别于字符串和元组的最重要�
 
 ## 实例
 
-\>>> stack = [3, 4, 5]
-\>>> stack.append(6)
-\>>> stack.append(7)
-\>>> stack
+```
+>>> stack = [3, 4, 5]
+>>> stack.append(6)
+>>> stack.append(7)
+>>> stack
 [3, 4, 5, 6, 7]
-\>>> stack.pop()
+>>> stack.pop()
 7
-\>>> stack
+>>> stack
 [3, 4, 5, 6]
-\>>> stack.pop()
+>>> stack.pop()
 6
-\>>> stack.pop()
+>>> stack.pop()
 5
-\>>> stack
+>>> stack
 [3, 4]
+```
+
+
 
 ------
 
@@ -87,16 +93,20 @@ Python中列表是可变的，这是它区别于字符串和元组的最重要�
 
 ## 实例
 
-\>>> **from** collections **import** deque
-\>>> queue = deque(["Eric", "John", "Michael"])
-\>>> queue.append("Terry")      # Terry arrives
-\>>> queue.append("Graham")      # Graham arrives
-\>>> queue.popleft()         # The first to arrive now leaves
+```
+>>> from collections import deque
+>>> queue = deque(["Eric", "John", "Michael"])
+>>> queue.append("Terry")           # Terry arrives
+>>> queue.append("Graham")          # Graham arrives
+>>> queue.popleft()                 # The first to arrive now leaves
 'Eric'
-\>>> queue.popleft()         # The second to arrive now leaves
+>>> queue.popleft()                 # The second to arrive now leaves
 'John'
-\>>> queue              # Remaining queue in order of arrival
+>>> queue                           # Remaining queue in order of arrival
 deque(['Michael', 'Terry', 'Graham'])
+```
+
+
 
 ------
 
@@ -108,45 +118,59 @@ deque(['Michael', 'Terry', 'Graham'])
 
 这里我们将列表中每个数值乘三，获得一个新的列表：
 
-\>>> vec = [2, 4, 6]
-\>>> [3*x **for** x **in** vec]
+```
+>>> vec = [2, 4, 6]
+>>> [3*x for x in vec]
 [6, 12, 18]
+```
 
 现在我们玩一点小花样：
 
-\>>> [[x, x**2] **for** x **in** vec]
+```
+>>> [[x, x**2] for x in vec]
 [[2, 4], [4, 16], [6, 36]]
+```
 
 这里我们对序列里每一个元素逐个调用某方法：
 
 ## 实例
 
-\>>> freshfruit = ['  banana', '  loganberry ', 'passion fruit  ']
-\>>> [weapon.strip() **for** weapon **in** freshfruit]
+```
+>>> freshfruit = ['  banana', '  loganberry ', 'passion fruit  ']
+>>> [weapon.strip() for weapon in freshfruit]
 ['banana', 'loganberry', 'passion fruit']
+```
 
 我们可以用 if 子句作为过滤器：
 
-\>>> [3*x **for** x **in** vec **if** x > 3]
+```
+>>> [3*x for x in vec if x > 3]
 [12, 18]
-\>>> [3*x **for** x **in** vec **if** x < 2]
+>>> [3*x for x in vec if x < 2]
 []
+```
 
 以下是一些关于循环和其它技巧的演示：
 
-\>>> vec1 = [2, 4, 6]
-\>>> vec2 = [4, 3, -9]
-\>>> [x*y **for** x **in** vec1 **for** y **in** vec2]
+```
+>>> vec1 = [2, 4, 6]
+>>> vec2 = [4, 3, -9]
+>>> [x*y for x in vec1 for y in vec2]
 [8, 6, -18, 16, 12, -36, 24, 18, -54]
-\>>> [x+y **for** x **in** vec1 **for** y **in** vec2]
+>>> [x+y for x in vec1 for y in vec2]
 [6, 5, -7, 8, 7, -5, 10, 9, -3]
-\>>> [vec1[i]*vec2[i] **for** i **in** range(len(vec1))]
+>>> [vec1[i]*vec2[i] for i in range(len(vec1))]
 [8, 12, -54]
+```
 
 列表推导式可以使用复杂表达式或嵌套函数：
 
-\>>> [str(round(355/113, i)) **for** i **in** range(1, 6)]
+```
+>>> [str(round(355/113, i)) for i in range(1, 6)]
 ['3.1', '3.14', '3.142', '3.1416', '3.14159']
+```
+
+
 
 ------
 
@@ -156,55 +180,65 @@ Python的列表还可以嵌套。
 
 以下实例展示了3X4的矩阵列表：
 
-\>>> matrix = [
-...   [1, 2, 3, 4],
-...   [5, 6, 7, 8],
-...   [9, 10, 11, 12],
+```
+>>> matrix = [
+...     [1, 2, 3, 4],
+...     [5, 6, 7, 8],
+...     [9, 10, 11, 12],
 ... ]
+```
 
 以下实例将3X4的矩阵列表转换为4X3列表：
 
-\>>> [[row[i] **for** row **in** matrix] **for** i **in** range(4)]
+```
+>>> [[row[i] for row in matrix] for i in range(4)]
 [[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
+```
 
 以下实例也可以使用以下方法来实现：
 
-\>>> transposed = []
-\>>> **for** i **in** range(4):
-...   transposed.append([row[i] **for** row **in** matrix])
+```
+>>> transposed = []
+>>> for i in range(4):
+...     transposed.append([row[i] for row in matrix])
 ...
-\>>> transposed
+>>> transposed
 [[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
+```
 
 另外一种实现方法：
 
-\>>> transposed = []
-\>>> **for** i **in** range(4):
-...   # the following 3 lines implement the nested listcomp
-...   transposed_row = []
-...   **for** row **in** matrix:
-...     transposed_row.append(row[i])
-...   transposed.append(transposed_row)
+```
+>>> transposed = []
+>>> for i in range(4):
+...     # the following 3 lines implement the nested listcomp
+...     transposed_row = []
+...     for row in matrix:
+...         transposed_row.append(row[i])
+...     transposed.append(transposed_row)
 ...
-\>>> transposed
+>>> transposed
 [[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
+```
 
-------
+
 
 ## del 语句
 
 使用 del 语句可以从一个列表中依索引而不是值来删除一个元素。这与使用 pop() 返回一个值不同。可以用 del 语句从列表中删除一个切割，或清空整个列表（我们以前介绍的方法是给该切割赋一个空列表）。例如：
 
-\>>> a = [-1, 1, 66.25, 333, 333, 1234.5]
-\>>> **del** a[0]
-\>>> a
+```
+>>> a = [-1, 1, 66.25, 333, 333, 1234.5]
+>>> del a[0]
+>>> a
 [1, 66.25, 333, 333, 1234.5]
-\>>> **del** a[2:4]
-\>>> a
+>>> del a[2:4]
+>>> a
 [1, 66.25, 1234.5]
-\>>> **del** a[:]
-\>>> a
+>>> del a[:]
+>>> a
 []
+```
 
 也可以用 del 删除实体变量：
 
@@ -218,15 +252,17 @@ Python的列表还可以嵌套。
 
 元组由若干逗号分隔的值组成，例如：
 
-\>>> t = 12345, 54321, 'hello!'
-\>>> t[0]
+```
+>>> t = 12345, 54321, 'hello!'
+>>> t[0]
 12345
-\>>> t
+>>> t
 (12345, 54321, 'hello!')
-\>>> # Tuples may be nested:
+>>> # Tuples may be nested:
 ... u = t, (1, 2, 3, 4, 5)
-\>>> u
+>>> u
 ((12345, 54321, 'hello!'), (1, 2, 3, 4, 5))
+```
 
 如你所见，元组在输出时总是有括号的，以便于正确表达嵌套结构。在输入时可能有或没有括号， 不过括号通常是必须的（如果元组是更大的表达式的一部分）。
 
@@ -240,34 +276,43 @@ Python的列表还可以嵌套。
 
 以下是一个简单的演示：
 
-\>>> basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
-\>>> **print**(basket)            # 删除重复的
+\
+
+```
+>>> basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+>>> print(basket)                      # 删除重复的
 {'orange', 'banana', 'pear', 'apple'}
-\>>> 'orange' **in** basket         # 检测成员
+>>> 'orange' in basket                 # 检测成员
 True
-\>>> 'crabgrass' **in** basket
+>>> 'crabgrass' in basket
 False
 
-\>>> # 以下演示了两个集合的操作
+>>> # 以下演示了两个集合的操作
 ...
-\>>> a = set('abracadabra')
-\>>> b = set('alacazam')
-\>>> a                  # a 中唯一的字母
+>>> a = set('abracadabra')
+>>> b = set('alacazam')
+>>> a                                  # a 中唯一的字母
 {'a', 'r', 'b', 'c', 'd'}
-\>>> a - b                # 在 a 中的字母，但不在 b 中
+>>> a - b                              # 在 a 中的字母，但不在 b 中
 {'r', 'd', 'b'}
-\>>> a | b                # 在 a 或 b 中的字母
+>>> a | b                              # 在 a 或 b 中的字母
 {'a', 'c', 'r', 'd', 'b', 'm', 'z', 'l'}
-\>>> a & b                # 在 a 和 b 中都有的字母
+>>> a & b                              # 在 a 和 b 中都有的字母
 {'a', 'c'}
-\>>> a ^ b                # 在 a 或 b 中的字母，但不同时在 a 和 b 中
+>>> a ^ b                              # 在 a 或 b 中的字母，但不同时在 a 和 b 中
 {'r', 'd', 'b', 'm', 'z', 'l'}
+```
 
 集合也支持推导式：
 
-\>>> a = {x **for** x **in** 'abracadabra' **if** x **not** **in** 'abc'}
-\>>> a
+```
+>>> a = {x for x in 'abracadabra' if x not in 'abc'}
+>>> a
 {'r', 'd'}
+
+```
+
+
 
 ------
 
@@ -283,39 +328,49 @@ False
 
 这是一个字典运用的简单例子：
 
-\>>> tel = {'jack': 4098, 'sape': 4139}
-\>>> tel['guido'] = 4127
-\>>> tel
+```
+>>> tel = {'jack': 4098, 'sape': 4139}
+>>> tel['guido'] = 4127
+>>> tel
 {'sape': 4139, 'guido': 4127, 'jack': 4098}
-\>>> tel['jack']
+>>> tel['jack']
 4098
-\>>> **del** tel['sape']
-\>>> tel['irv'] = 4127
-\>>> tel
+>>> del tel['sape']
+>>> tel['irv'] = 4127
+>>> tel
 {'guido': 4127, 'irv': 4127, 'jack': 4098}
-\>>> list(tel.keys())
+>>> list(tel.keys())
 ['irv', 'guido', 'jack']
-\>>> sorted(tel.keys())
+>>> sorted(tel.keys())
 ['guido', 'irv', 'jack']
-\>>> 'guido' **in** tel
+>>> 'guido' in tel
 True
-\>>> 'jack' **not** **in** tel
+>>> 'jack' not in tel
 False
+```
 
 构造函数 dict() 直接从键值对元组列表中构建字典。如果有固定的模式，列表推导式指定特定的键值对：
 
-\>>> dict([('sape', 4139), ('guido', 4127), ('jack', 4098)])
+```
+>>> dict([('sape', 4139), ('guido', 4127), ('jack', 4098)])
 {'sape': 4139, 'jack': 4098, 'guido': 4127}
+```
 
 此外，字典推导可以用来创建任意键和值的表达式词典：
 
-\>>> {x: x**2 **for** x **in** (2, 4, 6)}
+```
+>>> {x: x**2 for x in (2, 4, 6)}
 {2: 4, 4: 16, 6: 36}
+```
 
 如果关键字只是简单的字符串，使用关键字参数指定键值对有时候更方便：
 
-\>>> dict(sape=4139, guido=4127, jack=4098)
+```
+>>> dict(sape=4139, guido=4127, jack=4098)
 {'sape': 4139, 'jack': 4098, 'guido': 4127}
+```
+
+
 
 ------
 
@@ -323,59 +378,66 @@ False
 
 在字典中遍历时，关键字和对应的值可以使用 items() 方法同时解读出来：
 
-\>>> knights = {'gallahad': 'the pure', 'robin': 'the brave'}
-\>>> **for** k, v **in** knights.items():
-...   **print**(k, v)
+```
+>>> knights = {'gallahad': 'the pure', 'robin': 'the brave'}
+>>> for k, v in knights.items():
+...     print(k, v)
 ...
 gallahad the pure
 robin the brave
+```
+
+
 
 在序列中遍历时，索引位置和对应值可以使用 enumerate() 函数同时得到：
 
-\>>> **for** i, v **in** enumerate(['tic', 'tac', 'toe']):
-...   **print**(i, v)
+```
+>>> for i, v in enumerate(['tic', 'tac', 'toe']):
+...     print(i, v)
 ...
 0 tic
 1 tac
 2 toe
+```
 
 同时遍历两个或更多的序列，可以使用 zip() 组合：
 
-\>>> questions = ['name', 'quest', 'favorite color']
-\>>> answers = ['lancelot', 'the holy grail', 'blue']
-\>>> **for** q, a **in** zip(questions, answers):
-...   **print**('What is your {0}?  It is {1}.'.format(q, a))
+```
+>>> questions = ['name', 'quest', 'favorite color']
+>>> answers = ['lancelot', 'the holy grail', 'blue']
+>>> for q, a in zip(questions, answers):
+...     print('What is your {0}?  It is {1}.'.format(q, a))
 ...
-What **is** your name?  It **is** lancelot.
-What **is** your quest?  It **is** the holy grail.
-What **is** your favorite color?  It **is** blue.
+What is your name?  It is lancelot.
+What is your quest?  It is the holy grail.
+What is your favorite color?  It is blue.
+```
 
 要反向遍历一个序列，首先指定这个序列，然后调用 reversed() 函数：
 
-\>>> **for** i **in** reversed(range(1, 10, 2)):
-...   **print**(i)
+```
+>>> for i in reversed(range(1, 10, 2)):
+...     print(i)
 ...
 9
 7
 5
 3
 1
+```
 
 要按顺序遍历一个序列，使用 sorted() 函数返回一个已排序的序列，并不修改原值：
 
-\>>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
-\>>> **for** f **in** sorted(set(basket)):
-...   **print**(f)
+```
+>>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
+>>> for f in sorted(set(basket)):
+...     print(f)
 ...
 apple
 banana
 orange
 pear
+```
 
-------
 
-## 参阅文档
 
-- [Python3 列表](https://www.runoob.com/python3/python3-list.html)
-- [Python3 元组](https://www.runoob.com/python3/python3-tuple.html)
-- [Python3 字典](https://www.runoob.com/python3/python3-dictionary.html)
