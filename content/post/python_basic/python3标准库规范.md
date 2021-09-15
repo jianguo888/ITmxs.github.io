@@ -209,7 +209,7 @@ b'witch which has which witches wrist watch'
 
 例如，使用元组封装和拆封来交换元素看起来要比使用传统的方法要诱人的多,timeit 证明了现代的方法更快一些。
 
-```
+```python
 >>> from timeit import Timer
 >>> Timer('t=a; a=b; b=t', 'a=1; b=2').timeit()
 0.57535828626024577
