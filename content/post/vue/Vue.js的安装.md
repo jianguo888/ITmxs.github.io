@@ -1,5 +1,5 @@
 ---
-title: "Vue"
+title: "Vue.js 安装"
 date: 2021-09-15T14:50:35+08:00
 draft: false
 tags: ["Vue"]
