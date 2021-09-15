@@ -1,7 +1,9 @@
 ---
 title: "Vue"
 date: 2021-09-15T14:50:35+08:00
-draft: true
+draft: false
+tags: ["Vue"]
+categories: ["Vue"]
 ---
 
 # Vue.js 安装

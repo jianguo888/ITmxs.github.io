@@ -1,7 +1,9 @@
 ---
 title: "Vue"
 date: 2021-09-15T15:10:28+08:00
-draft: true
+draft: false
+tags: ["Vue"]
+categories: ["Vue"]
 ---
 
 # Vue.js 目录结构
