@@ -1,7 +1,9 @@
 ---
 title: "Python操作mysql数据库"
 date: 2021-09-15T09:43:11+08:00
-draft: true
+draft: false
+tags: ["python"]
+categories: ["python"]
 ---
 
 # Python 操作 MySQL 数据库

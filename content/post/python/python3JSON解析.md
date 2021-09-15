@@ -1,14 +1,16 @@
 ---
 title: "Python3JSON解析"
 date: 2021-09-15T10:57:46+08:00
-draft: true
+draft: false
+tags: ["python"]
+categories: ["python"]
 ---
 
 # Python3 JSON 数据解析
 
 JSON (JavaScript Object Notation) 是一种轻量级的数据交换格式。
 
-如果你还不了解 JSON，可以先阅读我们的 [JSON 教程](https://www.runoob.com/json/json-tutorial.html)。
+如果你还不了解 JSON，可以先阅读我们的 [JSON 教程](https://luckly.work/json/json-tutorial.html)。
 
 Python3 中可以使用 json 模块来对 JSON 数据进行编解码，它包含了两个函数：
 
@@ -59,7 +61,7 @@ import json
 data = {
     'no' : 1,
     'name' : 'Runoob',
-    'url' : 'http://www.runoob.com'
+    'url' : 'http://luckly.work'
 }
  
 json_str = json.dumps(data)
@@ -70,8 +72,8 @@ print ("JSON 对象：", json_str)
 执行以上代码输出结果为：
 
 ```python
-Python 原始数据： {'url': 'http://www.runoob.com', 'no': 1, 'name': 'Runoob'}
-JSON 对象： {"url": "http://www.runoob.com", "no": 1, "name": "Runoob"}
+Python 原始数据： {'url': 'http://luckly.work', 'no': 1, 'name': 'Runoob'}
+JSON 对象： {"url": "http://luckly.work", "no": 1, "name": "Runoob"}
 ```
 
 通过输出的结果可以看出，简单类型通过编码后跟其原始的repr()输出结果非常相似。
@@ -89,7 +91,7 @@ import json
 data1 = {
     'no' : 1,
     'name' : 'Runoob',
-    'url' : 'http://www.runoob.com'
+    'url' : 'http://luckly.work'
 }
  
 json_str = json.dumps(data1)
@@ -105,10 +107,10 @@ print ("data2['url']: ", data2['url'])
 执行以上代码输出结果为：
 
 ```python
-Python 原始数据： {'name': 'Runoob', 'no': 1, 'url': 'http://www.runoob.com'}
-JSON 对象： {"name": "Runoob", "no": 1, "url": "http://www.runoob.com"}
+Python 原始数据： {'name': 'Runoob', 'no': 1, 'url': 'http://luckly.work'}
+JSON 对象： {"name": "Runoob", "no": 1, "url": "http://luckly.work"}
 data2['name']:  Runoob
-data2['url']:  http://www.runoob.com
+data2['url']:  http://luckly.work
 ```
 
 如果你要处理的是文件而不是字符串，你可以使用 **json.dump()** 和 **json.load()** 来编码和解码JSON数据。例如：

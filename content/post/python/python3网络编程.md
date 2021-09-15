@@ -1,7 +1,9 @@
 ---
 title: "Python3网络编程"
 date: 2021-09-15T10:07:35+08:00
-draft: true
+draft: false
+tags: ["python"]
+categories: ["python"]
 ---
 
 # Python3 网络编程
@@ -104,7 +106,7 @@ while True:
 
     print("连接地址: %s" % str(addr))
     
-    msg='欢迎访问菜鸟教程！'+ "\r\n"
+    msg='欢迎访问luckly.work！'+ "\r\n"
     clientsocket.send(msg.encode('utf-8'))
     clientsocket.close()
 ```
@@ -155,7 +157,7 @@ $ python3 server.py
 
 ```
 $ python3 client.py 
-欢迎访问菜鸟教程！
+欢迎访问luckly.work！
 ```
 
 这时我们再打开第一个终端，就会看到有以下信息输出：

@@ -1,7 +1,9 @@
 ---
 title: "Python中的正则表达式"
 date: 2021-09-15T09:52:47+08:00
-draft: true
+draft: false
+tags: ["python"]
+categories: ["python"]
 ---
 
 # Python3 正则表达式

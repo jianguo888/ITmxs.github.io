@@ -1,7 +1,9 @@
 ---
 title: "Python3SMTP发送邮件"
 date: 2021-09-15T10:11:01+08:00
-draft: true
+draft: false
+tags: ["python"]
+categories: ["python"]
 ---
 
 # Python3 SMTP发送邮件
@@ -148,7 +150,7 @@ receivers = ['429240967@qq.com']  # 接收邮件，可设置为你的QQ邮箱或
  
 mail_msg = """
 <p>Python 邮件发送测试...</p>
-<p><a href="http://www.runoob.com">这是一个链接</a></p>
+<p><a href="http://luckly.work">这是一个链接</a></p>
 """
 message = MIMEText(mail_msg, 'html', 'utf-8')
 message['From'] = Header("菜鸟教程", 'utf-8')
@@ -270,7 +272,7 @@ msgRoot.attach(msgAlternative)
  
 mail_msg = """
 <p>Python 邮件发送测试...</p>
-<p><a href="http://www.runoob.com">菜鸟教程链接</a></p>
+<p><a href="http://luckly.work">菜鸟教程链接</a></p>
 <p>图片演示：</p>
 <p><img src="cid:image1"></p>
 """

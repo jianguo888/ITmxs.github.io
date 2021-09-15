@@ -1,7 +1,9 @@
 ---
 title: "Python3Xml解析"
 date: 2021-09-15T10:54:14+08:00
-draft: true
+draft: false
+tags: ["python"]
+categories: ["python"]
 ---
 
 ## 什么是 XML？
