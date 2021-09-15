@@ -1,7 +1,9 @@
 ---
 title: "Python3操作OS"
 date: 2021-09-15T12:52:44+08:00
-draft: true
+draft: false
+tags: ["python"]
+categories: ["python"]
 ---
 
 

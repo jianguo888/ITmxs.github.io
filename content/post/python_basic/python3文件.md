@@ -1,7 +1,9 @@
 ---
 title: "Python3文件"
 date: 2021-09-15T12:52:05+08:00
-draft: true
+draft: false
+tags: ["python"]
+categories: ["python"]
 ---
 
 

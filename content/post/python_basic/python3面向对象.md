@@ -1,7 +1,9 @@
 ---
 title: "Python3面向对象"
 date: 2021-09-15T12:53:19+08:00
-draft: true
+draft: false
+tags: ["python"]
+categories: ["python"]
 ---
 
 # Python3 面向对象

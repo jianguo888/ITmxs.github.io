@@ -1,7 +1,9 @@
 ---
 title: "Python3数字"
 date: 2021-09-15T12:49:49+08:00
-draft: true
+draft: false
+tags: ["python"]
+categories: ["python"]
 ---
 
 # Python3 数字(Number)

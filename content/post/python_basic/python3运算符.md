@@ -1,7 +1,9 @@
 ---
 title: "Python3运算符"
 date: 2021-09-15T12:49:42+08:00
-draft: true
+draft: false
+tags: ["python"]
+categories: ["python"]
 ---
 
 # Python3 运算符

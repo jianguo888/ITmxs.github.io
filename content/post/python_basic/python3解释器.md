@@ -1,7 +1,9 @@
 ---
 title: "Python3解释器"
 date: 2021-09-15T12:49:12+08:00
-draft: true
+draft: false
+tags: ["python"]
+categories: ["python"]
 ---
 
 # Python3 解释器

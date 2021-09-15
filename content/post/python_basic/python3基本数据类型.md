@@ -1,7 +1,9 @@
 ---
 title: "Python3基本数据类型"
 date: 2021-09-15T12:48:57+08:00
-draft: true
+draft: false
+tags: ["python"]
+categories: ["python"]
 ---
 
 # Python3 基本数据类型

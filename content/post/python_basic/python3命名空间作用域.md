@@ -1,7 +1,9 @@
 ---
 title: "Python3命名空间作用域"
 date: 2021-09-15T12:53:51+08:00
-draft: true
+draft: false
+tags: ["python"]
+categories: ["python"]
 ---
 
 # Python3 命名空间和作用域

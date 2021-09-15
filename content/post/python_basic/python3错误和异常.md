@@ -1,7 +1,9 @@
 ---
 title: "Python3错误和异常"
 date: 2021-09-15T12:53:06+08:00
-draft: true
+draft: false
+tags: ["python"]
+categories: ["python"]
 ---
 
 # Python3 错误和异常

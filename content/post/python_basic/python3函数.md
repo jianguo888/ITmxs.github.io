@@ -1,7 +1,9 @@
 ---
 title: "Python3函数"
 date: 2021-09-15T12:51:30+08:00
-draft: true
+draft: false
+tags: ["python"]
+categories: ["python"]
 ---
 
 # Python3 函数

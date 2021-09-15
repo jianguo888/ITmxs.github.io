@@ -120,7 +120,24 @@ sys.path 输出是一个列表，其中第一项是空串''，代表当前目录
 
 ## 实例
 
-\# 斐波那契(fibonacci)数列模块  def fib(n):    # 定义到 n 的斐波那契数列    a, b = 0, 1    while b < n:        print(b, end=' ')        a, b = b, a+b    print()  def fib2(n): # 返回到 n 的斐波那契数列    result = []    a, b = 0, 1    while b < n:        result.append(b)        a, b = b, a+b    return result
+```
+# 斐波那契(fibonacci)数列模块
+ 
+def fib(n):    # 定义到 n 的斐波那契数列
+    a, b = 0, 1
+    while b < n:
+        print(b, end=' ')
+        a, b = b, a+b
+    print()
+ 
+def fib2(n): # 返回到 n 的斐波那契数列
+    result = []
+    a, b = 0, 1
+    while b < n:
+        result.append(b)
+        a, b = b, a+b
+    return result
+```
 
 然后进入Python解释器，使用下面的命令导入这个模块：
 
@@ -134,7 +151,14 @@ sys.path 输出是一个列表，其中第一项是空串''，代表当前目录
 
 ## 实例
 
-\>>>fibo.fib(1000) 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 >>> fibo.fib2(100) [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89] >>> fibo.__name__ 'fibo'
+```
+>>>fibo.fib(1000)
+1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987
+>>> fibo.fib2(100)
+[1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+>>> fibo.__name__
+'fibo'
+```
 
 如果你打算经常使用一个函数，你可以把它赋给一个本地的名称：
 
