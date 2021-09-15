@@ -15,7 +15,7 @@ draft: true
 - EMPLOYEE表字段为 FIRST_NAME, LAST_NAME, AGE, SEX 和 INCOME。
 - 连接数据库TESTDB使用的用户名为 "testuser" ，密码为 "test123",你可以可以自己设定或者直接使用root用户名及其密码，Mysql数据库用户授权请使用Grant命令。
 - 在你的机子上已经安装了 Python MySQLdb 模块。
-- 如果您对sql语句不熟悉，可以访问我们的 [SQL基础教程](https://www.runoob.com/sql/sql-tutorial.html)
+- 
 
 ### 实例：
 
@@ -24,7 +24,7 @@ draft: true
 ## 实例(Python 3.0+)
 
 \#!/usr/bin/python3  import pymysql  # 打开数据库连接 db = pymysql.connect(
-    host="47.117.1.68", port=3306, user="root", password="Xjg.201314", database="gorm"
+    host="你的ip", port=3306, user="root", password="你的密码", database="你的数据库名称"
 )  # 使用 cursor() 方法创建一个游标对象 cursor cursor = db.cursor()  # 使用 execute()  方法执行 SQL 查询  cursor.execute("SELECT VERSION()")  # 使用 fetchone() 方法获取单条数据. data = cursor.fetchone()  print ("Database version : %s " % data)  # 关闭数据库连接 db.close()
 
 执行以上脚本输出结果如下：
@@ -42,7 +42,7 @@ Database version : 5.5.20-log
 ## 实例(Python 3.0+)
 
 \#!/usr/bin/python3  import pymysql  # 打开数据库连接 db = pymysql.connect(
-    host="47.117.1.68", port=3306, user="root", password="Xjg.201314", database="gorm"
+    host="你的ip", port=3306, user="root", password="你的密码", database="你的数据库名称"
 )  # 使用 cursor() 方法创建一个游标对象 cursor cursor = db.cursor()  # 使用 execute() 方法执行 SQL，如果表存在则删除 cursor.execute("DROP TABLE IF EXISTS EMPLOYEE")  # 使用预处理语句创建表 sql = """CREATE TABLE EMPLOYEE (         FIRST_NAME  CHAR(20) NOT NULL,         LAST_NAME  CHAR(20),         AGE INT,           SEX CHAR(1),         INCOME FLOAT )"""  cursor.execute(sql)  # 关闭数据库连接 db.close()
 
 ------
@@ -54,7 +54,7 @@ Database version : 5.5.20-log
 ## 实例(Python 3.0+)
 
 \#!/usr/bin/python3  import pymysql  # 打开数据库连接 db = pymysql.connect(
-    host="47.117.1.68", port=3306, user="root", password="Xjg.201314", database="gorm"
+    host="你的ip", port=3306, user="root", password="你的密码", database="你的数据库名称"
 )  # 使用cursor()方法获取操作游标  cursor = db.cursor()  # SQL 插入语句 sql = """INSERT INTO EMPLOYEE(FIRST_NAME,         LAST_NAME, AGE, SEX, INCOME)         VALUES ('Mac', 'Mohan', 20, 'M', 2000)""" try:   # 执行sql语句   cursor.execute(sql)   # 提交到数据库执行   db.commit() except:   # 如果发生错误则回滚   db.rollback()  # 关闭数据库连接 db.close()
 
 以上例子也可以写成如下形式：
@@ -62,7 +62,7 @@ Database version : 5.5.20-log
 ## 实例(Python 3.0+)
 
 \#!/usr/bin/python3  import pymysql  # 打开数据库连接 db = pymysql.connect(
-    host="47.117.1.68", port=3306, user="root", password="Xjg.201314", database="gorm"
+    host="你的ip", port=3306, user="root", password="你的密码", database="你的数据库名称"
 )  # 使用cursor()方法获取操作游标  cursor = db.cursor()  # SQL 插入语句 sql = "INSERT INTO EMPLOYEE(FIRST_NAME, \       LAST_NAME, AGE, SEX, INCOME) \       VALUES ('%s', '%s',  %s,  '%s',  %s)" % \       ('Mac', 'Mohan', 20, 'M', 2000) try:   # 执行sql语句   cursor.execute(sql)   # 执行sql语句   db.commit() except:   # 发生错误时回滚   db.rollback()  # 关闭数据库连接 db.close()
 
 以下代码使用变量向SQL语句中传递参数:
@@ -94,7 +94,7 @@ Python查询Mysql使用 fetchone() 方法获取单条数据, 使用fetchall() �
 ## 实例(Python 3.0+)
 
 \#!/usr/bin/python3  import pymysql  # 打开数据库连接 db = pymysql.connect(
-    host="47.117.1.68", port=3306, user="root", password="Xjg.201314", database="gorm"
+    host="你的ip", port=3306, user="root", password="你的密码", database="你的数据库名称"
 )  # 使用cursor()方法获取操作游标  cursor = db.cursor()  # SQL 查询语句 sql = "SELECT * FROM EMPLOYEE \       WHERE INCOME > %s" % (1000) try:   # 执行SQL语句   cursor.execute(sql)   # 获取所有记录列表   results = cursor.fetchall()   for row in results:      fname = row[0]      lname = row[1]      age = row[2]      sex = row[3]      income = row[4]       # 打印结果      print ("fname=%s,lname=%s,age=%s,sex=%s,income=%s" % \             (fname, lname, age, sex, income )) except:   print ("Error: unable to fetch data")  # 关闭数据库连接 db.close()
 
 以上脚本执行结果如下：
@@ -112,7 +112,7 @@ fname=Mac, lname=Mohan, age=20, sex=M, income=2000
 ## 实例(Python 3.0+)
 
 \#!/usr/bin/python3  import pymysql  # 打开数据库连接 db = pymysql.connect(
-    host="47.117.1.68", port=3306, user="root", password="Xjg.201314", database="gorm"
+    host="你的ip", port=3306, user="root", password="你的密码", database="你的数据库名称"
 )  # 使用cursor()方法获取操作游标  cursor = db.cursor()  # SQL 更新语句 sql = "UPDATE EMPLOYEE SET AGE = AGE + 1 WHERE SEX = '%c'" % ('M') try:   # 执行SQL语句   cursor.execute(sql)   # 提交到数据库执行   db.commit() except:   # 发生错误时回滚   db.rollback()  # 关闭数据库连接 db.close()
 
 ------
@@ -124,7 +124,7 @@ fname=Mac, lname=Mohan, age=20, sex=M, income=2000
 ## 实例(Python 3.0+)
 
 \#!/usr/bin/python3  import pymysql  # 打开数据库连接 db = pymysql.connect(
-    host="47.117.1.68", port=3306, user="root", password="Xjg.201314", database="gorm"
+    host="你的ip", port=3306, user="root", password="你的密码", database="你的数据库名称"
 )  # 使用cursor()方法获取操作游标  cursor = db.cursor()  # SQL 删除语句 sql = "DELETE FROM EMPLOYEE WHERE AGE > %s" % (20) try:   # 执行SQL语句   cursor.execute(sql)   # 提交修改   db.commit() except:   # 发生错误时回滚   db.rollback()  # 关闭连接 db.close()
 
 ------

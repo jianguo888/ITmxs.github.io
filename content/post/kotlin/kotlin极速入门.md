@@ -2024,7 +2024,7 @@ interface MyInterface{
 }
  
 class MyImpl:MyInterface{
-    override var name: String = "runoob" //重写属性
+    override var name: String = "luckly" //重写属性
 }
 ```
 

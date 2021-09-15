@@ -16,7 +16,7 @@ compile 函数根据一个模式字符串和可选的标志参数生成一个正
 
 re 模块也提供了与这些方法功能完全一致的函数，这些函数使用一个模式字符串做为它们的第一个参数。
 
-本章节主要介绍 Python 中常用的正则表达式处理函数，如果你对正则表达式不了解，可以查看我们的 [正则表达式 - 教程](https://www.runoob.com/regexp/regexp-tutorial.html)。
+本章节主要介绍 Python 中常用的正则表达式处理函数，如果你对正则表达式不了解，可以查看我们的 [正则表达式 - 教程](https://www.luckly.work/regexp/regexp-tutorial.html)。
 
 ------
 
@@ -36,7 +36,7 @@ re.match(pattern, string, flags=0)
 | :------ | :----------------------------------------------------------- |
 | pattern | 匹配的正则表达式                                             |
 | string  | 要匹配的字符串。                                             |
-| flags   | 标志位，用于控制正则表达式的匹配方式，如：是否区分大小写，多行匹配等等。参见：[正则表达式修饰符 - 可选标志](https://www.runoob.com/python3/python3-reg-expressions.html#flags) |
+| flags   | 标志位，用于控制正则表达式的匹配方式，如：是否区分大小写，多行匹配等等。参见：[正则表达式修饰符 - 可选标志](https://www.luckly.work/python3/python3-reg-expressions.html#flags) |
 
 匹配成功re.match方法返回一个匹配的对象，否则返回None。
 
@@ -49,7 +49,7 @@ re.match(pattern, string, flags=0)
 
 ## 实例
 
-\#!/usr/bin/python  import re print(re.match('www', 'www.runoob.com').span())  # 在起始位置匹配 print(re.match('com', 'www.runoob.com'))         # 不在起始位置匹配
+\#!/usr/bin/python  import re print(re.match('www', 'www.luckly.work').span())  # 在起始位置匹配 print(re.match('com', 'www.luckly.work'))         # 不在起始位置匹配
 
 以上实例运行输出结果为：
 
@@ -88,7 +88,7 @@ re.search(pattern, string, flags=0)
 | :------ | :----------------------------------------------------------- |
 | pattern | 匹配的正则表达式                                             |
 | string  | 要匹配的字符串。                                             |
-| flags   | 标志位，用于控制正则表达式的匹配方式，如：是否区分大小写，多行匹配等等。参见：[正则表达式修饰符 - 可选标志](https://www.runoob.com/python3/python3-reg-expressions.html#flags) |
+| flags   | 标志位，用于控制正则表达式的匹配方式，如：是否区分大小写，多行匹配等等。参见：[正则表达式修饰符 - 可选标志](https://www.luckly.work/python3/python3-reg-expressions.html#flags) |
 
 匹配成功re.search方法返回一个匹配的对象，否则返回None。
 
@@ -101,7 +101,7 @@ re.search(pattern, string, flags=0)
 
 ## 实例
 
-\#!/usr/bin/python3  import re  print(re.search('www', 'www.runoob.com').span())  # 在起始位置匹配 print(re.search('com', 'www.runoob.com').span())         # 不在起始位置匹配
+\#!/usr/bin/python3  import re  print(re.search('www', 'www.luckly.work').span())  # 在起始位置匹配 print(re.search('com', 'www.luckly.work').span())         # 不在起始位置匹配
 
 以上实例运行输出结果为：
 
@@ -252,7 +252,7 @@ pattern.findall(string[, pos[, endpos]])
 
 ## 实例
 
-import re  result1 = re.findall(r'\d+','runoob 123 google 456')  pattern = re.compile(r'\d+')   # 查找数字 result2 = pattern.findall('runoob 123 google 456') result3 = pattern.findall('run88oob123google456', 0, 10)  print(result1) print(result2) print(result3)
+import re  result1 = re.findall(r'\d+','luckly 123 google 456')  pattern = re.compile(r'\d+')   # 查找数字 result2 = pattern.findall('luckly 123 google 456') result3 = pattern.findall('run88oob123google456', 0, 10)  print(result1) print(result2) print(result3)
 
 输出结果：
 
@@ -276,7 +276,7 @@ re.finditer(pattern, string, flags=0)
 | :------ | :----------------------------------------------------------- |
 | pattern | 匹配的正则表达式                                             |
 | string  | 要匹配的字符串。                                             |
-| flags   | 标志位，用于控制正则表达式的匹配方式，如：是否区分大小写，多行匹配等等。参见：[正则表达式修饰符 - 可选标志](https://www.runoob.com/python3/python3-reg-expressions.html#flags) |
+| flags   | 标志位，用于控制正则表达式的匹配方式，如：是否区分大小写，多行匹配等等。参见：[正则表达式修饰符 - 可选标志](https://www.luckly.work/python3/python3-reg-expressions.html#flags) |
 
 ## 实例
 
@@ -306,11 +306,11 @@ re.split(pattern, string[, maxsplit=0, flags=0])
 | pattern  | 匹配的正则表达式                                             |
 | string   | 要匹配的字符串。                                             |
 | maxsplit | 分割次数，maxsplit=1 分割一次，默认为 0，不限制次数。        |
-| flags    | 标志位，用于控制正则表达式的匹配方式，如：是否区分大小写，多行匹配等等。参见：[正则表达式修饰符 - 可选标志](https://www.runoob.com/python3/python3-reg-expressions.html#flags) |
+| flags    | 标志位，用于控制正则表达式的匹配方式，如：是否区分大小写，多行匹配等等。参见：[正则表达式修饰符 - 可选标志](https://www.luckly.work/python3/python3-reg-expressions.html#flags) |
 
 ## 实例
 
-\>>>import re >>> re.split('\W+', 'runoob, runoob, runoob.') ['runoob', 'runoob', 'runoob', ''] >>> re.split('(\W+)', ' runoob, runoob, runoob.')  ['', ' ', 'runoob', ', ', 'runoob', ', ', 'runoob', '.', ''] >>> re.split('\W+', ' runoob, runoob, runoob.', 1)  ['', 'runoob, runoob, runoob.']  >>> re.split('a*', 'hello world')   # 对于一个找不到匹配的字符串而言，split 不会对其作出分割 ['hello world']
+\>>>import re >>> re.split('\W+', 'luckly, luckly, luckly.') ['luckly', 'luckly', 'luckly', ''] >>> re.split('(\W+)', ' luckly, luckly, luckly.')  ['', ' ', 'luckly', ', ', 'luckly', ', ', 'luckly', '.', ''] >>> re.split('\W+', ' luckly, luckly, luckly.', 1)  ['', 'luckly, luckly, luckly.']  >>> re.split('a*', 'hello world')   # 对于一个找不到匹配的字符串而言，split 不会对其作出分割 ['hello world']
 
 ------
 
