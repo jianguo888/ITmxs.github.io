@@ -1,7 +1,9 @@
 ---
 title: "Flutter带有多个尾随图标按钮的ListTitle"
 date: 2021-09-16T15:06:57+08:00
-draft: true
+draft: false
+tags: ["Flutter"]
+categories: ["Flutter"]
 ---
 
 在某些情况下，您可能希望向 ListTIle 小部件添加多个尾随图标按钮。许多 Flutter 开发人员会在几秒钟内得到解决方案：使用 Row 小部件并在其中放置一些图标按钮，如下所示：
