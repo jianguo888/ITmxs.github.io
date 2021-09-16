@@ -91,7 +91,7 @@ import pandas as pd
 
 了解了数据集的意义后，我们将数据读取到Pandas里，变量名用df(DataFrame的缩写，后续会介绍)，它是Pandas二维数据的基础结构。
 
-```
+```python
 import pandas as pd # 引入Pandas库，按惯例起别名pd
 
 # 以下两种效果一样，如果是网址，它会自动将数据下载到内存
@@ -131,7 +131,7 @@ df = pd.read_excel('team.xlsx') # 文件在notebook文件同一目录下
 
 
 
-```
+```python
 df.head() # 查看前5条，括号里可以写明你想看的条数
 
 df.tail() # 查看尾部5条
@@ -161,7 +161,7 @@ df.sample(5) # 随机查看5条
 
 
 
-```
+```python
 df.shape # (100, 6) 查看行数和列数
 
 df.info() # 查看索引、数据类型和内存信息
@@ -181,7 +181,7 @@ df.info()显示有数据类型、索引情况、行列数、各字段数据类�
 
 
 
-```
+```python
 df.info()
 
 <class 'pandas.core.frame.DataFrame'>
@@ -217,7 +217,7 @@ df.describe()会计算出各数字字段的总数(count)、平均数(mean)、标
 
 
 
-```
+```python
 Out:
 
                Q1          Q2          Q3          Q4
@@ -241,13 +241,9 @@ max     98.000000   99.000000   99.000000   99.000000
 
 
 
-**
-**
-
 **6、建立索引**
 
-**
-**
+
 
 以上数据真正业务意义上的索引是name列，所以我们需要使它成为索引：
 
