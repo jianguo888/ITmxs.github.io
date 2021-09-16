@@ -1,7 +1,9 @@
 ---
 title: "Vue组件开发以及常用全局api"
 date: 2021-09-16T08:49:43+08:00
-draft: true
+draft: false
+tags: ["Vue"]
+categories: ["Vue"]
 ---
 
 ### 生命周期
