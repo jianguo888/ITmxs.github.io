@@ -158,7 +158,7 @@ return ScopedModelDescendant<MainModel>(
   );
 ```
 
-ttps://medium.com/@diegoveloper/flutter-persistent-tab-bars-a26220d322bc
+
 
 
 

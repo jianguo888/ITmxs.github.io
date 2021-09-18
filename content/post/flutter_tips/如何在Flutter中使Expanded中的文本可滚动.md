@@ -18,7 +18,7 @@ categories: ["Flutter"]
 
 我知道解决方案可能很简单，但我已经摆弄了几个小时
 
-```
+```dart
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -79,9 +79,6 @@ categories: ["Flutter"]
     );
   }
 ```
-
-
-将不胜感激
 
 
 
