@@ -20,8 +20,6 @@ re 模块也提供了与这些方法功能完全一致的函数，这些函数�
 
 本章节主要介绍 Python 中常用的正则表达式处理函数，如果你对正则表达式不了解，可以查看我们的 [正则表达式 - 教程](https://www.luckly.work/regexp/regexp-tutorial.html)。
 
-------
-
 ## re.match函数
 
 re.match 尝试从字符串的起始位置匹配一个模式，如果不是起始位置匹配成功的话，match()就返回none。
@@ -124,8 +122,6 @@ searchObj.group(1) :  Cats
 searchObj.group(2) :  smarter
 ```
 
-------
-
 ## re.match与re.search的区别
 
 re.match 只匹配字符串的开始，如果字符串开始不符合正则表达式，则匹配失败，函数返回 None，而 re.search 匹配整个字符串，直到找到一个匹配。
@@ -140,8 +136,6 @@ re.match 只匹配字符串的开始，如果字符串开始不符合正则表�
 No match!!
 search --> matchObj.group() :  dogs
 ```
-
-------
 
 ## 检索和替换
 
@@ -314,8 +308,6 @@ re.split(pattern, string[, maxsplit=0, flags=0])
 
 \>>>import re >>> re.split('\W+', 'luckly, luckly, luckly.') ['luckly', 'luckly', 'luckly', ''] >>> re.split('(\W+)', ' luckly, luckly, luckly.')  ['', ' ', 'luckly', ', ', 'luckly', ', ', 'luckly', '.', ''] >>> re.split('\W+', ' luckly, luckly, luckly.', 1)  ['', 'luckly, luckly, luckly.']  >>> re.split('a*', 'hello world')   # 对于一个找不到匹配的字符串而言，split 不会对其作出分割 ['hello world']
 
-------
-
 ## 正则表达式对象
 
 ### re.RegexObject
@@ -329,8 +321,6 @@ group() 返回被 RE 匹配的字符串。
 - **start()** 返回匹配开始的位置
 - **end()** 返回匹配结束的位置
 - **span()** 返回一个元组包含匹配 (开始,结束) 的位置
-
-------
 
 ## 正则表达式修饰符 - 可选标志
 
@@ -402,8 +392,6 @@ group() 返回被 RE 匹配的字符串。
 | \n, \t, 等。 | 匹配一个换行符。匹配一个制表符, 等                           |
 | \1...\9      | 匹配第n个分组的内容。                                        |
 | \10          | 匹配第n个分组的内容，如果它经匹配。否则指的是八进制字符码的表达式。 |
-
-------
 
 ## 正则表达式实例
 

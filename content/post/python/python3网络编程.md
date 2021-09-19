@@ -77,7 +77,7 @@ socket.socket([family[, type[, proto]]])
 
 完整代码如下：
 
-```
+```python
 #!/usr/bin/python3
 # 文件名：server.py
 
@@ -119,7 +119,7 @@ while True:
 
 完整代码如下：
 
-```
+```python
 #!/usr/bin/python3
 # 文件名：client.py
 
@@ -165,8 +165,6 @@ $ python3 client.py
 ```
 连接地址： ('192.168.0.118', 33397)
 ```
-
-------
 
 ## Python Internet 模块
 
