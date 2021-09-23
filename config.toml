@@ -66,6 +66,11 @@ disqusShortname = ""  ## 是否开启disqus评论，不要和utteranc同时开�
   title = "飞雪无情的博客"
   name = "飞雪无情的博客"
   url = "https://www.flysnow.org/"
+[[params.links]]
+  title = "sliverhorn的博客"
+  name = "sliverhorn的博客"
+  url = "https://sliverhorn.com/"
+ 
 
 [[params.links]]
   title = "Android Gradle权威指南"

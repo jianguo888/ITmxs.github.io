@@ -1,7 +1,9 @@
 ---
 title: "Flutter_DropdownButton示例"
 date: 2021-09-23T15:50:43+08:00
-draft: true
+draft: false
+tags: ["flutter"]
+categories: ["flutter"]
 ---
 
 ![img](https://luckly007.oss-cn-beijing.aliyuncs.com/image/Screen-Shot-2021-09-22-at-15.52.22.jpg)
