@@ -81,3 +81,30 @@ mapbox:
 # Go每日一库
 
 https://github.com/darjun/go-daily-lib
+
+
+
+
+go run . &
+
+
+
+加一个&
+
+
+然后exit
+
+
+控制台就关闭了
+
+ 
+如果要关闭就是ps -x
+
+ 
+找到你的那个项目，好像有个编号
+
+ 
+kill -9 编号
+
+ 
+就能杀死
