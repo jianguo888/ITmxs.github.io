@@ -1,9 +1,9 @@
 ---
 title: "Nginx极简教程"
-date: 2021-09-11T15:30:31+08:00
+date: 2021-09-25T15:30:31+08:00
 draft: false
-tags: ["flutter"]
-categories: ["flutter"]
+tags: ["nginx"]
+categories: ["nginx"]
 ---
 
 > 本文主要介绍
