@@ -19,7 +19,7 @@ git commit -m "$msg"
 
 # Push source and build repos.
 git push    git@github.com:itmxs/itmxs.github.io.git  master 
-git push   https://gitee.com/itmxs/ITmxs.gitee.io.git master
+
 
 # Come Back
 cd ..
