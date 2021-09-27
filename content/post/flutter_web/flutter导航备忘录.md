@@ -1,7 +1,13 @@
 ---
 title: "Flutter导航备忘录"
 date: 2021-09-27T16:51:21+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 

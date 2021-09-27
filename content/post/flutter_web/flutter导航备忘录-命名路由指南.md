@@ -1,7 +1,13 @@
 ---
 title: "Flutter导航备忘录 命名路由指南"
 date: 2021-09-27T16:56:37+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 一个简单的指南，涵盖了在 Flutter 上构建应用程序时遇到的所有导航场景

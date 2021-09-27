@@ -1,7 +1,13 @@
 ---
 title: "Flutter中的依赖注入"
 date: 2021-09-27T17:03:15+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
  掘金

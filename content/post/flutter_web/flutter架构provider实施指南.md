@@ -1,7 +1,13 @@
 ---
 title: "Flutter架构provider实施指南"
 date: 2021-09-27T17:15:34+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 ## [语境](https://www.filledstacks.com/post/flutter-architecture-my-provider-implementation-guide/#context)
