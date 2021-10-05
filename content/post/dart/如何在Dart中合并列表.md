@@ -25,7 +25,7 @@ https://www.geeksforgeeks.org/how-to-combine-lists-in-dart/?ref=leftbar-rightbar
 我们可以使用 addAll() 方法将另一个列表的所有元素添加到现有列表中。要了解此方法，您可以参考这篇[文章](https://www.geeksforgeeks.org/dart-programming-list/)。
 
 **例子：**
- 
+
 
 - dart
 
@@ -46,7 +46,7 @@ print(gfg1);
 
 ```
 
- 
+
 **输出：** 
 
 
@@ -62,7 +62,7 @@ print(gfg1);
 我们可以通过使用 Dart 中的 addAll() 方法将列表中的所有元素一个接一个地添加到新列表中。要了解此方法，您可以参考这篇[文章](https://www.geeksforgeeks.org/dart-programming-list/)。
 
 **例子：**
- 
+
 
 - dart
 
@@ -83,7 +83,7 @@ print(newgfgList);
 
 ```
 
- 
+
 **输出：** 
 
 ```dart
@@ -95,7 +95,7 @@ print(newgfgList);
 我们可以通过使用 Dart 中的 expand() 方法将列表中的所有元素一个接一个地添加到新列表中。这通常用于将两个以上的列表添加在一起。
 
 **例子：**
- 
+
 
 - dart
 
@@ -117,7 +117,7 @@ print(newgfgList);
 
 ```
 
- 
+
 **输出：** 
 
 
@@ -133,7 +133,7 @@ print(newgfgList);
 我们还可以通过在 Dart 中使用**+**运算符将列表添加到一起。这种方法是在**Dart 2.0 更新中**引入的。
 
 **例子：**
- 
+
 
 - dart
 
@@ -155,7 +155,7 @@ print(newgfgList);
 
 ```
 
- 
+
 **输出：** 
 
 ```dart
@@ -167,7 +167,7 @@ print(newgfgList);
 从**Dart 2.3**更新开始，还可以使用扩展运算符来组合 Dart 中的列表。
 
 **例子：**
- 
+
 
 - dart
 
@@ -189,9 +189,9 @@ print(newgfgList);
 
 ```
 
- 
 **输出：** 
 
 ```dart
 [Welcome, to, GeeksForGeeks]
 ```
+
