@@ -48,7 +48,7 @@ categories: ["Flutter"]
 
 在应用程序中，您经常使用来自互联网的图像，这很好，但它们总是会重新加载。这个包通过在第一次加载后缓存图像来解决这个问题，因此不必一遍又一遍地重新加载！
 
-```
+```dart
 CachedNetworkImage(
 	imageUrl: "<http://via.placeholder.com/350x150>",
 	placeholder:`(context, url) => CircularProgressIndicator(),

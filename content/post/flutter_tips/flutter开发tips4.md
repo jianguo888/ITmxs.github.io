@@ -16,7 +16,7 @@ categories: ["Flutter"]
 
 一个简单的小工具，**自动调整**你的**文字**，以适应屏幕。您可以在许多领域使用它，例如文本字段或一般文本。这只是您可以做的许多示例之一
 
-```
+```dart
 AutoSizeText(
   'The text to display',
   style: TextStyle(fontSize: 20),
@@ -32,7 +32,7 @@ AutoSizeText(
 
 很多开发者都应该知道。它使您可以访问 1500 多个附加图标。这是一个小例子：
 
-```
+```dart
 IconButton(
   icon: FaIcon(FontAwesomeIcons.gamepad),
   onPressed: () {
@@ -67,7 +67,7 @@ IconButton(
 
 它将**Liquid Swipe 动画**带入Flutter。
 
-```
+```dart
 @override
 Widget build(BuildContext context) {
   return new MaterialApp(
@@ -92,7 +92,7 @@ final pages = [
 
 您可以轻松创建一个非常**漂亮的导航栏**，这是一个真正的引人注目的地方。具有非常好的动画和许多自定义选项，这是您下一个应用程序的一个非常好的扩展！
 
-```
+```dart
 Scaffold(
   bottomNavigationBar: CurvedNavigationBar(
     backgroundColor: Colors.blueAccent,
@@ -113,7 +113,7 @@ Scaffold(
 
 您可以创建可以**与应用程序交互的****动画**。
 
-```
+```dart
 RiveAnimation.network(
   '<https://cdn.rive.app/animations/vehicles.riv>'
 ),
@@ -127,7 +127,7 @@ RiveAnimation.network(
 
 您可以**在应用程序中裁剪图像**。如果您正在构建一个希望用户裁剪个人资料图片的应用程序或者您想开发一个照片编辑应用程序，这当然很有用。
 
-```
+```dart
 import 'package:image_cropper/image_cropper.dart';
 File croppedFile =await ImageCropper.cropImage(
   sourcePath: imageFile.path,

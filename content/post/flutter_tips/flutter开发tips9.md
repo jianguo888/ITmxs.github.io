@@ -10,15 +10,15 @@ categories: ["Flutter"]
 
 <!--more-->
 
-# 升级者
+# upgrade
 
-[upgrader](https://pub.dev/packages/upgrader)是一个超级包，用于提醒用户应用程序的**更新****可用**。
+[upgrader](https://pub.dev/packages/upgrader)是一个超级包，用于提醒用户应用程序的**更新**可用。
 
 创建起来有点麻烦，但绝对是即使是对 Flutter 有一定了解的初学者也能做到的。该包有几个优点。一旦它可以在 MaterialDesign 以及 Cupertionostyle 中显示警报，还可以设置不同的语言。
 
-![img](https://miro.medium.com/max/60/0*JFKJgrYx_vu3MeJd.png?q=20)
 
-![img](https://miro.medium.com/max/400/0*JFKJgrYx_vu3MeJd.png)
+
+![image-20211005192035821](https://luckly007.oss-cn-beijing.aliyuncs.com/img/image-20211005192035821.png)
 
 # 在应用程序审查
 
@@ -26,27 +26,25 @@ categories: ["Flutter"]
 
 这就是为什么有一个很棒的插件叫做[in_app_review](https://pub.dev/packages/in_app_review)。有了这个包，用户可以在应用的某个点给一个评分，这个评分也会在不离开应用的情况下发布到 App & Google Play 商店。
 
-![img](https://miro.medium.com/max/60/0*w63xdE1eoV_vsgIe.jpg?q=20)
 
-![img](https://miro.medium.com/max/700/0*w63xdE1eoV_vsgIe.jpg)
 
-# Flutter 资金选择
+![image-20211005192016712](https://luckly007.oss-cn-beijing.aliyuncs.com/img/image-20211005192016712.png)
+
+# Flutter funding_choic
 
 好的，这是今天的最后一个弹窗，我保证:)
 
 在欧洲，必须在应用程序中询问是否**允许收集数据**以改善服务等。为此有包[flutter_funding_choices](http://pub.dev/packages/flutter_funding_choices)。这是资金选择的非官方 Flutter 实现，这是一项谷歌服务，允许请求用户同意 AdMob 中的个性化广告。
 
-![img](https://miro.medium.com/max/34/0*R6lxWnm3wFYPiGQd.png?q=20)
-
-![img](https://miro.medium.com/max/700/0*R6lxWnm3wFYPiGQd.png)
+![image-20211005192437846](https://luckly007.oss-cn-beijing.aliyuncs.com/img/image-20211005192437846.png)
 
 # 应用内通知
 
 WhatsApp、Signal 等通知。非常方便，我已经在另外 10 篇 Flutter 技巧文章中展示了它适用于哪个包。如果您想**在应用程序内**有独立**于**操作系统的小**通知**，那么您可以使用[in_app_notification](https://pub.dev/packages/in_app_notification)包。它非常易于使用，您可以显示这些小卡片，例如，如果登录过程中出现问题。说到登录，对用户使用强密码不是有一个很好的解决方案吗？
 
-![img](https://miro.medium.com/freeze/max/28/0*2Zw-Rwi72Svnwpbn.gif?q=20)
 
-![img](https://miro.medium.com/max/320/0*2Zw-Rwi72Svnwpbn.gif)
+
+![image-20211005192457658](https://luckly007.oss-cn-beijing.aliyuncs.com/img/image-20211005192457658.png)
 
 ```dart
 InAppNotification.show(
@@ -60,9 +58,9 @@ InAppNotification.show(
 
 回答上一个提示中的问题：是的，它存在。[flutter_pw_validator](https://pub.dev/packages/flutter_pw_validator)是一个非常不错的包，可以确保用户满足**一个好的密码**的**要求**。这也很容易使用，绝对应该看看。
 
-![img](https://miro.medium.com/freeze/max/28/0*T0E0lTmjdN_PL0li.gif?q=20)
 
-![img](https://miro.medium.com/max/320/0*T0E0lTmjdN_PL0li.gif)
+
+![image-20211005192528930](https://luckly007.oss-cn-beijing.aliyuncs.com/img/image-20211005192528930.png)
 
 ```dart
 dTextField(
@@ -80,7 +78,7 @@ FlutterPwValidator(
 )
 ```
 
-# 网页视图颤动
+# webview_flutter
 
 **在**不使用浏览器或其他东西的情况下**在应用程序中查看网站**？好吧，你可以很容易地做到这一点，使用[webview_flutter](https://pub.dev/packages/webview_flutter)。就像这里介绍的每个包一样，超级易于使用，只需要一行代码：
 
@@ -96,7 +94,7 @@ String tomicRiedel = '<https://tomicriedel.medium.com>';
 return WebView(initialUrl: tomicRiedel);
 ```
 
-# 旗帜
+# Flag
 
 **标志**可用于许多不同的领域。例如，如果您希望用户选择他的来源，或者您希望使用标志使国家/地区代码更具描述性。包[标志](https://pub.dev/packages/flag)为您提供了世界上所有的标志，以便在您的应用程序中使用它们：
 
@@ -140,10 +138,13 @@ var subnet = ipToSubnet(wifiIP);
 
 每个人都知道。当您想在应用程序中**修剪视频**时。如果您希望它在您的应用程序中工作，您应该使用包[video_trimmer](https://pub.dev/packages/video_trimmer)。它可以修剪视频，然后观看并将其保存在文件中。这个包的另一个非常酷的功能是它甚至支持 .gif 文件。
 
-![img](https://miro.medium.com/max/700/0*-DxPwvy8t7JTeuSJ.png)
+![image-20211005192610280](https://luckly007.oss-cn-beijing.aliyuncs.com/img/image-20211005192610280.png)
 
 由于加载视频等需要一定的权限，所以这里就不解释怎么设置了，但是包的README很详细，很容易理解。
 
-# 火焰
+# flame
 
 正如一开始所承诺的那样，我将向您展示Flutter的**游戏引擎**。而这个叫做[火焰](https://pub.dev/packages/flame)。该引擎仍处于测试阶段，但正在不断开发中，并且已经有很多人在制作。[Robert Brunhage](https://www.youtube.com/c/RobertBrunhage)在一个[视频中](https://www.youtube.com/watch?v=AfDYTOK_tfM&t=6s)制作了一个非常简单的游戏，但这实际上只是一个简单的例子，我相信你可以用它制作真正的热门游戏 ;)
+
+
+
