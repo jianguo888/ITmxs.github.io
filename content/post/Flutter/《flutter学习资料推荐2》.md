@@ -202,3 +202,15 @@ https://book.flutterchina.club/chapter1/flutter_intro.html
 
 - 学习 [dartdoc.dart 源码](https://github.com/flutter/flutter/blob/master/dev/tools/dartdoc.dart)
 - 翻译 [dart.cn 文档](https://www.sunmoonblog.com/2019/11/13/flutter-series-1-begin/#)
+
+
+
+
+
+https://www.pluralsight.com/courses/creating-layouts-flutter?exp=1
+
+书籍
+
+https://www.tutorialspoint.com/flutter/index.htm
+
+https://flutterlearn.com/courses/basic-course
