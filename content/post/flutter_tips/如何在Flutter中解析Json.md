@@ -10,7 +10,7 @@ categories: ["flutter"]
 
 Dart 内置了对解析 json 的支持。给定一个字符串，您可以使用该`dart:convert`库并将 Json（如果有效 json）转换为带有字符串键和动态对象的 Map。您可以直接解析 json 并使用映射，也可以将其解析并放入类型化对象中，以便您的数据具有更多结构并且更易于维护。
 
-## [直接解析和使用](https://www.filledstacks.com/snippet/how-to-parse-json-in-flutter/#direct-parsing-and-usage)
+## 直接解析和使用
 
 ```dart
 var jsonData = '{ "name" : "Dane", "alias" : "FilledStacks"  }';
@@ -39,7 +39,7 @@ print('$name is $alias');
 Dane is FilledStacks
 ```
 
-## [解析为对象](https://www.filledstacks.com/snippet/how-to-parse-json-in-flutter/#parse-into-object)
+## 解析为对象
 
 程序员通常的做法是将这些数据放入一个为您的数据建模的类中，而不是直接使用解析的数据。这通常通过 Dart 中的命名构造函数来完成。让我们将测试数据放入模型中。我们将首先以基本方式定义模型，然后进入命名构造函数。
 

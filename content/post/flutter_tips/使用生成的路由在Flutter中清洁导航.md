@@ -6,7 +6,7 @@ tags: ["flutter"]
 categories: ["flutter"]
 ---
 
-> 本文主要介绍使用生成的路由在 Flutter 中清洁导航
+> 本文主要介绍 Flutter 中设置路由器，以使导航调用更清晰、更简洁
 
 本教程将介绍如何在 Flutter 中设置路由器，以使导航调用更清晰、更简洁
 

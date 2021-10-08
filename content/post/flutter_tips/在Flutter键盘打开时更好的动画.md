@@ -6,11 +6,11 @@ tags: ["flutter"]
 categories: ["flutter"]
 ---
 
-> 本文主要介绍
+> 本文主要介绍在Flutter键盘打开时更好的动画
 
 在本教程中，我们将仔细聆听键盘可见性，并在它出现时为您的视图提供更平滑的过渡。我们将使用 keyboard_visibility 包来监听可见性，并使用 AnimatedContainer 来为我们的视图 UI 设置动画。
 
-## 听键盘
+## keyboard_visibility
 
 我们将首先将包添加到 pubspec
 

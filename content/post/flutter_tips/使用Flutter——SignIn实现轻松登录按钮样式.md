@@ -6,7 +6,7 @@ tags: ["flutter"]
 categories: ["flutter"]
 ---
 
-> 本文主要介绍使用 Flutter SignIn 实现轻松登录按钮样式
+> 本文主要介绍使用 Flutter SignIn 轻松实现登录按钮样式
 
 您可以使用[flutter_signin_button](https://pub.dev/packages/flutter_signin_button)包来加快开发速度，而不是在开发时设计自己的登录/注册按钮。这篇文章将向您展示可用的按钮以及样式选项。
 

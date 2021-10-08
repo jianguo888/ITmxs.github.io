@@ -6,9 +6,7 @@ tags: ["flutter"]
 categories: ["flutter"]
 ---
 
-> 本文主要介绍
-
-在本教程中，我们将使用 RfFlutter 来显示如下对话框。
+> 本文主要介绍使用 RfFlutter 来显示如下对话框。
 
 ![教程的所有警报](https://luckly007.oss-cn-beijing.aliyuncs.com/img/018-preview.cbab2cf.8b78cf466fe03e528c27ba06daef7dd1.jpg)
 

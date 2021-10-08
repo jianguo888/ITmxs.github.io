@@ -6,7 +6,7 @@ tags: ["flutter"]
 categories: ["flutter"]
 ---
 
-> 本文主要介绍使用 Flutter 和 Fluro 像在网上一样导航
+> 本文主要介绍使用 Flutter 和 Fluro 像在web上一样导航
 
 [Fluro](https://pub.dev/packages/fluro)是一个路由库，它为我们处理了一些基础知识，并为我们提供了一些类似 web 的路由功能。在本教程中，我将向您展示如何设置 Fluro、使用内置转换以及使用类似 Web 的路由。
 
@@ -114,7 +114,7 @@ class MyApp extends StatelessWidget {
 
 如果您现在运行它，您的应用程序将在登录时启动并且您正在使用 Fluro 路由器 😁
 
-## 像在网络上一样导航
+## 像在web上一样导航
 
 Fluro 导航与 Flutter Navigator 相关联，因此导航仍然相同。您 pushNamedRoute 它将通过 Fluro 定义的路由来确定您期望该路由的小部件。Fluro 的一件很酷的事情是您可以导航和传递查询参数。作为示例，我们将为 HomeView 定义一个路由。
 

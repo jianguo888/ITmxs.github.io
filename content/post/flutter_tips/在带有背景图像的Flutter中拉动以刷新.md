@@ -6,7 +6,7 @@ tags: ["flutter"]
 categories: ["flutter"]
 ---
 
-> 本文主要介绍
+> 本文主要介绍在带有背景图像的Flutter中拉动以刷新
 
 拉动刷新”是显示动态数据列表的移动应用程序的常见任务。今天我们将使用 pull_to_refresh 包实现 pull to refresh 并利用 Slivers 创建一个自定义的 Collapsible 标头
 
