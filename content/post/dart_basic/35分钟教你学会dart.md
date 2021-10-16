@@ -142,7 +142,7 @@ Dart 是*静态类型的*，这意味着 Dart 中的每个变量都有一个在�
 
 如果您没有明确指定数据类型，Dart 会使用*类型推断*来尝试确定它，就像 Swift 和 Kotlin 所做的那样。
 
-[![类型推断](https://luckly007.oss-cn-beijing.aliyuncs.com/image/type_inference-650x339.png)](https://koenig-media.raywenderlich.com/uploads/2021/05/type_inference.png)
+![类型推断](https://luckly007.oss-cn-beijing.aliyuncs.com/image/type_inference-650x339.png)
 
 Dart 还对`int`. 输入一个变量，`pi`，等于 3.14：
 
@@ -156,7 +156,7 @@ print(pi); // 3.14
 
 Dart 推断`pi`为 a 是`double`因为您使用了一个浮点值来初始化它。您可以在 Dart 信息面板中通过单击 来验证`pi`。
 
-[![双数据类型推断](https://luckly007.oss-cn-beijing.aliyuncs.com/image/pi_output-650x339.png)](https://koenig-media.raywenderlich.com/uploads/2021/05/pi_output.png)
+![双数据类型推断](https://luckly007.oss-cn-beijing.aliyuncs.com/image/pi_output-650x339.png)
 
 或者，您可以声明类型，而不是使用类型推断。
 
@@ -171,7 +171,7 @@ Dart 使用以下基本类型：
 
 以下是每种 Dart 类型的示例：
 
-[![Dart 数据类型](https://luckly007.oss-cn-beijing.aliyuncs.com/image/datatypes-650x314.png)](https://koenig-media.raywenderlich.com/uploads/2020/08/datatypes.png)
+![Dart 数据类型](https://luckly007.oss-cn-beijing.aliyuncs.com/image/datatypes-650x314.png)
 
 `int`并且`double`都派生自一个名为`num`. `num`使用`dynamic`关键字来模拟静态类型 Dart 中的动态类型。
 
