@@ -49,7 +49,7 @@ mapbox:
 
 我们将创建 4 个心形。第一个没有边界，但其他的有。
 
-![img](Screen-Shot-2021-10-14-at-16.09.22.jpg)
+![img](https://luckly007.oss-cn-beijing.aliyuncs.com/image/Screen-Shot-2021-10-14-at-16.09.22.jpg)
 
 ### 步骤
 
