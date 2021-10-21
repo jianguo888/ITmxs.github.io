@@ -1,7 +1,13 @@
 ---
 title: "在Flutter中使用导航服务进行无上下文导航"
 date: 2021-09-27T16:59:23+08:00
-draft: true
+draft: false
+author: ""
+authorLink: ""
+description: ""
+images: []
+tags: ["Flutter","dart"]
+categories: ["Flutter","dart"]
 ---
 
 # 在 Flutter 中使用导航服务进行无上下文导航
