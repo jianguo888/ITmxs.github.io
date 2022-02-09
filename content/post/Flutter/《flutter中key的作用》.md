@@ -70,6 +70,10 @@ Key Class官方介绍：
 > 在有着相同父节点的element中，Key必须是唯一的。
 >
 > Key的子类要么是LocalKey，要么是GlobalKey。
+>
+> ## 
+>
+> 在 Flutter 中我们经常与状态打交道。我们知道 Widget 可以有 Stateful 和 Stateless 两种。Key 能够帮助开发者在 Widget tree 中保存状态，在一般的情况下，我们并不需要使用 Key。那么，究竟什么时候应该使用 Key呢。
 
 Key 官方介绍：
 
@@ -240,7 +244,7 @@ class _StatefulContainerState extends State<StatefulContainer> {
 
 修正版本：
 
-```
+```dart
 import 'dart:math';
 
 import 'package:flutter/material.dart';
