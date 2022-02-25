@@ -758,7 +758,7 @@ class CarServices{
 
 https://www.filledstacks.com/post/multiple-themes-in-flutter-dark-and-light-theme-flutter-stacked/
 
-## 设置和堆叠主题
+## 设置主题
 
 我们首先将stacked_themes 包添加到pubspec.yaml 文件中
 
@@ -896,7 +896,7 @@ Widget build(BuildContext context) {
 
 在上面的例子中，我们返回主题的重音颜色作为状态栏颜色。此功能将自动检查状态文本是否可见，并将根据背景值强度(与白色/黑色的接近程度)将文本从白色更改为黑色。
 
-### 主题持久化]
+### 主题持久化
 
 如果用户在应用程序的生命周期内更改了任何主题，则在应用程序再次启动时将自动应用上次选择的主题。此功能是通过使用[shared_preferences](https://pub.dev/packages/shared_preferences)包创建的。
 
